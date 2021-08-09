@@ -3214,6 +3214,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./images/arrows/long-arrow-right.svg":
+/*!********************************************!*\
+  !*** ./images/arrows/long-arrow-right.svg ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/arrows/long-arrow-right.svg\");\n\n//# sourceURL=webpack:///./images/arrows/long-arrow-right.svg?");
+
+/***/ }),
+
 /***/ "./images/create-future/slider/focus.png":
 /*!***********************************************!*\
   !*** ./images/create-future/slider/focus.png ***!
@@ -3489,6 +3500,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./images/upgrade/upgrade-image.png":
+/*!******************************************!*\
+  !*** ./images/upgrade/upgrade-image.png ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/upgrade/upgrade-image.png\");\n\n//# sourceURL=webpack:///./images/upgrade/upgrade-image.png?");
+
+/***/ }),
+
 /***/ "./styles/styles.scss":
 /*!****************************!*\
   !*** ./styles/styles.scss ***!
@@ -3516,7 +3538,7 @@ eval("/**\n * Copyright (c) 2014-present, Facebook, Inc.\n *\n * This source cod
   \*******************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var map = {\n\t\"./arrows/arrow-bottom.svg\": \"./images/arrows/arrow-bottom.svg\",\n\t\"./arrows/arrow-right.svg\": \"./images/arrows/arrow-right.svg\",\n\t\"./arrows/big-arrow-left.svg\": \"./images/arrows/big-arrow-left.svg\",\n\t\"./arrows/big-arrow-right.svg\": \"./images/arrows/big-arrow-right.svg\",\n\t\"./create-future/slider/focus.png\": \"./images/create-future/slider/focus.png\",\n\t\"./create-future/slider/forever.png\": \"./images/create-future/slider/forever.png\",\n\t\"./create-future/slider/stack.png\": \"./images/create-future/slider/stack.png\",\n\t\"./create-future/slider/startup.png\": \"./images/create-future/slider/startup.png\",\n\t\"./create-future/spiral.svg\": \"./images/create-future/spiral.svg\",\n\t\"./direction/director.png\": \"./images/direction/director.png\",\n\t\"./goal/care-future.svg\": \"./images/goal/care-future.svg\",\n\t\"./goal/height.svg\": \"./images/goal/height.svg\",\n\t\"./goal/leader.svg\": \"./images/goal/leader.svg\",\n\t\"./goal/microchip.svg\": \"./images/goal/microchip.svg\",\n\t\"./goal/one-retail.svg\": \"./images/goal/one-retail.svg\",\n\t\"./goal/planet.svg\": \"./images/goal/planet.svg\",\n\t\"./goal/print.svg\": \"./images/goal/print.svg\",\n\t\"./goal/rocket.svg\": \"./images/goal/rocket.svg\",\n\t\"./goal/tree.svg\": \"./images/goal/tree.svg\",\n\t\"./goal/watch.svg\": \"./images/goal/watch.svg\",\n\t\"./header/header-logo.svg\": \"./images/header/header-logo.svg\",\n\t\"./management/check.svg\": \"./images/management/check.svg\",\n\t\"./management/confluence.svg\": \"./images/management/confluence.svg\",\n\t\"./management/gdocs.svg\": \"./images/management/gdocs.svg\",\n\t\"./management/gitlab.svg\": \"./images/management/gitlab.svg\",\n\t\"./management/jira.svg\": \"./images/management/jira.svg\",\n\t\"./management/management.png\": \"./images/management/management.png\",\n\t\"./management/slack.svg\": \"./images/management/slack.svg\",\n\t\"./management/swagger.svg\": \"./images/management/swagger.svg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images sync recursive \\\\.(png|jpg|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/_sync_\\.(png%7Cjpg%7Csvg%7Cgif)$?");
+eval("var map = {\n\t\"./arrows/arrow-bottom.svg\": \"./images/arrows/arrow-bottom.svg\",\n\t\"./arrows/arrow-right.svg\": \"./images/arrows/arrow-right.svg\",\n\t\"./arrows/big-arrow-left.svg\": \"./images/arrows/big-arrow-left.svg\",\n\t\"./arrows/big-arrow-right.svg\": \"./images/arrows/big-arrow-right.svg\",\n\t\"./arrows/long-arrow-right.svg\": \"./images/arrows/long-arrow-right.svg\",\n\t\"./create-future/slider/focus.png\": \"./images/create-future/slider/focus.png\",\n\t\"./create-future/slider/forever.png\": \"./images/create-future/slider/forever.png\",\n\t\"./create-future/slider/stack.png\": \"./images/create-future/slider/stack.png\",\n\t\"./create-future/slider/startup.png\": \"./images/create-future/slider/startup.png\",\n\t\"./create-future/spiral.svg\": \"./images/create-future/spiral.svg\",\n\t\"./direction/director.png\": \"./images/direction/director.png\",\n\t\"./goal/care-future.svg\": \"./images/goal/care-future.svg\",\n\t\"./goal/height.svg\": \"./images/goal/height.svg\",\n\t\"./goal/leader.svg\": \"./images/goal/leader.svg\",\n\t\"./goal/microchip.svg\": \"./images/goal/microchip.svg\",\n\t\"./goal/one-retail.svg\": \"./images/goal/one-retail.svg\",\n\t\"./goal/planet.svg\": \"./images/goal/planet.svg\",\n\t\"./goal/print.svg\": \"./images/goal/print.svg\",\n\t\"./goal/rocket.svg\": \"./images/goal/rocket.svg\",\n\t\"./goal/tree.svg\": \"./images/goal/tree.svg\",\n\t\"./goal/watch.svg\": \"./images/goal/watch.svg\",\n\t\"./header/header-logo.svg\": \"./images/header/header-logo.svg\",\n\t\"./management/check.svg\": \"./images/management/check.svg\",\n\t\"./management/confluence.svg\": \"./images/management/confluence.svg\",\n\t\"./management/gdocs.svg\": \"./images/management/gdocs.svg\",\n\t\"./management/gitlab.svg\": \"./images/management/gitlab.svg\",\n\t\"./management/jira.svg\": \"./images/management/jira.svg\",\n\t\"./management/management.png\": \"./images/management/management.png\",\n\t\"./management/slack.svg\": \"./images/management/slack.svg\",\n\t\"./management/swagger.svg\": \"./images/management/swagger.svg\",\n\t\"./upgrade/upgrade-image.png\": \"./images/upgrade/upgrade-image.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images sync recursive \\\\.(png|jpg|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/_sync_\\.(png%7Cjpg%7Csvg%7Cgif)$?");
 
 /***/ })
 
