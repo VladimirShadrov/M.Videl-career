@@ -1,5 +1,11 @@
 @import './styles.scss';
 
+.it-header {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 96px;
+}
+
 .it-header__wrapper {
   display: flex;
   justify-content: flex-start;
@@ -81,9 +87,19 @@
   color: $mainColor;
 }
 
+@media (max-width: 1440px) {
+  .it-header {
+    margin-bottom: 72px;
+  }
+}
+
 @media (max-width: 991px) {
   .it-header__contact-us {
     display: none;
+  }
+
+  .it-header {
+    margin-bottom: 64px;
   }
 }
 
@@ -106,5 +122,11 @@
   .it-header__logo {
     width: 117.27px;
     height: 20px;
+  }
+}
+
+@media (max-width: 479px) {
+  .it-header {
+    margin-bottom: 32px;
   }
 }

@@ -87,8 +87,16 @@ body {
   font-family: suisse;
   background: $bodyBackgraund;
   color: $mainColor;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .container {
   padding: 16px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 8px;
+  }
 }
