@@ -1,3 +1,9 @@
+@font-face {
+  font-family: suisse;
+  src: url('../fonts/SuisseIntl-Regular.woff') format('woff'),
+    url('../fonts/SuisseIntl-Regular.woff2') format('woff2');
+}
+
 // сброс стилей
 * {
   padding: 0;
@@ -30,7 +36,7 @@ aside {
 
 html,
 body {
-  height: 100%;
+  // height: 100%;
   width: 100%;
   font-size: 100%;
   line-height: 1;
@@ -72,4 +78,17 @@ h5,
 h6 {
   font-size: inherit;
   font-weight: 400;
+}
+
+$bodyBackgraund: #f3f3f3;
+$mainColor: #000000;
+
+body {
+  font-family: suisse;
+  background: $bodyBackgraund;
+  color: $mainColor;
+}
+
+.container {
+  padding: 16px;
 }
