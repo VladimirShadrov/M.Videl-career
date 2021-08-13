@@ -446,71 +446,40 @@
 
         <div class="profession__content">
           <div class="profession__side-bar">
-            <p class="profession__side-bar-text">
-              Организуем и отлаживаем процессы в команде, формируем бэклог
-              и управляем продуктами.
-            </p>
+            <div class="profession__side-bar-text-wrapper">
+              <p class="profession__side-bar-text">
+                Организуем и отлаживаем процессы в команде, формируем бэклог
+                и управляем продуктами.
+              </p>
 
-            <p class="profession__side-bar-text">Мы используем</p>
+              <p class="profession__side-bar-text">Мы используем</p>
 
-            <div class="profession__side-bar-image-wrapper">
-              <div class="profession__side-bar-image">
+              <div class="profession__side-bar-image-tools-wrapper">
                 <img
-                  src="./images/management/jira.svg"
-                  alt="stack"
-                  class="profession__side-bar-img"
+                  class="profession__side-bar-tools"
+                  src="./images/management/tools.svg"
+                  alt="Tools"
                 />
-                <p class="profession__side-bar-text">Jira</p>
               </div>
-              <div class="profession__side-bar-image">
-                <img
-                  src="./images/management/confluence.svg"
-                  alt="stack"
-                  class="profession__side-bar-img"
-                />
-                <p class="profession__side-bar-text">Confluence</p>
-              </div>
-              <div class="profession__side-bar-image">
-                <img
-                  src="./images/management/gdocs.svg"
-                  alt="stack"
-                  class="profession__side-bar-img"
-                />
-                <p class="profession__side-bar-text">Google Docs</p>
-              </div>
-              <div class="profession__side-bar-image">
-                <img
-                  src="./images/management/gitlab.svg"
-                  alt="stack"
-                  class="profession__side-bar-img"
-                />
-                <p class="profession__side-bar-text">Gitlab CI</p>
-              </div>
-              <div class="profession__side-bar-image">
-                <img
-                  src="./images/management/slack.svg"
-                  alt="stack"
-                  class="profession__side-bar-img"
-                />
-                <p class="profession__side-bar-text">Slack</p>
-              </div>
-              <div class="profession__side-bar-image">
-                <img
-                  src="./images/management/swagger.svg"
-                  alt="stack"
-                  class="profession__side-bar-img"
-                />
-                <p class="profession__side-bar-text">Swagger</p>
-              </div>
+
+              <a href="#" class="profession__side-bar-vacancy-mobile">
+                <span class="profession__side-bar-vacancy-value">192</span>
+                вакансии в
+                <span class="profession__side-bar-vacancy-value">
+                  Менеджменте
+                </span>
+                <span class="profession__side-bar-vacancy-value-arrow"></span>
+              </a>
             </div>
 
-            <p class="profession__side-bar-vacancy">
+            <a href="#" class="profession__side-bar-vacancy">
               <span class="profession__side-bar-vacancy-value">192</span>
               вакансии в
-              <span class="profession__side-bar-vacancy-value"
-                >Менеджменте</span
-              >
-            </p>
+              <span class="profession__side-bar-vacancy-value">
+                Менеджменте
+              </span>
+              <span class="profession__side-bar-vacancy-value-arrow"></span>
+            </a>
 
             <div class="profession__side-bar-image-wrapper">
               <img
@@ -536,7 +505,7 @@
                       alt="arrow-bottom"
                     />
                   </div>
-                  <div class="profession__filter-item-select-list">
+                  <div class="profession__filter-item-select-list hide">
                     <p class="profession__filter-item-select-list-item">
                       Junior, Senior
                     </p>
@@ -559,7 +528,7 @@
                       alt="arrow-bottom"
                     />
                   </div>
-                  <div class="profession__filter-item-select-list">
+                  <div class="profession__filter-item-select-list hide">
                     <p class="profession__filter-item-select-list-item">
                       Любой
                     </p>
@@ -573,16 +542,14 @@
                 </div>
               </div>
 
-              <div class="profession__filter-checbox">
+              <div class="profession__checkbox-container">
                 <label class="profession__filter-checbox-wrapper">
                   <input class="profession__filter-input" type="checkbox" />
 
                   Удалённо
                   <span class="profession__filter-checbox-value"></span>
                 </label>
-              </div>
 
-              <div class="profession__filter-checbox">
                 <label class="profession__filter-checbox-wrapper">
                   <input class="profession__filter-input" type="checkbox" />
 
@@ -594,13 +561,29 @@
               <button class="profession__filter-reset">Сбросить фильтры</button>
             </div>
 
+            <div class="profession__checkbox-container-mobile">
+              <label class="profession__filter-checbox-wrapper">
+                <input class="profession__filter-input" type="checkbox" />
+
+                Удалённо
+                <span class="profession__filter-checbox-value"></span>
+              </label>
+
+              <label class="profession__filter-checbox-wrapper">
+                <input class="profession__filter-input" type="checkbox" />
+
+                Без опыта
+                <span class="profession__filter-checbox-value"></span>
+              </label>
+            </div>
+
             <div class="profession__job-wrapper">
               <div class="profession__job-item">
                 <div class="profession__job-title-container">
-                  <p class="profession__job-title">
+                  <a href="#" class="profession__job-title">
                     Менеджер по управлению <br />
                     технической поддержкой SAP
-                  </p>
+                  </a>
                   <p class="profession__job-department">
                     <span class="profession__department">IT-Департамент</span>
                     <span class="profession__arrow">&#129042;</span>
@@ -622,17 +605,17 @@
                 </div>
 
                 <div class="profession__location-container">
-                  <p class="profession__location">Москва</p>
+                  <p class="profession__location-city">Москва</p>
                   <p class="profession__location">Можно удаленно</p>
                 </div>
               </div>
 
               <div class="profession__job-item">
                 <div class="profession__job-title-container">
-                  <p class="profession__job-title">
+                  <a href="#" class="profession__job-title">
                     Менеджер по управлению <br />
                     технической поддержкой SAP
-                  </p>
+                  </a>
                   <p class="profession__job-department">
                     <span class="profession__department">IT-Департамент</span>
                     <span class="profession__arrow">&#129042;</span>
@@ -663,10 +646,10 @@
 
               <div class="profession__job-item">
                 <div class="profession__job-title-container">
-                  <p class="profession__job-title">
+                  <a href="#" class="profession__job-title">
                     Менеджер по управлению <br />
                     технической поддержкой SAP
-                  </p>
+                  </a>
                   <p class="profession__job-department">
                     <span class="profession__department">IT-Департамент</span>
                     <span class="profession__arrow">&#129042;</span>
@@ -695,10 +678,10 @@
 
               <div class="profession__job-item">
                 <div class="profession__job-title-container">
-                  <p class="profession__job-title">
+                  <a href="#" class="profession__job-title">
                     Менеджер по управлению <br />
                     технической поддержкой SAP
-                  </p>
+                  </a>
                   <p class="profession__job-department">
                     <span class="profession__department">IT-Департамент</span>
                     <span class="profession__arrow">&#129042;</span>
@@ -727,10 +710,10 @@
 
               <div class="profession__job-item">
                 <div class="profession__job-title-container">
-                  <p class="profession__job-title">
+                  <a href="#" class="profession__job-title">
                     Менеджер по управлению <br />
                     технической поддержкой SAP
-                  </p>
+                  </a>
                   <p class="profession__job-department">
                     <span class="profession__department">IT-Департамент</span>
                     <span class="profession__arrow">&#129042;</span>
@@ -759,10 +742,10 @@
 
               <div class="profession__job-item">
                 <div class="profession__job-title-container">
-                  <p class="profession__job-title">
+                  <a href="#" class="profession__job-title">
                     Менеджер по управлению <br />
                     технической поддержкой SAP
-                  </p>
+                  </a>
                   <p class="profession__job-department">
                     <span class="profession__department">IT-Департамент</span>
                     <span class="profession__arrow">&#129042;</span>

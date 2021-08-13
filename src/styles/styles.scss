@@ -82,6 +82,8 @@ h6 {
 
 $bodyBackgraund: #f3f3f3;
 $mainColor: #000000;
+$whiteColor: #ffffff;
+$blackColorOpacity-05: rgba(0, 0, 0, 0.5);
 
 body {
   font-family: suisse;
@@ -93,6 +95,10 @@ body {
 
 .container {
   padding: 16px;
+}
+
+.hide {
+  display: none;
 }
 
 @media (max-width: 768px) {
