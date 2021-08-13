@@ -1,7 +1,7 @@
 @import './styles.scss';
 
 .why-are-we {
-  margin-bottom: 128px;
+  margin-bottom: 192px;
 }
 
 .why-are-we__wrapper {
@@ -106,6 +106,10 @@
 }
 
 @media (max-width: 1440px) {
+  .why-are-we {
+    margin-bottom: 144px;
+  }
+
   .why-are-we__side-bar-text {
     max-width: 224px;
     font-size: 16px;
@@ -128,6 +132,10 @@
   .why-are-we__slide-text {
     padding-right: 0;
   }
+
+  .why-are-we {
+    margin-bottom: 128px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -140,7 +148,8 @@
     margin-bottom: 40px;
   }
 
-  .why-are-we__slide-buttons-mobile {
+  .why-are-we__slide-buttons-mobile,
+  .goal__slide-buttons-mobile {
     display: none;
     align-items: center;
     justify-content: flex-end;
@@ -183,6 +192,10 @@
 }
 
 @media (max-width: 650px) {
+  .why-are-we {
+    margin-bottom: 64px;
+  }
+
   .why-are-we__slide-buttons-mobile {
     display: flex;
   }

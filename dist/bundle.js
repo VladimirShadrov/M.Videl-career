@@ -38,7 +38,7 @@ eval("\n\n__webpack_require__(/*! core-js/es6 */ \"../node_modules/core-js/es6/i
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/styles.scss */ \"./styles/styles.scss\");\n/* harmony import */ var _styles_header_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/header.scss */ \"./styles/header.scss\");\n/* harmony import */ var _styles_createFuture_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/createFuture.scss */ \"./styles/createFuture.scss\");\n/* harmony import */ var _styles_advantages_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/advantages.scss */ \"./styles/advantages.scss\");\n\n\n\n // Перенос изображений\n\n__webpack_require__(\"./images sync recursive \\\\.(png|jpg|svg|gif)$\");\n\n__webpack_require__(\"./fonts sync recursive \\\\.(ttf|woff|woff2)$\");\n\n//# sourceURL=webpack:///./js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/styles.scss */ \"./styles/styles.scss\");\n/* harmony import */ var _styles_header_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/header.scss */ \"./styles/header.scss\");\n/* harmony import */ var _styles_createFuture_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/createFuture.scss */ \"./styles/createFuture.scss\");\n/* harmony import */ var _styles_advantages_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/advantages.scss */ \"./styles/advantages.scss\");\n/* harmony import */ var _styles_goal_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles/goal.scss */ \"./styles/goal.scss\");\n\n\n\n\n // Перенос изображений\n\n__webpack_require__(\"./images sync recursive \\\\.(png|jpg|svg|gif)$\");\n\n__webpack_require__(\"./fonts sync recursive \\\\.(ttf|woff|woff2)$\");\n\n//# sourceURL=webpack:///./js/index.js?");
 
 /***/ }),
 
@@ -3522,6 +3522,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./images/goal/arrow-right.svg":
+/*!*************************************!*\
+  !*** ./images/goal/arrow-right.svg ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/goal/arrow-right.svg\");\n\n//# sourceURL=webpack:///./images/goal/arrow-right.svg?");
+
+/***/ }),
+
 /***/ "./images/goal/care-future.svg":
 /*!*************************************!*\
   !*** ./images/goal/care-future.svg ***!
@@ -3563,6 +3574,39 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/goal/microchip.svg\");\n\n//# sourceURL=webpack:///./images/goal/microchip.svg?");
+
+/***/ }),
+
+/***/ "./images/goal/mission__bg-fullscreen.svg":
+/*!************************************************!*\
+  !*** ./images/goal/mission__bg-fullscreen.svg ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/goal/mission__bg-fullscreen.svg\");\n\n//# sourceURL=webpack:///./images/goal/mission__bg-fullscreen.svg?");
+
+/***/ }),
+
+/***/ "./images/goal/mission__bg-mobile.svg":
+/*!********************************************!*\
+  !*** ./images/goal/mission__bg-mobile.svg ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/goal/mission__bg-mobile.svg\");\n\n//# sourceURL=webpack:///./images/goal/mission__bg-mobile.svg?");
+
+/***/ }),
+
+/***/ "./images/goal/mission__bg-tablet.svg":
+/*!********************************************!*\
+  !*** ./images/goal/mission__bg-tablet.svg ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/goal/mission__bg-tablet.svg\");\n\n//# sourceURL=webpack:///./images/goal/mission__bg-tablet.svg?");
 
 /***/ }),
 
@@ -3852,6 +3896,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
+/***/ "./styles/goal.scss":
+/*!**************************!*\
+  !*** ./styles/goal.scss ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./styles/goal.scss?");
+
+/***/ }),
+
 /***/ "./styles/header.scss":
 /*!****************************!*\
   !*** ./styles/header.scss ***!
@@ -3900,7 +3955,7 @@ eval("var map = {\n\t\"./SuisseIntl-Regular.woff\": \"./fonts/SuisseIntl-Regular
   \*******************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var map = {\n\t\"./advantages/arrow-left.svg\": \"./images/advantages/arrow-left.svg\",\n\t\"./advantages/arrow-right.svg\": \"./images/advantages/arrow-right.svg\",\n\t\"./advantages/arrow-small.svg\": \"./images/advantages/arrow-small.svg\",\n\t\"./advantages/long-arrow-left.svg\": \"./images/advantages/long-arrow-left.svg\",\n\t\"./advantages/long-arrow-right.svg\": \"./images/advantages/long-arrow-right.svg\",\n\t\"./advantages/small-arrow-left.svg\": \"./images/advantages/small-arrow-left.svg\",\n\t\"./advantages/small-arrow-right.svg\": \"./images/advantages/small-arrow-right.svg\",\n\t\"./arrows/arrow-bottom.svg\": \"./images/arrows/arrow-bottom.svg\",\n\t\"./arrows/arrow-right.svg\": \"./images/arrows/arrow-right.svg\",\n\t\"./arrows/big-arrow-left.svg\": \"./images/arrows/big-arrow-left.svg\",\n\t\"./arrows/big-arrow-right.svg\": \"./images/arrows/big-arrow-right.svg\",\n\t\"./arrows/long-arrow-right.svg\": \"./images/arrows/long-arrow-right.svg\",\n\t\"./create-future/arrow-bottom.svg\": \"./images/create-future/arrow-bottom.svg\",\n\t\"./create-future/slider/focus.png\": \"./images/create-future/slider/focus.png\",\n\t\"./create-future/slider/forever.png\": \"./images/create-future/slider/forever.png\",\n\t\"./create-future/slider/stack.png\": \"./images/create-future/slider/stack.png\",\n\t\"./create-future/slider/startup.png\": \"./images/create-future/slider/startup.png\",\n\t\"./create-future/spiral.svg\": \"./images/create-future/spiral.svg\",\n\t\"./direction/director.png\": \"./images/direction/director.png\",\n\t\"./find-vacancies/arrow-long-white.svg\": \"./images/find-vacancies/arrow-long-white.svg\",\n\t\"./find-vacancies/play.svg\": \"./images/find-vacancies/play.svg\",\n\t\"./find-vacancies/slider/image1.png\": \"./images/find-vacancies/slider/image1.png\",\n\t\"./find-vacancies/slider/image2.png\": \"./images/find-vacancies/slider/image2.png\",\n\t\"./find-vacancies/slider/image3.png\": \"./images/find-vacancies/slider/image3.png\",\n\t\"./find-vacancies/slider/image4.png\": \"./images/find-vacancies/slider/image4.png\",\n\t\"./find-vacancies/slider/image5.png\": \"./images/find-vacancies/slider/image5.png\",\n\t\"./find-vacancies/slider/image6.png\": \"./images/find-vacancies/slider/image6.png\",\n\t\"./find-vacancies/slider/reviashko.png\": \"./images/find-vacancies/slider/reviashko.png\",\n\t\"./find-vacancies/title-vacancie-arrow.svg\": \"./images/find-vacancies/title-vacancie-arrow.svg\",\n\t\"./footer/arrow.svg\": \"./images/footer/arrow.svg\",\n\t\"./footer/footer__logo.svg\": \"./images/footer/footer__logo.svg\",\n\t\"./footer/search.svg\": \"./images/footer/search.svg\",\n\t\"./goal/care-future.svg\": \"./images/goal/care-future.svg\",\n\t\"./goal/height.svg\": \"./images/goal/height.svg\",\n\t\"./goal/leader.svg\": \"./images/goal/leader.svg\",\n\t\"./goal/microchip.svg\": \"./images/goal/microchip.svg\",\n\t\"./goal/one-retail.svg\": \"./images/goal/one-retail.svg\",\n\t\"./goal/planet.svg\": \"./images/goal/planet.svg\",\n\t\"./goal/print.svg\": \"./images/goal/print.svg\",\n\t\"./goal/rocket.svg\": \"./images/goal/rocket.svg\",\n\t\"./goal/tree.svg\": \"./images/goal/tree.svg\",\n\t\"./goal/watch.svg\": \"./images/goal/watch.svg\",\n\t\"./header/header-logo.svg\": \"./images/header/header-logo.svg\",\n\t\"./header/phone.svg\": \"./images/header/phone.svg\",\n\t\"./internship/arrow-right.svg\": \"./images/internship/arrow-right.svg\",\n\t\"./internship/main-news.png\": \"./images/internship/main-news.png\",\n\t\"./internship/news1.png\": \"./images/internship/news1.png\",\n\t\"./internship/news2.png\": \"./images/internship/news2.png\",\n\t\"./internship/swichers.svg\": \"./images/internship/swichers.svg\",\n\t\"./management/check.svg\": \"./images/management/check.svg\",\n\t\"./management/confluence.svg\": \"./images/management/confluence.svg\",\n\t\"./management/gdocs.svg\": \"./images/management/gdocs.svg\",\n\t\"./management/gitlab.svg\": \"./images/management/gitlab.svg\",\n\t\"./management/jira.svg\": \"./images/management/jira.svg\",\n\t\"./management/management.png\": \"./images/management/management.png\",\n\t\"./management/slack.svg\": \"./images/management/slack.svg\",\n\t\"./management/swagger.svg\": \"./images/management/swagger.svg\",\n\t\"./upgrade/upgrade-image.png\": \"./images/upgrade/upgrade-image.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images sync recursive \\\\.(png|jpg|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/_sync_\\.(png%7Cjpg%7Csvg%7Cgif)$?");
+eval("var map = {\n\t\"./advantages/arrow-left.svg\": \"./images/advantages/arrow-left.svg\",\n\t\"./advantages/arrow-right.svg\": \"./images/advantages/arrow-right.svg\",\n\t\"./advantages/arrow-small.svg\": \"./images/advantages/arrow-small.svg\",\n\t\"./advantages/long-arrow-left.svg\": \"./images/advantages/long-arrow-left.svg\",\n\t\"./advantages/long-arrow-right.svg\": \"./images/advantages/long-arrow-right.svg\",\n\t\"./advantages/small-arrow-left.svg\": \"./images/advantages/small-arrow-left.svg\",\n\t\"./advantages/small-arrow-right.svg\": \"./images/advantages/small-arrow-right.svg\",\n\t\"./arrows/arrow-bottom.svg\": \"./images/arrows/arrow-bottom.svg\",\n\t\"./arrows/arrow-right.svg\": \"./images/arrows/arrow-right.svg\",\n\t\"./arrows/big-arrow-left.svg\": \"./images/arrows/big-arrow-left.svg\",\n\t\"./arrows/big-arrow-right.svg\": \"./images/arrows/big-arrow-right.svg\",\n\t\"./arrows/long-arrow-right.svg\": \"./images/arrows/long-arrow-right.svg\",\n\t\"./create-future/arrow-bottom.svg\": \"./images/create-future/arrow-bottom.svg\",\n\t\"./create-future/slider/focus.png\": \"./images/create-future/slider/focus.png\",\n\t\"./create-future/slider/forever.png\": \"./images/create-future/slider/forever.png\",\n\t\"./create-future/slider/stack.png\": \"./images/create-future/slider/stack.png\",\n\t\"./create-future/slider/startup.png\": \"./images/create-future/slider/startup.png\",\n\t\"./create-future/spiral.svg\": \"./images/create-future/spiral.svg\",\n\t\"./direction/director.png\": \"./images/direction/director.png\",\n\t\"./find-vacancies/arrow-long-white.svg\": \"./images/find-vacancies/arrow-long-white.svg\",\n\t\"./find-vacancies/play.svg\": \"./images/find-vacancies/play.svg\",\n\t\"./find-vacancies/slider/image1.png\": \"./images/find-vacancies/slider/image1.png\",\n\t\"./find-vacancies/slider/image2.png\": \"./images/find-vacancies/slider/image2.png\",\n\t\"./find-vacancies/slider/image3.png\": \"./images/find-vacancies/slider/image3.png\",\n\t\"./find-vacancies/slider/image4.png\": \"./images/find-vacancies/slider/image4.png\",\n\t\"./find-vacancies/slider/image5.png\": \"./images/find-vacancies/slider/image5.png\",\n\t\"./find-vacancies/slider/image6.png\": \"./images/find-vacancies/slider/image6.png\",\n\t\"./find-vacancies/slider/reviashko.png\": \"./images/find-vacancies/slider/reviashko.png\",\n\t\"./find-vacancies/title-vacancie-arrow.svg\": \"./images/find-vacancies/title-vacancie-arrow.svg\",\n\t\"./footer/arrow.svg\": \"./images/footer/arrow.svg\",\n\t\"./footer/footer__logo.svg\": \"./images/footer/footer__logo.svg\",\n\t\"./footer/search.svg\": \"./images/footer/search.svg\",\n\t\"./goal/arrow-right.svg\": \"./images/goal/arrow-right.svg\",\n\t\"./goal/care-future.svg\": \"./images/goal/care-future.svg\",\n\t\"./goal/height.svg\": \"./images/goal/height.svg\",\n\t\"./goal/leader.svg\": \"./images/goal/leader.svg\",\n\t\"./goal/microchip.svg\": \"./images/goal/microchip.svg\",\n\t\"./goal/mission__bg-fullscreen.svg\": \"./images/goal/mission__bg-fullscreen.svg\",\n\t\"./goal/mission__bg-mobile.svg\": \"./images/goal/mission__bg-mobile.svg\",\n\t\"./goal/mission__bg-tablet.svg\": \"./images/goal/mission__bg-tablet.svg\",\n\t\"./goal/one-retail.svg\": \"./images/goal/one-retail.svg\",\n\t\"./goal/planet.svg\": \"./images/goal/planet.svg\",\n\t\"./goal/print.svg\": \"./images/goal/print.svg\",\n\t\"./goal/rocket.svg\": \"./images/goal/rocket.svg\",\n\t\"./goal/tree.svg\": \"./images/goal/tree.svg\",\n\t\"./goal/watch.svg\": \"./images/goal/watch.svg\",\n\t\"./header/header-logo.svg\": \"./images/header/header-logo.svg\",\n\t\"./header/phone.svg\": \"./images/header/phone.svg\",\n\t\"./internship/arrow-right.svg\": \"./images/internship/arrow-right.svg\",\n\t\"./internship/main-news.png\": \"./images/internship/main-news.png\",\n\t\"./internship/news1.png\": \"./images/internship/news1.png\",\n\t\"./internship/news2.png\": \"./images/internship/news2.png\",\n\t\"./internship/swichers.svg\": \"./images/internship/swichers.svg\",\n\t\"./management/check.svg\": \"./images/management/check.svg\",\n\t\"./management/confluence.svg\": \"./images/management/confluence.svg\",\n\t\"./management/gdocs.svg\": \"./images/management/gdocs.svg\",\n\t\"./management/gitlab.svg\": \"./images/management/gitlab.svg\",\n\t\"./management/jira.svg\": \"./images/management/jira.svg\",\n\t\"./management/management.png\": \"./images/management/management.png\",\n\t\"./management/slack.svg\": \"./images/management/slack.svg\",\n\t\"./management/swagger.svg\": \"./images/management/swagger.svg\",\n\t\"./upgrade/upgrade-image.png\": \"./images/upgrade/upgrade-image.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images sync recursive \\\\.(png|jpg|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/_sync_\\.(png%7Cjpg%7Csvg%7Cgif)$?");
 
 /***/ })
 
