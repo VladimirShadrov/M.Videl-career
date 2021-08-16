@@ -515,6 +515,12 @@
                     </p>
                   </div>
                 </div>
+
+                <label class="profession__filter-checbox-wrapper-mobile">
+                  <input class="profession__filter-input" type="checkbox" />
+                  Без опыта
+                  <span class="profession__filter-checbox-value"></span>
+                </label>
               </div>
 
               <div class="profession__filter-item">
@@ -540,6 +546,12 @@
                     </p>
                   </div>
                 </div>
+
+                <label class="profession__filter-checbox-wrapper-mobile">
+                  <input class="profession__filter-input" type="checkbox" />
+                  Удалённо
+                  <span class="profession__filter-checbox-value"></span>
+                </label>
               </div>
 
               <div class="profession__checkbox-container">
@@ -561,22 +573,6 @@
               <button class="profession__filter-reset">Сбросить фильтры</button>
             </div>
 
-            <div class="profession__checkbox-container-mobile">
-              <label class="profession__filter-checbox-wrapper">
-                <input class="profession__filter-input" type="checkbox" />
-
-                Удалённо
-                <span class="profession__filter-checbox-value"></span>
-              </label>
-
-              <label class="profession__filter-checbox-wrapper">
-                <input class="profession__filter-input" type="checkbox" />
-
-                Без опыта
-                <span class="profession__filter-checbox-value"></span>
-              </label>
-            </div>
-
             <div class="profession__job-wrapper">
               <div class="profession__job-item">
                 <div class="profession__job-title-container">
@@ -589,6 +585,11 @@
                     <span class="profession__arrow">&#129042;</span>
                     <span class="profession__direction">SAP</span>
                   </p>
+                  <a href="#" class="profession__show-more">
+                    Показать
+                    <span class="profession__show-more-number">6</span>
+                    вакансий +
+                  </a>
                   <a href="#" class="profession__more-info"
                     >Больше о направлении</a
                   >
@@ -606,73 +607,24 @@
 
                 <div class="profession__location-container">
                   <p class="profession__location-city">Москва</p>
-                  <p class="profession__location">Можно удаленно</p>
-                </div>
-              </div>
-
-              <div class="profession__job-item">
-                <div class="profession__job-title-container">
-                  <a href="#" class="profession__job-title">
-                    Менеджер по управлению <br />
-                    технической поддержкой SAP
-                  </a>
-                  <p class="profession__job-department">
-                    <span class="profession__department">IT-Департамент</span>
-                    <span class="profession__arrow">&#129042;</span>
-                    <span class="profession__direction">SAP</span>
-                  </p>
-                  <a href="#" class="profession__more-info"
-                    >Больше о направлении</a
+                  <p
+                    class="
+                      profession__location-city-metro
+                      profession__location-city-metro-sokoln
+                    "
                   >
-                </div>
-
-                <div class="profession__job-price-container">
-                  <p class="profession__job-price">
-                    от
-                    <span class="profession__job-price-value">80 000</span>
-                    <span class="profession__currency">&#8381;</span>
+                    Красносельская
                   </p>
-
-                  <!-- <p class="profession__job-expiriens">
-                    Можно без опыта
-                  </p> -->
-                </div>
-
-                <div class="profession__location-container">
-                  <p class="profession__location">Петропавловск-Камчатский</p>
-                  <!-- <p class="profession__location">Можно удаленно</p> -->
-                </div>
-              </div>
-
-              <div class="profession__job-item">
-                <div class="profession__job-title-container">
-                  <a href="#" class="profession__job-title">
-                    Менеджер по управлению <br />
-                    технической поддержкой SAP
-                  </a>
-                  <p class="profession__job-department">
-                    <span class="profession__department">IT-Департамент</span>
-                    <span class="profession__arrow">&#129042;</span>
-                    <span class="profession__direction">SAP</span>
-                  </p>
-                  <a href="#" class="profession__more-info"
-                    >Больше о направлении</a
+                  <p
+                    class="
+                      profession__location-city-metro
+                      profession__location-city-metro-arbat
+                    "
                   >
-                </div>
-
-                <div class="profession__job-price-container">
-                  <p class="profession__job-price">
-                    от
-                    <span class="profession__job-price-value">80 000</span>
-                    <span class="profession__currency">&#8381;</span>
+                    Бауманская
                   </p>
-
-                  <p class="profession__job-expiriens">Можно без опыта</p>
-                </div>
-
-                <div class="profession__location-container">
-                  <p class="profession__location">Москва</p>
                   <p class="profession__location">Можно удаленно</p>
+                  <a href="#" class="profession__location-map">На карте</a>
                 </div>
               </div>
 
@@ -687,6 +639,11 @@
                     <span class="profession__arrow">&#129042;</span>
                     <span class="profession__direction">SAP</span>
                   </p>
+                  <a href="#" class="profession__show-more">
+                    Показать
+                    <span class="profession__show-more-number">6</span>
+                    вакансий +
+                  </a>
                   <a href="#" class="profession__more-info"
                     >Больше о направлении</a
                   >
@@ -703,8 +660,25 @@
                 </div>
 
                 <div class="profession__location-container">
-                  <p class="profession__location">Москва</p>
+                  <p class="profession__location-city">Москва</p>
+                  <p
+                    class="
+                      profession__location-city-metro
+                      profession__location-city-metro-sokoln
+                    "
+                  >
+                    Красносельская
+                  </p>
+                  <p
+                    class="
+                      profession__location-city-metro
+                      profession__location-city-metro-arbat
+                    "
+                  >
+                    Бауманская
+                  </p>
                   <p class="profession__location">Можно удаленно</p>
+                  <a href="#" class="profession__location-map">На карте</a>
                 </div>
               </div>
 
@@ -719,6 +693,11 @@
                     <span class="profession__arrow">&#129042;</span>
                     <span class="profession__direction">SAP</span>
                   </p>
+                  <a href="#" class="profession__show-more">
+                    Показать
+                    <span class="profession__show-more-number">6</span>
+                    вакансий +
+                  </a>
                   <a href="#" class="profession__more-info"
                     >Больше о направлении</a
                   >
@@ -735,8 +714,25 @@
                 </div>
 
                 <div class="profession__location-container">
-                  <p class="profession__location">Москва</p>
+                  <p class="profession__location-city">Москва</p>
+                  <p
+                    class="
+                      profession__location-city-metro
+                      profession__location-city-metro-sokoln
+                    "
+                  >
+                    Красносельская
+                  </p>
+                  <p
+                    class="
+                      profession__location-city-metro
+                      profession__location-city-metro-arbat
+                    "
+                  >
+                    Бауманская
+                  </p>
                   <p class="profession__location">Можно удаленно</p>
+                  <a href="#" class="profession__location-map">На карте</a>
                 </div>
               </div>
 
@@ -751,6 +747,11 @@
                     <span class="profession__arrow">&#129042;</span>
                     <span class="profession__direction">SAP</span>
                   </p>
+                  <a href="#" class="profession__show-more">
+                    Показать
+                    <span class="profession__show-more-number">6</span>
+                    вакансий +
+                  </a>
                   <a href="#" class="profession__more-info"
                     >Больше о направлении</a
                   >
@@ -767,8 +768,133 @@
                 </div>
 
                 <div class="profession__location-container">
-                  <p class="profession__location">Москва</p>
+                  <p class="profession__location-city">Москва</p>
+                  <p
+                    class="
+                      profession__location-city-metro
+                      profession__location-city-metro-sokoln
+                    "
+                  >
+                    Красносельская
+                  </p>
+                  <p
+                    class="
+                      profession__location-city-metro
+                      profession__location-city-metro-arbat
+                    "
+                  >
+                    Бауманская
+                  </p>
                   <p class="profession__location">Можно удаленно</p>
+                  <a href="#" class="profession__location-map">На карте</a>
+                </div>
+              </div>
+
+              <div class="profession__job-item">
+                <div class="profession__job-title-container">
+                  <a href="#" class="profession__job-title">
+                    Менеджер по управлению <br />
+                    технической поддержкой SAP
+                  </a>
+                  <p class="profession__job-department">
+                    <span class="profession__department">IT-Департамент</span>
+                    <span class="profession__arrow">&#129042;</span>
+                    <span class="profession__direction">SAP</span>
+                  </p>
+                  <a href="#" class="profession__show-more">
+                    Показать
+                    <span class="profession__show-more-number">6</span>
+                    вакансий +
+                  </a>
+                  <a href="#" class="profession__more-info"
+                    >Больше о направлении</a
+                  >
+                </div>
+
+                <div class="profession__job-price-container">
+                  <p class="profession__job-price">
+                    от
+                    <span class="profession__job-price-value">80 000</span>
+                    <span class="profession__currency">&#8381;</span>
+                  </p>
+
+                  <p class="profession__job-expiriens">Можно без опыта</p>
+                </div>
+
+                <div class="profession__location-container">
+                  <p class="profession__location-city">Москва</p>
+                  <p
+                    class="
+                      profession__location-city-metro
+                      profession__location-city-metro-sokoln
+                    "
+                  >
+                    Красносельская
+                  </p>
+                  <p
+                    class="
+                      profession__location-city-metro
+                      profession__location-city-metro-arbat
+                    "
+                  >
+                    Бауманская
+                  </p>
+                  <p class="profession__location">Можно удаленно</p>
+                  <a href="#" class="profession__location-map">На карте</a>
+                </div>
+              </div>
+
+              <div class="profession__job-item">
+                <div class="profession__job-title-container">
+                  <a href="#" class="profession__job-title">
+                    Менеджер по управлению <br />
+                    технической поддержкой SAP
+                  </a>
+                  <p class="profession__job-department">
+                    <span class="profession__department">IT-Департамент</span>
+                    <span class="profession__arrow">&#129042;</span>
+                    <span class="profession__direction">SAP</span>
+                  </p>
+                  <a href="#" class="profession__show-more">
+                    Показать
+                    <span class="profession__show-more-number">6</span>
+                    вакансий +
+                  </a>
+                  <a href="#" class="profession__more-info"
+                    >Больше о направлении</a
+                  >
+                </div>
+
+                <div class="profession__job-price-container">
+                  <p class="profession__job-price">
+                    от
+                    <span class="profession__job-price-value">80 000</span>
+                    <span class="profession__currency">&#8381;</span>
+                  </p>
+
+                  <p class="profession__job-expiriens">Можно без опыта</p>
+                </div>
+
+                <div class="profession__location-container">
+                  <p class="profession__location-city">Москва</p>
+                  <p
+                    class="
+                      profession__location-city-metro
+                      profession__location-city-metro-sokoln
+                    "
+                  >
+                    Красносельская
+                  </p>
+                  <p
+                    class="
+                      profession__location-city-metro
+                      profession__location-city-metro-arbat
+                    "
+                  >
+                    Бауманская
+                  </p>
+                  <p class="profession__location">Можно удаленно</p>
+                  <a href="#" class="profession__location-map">На карте</a>
                 </div>
               </div>
             </div>

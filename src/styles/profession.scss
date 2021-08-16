@@ -118,13 +118,8 @@
   line-height: 24px;
 }
 
-.profession__checkbox-container,
-.profession__checkbox-container-mobile {
+.profession__checkbox-container {
   display: flex;
-}
-
-.profession__checkbox-container-mobile {
-  display: none;
 }
 
 .profession__filter-item {
@@ -151,6 +146,7 @@
   right: 0;
   top: 100%;
   background-color: $bodyBackgraund;
+  z-index: 1;
 }
 
 .profession__filter-item-select-list-item {
@@ -168,13 +164,21 @@
   display: none;
 }
 
-.profession__filter-checbox-wrapper {
+.profession__filter-checbox-wrapper,
+.profession__filter-checbox-wrapper-mobile {
   display: block;
   margin-right: 16px;
   padding-left: 24px;
   width: max-content;
   cursor: pointer;
   position: relative;
+}
+
+.profession__filter-checbox-wrapper-mobile {
+  position: absolute;
+  left: 0;
+  bottom: -26px;
+  display: none;
 }
 
 .profession__filter-checbox-value {
@@ -251,6 +255,13 @@
 .profession__job-title-container {
   margin-right: auto;
   position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.profession__show-more {
+  color: $mainColor;
+  margin-top: auto;
 }
 
 .profession__more-info {
@@ -287,9 +298,54 @@
   flex-direction: column;
 }
 
-.profession__job-expiriens,
-.profession__location {
+.profession__job-expiriens {
   margin-top: auto;
+}
+
+.profession__location-city-metro,
+.profession__location-city-metro-sokoln,
+.profession__location-city-metro-arbat {
+  position: relative;
+  padding-left: 12px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: calc(50% - 4px);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+}
+
+.profession__location-city-metro-sokoln::after {
+  background: #e42313;
+}
+
+.profession__location-city-metro-arbat::after {
+  background: #0072ba;
+}
+
+.profession__location {
+  margin: 24px 0;
+}
+
+.profession__location-map {
+  color: $mainColor;
+  position: relative;
+  width: max-content;
+  padding-right: 20px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: calc(50% - 4.5px);
+    right: 0;
+    width: 14px;
+    height: 9px;
+    background: url('../images/management/arrow-right.svg');
+  }
 }
 
 // Styles for 1440px
@@ -369,13 +425,12 @@
     display: none;
   }
 
-  .profession__checkbox-container-mobile {
-    display: flex;
-    margin-bottom: 40px;
+  .profession__filter-checbox-wrapper-mobile {
+    display: block;
   }
 
   .profession__filter-wrapper {
-    margin-bottom: 8px;
+    margin-bottom: 66px;
   }
 
   .profession__filter-checbox-wrapper {
@@ -468,6 +523,10 @@
   .profession__main-content {
     width: 100%;
   }
+
+  .profession__filter-wrapper {
+    margin-bottom: 74px;
+  }
 }
 
 @media (max-width: 850px) {
@@ -484,6 +543,106 @@
 }
 
 // Styles for 320px
+@media (max-width: 700px) {
+  .profession__side-bar {
+    margin-bottom: 0;
+  }
+
+  .profession__side-bar-text,
+  .profession__side-bar-vacancy,
+  .profession__filter-wrapper,
+  .profession__job-item,
+  .profession__filter-reset {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .profession__side-bar-text,
+  .profession__side-bar-vacancy {
+    margin-bottom: 16px;
+  }
+
+  .profession__side-bar-text-wrapper > .profession__side-bar-text:nth-child(2) {
+    margin-bottom: 8px;
+  }
+
+  .profession__side-bar-vacancy-mobile {
+    margin: 32px 0;
+  }
+
+  .profession__side-bar-image-wrapper {
+    display: none;
+  }
+
+  .profession__side-bar-text-wrapper {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .profession__side-bar-image-tools-wrapper {
+    background: url('../images/management/tools-mobile.svg') left / contain
+      no-repeat;
+  }
+
+  .profession__filter-wrapper {
+    flex-direction: column;
+  }
+
+  .profession__filter-item {
+    width: 100%;
+    min-width: 100%;
+    margin-left: 8px;
+    margin-bottom: 42px;
+    padding-bottom: 8px;
+  }
+
+  .profession__filter-reset {
+    margin-right: auto;
+    margin-left: 0;
+    background: transparent;
+  }
+
+  .profession__filter-checbox-wrapper-mobile {
+    line-height: 19px;
+  }
+
+  .profession__filter-wrapper {
+    margin-bottom: 32px;
+  }
+
+  .profession__job-item {
+    flex-wrap: wrap;
+  }
+
+  .profession__job-title-container {
+    margin-right: 0;
+    width: 100%;
+    min-width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .profession__job-price-container,
+  .profession__location-container {
+    width: 50%;
+    min-width: 50%;
+  }
+
+  .profession__job-department {
+    margin: 8px 0;
+  }
+
+  .profession__location {
+    margin: 16px 0;
+  }
+
+  .profession__more-info {
+    position: absolute;
+    right: calc(50% - 97.5px);
+    bottom: -76px;
+    z-index: 1;
+  }
+}
+
 @media (max-width: 600px) {
   .profession {
     margin-bottom: 64px;
