@@ -5,6 +5,7 @@ import '../styles/advantages.scss';
 import '../styles/goal.scss';
 import '../styles/profession.scss';
 import '../styles/direction.scss';
+import '../styles/upgrade.scss';
 
 // Перенос изображений
 require.context('../images', true, /\.(png|jpg|svg|gif)$/);
