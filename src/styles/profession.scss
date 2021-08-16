@@ -544,6 +544,10 @@
 
 // Styles for 320px
 @media (max-width: 700px) {
+  .profession {
+    margin-bottom: 64px;
+  }
+
   .profession__side-bar {
     margin-bottom: 0;
   }
@@ -644,10 +648,6 @@
 }
 
 @media (max-width: 600px) {
-  .profession {
-    margin-bottom: 64px;
-  }
-
   .profession__title {
     font-size: 36px;
     line-height: 38px;

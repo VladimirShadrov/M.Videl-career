@@ -4,6 +4,7 @@ import '../styles/createFuture.scss';
 import '../styles/advantages.scss';
 import '../styles/goal.scss';
 import '../styles/profession.scss';
+import '../styles/direction.scss';
 
 // Перенос изображений
 require.context('../images', true, /\.(png|jpg|svg|gif)$/);
