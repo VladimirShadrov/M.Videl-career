@@ -1,0 +1,161 @@
+@import './styles.scss';
+
+.footer {
+  padding-top: 40px;
+  padding-bottom: 24px;
+  background-color: $mainColor;
+  font-size: 18px;
+  line-height: 24px;
+  color: $whiteColor;
+}
+
+.footer__title-container {
+  position: relative;
+  margin-bottom: 200px;
+}
+
+.footer__title {
+  font-size: 160px;
+  line-height: 144px;
+  letter-spacing: -0.03em;
+}
+
+.footer__search-block {
+  position: absolute;
+  left: 47%;
+  top: 37%;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 48px 2px 24px rgba(0, 0, 0, 0.03);
+  border-radius: 128px;
+  background: $whiteColor;
+}
+
+.footer__search-field {
+  padding: 16px;
+  background: transparent;
+  font-size: 18px;
+  line-height: 24px;
+  width: 90%;
+  color: $mainColor;
+}
+
+.footer__search-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 10%;
+  background-color: transparent;
+  background: url('../images/footer/search.svg') left center / 50% no-repeat;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer__item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &:first-child {
+    max-width: 944px;
+  }
+
+  &:nth-child(2) {
+    max-width: 640px;
+  }
+
+  &:last-child {
+    max-width: 304px;
+  }
+}
+
+.footer__item-wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer__logo-link {
+  margin-right: 80px;
+}
+
+.footer__item-title {
+  margin-bottom: 24px;
+}
+
+.footer__contacts-block {
+  margin-bottom: 8px;
+}
+
+.footer__contact-mail,
+.footer__contact-phone {
+  font-size: 40px;
+  line-height: 44px;
+}
+
+.footer__contact-mail {
+  line-height: 30px;
+}
+
+.footer__contact-phone {
+  color: $whiteColor;
+}
+
+.footer__contact-button,
+.footer__contact-button,
+.footer__contacts-time {
+  background: transparent;
+  color: $whiteColor;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.footer__contact-button {
+  margin-right: 8px;
+}
+
+.footer__item-social-row {
+  margin-bottom: 8px;
+}
+
+.footer__item-social-link {
+  display: inline-block;
+  position: relative;
+  padding-right: 20px;
+  color: $whiteColor;
+  margin-right: 16px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: calc(50% - 4.5px);
+    width: 10px;
+    height: 10px;
+    background: url('../images/footer/arrow.svg') center / contain no-repeat;
+  }
+}
+
+.footem__item-directions-link {
+  color: $whiteColor;
+}
+
+.footer__item-social-block {
+  margin-bottom: 8px;
+
+  &:nth-child(4) {
+    margin-bottom: 96px;
+  }
+}
+
+.footer__info-text {
+  margin-top: auto;
+  color: #969696;
+}

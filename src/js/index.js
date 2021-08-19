@@ -8,6 +8,7 @@ import '../styles/direction.scss';
 import '../styles/upgrade.scss';
 import '../styles/find.scss';
 import '../styles/intern.scss';
+import '../styles/footer.scss';
 
 // Перенос изображений
 require.context('../images', true, /\.(png|jpg|svg|gif)$/);

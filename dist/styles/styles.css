@@ -2966,5 +2966,221 @@ body {
   max-width: 464px;
   margin-bottom: 32px; }
 
+/*!**************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/postcss-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles/footer.scss ***!
+  \**************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: suisse;
+  src: url("../fonts/SuisseIntl-Regular.woff") format("woff"), url("../fonts/SuisseIntl-Regular.woff2") format("woff2"); }
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+:focus,
+:active {
+  outline: none; }
+
+a:focus,
+a:active {
+  outline: none; }
+
+nav,
+footer,
+header,
+aside {
+  display: block; }
+
+html,
+body {
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px; }
+
+input,
+button,
+textarea {
+  font-family: inherit; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a,
+a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400; }
+
+body {
+  font-family: suisse;
+  background: #f3f3f3;
+  color: #000000;
+  font-size: 16px;
+  line-height: 20px; }
+
+.container {
+  padding: 16px; }
+
+.hide {
+  display: none; }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 8px; } }
+
+.footer {
+  padding-top: 40px;
+  padding-bottom: 24px;
+  background-color: #000000;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff; }
+
+.footer__title-container {
+  position: relative;
+  margin-bottom: 200px; }
+
+.footer__title {
+  font-size: 160px;
+  line-height: 144px;
+  letter-spacing: -0.03em; }
+
+.footer__search-block {
+  position: absolute;
+  left: 47%;
+  top: 37%;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 48px 2px 24px rgba(0, 0, 0, 0.03);
+  border-radius: 128px;
+  background: #ffffff; }
+
+.footer__search-field {
+  padding: 16px;
+  background: transparent;
+  font-size: 18px;
+  line-height: 24px;
+  width: 90%;
+  color: #000000; }
+
+.footer__search-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 10%;
+  background-color: transparent;
+  background: url("../images/footer/search.svg") left center/50% no-repeat; }
+
+.footer__wrapper {
+  display: flex;
+  justify-content: flex-start; }
+
+.footer__item {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+  .footer__item:first-child {
+    max-width: 944px; }
+  .footer__item:nth-child(2) {
+    max-width: 640px; }
+  .footer__item:last-child {
+    max-width: 304px; }
+
+.footer__item-wrapper {
+  display: flex;
+  justify-content: flex-start; }
+
+.footer__logo-link {
+  margin-right: 80px; }
+
+.footer__item-title {
+  margin-bottom: 24px; }
+
+.footer__contacts-block {
+  margin-bottom: 8px; }
+
+.footer__contact-mail,
+.footer__contact-phone {
+  font-size: 40px;
+  line-height: 44px; }
+
+.footer__contact-mail {
+  line-height: 30px; }
+
+.footer__contact-phone {
+  color: #ffffff; }
+
+.footer__contact-button,
+.footer__contact-button,
+.footer__contacts-time {
+  background: transparent;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 12px; }
+
+.footer__contact-button {
+  margin-right: 8px; }
+
+.footer__item-social-row {
+  margin-bottom: 8px; }
+
+.footer__item-social-link {
+  display: inline-block;
+  position: relative;
+  padding-right: 20px;
+  color: #ffffff;
+  margin-right: 16px; }
+  .footer__item-social-link:last-child {
+    margin-right: 0; }
+  .footer__item-social-link::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: calc(50% - 4.5px);
+    width: 10px;
+    height: 10px;
+    background: url("../images/footer/arrow.svg") center/contain no-repeat; }
+
+.footem__item-directions-link {
+  color: #ffffff; }
+
+.footer__item-social-block {
+  margin-bottom: 8px; }
+  .footer__item-social-block:nth-child(4) {
+    margin-bottom: 96px; }
+
+.footer__info-text {
+  margin-top: auto;
+  color: #969696; }
+
 
 /*# sourceMappingURL=styles.css.map*/
