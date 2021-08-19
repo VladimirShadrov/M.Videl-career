@@ -38,7 +38,7 @@ eval("\n\n__webpack_require__(/*! core-js/es6 */ \"../node_modules/core-js/es6/i
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/styles.scss */ \"./styles/styles.scss\");\n/* harmony import */ var _styles_header_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/header.scss */ \"./styles/header.scss\");\n/* harmony import */ var _styles_createFuture_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/createFuture.scss */ \"./styles/createFuture.scss\");\n/* harmony import */ var _styles_advantages_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/advantages.scss */ \"./styles/advantages.scss\");\n/* harmony import */ var _styles_goal_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles/goal.scss */ \"./styles/goal.scss\");\n/* harmony import */ var _styles_profession_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles/profession.scss */ \"./styles/profession.scss\");\n/* harmony import */ var _styles_direction_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../styles/direction.scss */ \"./styles/direction.scss\");\n/* harmony import */ var _styles_upgrade_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../styles/upgrade.scss */ \"./styles/upgrade.scss\");\n/* harmony import */ var _styles_find_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../styles/find.scss */ \"./styles/find.scss\");\n\n\n\n\n\n\n\n\n // Перенос изображений\n\n__webpack_require__(\"./images sync recursive \\\\.(png|jpg|svg|gif)$\");\n\n__webpack_require__(\"./fonts sync recursive \\\\.(ttf|woff|woff2)$\");\n\n//# sourceURL=webpack:///./js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/styles.scss */ \"./styles/styles.scss\");\n/* harmony import */ var _styles_header_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/header.scss */ \"./styles/header.scss\");\n/* harmony import */ var _styles_createFuture_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/createFuture.scss */ \"./styles/createFuture.scss\");\n/* harmony import */ var _styles_advantages_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/advantages.scss */ \"./styles/advantages.scss\");\n/* harmony import */ var _styles_goal_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles/goal.scss */ \"./styles/goal.scss\");\n/* harmony import */ var _styles_profession_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles/profession.scss */ \"./styles/profession.scss\");\n/* harmony import */ var _styles_direction_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../styles/direction.scss */ \"./styles/direction.scss\");\n/* harmony import */ var _styles_upgrade_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../styles/upgrade.scss */ \"./styles/upgrade.scss\");\n/* harmony import */ var _styles_find_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../styles/find.scss */ \"./styles/find.scss\");\n/* harmony import */ var _styles_intern_scss__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../styles/intern.scss */ \"./styles/intern.scss\");\n\n\n\n\n\n\n\n\n\n // Перенос изображений\n\n__webpack_require__(\"./images sync recursive \\\\.(png|jpg|svg|gif)$\");\n\n__webpack_require__(\"./fonts sync recursive \\\\.(ttf|woff|woff2)$\");\n\n//# sourceURL=webpack:///./js/index.js?");
 
 /***/ }),
 
@@ -4025,6 +4025,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./styles/header.scss?");
+
+/***/ }),
+
+/***/ "./styles/intern.scss":
+/*!****************************!*\
+  !*** ./styles/intern.scss ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./styles/intern.scss?");
 
 /***/ }),
 
