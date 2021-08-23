@@ -1,0 +1,137 @@
+@import './styles.scss';
+
+.flyout,
+.flyout__active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  z-index: 10;
+  transform: translateX(100%);
+  transition: transform 0.3s;
+  font-size: 18px;
+  line-height: 24px;
+  color: $mainColor;
+}
+
+.flyout__active {
+  transform: translateX(0);
+}
+
+.flyout__side-bar {
+  width: 33%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.vacancy {
+  width: 67%;
+  background: #f3f3f3;
+}
+
+.vacancy__header {
+  padding-top: 20px;
+  margin-bottom: 96px;
+}
+
+.vacancy__header-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 56px;
+}
+
+.vacancy__header-head-links {
+  width: 100%;
+  max-width: 209px;
+}
+
+.vacancy__header-head-link-main,
+.vacancy__header-head-link-vacancy {
+  display: inline-block;
+  color: $mainColor;
+  padding-left: 20px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: calc(50% - 4.5px);
+    width: 14px;
+    height: 9px;
+    background: url('../images/flyout/flyout-header/arrow-left.svg') left /
+      contain no-repeat;
+  }
+}
+
+.vacancy__header-head-link-vacancy {
+  transform: translateX(20px);
+}
+
+.vacancy__header-head-copy {
+  display: inline-block;
+  width: 100%;
+  max-width: 201px;
+  padding-right: 20px;
+  color: $mainColor;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: calc(50% - 4.5px);
+    width: 14px;
+    height: 9px;
+    background: url('../images/flyout/flyout-header/link.svg') left / contain
+      no-repeat;
+  }
+}
+
+.vacancy__header-headline {
+  margin-bottom: 56px;
+  position: relative;
+}
+
+.vacancy__headline-title {
+  font-size: 64px;
+  line-height: 68px;
+  width: 100%;
+  max-width: 928px;
+}
+
+.vacancy__headline-link {
+  position: absolute;
+  bottom: 10px;
+  left: 330px;
+  font-size: 24px;
+  line-height: 24px;
+  padding: 8px 40px 8px 16px;
+  border-radius: 36px;
+  background: $whiteColor;
+  color: $mainColor;
+
+  &::before {
+    content: '';
+    position: absolute;
+    right: 17px;
+    top: calc(50% - 4.5px);
+    width: 14px;
+    height: 9px;
+    background: url('../images/flyout/flyout-header/arrow-right.svg') no-repeat;
+  }
+}
+
+.vacancy__header-meta {
+  display: flex;
+}
+
+.vacancy__meta-info {
+  width: 50%;
+}
+
+.vacancy__meta-info-title {
+  color: #969696;
+}
