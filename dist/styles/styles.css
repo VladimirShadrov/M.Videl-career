@@ -3870,7 +3870,8 @@ body {
 .vacancy__intro,
 .vacancy__header,
 .vacancy__description,
-.vacancy__description-block {
+.vacancy__description-block,
+.vacancy__office {
   margin-bottom: 96px; }
 
 .vacancy__intro {
@@ -3912,6 +3913,119 @@ body {
   margin-bottom: 20px; }
   .vacancy__description-list-item:last-child {
     margin-bottom: 0; }
+
+.vacancy__office {
+  display: flex; }
+
+.vacancy__office-map,
+.vacancy__office-content {
+  width: 50%; }
+
+.vacancy__office-map {
+  padding-right: 16px; }
+
+.vacancy__office-map-selectors {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px; }
+
+.vacancy__office-map-link,
+.vacancy__office-map-link-active {
+  color: rgba(0, 0, 0, 0.5);
+  margin-right: 16px;
+  position: relative; }
+  .vacancy__office-map-link:last-child,
+  .vacancy__office-map-link-active:last-child {
+    margin-right: 0; }
+
+.vacancy__office-map-link-active {
+  color: #000000; }
+  .vacancy__office-map-link-active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -4px;
+    height: 1px;
+    background: #000000; }
+
+.vacancy__office-map-wrapper {
+  position: relative; }
+
+.vacancy__office-map-image {
+  display: block;
+  width: 100%; }
+
+.vacancy__office-selector-image {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 42px;
+  height: 66px; }
+
+.vacancy__office-content {
+  padding-top: 51px;
+  display: flex;
+  flex-direction: column; }
+
+.vacancy__office-adress {
+  margin-bottom: 32px; }
+
+.vacancy__office-content-link {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  max-width: 196px;
+  padding-right: 20px;
+  color: #000000; }
+  .vacancy__office-content-link::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: calc(50% - 4.5px);
+    width: 13px;
+    height: 9px;
+    background: url("../images/flyout/flyout-office/arrow-right.svg") no-repeat; }
+
+.vacancy__office-content-bottom {
+  margin-top: auto;
+  display: flex; }
+
+.vacancy__office-location-wrapper {
+  width: 50%; }
+
+.vacancy__office-location,
+.vacancy__office-location-cokol,
+.vacancy__office-location-arbat,
+.vacancy__office-location-mck {
+  position: relative;
+  padding-left: 12px; }
+  .vacancy__office-location::before,
+  .vacancy__office-location-cokol::before,
+  .vacancy__office-location-arbat::before,
+  .vacancy__office-location-mck::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: calc(50% - 4px);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%; }
+
+.vacancy__office-location-cokol::before {
+  background: #e42313; }
+
+.vacancy__office-location-arbat::before {
+  background: #0072ba; }
+
+.vacancy__office-location-mck::before {
+  border: 2px solid #df477c; }
+
+.vacancy__office-location-time,
+.vacancy__office-location-minutes {
+  color: #969696; }
 
 
 /*# sourceMappingURL=styles.css.map*/
