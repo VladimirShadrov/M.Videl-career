@@ -576,6 +576,87 @@
   transform: translateY(2px);
 }
 
-.vacancy__item-positions-experience {
+.vacancy__item-positions-experience,
+.vacancy__item-positions-location {
   margin-top: auto;
+}
+
+// Styles for News block
+.vacancy__news {
+  overflow: hidden;
+  padding-left: 16px;
+}
+
+.vacancy__news-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  padding-right: 16px;
+}
+
+.vacancy__news-link,
+.vacancy__news-link-active {
+  color: $blackColorOpacity-05;
+  margin-right: 16px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.vacancy__news-link-active {
+  color: $mainColor;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -4px;
+    height: 1px;
+    background: $mainColor;
+  }
+}
+
+.vacancy__news-btn-prev,
+.vacancy__news-btn-next {
+  width: 16px;
+  height: 16px;
+}
+
+.vacancy__news-btn-prev {
+  margin-right: 16px;
+  background: url('../images/flyout/flyout-news/arrow-left.svg') no-repeat;
+}
+
+.vacancy__news-btn-next {
+  background: url('../images/flyout/flyout-news/arrow-right.svg') no-repeat;
+}
+
+.vacancy__news-row {
+  width: 160%;
+  display: flex;
+}
+
+.vacancy__news-item {
+  width: 25%;
+  margin-right: 16px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.vacancy__news-item-image-block {
+  margin-bottom: 12px;
+}
+
+.vacancy__news-image {
+  display: block;
+  width: 100%;
+}
+
+.vacancy__news-title-info {
+  margin-bottom: 24px;
 }
