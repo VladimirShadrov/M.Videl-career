@@ -3873,7 +3873,8 @@ body {
 .vacancy__description-block,
 .vacancy__office,
 .vacancy__remote,
-.vacancy__form {
+.vacancy__form,
+.vacancy__positions {
   margin-bottom: 96px; }
 
 .vacancy__intro {
@@ -4180,6 +4181,48 @@ body {
     width: 14px;
     height: 9px;
     background: url("../images/flyout/flyout-form/arrow-right.svg") no-repeat; }
+
+.vacancy__positions-title {
+  margin-bottom: 32px; }
+
+.vacancy__positions-item {
+  display: flex;
+  margin-bottom: 32px;
+  border-top: 1px solid #969696;
+  padding-top: 8px; }
+  .vacancy__positions-item:last-child {
+    margin-bottom: 0; }
+
+.vacancy__item-positions-name-block {
+  width: 50%; }
+
+.vacancy__item-positions-price-block,
+.vacancy__item-positions-location-block {
+  width: 25%;
+  display: flex;
+  flex-direction: column; }
+
+.vacancy__item-positions-name {
+  max-width: 265px;
+  margin-bottom: 6px; }
+
+.vacancy__item-positions-name-direction {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+  line-height: 12px; }
+
+.vacancy__item-positions-department {
+  color: rgba(0, 0, 0, 0.5); }
+
+.vacancy__item-positions-separator {
+  width: 14px;
+  height: 12px;
+  display: inline-block;
+  background: url("../images/flyout/flyout-positions/arrow-right.svg") center no-repeat;
+  transform: translateY(2px); }
+
+.vacancy__item-positions-experience {
+  margin-top: auto; }
 
 
 /*# sourceMappingURL=styles.css.map*/
