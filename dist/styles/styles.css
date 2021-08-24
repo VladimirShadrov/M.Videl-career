@@ -3871,7 +3871,9 @@ body {
 .vacancy__header,
 .vacancy__description,
 .vacancy__description-block,
-.vacancy__office {
+.vacancy__office,
+.vacancy__remote,
+.vacancy__form {
   margin-bottom: 96px; }
 
 .vacancy__intro {
@@ -4026,6 +4028,37 @@ body {
 .vacancy__office-location-time,
 .vacancy__office-location-minutes {
   color: #969696; }
+
+.vacancy__remote {
+  position: relative;
+  display: flex;
+  justify-content: flex-start; }
+
+.vacancy__remote-title-wrapper {
+  max-width: 697px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 8px; }
+
+.vacancy__remote-title {
+  font-size: 64px;
+  line-height: 68px;
+  margin-bottom: 24px;
+  background: linear-gradient(90deg, black, #72bf44);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #000000; }
+
+.vacancy__remote-info {
+  max-width: 384px;
+  margin-left: auto; }
+
+.vacancy__remote-image {
+  display: block;
+  width: 100%; }
+
+.vacancy__remote-image-container {
+  max-width: 156px; }
 
 
 /*# sourceMappingURL=styles.css.map*/

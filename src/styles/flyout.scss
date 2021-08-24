@@ -141,7 +141,9 @@
 .vacancy__header,
 .vacancy__description,
 .vacancy__description-block,
-.vacancy__office {
+.vacancy__office,
+.vacancy__remote,
+.vacancy__form {
   margin-bottom: 96px;
 }
 
@@ -337,3 +339,43 @@
 .vacancy__office-location-minutes {
   color: #969696;
 }
+
+// Styles for Vacancy-Remote block
+.vacancy__remote {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.vacancy__remote-title-wrapper {
+  max-width: 697px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 8px;
+}
+
+.vacancy__remote-title {
+  font-size: 64px;
+  line-height: 68px;
+  margin-bottom: 24px;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1), rgba(114, 191, 68, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: $mainColor;
+}
+
+.vacancy__remote-info {
+  max-width: 384px;
+  margin-left: auto;
+}
+
+.vacancy__remote-image {
+  display: block;
+  width: 100%;
+}
+
+.vacancy__remote-image-container {
+  max-width: 156px;
+}
+
+// Sytles for Vacancy-Form block
