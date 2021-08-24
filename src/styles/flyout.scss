@@ -14,7 +14,7 @@
   font-size: 18px;
   line-height: 24px;
   color: $mainColor;
-  background: white;
+  background: transparent;
 }
 
 .flyout__active {
@@ -23,7 +23,7 @@
 
 .flyout__side-bar {
   width: 33%;
-  background: rgba(0, 0, 0, 0.8);
+  background: transparent;
   transition: 0.3s;
 }
 
@@ -488,17 +488,8 @@
 
 .vacancy__form-politics {
   color: $mainColor;
-  position: relative;
-
-  &::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -2px;
-    height: 1px;
-    background: $mainColor;
-  }
+  border-bottom: 1px solid $mainColor;
+  padding-bottom: 1px;
 }
 
 .vacancy__response {
@@ -733,5 +724,125 @@
     font-size: 20px;
     line-height: 20px;
     max-width: 187px;
+  }
+
+  .vacancy__office-content-link {
+    max-width: 176px;
+  }
+}
+
+// Styles for 1024px
+@media (max-width: 1250px) {
+  .vacancy__header-head,
+  .vacancy__header-headline {
+    margin-bottom: 32px;
+  }
+
+  .vacancy__headline-title {
+    font-size: 32px;
+    line-height: 36px;
+    max-width: 498px;
+  }
+
+  .vacancy__headline-link {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .vacancy__meta-info {
+    &:first-child {
+      width: 55%;
+    }
+
+    &:last-child {
+      width: 45%;
+    }
+  }
+
+  .vacancy__intro,
+  .vacancy__header,
+  .vacancy__description,
+  .vacancy__office,
+  .vacancy__remote,
+  .vacancy__form,
+  .vacancy__positions {
+    margin-bottom: 64px;
+  }
+
+  .vacancy__video-container {
+    max-width: 220px;
+    min-height: 220px;
+    background: url('../images/flyout/flyout-intro/intro-bg.png') center /
+      contain no-repeat;
+  }
+
+  .vacancy__office-content-bottom {
+    flex-wrap: wrap;
+  }
+
+  .vacancy__office-location-wrapper {
+    width: 100%;
+  }
+
+  .vacancy__office-adress {
+    margin-bottom: 24px;
+  }
+
+  .vacancy__office-content-link {
+    margin-bottom: 30px;
+  }
+
+  .vacancy__office-content {
+    padding-top: 46px;
+  }
+
+  .vacancy__office-map-wrapper {
+    height: 83%;
+    display: flex;
+  }
+
+  .vacancy__remote-title-wrapper {
+    width: 100%;
+    max-width: 486px;
+  }
+
+  .vacancy__remote-title {
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 12px;
+  }
+
+  .vacancy__remote-info {
+    max-width: 341px;
+  }
+
+  .vacancy__remote-image-container {
+    max-width: 108px;
+    height: 108px;
+    display: flex;
+  }
+
+  .vacancy__form-title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .vacancy__response {
+    font-size: 18px;
+    line-height: 18px;
+    max-width: 174px;
+  }
+
+  .vacancy__item-positions-name {
+    max-width: 232px;
+  }
+
+  .vacancy__news-row {
+    width: 190%;
+  }
+
+  .vacancy__positions-title,
+  .vacancy__positions-item {
+    margin-bottom: 24px;
   }
 }
