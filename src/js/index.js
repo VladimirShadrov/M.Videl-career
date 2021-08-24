@@ -11,6 +11,12 @@ import '../styles/intern.scss';
 import '../styles/footer.scss';
 import '../styles/flyout.scss';
 
+import { Vacancy } from '../js/components/vacancy';
+
 // Перенос изображений
 require.context('../images', true, /\.(png|jpg|svg|gif)$/);
 require.context('../fonts', true, /\.(ttf|woff|woff2)$/);
+
+const profession = document.querySelector('.profession');
+
+new Vacancy(profession);
