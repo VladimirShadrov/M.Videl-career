@@ -3768,7 +3768,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: #000000;
-  background: transparent;
+  background: white;
   overflow: auto; }
 
 .flyout__active {
@@ -3776,7 +3776,7 @@ body {
 
 .flyout__side-bar {
   width: 33%;
-  background: transparent;
+  background: black;
   transition: 0.3s; }
 
 .vacancy {
@@ -4204,20 +4204,26 @@ body {
   max-width: 265px;
   margin-bottom: 6px; }
 
-.vacancy__item-positions-name-direction {
-  color: rgba(0, 0, 0, 0.5);
+.vacancy__bread-crumbs-block {
   font-size: 12px;
   line-height: 12px; }
 
-.vacancy__item-positions-department {
-  color: rgba(0, 0, 0, 0.5); }
-
-.vacancy__item-positions-separator {
-  width: 14px;
-  height: 12px;
+.vacancy__bread-crumbs-item {
+  color: rgba(0, 0, 0, 0.5);
+  padding-right: 16px;
+  margin-right: 5px;
   display: inline-block;
-  background: url("../images/flyout/flyout-positions/arrow-right.svg") center no-repeat;
-  transform: translateY(2px); }
+  position: relative; }
+  .vacancy__bread-crumbs-item::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: calc(50% - 3.5px);
+    width: 11px;
+    height: 7px;
+    background: url("../images/flyout/flyout-positions/arrow-right.svg") no-repeat; }
+  .vacancy__bread-crumbs-item:last-child::after {
+    display: none; }
 
 .vacancy__item-positions-experience,
 .vacancy__item-positions-location {
@@ -4266,11 +4272,14 @@ body {
   background: url("../images/flyout/flyout-news/arrow-right.svg") no-repeat; }
 
 .vacancy__news-row {
-  width: 160%;
-  display: flex; }
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content; }
 
 .vacancy__news-item {
-  width: 25%;
+  width: 100%;
+  max-width: 480px;
   margin-right: 16px; }
   .vacancy__news-item:last-child {
     margin-right: 0; }
@@ -4332,7 +4341,9 @@ body {
     line-height: 20px;
     max-width: 187px; }
   .vacancy__office-content-link {
-    max-width: 176px; } }
+    max-width: 176px; }
+  .vacancy__news-item {
+    max-width: 360px; } }
 
 @media (max-width: 1250px) {
   .vacancy__header-head,
@@ -4397,11 +4408,78 @@ body {
     max-width: 174px; }
   .vacancy__item-positions-name {
     max-width: 232px; }
-  .vacancy__news-row {
-    width: 190%; }
   .vacancy__positions-title,
   .vacancy__positions-item {
-    margin-bottom: 24px; } }
+    margin-bottom: 24px; }
+  .vacancy__news-item {
+    max-width: 308px; } }
+
+@media (max-width: 990px) {
+  .flyout__side-bar {
+    display: none; }
+  .vacancy {
+    width: 100%; }
+  .vacancy__header-headline {
+    margin-bottom: 24px; }
+  .vacancy__headline-title {
+    max-width: 100%; }
+  .vacancy__meta-info {
+    display: flex; }
+    .vacancy__meta-info:first-child {
+      width: 65%;
+      margin-right: 16px; }
+    .vacancy__meta-info:last-child {
+      width: 35%; }
+  .vacancy__meta-info-item {
+    margin-right: 16px; }
+    .vacancy__meta-info-item:last-child {
+      margin-right: 0; }
+  .vacancy__meta-info-title {
+    display: block; }
+  .vacancy__video,
+  .vacancy__description-title {
+    width: 30%;
+    max-width: 220px;
+    margin-right: 28px; }
+  .vacancy__intro-description,
+  .vacancy__description-list {
+    width: 69%;
+    max-width: 504px; }
+  .vacancy__intro-description-text {
+    max-width: 504px; }
+  .vacancy__description-list-wrapper {
+    max-width: 494px; }
+  .vacancy__description-list-item {
+    margin-left: 15px; }
+  .vacancy__office-map {
+    padding-right: 12px; }
+  .vacancy__office-content-link {
+    margin-bottom: 32px; }
+  .vacancy__office-content {
+    padding-top: 60px; }
+  .vacancy__remote-title-wrapper {
+    max-width: 408px;
+    margin-right: 0; }
+  .vacancy__remote-info {
+    margin-left: 0;
+    max-width: 100%; }
+  .vacancy__remote-image-container {
+    max-width: 96px;
+    height: 96px; }
+  .vacancy__form-title-block {
+    width: 33%; }
+  .vacancy__form-inner-block {
+    width: 67%; }
+  .vacancy__response {
+    margin-top: 36px; }
+  .vacancy__positions-item {
+    justify-content: space-between; }
+  .vacancy__item-positions-name-block,
+  .vacancy__item-positions-price-block,
+  .vacancy__item-positions-location-block {
+    width: 32.3%; }
+  .vacancy__news-item {
+    max-width: 280px; } }
 
 
 /*# sourceMappingURL=styles.css.map*/
