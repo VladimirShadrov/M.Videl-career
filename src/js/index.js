@@ -10,6 +10,7 @@ import '../styles/find.scss';
 import '../styles/intern.scss';
 import '../styles/footer.scss';
 import '../styles/flyout.scss';
+import '../styles/listing.scss';
 
 import { Vacancy } from '../js/components/vacancy';
 

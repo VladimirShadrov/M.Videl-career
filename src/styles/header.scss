@@ -1,9 +1,14 @@
 @import './styles.scss';
 
-.it-header {
+.it-header,
+.listing-header {
   position: relative;
   overflow: hidden;
   margin-bottom: 96px;
+}
+
+.listing-header {
+  margin-bottom: 56px;
 }
 
 .it-header__wrapper {
