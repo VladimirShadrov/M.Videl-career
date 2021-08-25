@@ -3801,7 +3801,7 @@ body {
 
 .vacancy__header-head-link-main,
 .vacancy__header-head-link-vacancy {
-  display: inline-block;
+  display: block;
   color: #000000;
   padding-left: 20px;
   position: relative; }
