@@ -3768,7 +3768,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: #000000;
-  background: white;
+  background: transparent;
   overflow: auto; }
 
 .flyout__active {
@@ -3776,7 +3776,7 @@ body {
 
 .flyout__side-bar {
   width: 33%;
-  background: black;
+  background: transparent;
   transition: 0.3s; }
 
 .vacancy {
@@ -4424,7 +4424,8 @@ body {
   .vacancy__headline-title {
     max-width: 100%; }
   .vacancy__meta-info {
-    display: flex; }
+    display: flex;
+    justify-content: space-around; }
     .vacancy__meta-info:first-child {
       width: 65%;
       margin-right: 16px; }

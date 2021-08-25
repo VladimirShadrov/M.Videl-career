@@ -42,6 +42,8 @@ export class Vacancy {
 
   setHeightFlyoutSideBar() {
     this.flyoutSideBar.style.height = this.flyOutContentBar.clientHeight + 'px';
+    this.flyoutSideBar.style.background = 'rgba(0, 0, 0, 0.8)';
+    this.flyout.style.background = 'white';
   }
 
   resizeFlyout() {
