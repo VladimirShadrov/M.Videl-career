@@ -3,9 +3,11 @@ export class Vacancy {
     this.el = el;
     this.flyout = document.querySelector('.flyout');
     this.flyoutSideBar = this.flyout.querySelector('.flyout__side-bar');
+    this.flyOutContentBar = this.flyout.querySelector('.vacancy');
 
     this.init();
     this.closeFlyout();
+    this.resizeFlyout();
   }
 
   init() {
@@ -14,7 +16,9 @@ export class Vacancy {
 
   openFlyout() {
     this.flyout.classList.add('flyout__active');
+    document.body.style.overflow = 'hidden';
     window.scrollTo(0, 0);
+    this.setHeightFlyoutSideBar();
 
     setTimeout(() => {
       this.flyout.style.background = '#ffffff';
@@ -27,11 +31,22 @@ export class Vacancy {
       if (event.target.classList.contains('vacancy__header-head-link-main')) {
         this.flyout.style.background = 'transparent';
         this.flyoutSideBar.style.background = 'transparent';
+        document.body.style.overflow = 'visible';
 
         setTimeout(() => {
           this.flyout.classList.remove('flyout__active');
         }, 300);
       }
+    });
+  }
+
+  setHeightFlyoutSideBar() {
+    this.flyoutSideBar.style.height = this.flyOutContentBar.clientHeight + 'px';
+  }
+
+  resizeFlyout() {
+    window.addEventListener('resize', () => {
+      this.setHeightFlyoutSideBar();
     });
   }
 }

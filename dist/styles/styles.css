@@ -3756,7 +3756,7 @@ body {
 
 .flyout,
 .flyout__active {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -3768,7 +3768,8 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: #000000;
-  background: transparent; }
+  background: transparent;
+  overflow: auto; }
 
 .flyout__active {
   transform: translateX(0); }
@@ -3780,7 +3781,10 @@ body {
 
 .vacancy {
   width: 67%;
-  background: #f3f3f3; }
+  background: #f3f3f3;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content; }
 
 .vacancy__header {
   padding-top: 20px; }
@@ -3874,7 +3878,8 @@ body {
 .vacancy__office,
 .vacancy__remote,
 .vacancy__form,
-.vacancy__positions {
+.vacancy__positions,
+.vacancy__news {
   margin-bottom: 96px; }
 
 .vacancy__intro {
@@ -4302,7 +4307,8 @@ body {
   .vacancy__office,
   .vacancy__remote,
   .vacancy__form,
-  .vacancy__positions {
+  .vacancy__positions,
+  .vacancy__news {
     margin-bottom: 72px; }
   .vacancy__description-block {
     margin-bottom: 64px; }
@@ -4349,7 +4355,8 @@ body {
   .vacancy__office,
   .vacancy__remote,
   .vacancy__form,
-  .vacancy__positions {
+  .vacancy__positions,
+  .vacancy__news {
     margin-bottom: 64px; }
   .vacancy__video-container {
     max-width: 220px;
