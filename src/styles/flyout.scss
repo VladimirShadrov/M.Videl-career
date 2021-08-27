@@ -559,6 +559,8 @@
 .vacancy__item-positions-name {
   max-width: 265px;
   margin-bottom: 6px;
+  display: inline-block;
+  color: $mainColor;
 }
 
 .vacancy__bread-crumbs-block {
@@ -677,6 +679,8 @@
 
 .vacancy__news-title-info {
   margin-bottom: 24px;
+  display: inline-block;
+  color: $mainColor;
 }
 
 // Styles for 1440px

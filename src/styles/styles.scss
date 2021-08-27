@@ -102,6 +102,10 @@ body {
   display: none;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 8px;
