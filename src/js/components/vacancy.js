@@ -29,6 +29,7 @@ export class Vacancy {
   closeFlyout() {
     this.flyout.addEventListener('click', (event) => {
       if (event.target.classList.contains('vacancy__header-head-link-main')) {
+        event.preventDefault();
         this.flyout.style.background = 'transparent';
         this.flyoutSideBar.style.background = 'transparent';
         document.body.style.overflow = 'visible';
@@ -56,9 +57,8 @@ export class Vacancy {
 }
 
 function vacancyClickHandler(event) {
-  event.preventDefault();
-
   if (event.target.classList.contains('profession__job-title')) {
+    event.preventDefault();
     this.openFlyout();
   }
 }
