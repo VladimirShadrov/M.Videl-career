@@ -4873,7 +4873,7 @@ body {
 .listing-top__dropdown-container-active {
   color: #e31235; }
   .listing-top__dropdown-container-active > .listing-top__where::after {
-    background: url("../images/listing/listing-top/arrow-big-red.svg") no-repeat; }
+    background: url("../images/listing/listing-top/arrow-big-red.svg") center/contain no-repeat; }
 
 .listing-top__dropdown-list {
   position: absolute;
@@ -5150,7 +5150,8 @@ body {
   padding-top: 32px;
   padding-bottom: 104px;
   padding-left: 16px;
-  border-top: 1px solid rgba(0, 0, 0, 0.5); }
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  overflow: hidden; }
 
 .banner-l__content {
   position: relative; }

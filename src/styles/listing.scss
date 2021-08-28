@@ -71,7 +71,8 @@
   color: #e31235;
 
   & > .listing-top__where::after {
-    background: url('../images/listing/listing-top/arrow-big-red.svg') no-repeat;
+    background: url('../images/listing/listing-top/arrow-big-red.svg') center /
+      contain no-repeat;
   }
 }
 
@@ -407,6 +408,7 @@
   padding-bottom: 104px;
   padding-left: 16px;
   border-top: 1px solid $blackColorOpacity-05;
+  overflow: hidden;
 }
 
 .banner-l__content {
