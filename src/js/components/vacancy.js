@@ -21,7 +21,6 @@ export class Vacancy {
     this.setHeightFlyoutSideBar();
 
     setTimeout(() => {
-      // this.flyout.style.background = '#ffffff';
       this.flyoutSideBar.style.background = 'rgba(0, 0, 0, 0.8)';
     }, 300);
   }
@@ -30,7 +29,6 @@ export class Vacancy {
     this.flyout.addEventListener('click', (event) => {
       if (event.target.classList.contains('vacancy__header-head-link-main')) {
         event.preventDefault();
-        // this.flyout.style.background = 'transparent';
         this.flyoutSideBar.style.background = 'transparent';
         document.body.style.overflow = 'visible';
 

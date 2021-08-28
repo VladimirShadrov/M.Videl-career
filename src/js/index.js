@@ -13,11 +13,14 @@ import '../styles/flyout.scss';
 import '../styles/listing.scss';
 
 import { Vacancy } from '../js/components/vacancy';
+import { Listing } from '../js/components/listing';
 
 // Перенос изображений
 require.context('../images', true, /\.(png|jpg|svg|gif)$/);
 require.context('../fonts', true, /\.(ttf|woff|woff2)$/);
 
 const profession = document.querySelector('.profession');
+const listing = document.querySelector('.listing');
 
-new Vacancy(profession);
+// new Vacancy(profession);
+new Listing(listing);
