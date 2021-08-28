@@ -5112,7 +5112,6 @@ body {
   position: absolute;
   left: 53%;
   bottom: -46px;
-  width: 260px;
   background: #ffffff;
   box-shadow: 16px 2px 24px rgba(0, 0, 0, 0.03);
   border-radius: 36px;
@@ -5260,6 +5259,101 @@ body {
   margin-bottom: 24px;
   display: inline-block;
   color: #000000; }
+
+@media (max-width: 1440px) {
+  .listing,
+  .listing-top__filter-item-input,
+  .listing-top__filter-item-button-reset {
+    font-size: 16px;
+    line-height: 20px; }
+  .listing-top {
+    margin-bottom: 72px; }
+  .listing-top__dropdown {
+    margin-bottom: 48px; }
+  .listing-top__title,
+  .listing-top__in,
+  .listing-top__where {
+    font-size: 56px;
+    line-height: 60px; }
+  .listing-top__counter {
+    font-size: 32px;
+    line-height: 40px; }
+  .listing-top__filter-item,
+  .position__job-title-container,
+  .banner-S__side-bar {
+    max-width: 448px; }
+  .listing-top__filter-item-selected {
+    width: 85%; }
+  .position__bread-crumbs-block,
+  .position__payment-container,
+  .position__location-container {
+    max-width: 224px; }
+  .banner-S {
+    padding: 0 16px;
+    padding-top: 24px; }
+  .banner-S__image-container {
+    max-width: 224px;
+    margin-right: 16px; }
+  .banner-S__title-container {
+    max-width: 464px;
+    margin-right: 16px; }
+  .banner-S__title {
+    font-size: 32px;
+    line-height: 40px; }
+  .banner-S__link {
+    font-size: 20px;
+    line-height: 20px; }
+  .banner-S__link-arrow {
+    width: 13.8px;
+    top: calc(50% - 2px); }
+  .banner-S__info {
+    max-width: 224px; }
+  .position__card-item,
+  .banner-S,
+  .banner-l,
+  .position-subscribe,
+  .events__news-title {
+    margin-bottom: 24px; }
+  .banner-l {
+    padding-top: 24px;
+    padding-bottom: 56px;
+    padding-left: 8px; }
+  .banner-l__title {
+    font-size: 124px;
+    line-height: 112px; }
+  .banner-l__header-background {
+    max-width: 650px;
+    right: 0; }
+  .banner-l__header-background-image {
+    max-width: 650px;
+    position: absolute;
+    top: -20px; }
+  .banner-l__header-link {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 9px 40px 9px 16px; }
+  .position-subscribe {
+    padding-top: 24px; }
+  .position-subscribe__content {
+    max-width: 490px; }
+  .position-subscribe__title {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 8px; }
+  .position-subscribe__info {
+    margin-bottom: 24px; }
+  .products__show-more {
+    margin-top: 24px;
+    margin-bottom: 72px; }
+  .position__show-more-button {
+    font-size: 20px;
+    line-height: 20px; }
+  .events {
+    margin-bottom: 72px; }
+  .events__news-btn-prev {
+    margin-right: 16px; }
+  .events__news-item {
+    max-width: 360px; } }
 
 
 /*# sourceMappingURL=styles.css.map*/
