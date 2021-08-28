@@ -15,13 +15,19 @@
   line-height: 68px;
 }
 
-.listing-top__counter {
+.listing-top__counter,
+.listing-top__counter-list-item {
   font-size: 40px;
   line-height: 44px;
   color: #e31235;
   display: inline-block;
   transform: translateY(-15px);
   margin-left: -8px;
+  transition: 0.3s;
+}
+
+.listing-top__counter-list-item {
+  opacity: 0;
 }
 
 .listing-top__dropdown {
@@ -35,6 +41,15 @@
 .listing-top__in {
   display: inline-block;
   position: relative;
+}
+
+.listing-top__where,
+.listing-top__dropdown-list-item {
+  cursor: pointer;
+
+  &:hover > .listing-top__counter-list-item {
+    opacity: 1;
+  }
 }
 
 .listing-top__where {
@@ -72,16 +87,17 @@
 .listing-top__filters-wrapper {
   display: flex;
   justify-content: flex-start;
+  position: relative;
 }
 
 .listing-top__filter-item:first-child {
   width: 100%;
   max-width: 608px;
   margin-right: 16px;
-  position: relative;
   border-bottom: 1px solid $blackColorOpacity-05;
   padding-bottom: 8px;
   display: flex;
+  cursor: auto;
 
   &::after {
     content: '';
@@ -107,6 +123,7 @@
 
 .listing-top__filter-item-selected {
   display: inline-block;
+  cursor: auto;
   width: 50%;
 }
 
@@ -453,6 +470,7 @@
 
 .position-subscribe__content {
   max-width: 638px;
+  padding-right: 16px;
 }
 
 .position-subscribe__title {
@@ -618,12 +636,14 @@
 
   .listing-top__title,
   .listing-top__in,
-  .listing-top__where {
+  .listing-top__where,
+  .listing-top__dropdown-list-item {
     font-size: 56px;
     line-height: 60px;
   }
 
-  .listing-top__counter {
+  .listing-top__counter,
+  .listing-top__counter-list-item {
     font-size: 32px;
     line-height: 40px;
   }
@@ -772,7 +792,8 @@
 
   .listing-top__title,
   .listing-top__in,
-  .listing-top__where {
+  .listing-top__where,
+  .listing-top__dropdown-list-item {
     font-size: 32px;
     line-height: 36px;
   }
@@ -792,7 +813,8 @@
     padding-right: 32px;
   }
 
-  .listing-top__counter {
+  .listing-top__counter,
+  .listing-top__counter-list-item {
     font-size: 16px;
     line-height: 20px;
     transform: translate(8px, -8px);
@@ -850,6 +872,7 @@
     margin-right: 0;
     max-width: 256px;
     margin-left: auto;
+    display: flex;
   }
 
   .banner-S__title-container {
@@ -919,5 +942,134 @@
 
   .events {
     margin-bottom: 64px;
+  }
+}
+
+// Styles for 768px
+@media (max-width: 950px) {
+  .page-container {
+    padding: 0 8px;
+  }
+
+  .listing-top__filters-wrapper {
+    flex-wrap: wrap;
+    margin-bottom: 128px;
+  }
+
+  .listing-top__filter-item {
+    max-width: 32.6%;
+    margin-right: 8px;
+  }
+
+  .listing-top__filter-item {
+    &:first-child {
+      width: 100%;
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 24px;
+    }
+
+    &:nth-child(2) {
+      order: 3;
+      margin-right: 0;
+    }
+  }
+
+  .listing-top__filter-item-button-reset {
+    margin-bottom: -40px;
+  }
+
+  .listing-top__filter-item-selected {
+    width: 100%;
+    max-width: 30%;
+  }
+
+  .listing-top__filter-item-input {
+    width: 100%;
+    max-width: 70%;
+  }
+
+  .position__bread-crumbs-block {
+    display: none;
+  }
+
+  .position__bread-crumbs-container-mobile {
+    display: block;
+  }
+
+  .position__job-title-container,
+  .position__location-container {
+    max-width: 248px;
+  }
+
+  .position__payment-container {
+    max-width: 256px;
+  }
+
+  .position__job-title {
+    max-width: 232px;
+  }
+
+  .banner-S {
+    padding-bottom: 20px;
+    padding-left: 8px;
+  }
+
+  .banner-S__side-bar {
+    display: none;
+  }
+
+  .banner-S__title-container {
+    max-width: 483px;
+    margin-right: 13px;
+  }
+
+  .banner-S__info {
+    max-width: 449px;
+  }
+
+  .banner-S__link-mobile {
+    left: calc(35% - 155px);
+    bottom: -39px;
+  }
+
+  .banner-l {
+    padding-bottom: 64px;
+  }
+
+  .banner-l__header-background,
+  .banner-l__header-background-image {
+    max-width: 392px;
+  }
+
+  .banner-l__header-background-image {
+    top: -85px;
+  }
+
+  .banner-l__header-link {
+    left: 55%;
+    bottom: -48px;
+  }
+
+  .position-subscribe__side-bar {
+    display: none;
+  }
+
+  .position-subscribe__content {
+    width: 100%;
+    max-width: 510px;
+    padding: 0 8px;
+  }
+
+  .position-subscribe__info {
+    max-width: 480px;
+  }
+
+  .products__show-more {
+    margin-top: 24px;
+  }
+
+  .events__news-item {
+    max-width: 280px;
   }
 }
