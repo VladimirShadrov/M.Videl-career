@@ -713,7 +713,8 @@ body {
 
 .why-are-we__slider-row {
   display: flex;
-  width: 400%; }
+  width: 400%;
+  transition: transform 0.3s; }
 
 .why-are-we__slide {
   display: flex;
@@ -749,7 +750,8 @@ body {
   margin-bottom: 16px; }
 
 .why-are-we__slide-buttons {
-  margin-top: auto; }
+  margin-top: auto;
+  display: flex; }
 
 .why-are-we__slide-link {
   color: #000000;
@@ -775,6 +777,8 @@ body {
   background: transparent; }
   .why-are-we__slide-arrow:last-child {
     margin-right: 0; }
+  .why-are-we__slide-arrow > img {
+    pointer-events: none; }
 
 .why-are-we__mobile-block {
   display: none; }

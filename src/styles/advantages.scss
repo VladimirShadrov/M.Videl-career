@@ -27,6 +27,7 @@
 .why-are-we__slider-row {
   display: flex;
   width: 400%;
+  transition: transform 0.3s;
 }
 
 .why-are-we__slide {
@@ -71,6 +72,7 @@
 
 .why-are-we__slide-buttons {
   margin-top: auto;
+  display: flex;
 }
 
 .why-are-we__slide-link {
@@ -99,6 +101,10 @@
 
   &:last-child {
     margin-right: 0;
+  }
+
+  & > img {
+    pointer-events: none;
   }
 }
 

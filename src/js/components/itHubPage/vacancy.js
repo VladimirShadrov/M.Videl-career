@@ -27,7 +27,10 @@ export class Vacancy {
 
   closeFlyout() {
     this.flyout.addEventListener('click', (event) => {
-      if (event.target.classList.contains('vacancy__header-head-link-main')) {
+      if (
+        event.target.classList.contains('vacancy__header-head-link-main') ||
+        event.target.classList.contains('flyout__side-bar')
+      ) {
         event.preventDefault();
         this.flyoutSideBar.style.background = 'transparent';
         document.body.style.overflow = 'visible';

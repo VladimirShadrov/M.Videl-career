@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>М.ВидеоЭльдорадо</title>
   <script defer src="bundle.js"></script><link href="styles/styles.css" rel="stylesheet"></head>
-  <body>
+  <body class="it-hub">
     <!-- Header -->
     <header class="it-header">
       <div class="container">
@@ -93,7 +93,7 @@
         </p>
 
         <div class="why-are-we__slide-buttons-mobile">
-          <button class="why-are-we__slide-arrow">
+          <button class="why-are-we__slide-arrow" data-name="prev">
             <img
               src="./images/advantages/small-arrow-left.svg"
               alt="Arrow-right"
@@ -101,12 +101,12 @@
           </button>
 
           <p class="why-are-we__slide-number-mobile">
-            <span>1</span>
+            <span class="why-are-we__slide-number-mobile-value">1</span>
             /
-            <span>4</span>
+            <span class="why-are-we__slide-number-mobile-total">4</span>
           </p>
 
-          <button class="why-are-we__slide-arrow">
+          <button class="why-are-we__slide-arrow" data-name="next">
             <img
               src="./images/advantages/small-arrow-right.svg"
               alt="Arrow-right"
@@ -122,9 +122,9 @@
           </p>
         </div>
 
-        <div class="why-are-we__slider-wrapper">
-          <div class="why-are-we__slider-row">
-            <div class="why-are-we__slide">
+        <div class="why-are-we__slider-wrapper swiper">
+          <div class="why-are-we__slider-row swiper-wrapper">
+            <div class="why-are-we__slide swiper-slide">
               <div class="why-are-we__slide-info">
                 <div class="why-are-we__slide-numbers">
                   <span class="why-are-we__slide-number">01</span>
@@ -139,7 +139,7 @@
                   мы отправили код билдиться.
                 </p>
                 <div class="why-are-we__slide-buttons">
-                  <button class="why-are-we__slide-arrow">
+                  <button class="why-are-we__slide-arrow" data-name="next">
                     <img
                       src="./images/advantages/long-arrow-right.svg"
                       alt="Arrow-right"
@@ -157,7 +157,7 @@
               </div>
             </div>
 
-            <div class="why-are-we__slide">
+            <div class="why-are-we__slide swiper-slide">
               <div class="why-are-we__slide-info">
                 <div class="why-are-we__slide-numbers">
                   <span class="why-are-we__slide-number">02</span>
@@ -171,14 +171,14 @@
                   тоже можно заглядывать.
                 </p>
                 <div class="why-are-we__slide-buttons">
-                  <button class="why-are-we__slide-arrow">
+                  <button class="why-are-we__slide-arrow" data-name="prev">
                     <img
                       src="./images/advantages/arrow-left.svg"
                       alt="Arrow-right"
                     />
                   </button>
 
-                  <button class="why-are-we__slide-arrow">
+                  <button class="why-are-we__slide-arrow" data-name="next">
                     <img
                       src="./images/advantages/arrow-right.svg"
                       alt="Arrow-right"
@@ -196,7 +196,7 @@
               </div>
             </div>
 
-            <div class="why-are-we__slide">
+            <div class="why-are-we__slide swiper-slide">
               <div class="why-are-we__slide-info">
                 <div class="why-are-we__slide-numbers">
                   <span class="why-are-we__slide-number">03</span>
@@ -212,15 +212,15 @@
                 <a href="#" class="why-are-we__slide-link"
                   >Узнай больше о нашем стеке</a
                 >
-                <div class="why-are-we__slide-buttons">
-                  <button class="why-are-we__slide-arrow">
+                <div class="why-are-we__slide-buttons" data-name="prev">
+                  <button class="why-are-we__slide-arrow" data-name="prev">
                     <img
                       src="./images/advantages/arrow-left.svg"
                       alt="Arrow-right"
                     />
                   </button>
 
-                  <button class="why-are-we__slide-arrow">
+                  <button class="why-are-we__slide-arrow" data-name="next">
                     <img
                       src="./images/advantages/arrow-right.svg"
                       alt="Arrow-right"
@@ -238,7 +238,7 @@
               </div>
             </div>
 
-            <div class="why-are-we__slide">
+            <div class="why-are-we__slide swiper-slide">
               <div class="why-are-we__slide-info">
                 <div class="why-are-we__slide-numbers">
                   <span class="why-are-we__slide-number">04</span>
@@ -256,7 +256,7 @@
                   >Узнай больше о нашей культуре</a
                 >
                 <div class="why-are-we__slide-buttons">
-                  <button class="why-are-we__slide-arrow">
+                  <button class="why-are-we__slide-arrow" data-name="prev">
                     <img
                       src="./images/advantages/long-arrow-left.svg"
                       alt="Arrow-right"
@@ -1181,9 +1181,9 @@
               </div>
             </div>
 
-            <div class="upgrade__middle-block-container">
-              <div class="upgrade__middle-image-row">
-                <div class="upgrade__middle-image-item">
+            <div class="upgrade__middle-block-container swiper">
+              <div class="upgrade__middle-image-row swiper-wrapper">
+                <div class="upgrade__middle-image-item swiper-slide">
                   <div class="upgrade__middle-image-item-container">
                     <div class="upgrade__middle-image">
                       <img
@@ -1264,7 +1264,7 @@
                   </div>
                 </div>
 
-                <div class="upgrade__middle-image-item">
+                <div class="upgrade__middle-image-item swiper-slide">
                   <div class="upgrade__middle-image-item-container">
                     <div class="upgrade__middle-image">
                       <img
@@ -1336,7 +1336,7 @@
                   </div>
                 </div>
 
-                <div class="upgrade__middle-image-item">
+                <div class="upgrade__middle-image-item swiper-slide">
                   <div class="upgrade__middle-image-item-container">
                     <div class="upgrade__middle-image">
                       <img
@@ -1408,7 +1408,7 @@
                   </div>
                 </div>
 
-                <div class="upgrade__middle-image-item">
+                <div class="upgrade__middle-image-item swiper-slide">
                   <div class="upgrade__middle-image-item-container">
                     <div class="upgrade__middle-image">
                       <img
@@ -2687,5 +2687,12 @@
       </div>
     </div>
     <!-- //Flyout section -->
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   </body>
 </html>
