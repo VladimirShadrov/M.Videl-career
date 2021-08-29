@@ -22,5 +22,10 @@ require.context('../fonts', true, /\.(ttf|woff|woff2)$/);
 const profession = document.querySelector('.profession');
 const listing = document.querySelector('.listing');
 
-// new Vacancy(profession);
-new Listing(listing);
+if (profession && profession !== null && profession !== undefined) {
+  new Vacancy(profession);
+}
+
+if (listing && listing !== null && listing !== undefined) {
+  new Listing(listing);
+}
