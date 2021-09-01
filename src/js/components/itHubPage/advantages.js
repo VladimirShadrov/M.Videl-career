@@ -41,10 +41,10 @@ export class Advantages {
     // );
 
     this.swiper = new Swiper(this.el.querySelector('.swiper'), {
-      navigation: {
-        nextEl: '.why-are-we__slide-arrow.swiper-button-next',
-        prevEl: '.why-are-we__slide-arrow.swiper-button-prev',
-      },
+      // navigation: {
+      //   nextEl: '.why-are-we__slide-arrow.swiper-button-next',
+      //   prevEl: '.why-are-we__slide-arrow.swiper-button-prev',
+      // },
     });
 
     this.init();

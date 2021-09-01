@@ -24,6 +24,11 @@
   overflow: hidden;
 }
 
+.why-are-we__slide-arrow-next-image,
+.why-are-we__slide-arrow-prev-image {
+  pointer-events: none;
+}
+
 .why-are-we__slider-row {
   display: flex;
   width: 400%;
