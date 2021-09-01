@@ -12,6 +12,7 @@ export class CareerUpgrade {
     this.currentSlideRowPosition = 0;
 
     this.swiper = new Swiper(this.el.querySelector('.swiper'), {});
+
     this.slider = new ItHubSlider(
       this.currentSlideNumber,
       this.slides,
