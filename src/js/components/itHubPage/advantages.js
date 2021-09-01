@@ -1,21 +1,6 @@
-import { ItHubSlider } from '../../helpers/itHubSlider';
-
 export class Advantages {
   constructor(el) {
     this.el = el;
-    // this.slidesRow = this.el.querySelector('.why-are-we__slider-row');
-    // this.slides = Array.from(this.el.querySelectorAll('.why-are-we__slide'));
-    // this.slidesCounterField = this.el.querySelector(
-    //   '.why-are-we__slide-number-mobile-value'
-    // );
-    // this.slidesTotalValueField = this.el.querySelector(
-    //   '.why-are-we__slide-number-mobile-total'
-    // );
-    // this.slideWidht = 0;
-    // this.currentSlideRowPosition = 0;
-    // this.currentSlideNumber = 1;
-    // this.slidesTotalValue = this.slides.length;
-    // this.slidesTotalValueField.textContent = this.slides.length;
     this.buttonNext = this.el.querySelector(
       '.why-are-we__slide-main-button-next'
     );
@@ -29,29 +14,17 @@ export class Advantages {
       '.why-are-we__slide-btn-prev'
     );
     this.sliderRow = this.el.querySelector('.why-are-we__slider-row');
-    this.slides = this.el.querySelectorAll('.why-are-we__slide');
+    this.slides = Array.from(this.el.querySelectorAll('.why-are-we__slide'));
 
-    console.log(this.slides);
-
-    // this.btnNext = this.el.querySelector(
-    //   '.why-are-we__slide-arrow.swiper-button-next'
-    // );
-    // this.btnPrev = this.el.querySelector(
-    //   '.why-are-we__slide-arrow.swiper-button-prev'
-    // );
-
-    this.swiper = new Swiper(this.el.querySelector('.swiper'), {
-      // navigation: {
-      //   nextEl: '.why-are-we__slide-arrow.swiper-button-next',
-      //   prevEl: '.why-are-we__slide-arrow.swiper-button-prev',
-      // },
-    });
+    this.swiper = new Swiper(this.el.querySelector('.swiper'), {});
 
     this.init();
     this.setDisabledClassSliderBtn();
     this.setOpacitySliderBtn();
     this.setSliderRowLength();
     this.setWidthSliderButtons();
+    this.setSlidesCounter();
+    this.setNumberCurrentSlideMobile();
   }
 
   init() {
@@ -62,6 +35,7 @@ export class Advantages {
     this.sliderRow.addEventListener('transitionend', () => {
       this.setOpacitySliderBtn();
       this.setWidthSliderButtons();
+      this.setNumberCurrentSlideMobile();
     });
   }
 
@@ -104,6 +78,35 @@ export class Advantages {
     this.slides.forEach((slide) => {
       slide.style.width = this.sliderRow.style.width / this.slides.length;
     });
+  }
+
+  setSlidesCounter() {
+    for (let i = 0; i < this.slides.length; i++) {
+      let slideNumberField = this.slides[i].querySelector(
+        '.why-are-we__slide-number'
+      );
+      let slidesValue = this.slides[i].querySelector(
+        '.why-are-we__slide-value'
+      );
+
+      if (i + 1 <= 10) {
+        slideNumberField.textContent = `0${i + 1}`;
+        slidesValue.textContent = `0${this.slides.length}`;
+      } else {
+        slideNumberField.textContent = `${i + 1}`;
+        slidesValue.textContent = `${this.slides.length}`;
+      }
+    }
+  }
+
+  setNumberCurrentSlideMobile() {
+    let slideNumberField = this.el.querySelector(
+      '.why-are-we__slide-number-mobile-value'
+    );
+    const slidesValue = this.slides.length;
+    const currentSlide = this.swiper.activeIndex;
+
+    slideNumberField.textContent = currentSlide + 1;
   }
 }
 
