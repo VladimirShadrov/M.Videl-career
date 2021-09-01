@@ -89,12 +89,16 @@ export class Advantages {
         '.why-are-we__slide-value'
       );
 
-      if (i + 1 <= 10) {
-        slideNumberField.textContent = `0${i + 1}`;
+      if (this.slides.length > 10) {
+        slidesValue.textContent = `${this.slides.length}`;
+      } else {
         slidesValue.textContent = `0${this.slides.length}`;
+      }
+
+      if (i + 1 < 10) {
+        slideNumberField.textContent = `0${i + 1}`;
       } else {
         slideNumberField.textContent = `${i + 1}`;
-        slidesValue.textContent = `${this.slides.length}`;
       }
     }
   }
@@ -103,7 +107,9 @@ export class Advantages {
     let slideNumberField = this.el.querySelector(
       '.why-are-we__slide-number-mobile-value'
     );
-    const slidesValue = this.slides.length;
+    this.el.querySelector(
+      '.why-are-we__slide-number-mobile-total'
+    ).textContent = this.slides.length;
     const currentSlide = this.swiper.activeIndex;
 
     slideNumberField.textContent = currentSlide + 1;
