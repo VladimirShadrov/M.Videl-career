@@ -2908,7 +2908,7 @@ body {
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 100%;
+  width: 0;
   height: 2px;
   background: #e31235;
   display: none; }

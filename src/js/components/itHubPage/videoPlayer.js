@@ -66,9 +66,12 @@ export class VideoPlayer {
     this.hideVideo();
     this.video.firstElementChild.src = currentVideo;
     this.showControllsOnScreen();
+    this.videoBlock.classList.add('find__block-video-active');
+
     this.video.load();
     this.videoControl.style.background =
       "url('./images/find-vacancies/pause.svg') center / contain no-repeat";
+
     setTimeout(() => (this.videoControl.dataset.name = 'pause'), 100);
   }
 
@@ -79,6 +82,7 @@ export class VideoPlayer {
     this.videoContainer.lastElementChild.style.display = 'none';
     this.videoControl.style.background =
       "url('./images/find-vacancies/play-control.svg') center / contain no-repeat";
+    this.setVideoProgress();
 
     setTimeout(() => (this.videoControl.dataset.name = 'play'), 100);
   }
@@ -105,6 +109,15 @@ export class VideoPlayer {
     this.soundControl.textContent = 'Выключить звук';
     setTimeout(() => (this.soundControl.dataset.name = 'turn-of'), 100);
   }
+
+  setVideoProgress() {
+    const progress =
+      Math.floor(
+        ((this.video.currentTime + 0.0001) / this.video.duration) * 100
+      ) + '%';
+    const activeItem = this.el.querySelector('.find__video-slide-active');
+    activeItem.lastElementChild.style.width = progress;
+  }
 }
 
 function videoBlockClickHandler(event) {
@@ -113,6 +126,7 @@ function videoBlockClickHandler(event) {
     this.cleanScreen();
     this.scrollToVideoBlock();
 
+    setTimeout(() => this.setVideoProgress(), 50);
     setTimeout(() => this.setFullScreenHeight(), 300);
   }
 
