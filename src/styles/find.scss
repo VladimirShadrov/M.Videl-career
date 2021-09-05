@@ -466,6 +466,7 @@
 
   .find__video-slide-mobile-image {
     display: block;
+    transition: 0.3s;
   }
 
   .find__video-slide-mobile-button {
@@ -478,11 +479,16 @@
     height: 48px;
     background: url('../images/find-vacancies/play-mobile.svg') left / contain
       no-repeat;
-    z-index: 1;
+    z-index: 3;
   }
 
   .find__video-slide-mobile-video {
     margin-bottom: 16px;
+  }
+
+  .find__video-player-mobile {
+    max-width: 280px;
+    z-index: 2;
   }
 
   .find__video-slide-mobile-text-info {
@@ -492,5 +498,17 @@
     font-size: 32px;
     line-height: 36px;
     overflow-wrap: break-word;
+    color: $mainColor;
+  }
+
+  .find__mobile-progress {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background: #e31235;
+    z-index: 2;
   }
 }

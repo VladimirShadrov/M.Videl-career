@@ -3106,7 +3106,8 @@ body {
       left: 0;
       background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 71.87%, #000000 100%); }
   .find__video-slide-mobile-image {
-    display: block; }
+    display: block;
+    transition: 0.3s; }
   .find__video-slide-mobile-button {
     display: block;
     position: absolute;
@@ -3116,16 +3117,29 @@ body {
     width: 44px;
     height: 48px;
     background: url("../images/find-vacancies/play-mobile.svg") left/contain no-repeat;
-    z-index: 1; }
+    z-index: 3; }
   .find__video-slide-mobile-video {
     margin-bottom: 16px; }
+  .find__video-player-mobile {
+    max-width: 280px;
+    z-index: 2; }
   .find__video-slide-mobile-text-info {
     padding-left: 8px;
     width: 100%;
     max-width: 272px;
     font-size: 32px;
     line-height: 36px;
-    overflow-wrap: break-word; } }
+    overflow-wrap: break-word;
+    color: #000000; }
+  .find__mobile-progress {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background: #e31235;
+    z-index: 2; } }
 
 /*!**************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/postcss-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles/intern.scss ***!
