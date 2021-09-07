@@ -30,6 +30,7 @@ const upgradeSection = document.querySelector('.upgrade');
 const videoPlayerBlock = document.querySelector('.find');
 
 if (itHubPage && itHubPage !== null && itHubPage !== undefined) {
+  cancelDefaultBehavior();
   new Vacancy(profession);
   new Advantages(ourAdvantages);
   new CareerUpgrade(upgradeSection);
@@ -38,4 +39,12 @@ if (itHubPage && itHubPage !== null && itHubPage !== undefined) {
 
 if (listingPage && listingPage !== null && listingPage !== undefined) {
   new Listing(listingPage);
+}
+
+function cancelDefaultBehavior() {
+  document.body.addEventListener('click', (event) => {
+    if (event.target.tagName.toLowerCase() === 'a') {
+      event.preventDefault();
+    }
+  });
 }

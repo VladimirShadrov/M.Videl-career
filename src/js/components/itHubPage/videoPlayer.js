@@ -12,9 +12,18 @@ export class VideoPlayer {
     this.soundControl = this.el.querySelector('.find__sound-control');
 
     // mobile items
-    this.mobileVideoRow = this.el.querySelector(
-      '.find__video-slides-row-mobile'
+    this.mobileVideoSlides = Array.from(
+      this.el.querySelectorAll('.find__video-slide-mobile')
     );
+
+    // Swiper
+    // this.desktopSlider = new Swiper('.desktop-slider', {});
+
+    this.mobileSlider = new Swiper('.mobile-slider', {
+      slidesPerView: 'auto',
+      spaceBetween: 16,
+      loop: true,
+    });
 
     this.init();
   }
@@ -125,57 +134,111 @@ export class VideoPlayer {
     return progress;
   }
 
-  playMobileVideo() {
-    this.mobilePrevew.style.opacity = 0;
-    this.mobilePrevew.style.zIndex = -1;
+  playMobileVideo(prevew, video, button) {
+    prevew.style.opacity = 0;
+    prevew.style.zIndex = -1;
 
     setTimeout(() => {
-      this.mobileVideo.classList.remove('hide');
-      this.mobileVideo.play();
-      this.mobileButton.style.background =
+      video.classList.remove('hide');
+      video.play();
+      button.style.background =
         "url('../images/find-vacancies/pause.svg') left / contain no-repeat";
-      this.mobileButton.dataset.name = 'pause';
+      button.dataset.name = 'pause';
     }, 300);
   }
 
-  pauseMobileVideo() {
-    this.mobileVideo.pause();
-    this.mobileButton.style.background =
+  pauseMobileVideo(video, button) {
+    video.pause();
+    button.style.background =
       "url('../images/find-vacancies/play-mobile.svg') left / contain no-repeat";
 
-    setTimeout(() => (this.mobileButton.dataset.name = 'play'), 50);
+    setTimeout(() => (button.dataset.name = 'play'), 50);
   }
 
-  stopVideo() {
-    this.mobileVideo.classList.add('hide');
-    this.mobilePrevew.style.opacity = 1;
-    this.mobilePrevew.style.zIndex = 0;
-    this.mobileProgress.style.width = '0';
-    this.mobileButton.style.background =
+  stopMobileVideo(video, prevew, progress, button) {
+    video.classList.add('hide');
+    video.pause();
+    prevew.style.opacity = 1;
+    prevew.style.zIndex = 0;
+    progress.style.width = '0';
+    button.style.background =
       "url('../images/find-vacancies/play-mobile.svg') left / contain no-repeat";
 
     setTimeout(() => {
-      this.mobileButton.dataset.name = 'play';
-      this.mobileVideo.currentTime = '0';
+      button.dataset.name = 'play';
+      video.currentTime = '0';
     }, 50);
   }
 
-  showProgressMobileVideo() {
+  showProgressMobileVideo(video, progress, prevew, button) {
     let interval = setInterval(() => {
-      const progress =
-        Math.floor(
-          ((this.mobileVideo.currentTime + 0.0001) /
-            this.mobileVideo.duration) *
-            100
-        ) + '%';
+      const currentProgress =
+        Math.floor(((video.currentTime + 0.0001) / video.duration) * 100) + '%';
 
-      this.mobileProgress.style.width = progress;
+      progress.style.width = currentProgress;
 
-      if (this.mobileVideo.currentTime === this.mobileVideo.duration) {
+      if (video.currentTime === video.duration) {
         clearInterval(interval);
-        this.stopVideo();
+        this.stopMobileVideo(video, prevew, progress, button);
       }
     }, 10);
+  }
+
+  swichMobileVideoPlayer() {
+    const videoSlides = Array.from(
+      this.el.querySelectorAll('.find__video-slide-mobile')
+    );
+    const activeSlide = videoSlides.find((slide) =>
+      slide.classList.contains('active-video')
+    );
+    const inactiveSlides = videoSlides.filter(
+      (slide) => !slide.classList.contains('active-video')
+    );
+
+    inactiveSlides.forEach((slide) => {
+      let video = slide.querySelector('.find__video-player-mobile');
+      let prevew = slide.querySelector('.find__video-slide-mobile-image');
+      let button = slide.querySelector('.find__video-slide-mobile-button');
+      let progress = slide.querySelector('.find__mobile-progress');
+      this.stopMobileVideo(video, prevew, progress, button);
+    });
+
+    activeSlide.addEventListener('click', (event) => {
+      const mobileVideo = activeSlide.querySelector(
+        '.find__video-player-mobile'
+      );
+      const mobilePrevew = activeSlide.querySelector(
+        '.find__video-slide-mobile-image'
+      );
+      const mobileButton = activeSlide.querySelector(
+        '.find__video-slide-mobile-button'
+      );
+      const mobileProgress = activeSlide.querySelector(
+        '.find__mobile-progress'
+      );
+
+      console.log(activeSlide);
+
+      if (
+        event.target === mobileButton &&
+        event.target.dataset.name === 'play'
+      ) {
+        this.playMobileVideo(mobilePrevew, mobileVideo, mobileButton);
+        this.showProgressMobileVideo(
+          mobileVideo,
+          mobileProgress,
+          mobilePrevew,
+          mobileButton
+        );
+      }
+
+      if (
+        event.target === mobileButton &&
+        event.target.dataset.name === 'pause'
+      ) {
+        this.pauseMobileVideo(mobileVideo, mobileButton);
+      }
+    });
   }
 }
 
@@ -221,28 +284,22 @@ function videoBlockClickHandler(event) {
     this.turnOnSound();
   }
 
-  if (event.target.classList.contains('find__video-slide-mobile-button')) {
-    const currentVideoSlide = event.target.closest('.find__video-slide-mobile');
-    this.mobileVideo = currentVideoSlide.querySelector(
-      '.find__video-player-mobile'
-    );
-    this.mobilePrevew = currentVideoSlide.querySelector(
-      '.find__video-slide-mobile-image'
-    );
-    this.mobileButton = currentVideoSlide.querySelector(
-      '.find__video-slide-mobile-button'
-    );
-    this.mobileProgress = currentVideoSlide.querySelector(
-      '.find__mobile-progress'
+  if (
+    !event.target
+      .closest('.find__video-slide-mobile')
+      .classList.contains('active-video')
+  ) {
+    const dublicates = Array.from(
+      this.el.querySelectorAll('.swiper-slide-duplicate')
     );
 
-    if (event.target.dataset.name === 'play') {
-      this.playMobileVideo();
-      this.showProgressMobileVideo();
-    }
+    const slides = [...dublicates, ...this.mobileVideoSlides];
 
-    if (event.target.dataset.name === 'pause') {
-      this.pauseMobileVideo();
-    }
+    slides.forEach((slide) => slide.classList.remove('active-video'));
+    event.target
+      .closest('.find__video-slide-mobile')
+      .classList.add('active-video');
+
+    this.swichMobileVideoPlayer();
   }
 }
