@@ -5,6 +5,9 @@ export class VideoPlayer {
     this.videoBlock = this.el.querySelector('.find__block-video');
     this.videoContainer = this.el.querySelector('.find__video-container');
     this.controllsBlock = this.el.querySelector('.find__video-play-box');
+    this.videoDesktopContainer = this.el.querySelector(
+      '.find__video-slides-container'
+    );
     this.videoRow = this.el.querySelector('.find__video-slides-row');
     this.buttonNext = this.el.querySelector('.find__arrow-next');
     this.videoSlides = this.el.querySelectorAll('.find__video-slide');
@@ -16,8 +19,11 @@ export class VideoPlayer {
       this.el.querySelectorAll('.find__video-slide-mobile')
     );
 
-    // Swiper
-    // this.desktopSlider = new Swiper('.desktop-slider', {});
+    // Swiper;
+    this.desktopSlider = new Swiper('.desktop-slider', {
+      slidesPerView: 'auto',
+      loop: true,
+    });
 
     this.mobileSlider = new Swiper('.mobile-slider', {
       slidesPerView: 'auto',
@@ -26,15 +32,24 @@ export class VideoPlayer {
     });
 
     this.init();
+    this.addClickDesktopSwiper();
   }
 
   init() {
     this.el.addEventListener('mousedown', videoBlockClickHandler.bind(this));
   }
 
+  addClickDesktopSwiper() {
+    this.desktopSlider.on('click', (event) => {
+      this.selectVideo(event.clickedSlide);
+    });
+  }
+
   cleanScreen() {
     this.controllsBlock.classList.add('find__video-play-box-active');
-    this.videoRow.classList.add('find__video-slides-row-active');
+    this.videoDesktopContainer.classList.add(
+      'find__video-slides-container-active'
+    );
     this.buttonNext.classList.add('find__arrow-next-active');
   }
 
@@ -55,7 +70,9 @@ export class VideoPlayer {
     this.videoBlock.classList.remove('find__block-video-active');
     this.videoContainer.classList.remove('find__video-container-active');
     this.controllsBlock.classList.remove('find__video-play-box-active');
-    this.videoRow.classList.remove('find__video-slides-row-active');
+    this.videoDesktopContainer.classList.remove(
+      'find__video-slides-container-active'
+    );
     this.buttonNext.classList.remove('find__arrow-next-active');
     this.videoContainer.lastElementChild.style.display = 'block';
   }
@@ -69,19 +86,28 @@ export class VideoPlayer {
     });
   }
 
-  selectVideo(event) {
-    this.videoSlides.forEach((slide) => {
+  selectVideo(eventObject) {
+    const desktopSlides = this.el.querySelectorAll('.find__video-slide');
+
+    desktopSlides.forEach((slide) => {
       slide.classList.remove('find__video-slide-active');
     });
 
-    const currentVideo = event.target.dataset.name;
+    const currentVideo = eventObject.dataset.name;
 
-    event.target.classList.add('find__video-slide-active');
-    this.hideVideo();
+    eventObject.classList.add('find__video-slide-active');
+    // const activeItem = this.el.querySelector('.find__video-slide-active');
+    // activeItem.lastElementChild.style.width = 0;
+
+    eventObject.lastElementChild.style.width = this.video.currentTime;
+
     this.video.firstElementChild.src = currentVideo;
-    this.showControllsOnScreen();
-    this.videoBlock.classList.add('find__block-video-active');
+    this.stopDesktopVideo();
+  }
 
+  stopDesktopVideo() {
+    this.hideVideo();
+    this.showControllsOnScreen();
     this.video.load();
     this.videoControl.style.background =
       "url('./images/find-vacancies/pause.svg') center / contain no-repeat";
@@ -91,7 +117,9 @@ export class VideoPlayer {
 
   putOnPause() {
     this.video.pause();
-    this.videoRow.classList.remove('find__video-slides-row-active');
+    this.videoDesktopContainer.classList.remove(
+      'find__video-slides-container-active'
+    );
     this.buttonNext.classList.remove('find__arrow-next-active');
     this.videoContainer.lastElementChild.style.display = 'none';
     this.videoControl.style.background =
@@ -125,13 +153,19 @@ export class VideoPlayer {
   }
 
   setVideoProgress() {
-    const progress =
-      Math.floor(
-        ((this.video.currentTime + 0.0001) / this.video.duration) * 100
-      ) + '%';
-    const activeItem = this.el.querySelector('.find__video-slide-active');
-    activeItem.lastElementChild.style.width = progress;
-    return progress;
+    let interval = setInterval(() => {
+      const progress =
+        Math.floor(
+          ((this.video.currentTime + 0.0001) / this.video.duration) * 100
+        ) + '%';
+      const activeItem = this.el.querySelector('.find__video-slide-active');
+      activeItem.lastElementChild.style.width = progress;
+
+      if (this.video.currentTime === this.video.duration) {
+        clearInterval(interval);
+        this.stopDesktopVideo();
+      }
+    }, 100);
   }
 
   playMobileVideo(prevew, video, button) {
@@ -217,8 +251,6 @@ export class VideoPlayer {
         '.find__mobile-progress'
       );
 
-      console.log(activeSlide);
-
       if (
         event.target === mobileButton &&
         event.target.dataset.name === 'play'
@@ -252,10 +284,6 @@ function videoBlockClickHandler(event) {
     setTimeout(() => this.setFullScreenHeight(), 300);
   }
 
-  if (event.target.classList.contains('find__video-slide')) {
-    this.selectVideo(event);
-  }
-
   if (
     event.target.classList.contains('find__video-control') &&
     event.target.dataset.name === 'pause'
@@ -285,6 +313,7 @@ function videoBlockClickHandler(event) {
   }
 
   if (
+    event.target.classList.contains('find__video-slide-mobile-button') &&
     !event.target
       .closest('.find__video-slide-mobile')
       .classList.contains('active-video')
@@ -301,5 +330,9 @@ function videoBlockClickHandler(event) {
       .classList.add('active-video');
 
     this.swichMobileVideoPlayer();
+  }
+
+  if (event.target.classList.contains('find__arrow-next')) {
+    this.desktopSlider.slideNext();
   }
 }
