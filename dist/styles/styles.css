@@ -2928,9 +2928,9 @@ body {
 .find__video-play-box,
 .find__video-play-box-active {
   position: absolute;
-  top: 74%;
-  left: 58%;
-  transform: translate(-50%, -74%);
+  top: 58%;
+  left: 60%;
+  transform: translate(-60%, -58%);
   color: #fff;
   font-size: 64px;
   line-height: 68px;
@@ -3061,7 +3061,7 @@ body {
     transform: translateX(-11.5%); }
   .find__video-play-box {
     max-width: 504px;
-    top: 59%;
+    top: 50%;
     left: 67%; }
   .find__video-slide.swiper-slide {
     width: 154px; }

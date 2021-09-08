@@ -13,6 +13,8 @@ export class VideoPlayer {
     this.videoSlides = this.el.querySelectorAll('.find__video-slide');
     this.videoControl = this.el.querySelector('.find__video-control');
     this.soundControl = this.el.querySelector('.find__sound-control');
+    this.prevewImage = this.el.querySelector('.find__video-preview');
+    this.prevewText = this.el.querySelector('.find__video-title');
 
     // mobile items
     this.mobileVideoSlides = Array.from(
@@ -33,6 +35,8 @@ export class VideoPlayer {
 
     this.init();
     this.addClickDesktopSwiper();
+    this.setDesktopSliderPrevew();
+    this.resizePrevewImage();
   }
 
   init() {
@@ -42,6 +46,29 @@ export class VideoPlayer {
   addClickDesktopSwiper() {
     this.desktopSlider.on('click', (event) => {
       this.selectVideo(event.clickedSlide);
+      this.setDesktopSliderPrevew();
+    });
+  }
+
+  setDesktopSliderPrevew() {
+    const slides = Array.from(this.el.querySelectorAll('.find__video-slide'));
+    const activeSlide = slides.find((slide) =>
+      slide.classList.contains('find__video-slide-active')
+    );
+    const prevewImage = activeSlide.firstElementChild.src;
+    const prevewText = activeSlide.dataset.prevew;
+
+    this.prevewImage.style.width = document.documentElement.clientWidth + 'px';
+    this.prevewImage.src = prevewImage;
+    this.prevewText.textContent = prevewText;
+  }
+
+  resizePrevewImage() {
+    window.addEventListener('resize', () => {
+      if (document.documentElement.clientWidth >= 761) {
+        this.prevewImage.style.width =
+          document.documentElement.clientWidth + 'px';
+      }
     });
   }
 
@@ -96,8 +123,6 @@ export class VideoPlayer {
     const currentVideo = eventObject.dataset.name;
 
     eventObject.classList.add('find__video-slide-active');
-    // const activeItem = this.el.querySelector('.find__video-slide-active');
-    // activeItem.lastElementChild.style.width = 0;
 
     eventObject.lastElementChild.style.width = this.video.currentTime;
 
