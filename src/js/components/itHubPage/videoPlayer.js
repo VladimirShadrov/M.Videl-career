@@ -189,6 +189,7 @@ export class VideoPlayer {
       if (this.video.currentTime === this.video.duration) {
         clearInterval(interval);
         this.stopDesktopVideo();
+        activeItem.lastElementChild.style.width = progress;
       }
     }, 100);
   }
