@@ -6063,6 +6063,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   height: 100vh;
+  width: 100vw;
   position: fixed;
   top: 0;
   left: 0;
@@ -6076,13 +6077,12 @@ body {
   transform: translateX(0); }
 
 .form__side-bar {
-  width: 100%;
-  max-width: 640px;
-  background: rgba(0, 0, 0, 0.8); }
+  width: 34%;
+  background: transparent;
+  transition: 0.3s; }
 
 .form__content {
-  width: 100%;
-  max-width: 1280px;
+  width: 70%;
   background: #f3f3f3; }
 
 .form__container {

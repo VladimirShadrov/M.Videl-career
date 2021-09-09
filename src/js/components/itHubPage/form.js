@@ -1,10 +1,12 @@
 export class Form {
   constructor(el) {
     this.el = el;
-    this.dropdown = this.el.querySelector('.form__dropdown');
-    this.dropdownText = this.el.querySelector('.form__dropdown-result');
-    this.dropdownList = this.el.querySelector('.form__dropdown-list');
     this.dropdownItems = this.el.querySelectorAll('form__dropdown-list-item');
+    this.sideBar = this.el.querySelector('.form__side-bar');
+    this.dropdowns = Array.from(this.el.querySelectorAll('.form__dropdown'));
+    this.dropdownLists = Array.from(
+      this.el.querySelectorAll('.form__dropdown-list')
+    );
 
     this.init();
   }
@@ -14,15 +16,23 @@ export class Form {
   }
 
   closeForm() {
-    this.el.classList.remove('form-active');
+    this.sideBar.style.background = 'transparent';
+    document.body.style.overflow = 'visible';
+
+    setTimeout(() => {
+      this.el.classList.remove('form-active');
+    }, 300);
   }
 
   openDropdown(event) {
+    this.closeDropdown();
     event.target.lastElementChild.classList.remove('hide');
   }
 
-  closeDropdown(event) {
-    event.target.lastElementChild.classList.add('hide');
+  closeDropdown() {
+    this.dropdowns.forEach((dropdown) => {
+      dropdown.lastElementChild.classList.add('hide');
+    });
   }
 
   selectDropdownItem(event) {
@@ -57,5 +67,12 @@ function formClickHandler(event) {
 
   if (event.target.classList.contains('form__dropdown-list-item')) {
     this.selectDropdownItem(event);
+  }
+
+  if (
+    event.target.closest('.form__content') &&
+    !event.target.classList.contains('form__dropdown')
+  ) {
+    this.closeDropdown();
   }
 }

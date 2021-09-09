@@ -53,7 +53,18 @@ document.body.addEventListener('click', (event) => {
     event.target.classList.contains('it-header__button') ||
     event.target.classList.contains('intern__header-link')
   ) {
-    const form = document.querySelector('.form');
-    form.classList.add('form-active');
+    openApplicationForm();
   }
 });
+
+// Открыть анкету выбора вакансии
+function openApplicationForm() {
+  const form = document.querySelector('.form');
+
+  form.classList.add('form-active');
+
+  setTimeout(() => {
+    document.body.style.overflow = 'hidden';
+    form.firstElementChild.style.background = 'rgba(0, 0, 0, 0.8)';
+  }, 300);
+}
