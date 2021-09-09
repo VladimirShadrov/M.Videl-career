@@ -231,6 +231,7 @@
   border-top: 1px solid #969696;
   padding-bottom: 32px;
   padding-top: 8px;
+  margin-bottom: 6px;
   transition: 0.2s;
 
   &:first-child {
@@ -255,10 +256,27 @@
   transition: 0.2s;
 }
 
-.profession__job-department {
+.profession__crumb {
+  display: inline-block;
   font-size: 12px;
   line-height: 12px;
   color: $blackColorOpacity-05;
+  position: relative;
+  padding-right: 15px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: calc(50% - 3px);
+    width: 11px;
+    height: 7px;
+    background: url('../images/management/arrow-bread-crumb.svg') no-repeat;
+  }
+
+  &:last-child::after {
+    display: none;
+  }
 }
 
 .profession__job-title-container {
@@ -638,10 +656,6 @@
   .profession__location-container {
     width: 50%;
     min-width: 50%;
-  }
-
-  .profession__job-department {
-    margin: 8px 0;
   }
 
   .profession__location {

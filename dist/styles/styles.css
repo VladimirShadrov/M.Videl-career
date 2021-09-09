@@ -1542,6 +1542,7 @@ body {
   border-top: 1px solid #969696;
   padding-bottom: 32px;
   padding-top: 8px;
+  margin-bottom: 6px;
   transition: 0.2s; }
   .profession__job-item:first-child {
     border-top: 1px solid transparent; }
@@ -1556,10 +1557,23 @@ body {
   color: #000000;
   transition: 0.2s; }
 
-.profession__job-department {
+.profession__crumb {
+  display: inline-block;
   font-size: 12px;
   line-height: 12px;
-  color: rgba(0, 0, 0, 0.5); }
+  color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  padding-right: 15px; }
+  .profession__crumb::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: calc(50% - 3px);
+    width: 11px;
+    height: 7px;
+    background: url("../images/management/arrow-bread-crumb.svg") no-repeat; }
+  .profession__crumb:last-child::after {
+    display: none; }
 
 .profession__job-title-container {
   margin-right: auto;
@@ -1818,8 +1832,6 @@ body {
   .profession__location-container {
     width: 50%;
     min-width: 50%; }
-  .profession__job-department {
-    margin: 8px 0; }
   .profession__location {
     margin: 16px 0; }
   .profession__more-info {
