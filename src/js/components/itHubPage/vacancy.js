@@ -17,8 +17,8 @@ export class Vacancy {
   openFlyout() {
     this.flyout.classList.add('flyout__active');
     document.body.style.overflow = 'hidden';
-    window.scrollTo(0, 0);
     this.setHeightFlyoutSideBar();
+    this.flyout.scrollTop = 0;
 
     setTimeout(() => {
       this.flyoutSideBar.style.background = 'rgba(0, 0, 0, 0.8)';

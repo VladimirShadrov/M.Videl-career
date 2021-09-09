@@ -2845,7 +2845,7 @@ body {
   height: 100%;
   background: #000; }
   .find__video-container-active::before {
-    background: transparent; }
+    display: none; }
   .find__video-container-active:hover > .find__sound-control,
   .find__video-container-active:hover > .find__video-control {
     z-index: 3;
@@ -3112,6 +3112,7 @@ body {
     margin-right: 16px; }
   .find__video-slide-mobile-video {
     width: 100%;
+    height: 160px;
     display: flex;
     position: relative; }
     .find__video-slide-mobile-video::after {
