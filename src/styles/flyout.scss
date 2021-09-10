@@ -77,11 +77,13 @@
 .vacancy__header-head-copy,
 .vacancy__header-head-copy-mobile {
   display: inline-block;
-  width: 100%;
+  // width: 100%;
   max-width: 201px;
   padding-right: 20px;
   color: $mainColor;
   position: relative;
+  font-size: 18px;
+  line-height: 24px;
 
   &::before {
     content: '';
