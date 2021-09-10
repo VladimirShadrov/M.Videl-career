@@ -16,11 +16,11 @@ export class Vacancy {
 
   openFlyout() {
     this.flyout.classList.add('flyout__active');
-    document.body.style.overflow = 'hidden';
     this.setHeightFlyoutSideBar();
     this.flyout.scrollTop = 0;
 
     setTimeout(() => {
+      document.body.style.overflow = 'hidden';
       this.flyoutSideBar.style.background = 'rgba(0, 0, 0, 0.8)';
     }, 300);
   }
@@ -33,9 +33,9 @@ export class Vacancy {
       ) {
         event.preventDefault();
         this.flyoutSideBar.style.background = 'transparent';
-        document.body.style.overflow = 'visible';
 
         setTimeout(() => {
+          document.body.style.overflow = 'visible';
           this.flyout.classList.remove('flyout__active');
         }, 300);
       }

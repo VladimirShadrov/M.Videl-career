@@ -6092,7 +6092,8 @@ body {
 .form__side-bar {
   width: 34%;
   background: transparent;
-  transition: 0.3s; }
+  transition: 0.3s;
+  background: #000; }
 
 .form__content {
   width: 70%;
@@ -6182,12 +6183,14 @@ body {
 .form__form-politics {
   color: #000000;
   border-bottom: 1px solid #000000;
-  padding-bottom: 1px; }
+  padding-bottom: 1px;
+  font-size: 18px;
+  line-height: 24px; }
 
 .form__response {
   display: block;
   width: 100%;
-  max-width: 213px;
+  max-width: 180px;
   border-radius: 36px;
   background: #ffffff;
   padding: 8px 40px 8px 16px;
@@ -6282,6 +6285,75 @@ body {
   background: transparent;
   font-size: 18px;
   line-height: 24px; }
+
+.form__form-label {
+  display: block;
+  margin-bottom: 16px; }
+
+@media (max-width: 1600px) {
+  .form,
+  .form__form-input,
+  .form__information,
+  .form__form-politics {
+    font-size: 16px;
+    line-height: 20px; }
+  .form__title {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 16px; }
+  .form__response {
+    font-size: 20px;
+    line-height: 20px;
+    max-width: 160px; }
+  .form__text-left-bar,
+  .form__dropdown-result,
+  .form__title {
+    padding-right: 16px; }
+  .form__header {
+    margin-bottom: 40px; } }
+
+@media (max-width: 991px) {
+  .form__container {
+    padding: 0 8px; }
+  .form__side-bar {
+    display: none; }
+  .form__content {
+    width: 100%; }
+  .form__header {
+    margin-bottom: 32px; }
+  .form__content-left-bar {
+    width: 35%; }
+  .form__content-right-bar {
+    width: 65%; }
+  .form__response {
+    font-size: 18px;
+    line-height: 18px;
+    max-width: 147px; } }
+
+@media (max-width: 650px) {
+  .form,
+  .form__form-input,
+  .form__information,
+  .form__form-politics {
+    font-size: 14px;
+    line-height: 16px; }
+  .form__title {
+    font-size: 24px;
+    line-height: 28px; }
+  .form__content-wrapper {
+    flex-direction: column; }
+  .form__content-left-bar,
+  .form__content-right-bar {
+    width: 100%; }
+  .form__content-left-bar {
+    margin-bottom: 24px; }
+  .form__text-left-bar {
+    display: inline;
+    padding-right: 0; }
+  .form__file-uploader {
+    margin-bottom: 16px; }
+  .form__header {
+    margin-bottom: 24px; } }
 
 
 /*# sourceMappingURL=styles.css.map*/

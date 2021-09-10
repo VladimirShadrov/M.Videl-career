@@ -45,14 +45,11 @@ if (listingPage && listingPage !== null && listingPage !== undefined) {
 }
 
 document.body.addEventListener('click', (event) => {
-  if (event.target.tagName.toLowerCase() === 'a') {
-    event.preventDefault();
-  }
-
   if (
     event.target.classList.contains('it-header__button') ||
     event.target.classList.contains('intern__header-link')
   ) {
+    event.preventDefault();
     openApplicationForm();
   }
 });
