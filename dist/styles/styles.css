@@ -3675,6 +3675,76 @@ body {
     max-width: 464px;
     margin-bottom: 32px; }
 
+@media (max-width: 1440px) {
+  .intern-no-events {
+    font-size: 16px;
+    line-height: 20px; }
+  .intern-no-events__header {
+    margin-bottom: 24px; }
+  .intern-no-events__news-card-main > .intern-no-events__title {
+    font-size: 32px;
+    line-height: 40px;
+    max-width: 100%; }
+  .intern-no-events__news-block {
+    margin-bottom: 40px; }
+    .intern-no-events__news-block:last-child {
+      margin-bottom: 0; }
+  .intern-no-events__news-card-second > .intern-no-events__title {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 24px;
+    max-width: 100%; } }
+
+@media (max-width: 1024px) {
+  .intern-no-events__news-card-main {
+    width: 64%; }
+  .intern-no-events__news-card-second {
+    width: 34%; }
+  .intern-no-events__news-block {
+    margin-bottom: 32px; } }
+
+@media (max-width: 880px) {
+  .intern-no-events {
+    margin-top: -60px; }
+  .intern-no-events-container {
+    padding: 0 8px; }
+  .intern-no-events__news-block {
+    flex-direction: column; }
+  .intern-no-events__news-card-main,
+  .intern-no-events__news-card-second {
+    width: 100%; }
+  .intern-no-events__news-card-main {
+    margin-bottom: 24px; }
+  .intern-no-events__news-block:last-child > .intern-no-events__news-card-second {
+    order: 0; }
+  .intern-no-events__news-block {
+    margin-bottom: 24px; }
+    .intern-no-events__news-block:last-child {
+      margin-bottom: 24px; }
+  .intern-no-events__news-card-second > .intern-no-events__title {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 8px; } }
+
+@media (max-width: 620px) {
+  .intern-no-events {
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 16px; }
+  .intern-no-events__news-card-main > .intern-no-events__title {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 0 8px; }
+  .intern-no-events__news-card-second > .intern-no-events__title {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 0 8px; }
+  .intern-no-events-container {
+    padding: 0; }
+  .intern-no-events__header,
+  .intern-no-events__date-block {
+    padding: 0 8px; } }
+
 /*!**************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/postcss-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles/footer.scss ***!
   \**************************************************************************************************************************************************************************************/
