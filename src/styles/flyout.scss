@@ -685,6 +685,10 @@
   color: $mainColor;
 }
 
+.vacancy__news-block-mobile {
+  display: none;
+}
+
 // Styles for 1440px
 @media (max-width: 1440px) {
   .flyout,
@@ -1011,11 +1015,13 @@
 
 // Styles for 320px
 @media (max-width: 670px) {
-  .vacancy__header-head-copy {
+  .vacancy__header-head-copy,
+  .vacancy__news-block-desktop {
     display: none;
   }
 
-  .vacancy__header-head-copy-mobile {
+  .vacancy__header-head-copy-mobile,
+  .vacancy__news-block-mobile {
     display: block;
   }
 
