@@ -32,6 +32,7 @@ const ourAdvantages = document.querySelector('.why-are-we');
 const upgradeSection = document.querySelector('.upgrade');
 const videoPlayerBlock = document.querySelector('.find');
 const form = document.querySelector('.form');
+const directLink = document.querySelector('.direct-link');
 
 if (itHubPage && itHubPage !== null && itHubPage !== undefined) {
   new Vacancy(profession);
@@ -43,6 +44,10 @@ if (itHubPage && itHubPage !== null && itHubPage !== undefined) {
 
 if (listingPage && listingPage !== null && listingPage !== undefined) {
   new Listing(listingPage);
+}
+
+if (directLink && directLink !== null && directLink !== undefined) {
+  new Form(form);
 }
 
 document.body.addEventListener('click', (event) => {

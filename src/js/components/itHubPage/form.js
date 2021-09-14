@@ -58,17 +58,15 @@ function formClickHandler(event) {
     event.target.classList.contains('form__link-back') ||
     event.target.classList.contains('form__side-bar')
   ) {
+    event.preventDefault();
     this.closeForm();
   }
-
   if (event.target.classList.contains('form__dropdown')) {
     this.openDropdown(event);
   }
-
   if (event.target.classList.contains('form__dropdown-list-item')) {
     this.selectDropdownItem(event);
   }
-
   if (
     event.target.closest('.form__content') &&
     !event.target.classList.contains('form__dropdown')
