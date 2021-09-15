@@ -33,6 +33,7 @@ const upgradeSection = document.querySelector('.upgrade');
 const videoPlayerBlock = document.querySelector('.find');
 const form = document.querySelector('.form');
 const directLink = document.querySelector('.direct-link');
+const goalBlock = document.querySelector('.goal');
 
 if (itHubPage && itHubPage !== null && itHubPage !== undefined) {
   new Vacancy(profession);
@@ -58,6 +59,16 @@ document.body.addEventListener('click', (event) => {
     event.preventDefault();
     openApplicationForm();
   }
+
+  if (event.target.classList.contains('create-future__button')) {
+    event.preventDefault();
+    smothScrollingToBlock(goalBlock);
+  }
+
+  if (event.target.classList.contains('goal__button')) {
+    event.preventDefault();
+    smothScrollingToBlock(profession);
+  }
 });
 
 // Открыть анкету выбора вакансии
@@ -70,4 +81,17 @@ function openApplicationForm() {
     document.body.style.overflow = 'hidden';
     form.firstElementChild.style.background = 'rgba(0, 0, 0, 0.8)';
   }, 300);
+}
+
+// Скролл до блока
+function smothScrollingToBlock(block) {
+  const topOffset = block.offsetTop;
+
+  let interval = setInterval(() => {
+    document.scrollingElement.scrollTop += 10;
+
+    if (document.scrollingElement.scrollTop >= topOffset) {
+      clearInterval(interval);
+    }
+  }, 1);
 }
