@@ -1,5 +1,85 @@
 @import './styles.scss';
 
+// Стили для Tagify
+.tagify {
+  --tag-bg: transparent;
+  --tag-hover: transparent;
+  --tag-remove-bg: transparent;
+  --tagify-dd-color-primary: transparent;
+}
+
+.tagify {
+  width: 100%;
+  border: none;
+  margin-top: 0;
+
+  &::after {
+    display: none;
+  }
+}
+
+.tagify__input {
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-top: 4px;
+  padding-bottom: 8px;
+  background: var(--tag-bg);
+
+  &::after {
+    display: none;
+  }
+
+  &:hover {
+    background: var(--tag-hover);
+  }
+}
+
+// Стили для фильтра выбора профессий (Листинг вакансий)
+.tagify--outside {
+  border: 0;
+}
+
+.tagify--outside .tagify__input {
+  order: -1;
+  flex: 100%;
+  border: 1px solid var(--tags-border-color);
+  margin-bottom: 1em;
+  transition: 0.1s;
+}
+
+// Стили для фильтра выбора профессий (Листинг вакансий)-конец
+
+.tagify--select {
+  & > .tagify__tag {
+    display: none;
+  }
+}
+
+.tagify--outside {
+  & > .tagify__input {
+    margin-bottom: 0;
+  }
+}
+
+// .tagify__tag {
+//   border: 1px solid #000;
+//   border-radius: 36%;
+// }
+
+.tagify__dropdown__wrapper {
+  border: 1px solid transparent;
+}
+
+.tagify__dropdown__item {
+  &:hover {
+    background: rgba(0, 0, 0, 0.1);
+    color: $mainColor;
+  }
+}
+// Стили для Tagify
+
 .profession {
   margin-bottom: 192px;
   overflow: hidden;
@@ -23,6 +103,8 @@
   width: 85%;
   display: flex;
   justify-content: flex-end;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .profession__menu-item,
@@ -46,6 +128,12 @@
   margin-bottom: 96px;
 }
 
+#clear_all_filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .profession__content {
   display: flex;
   justify-content: space-between;
@@ -58,12 +146,153 @@
   flex-direction: column;
 }
 
-.profession__side-bar-text-wrapper:nth-child(2) {
+.profession__side-bar-text:nth-child(2) {
   margin-bottom: 24px;
 }
 
 .profession__side-bar-image-tools-wrapper {
   max-width: 340px;
+  margin-bottom: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  filter: grayscale(1);
+}
+
+.profession__technology-item,
+.jira,
+.confluence,
+.google-docs,
+.sap,
+.slack,
+.miro,
+.gradle,
+.jenkins,
+.docker,
+.sonar-qube,
+.spring,
+.gitlab,
+.PostgreSQL,
+.HP-QualityCenter,
+.postman,
+.ibm,
+.ansible,
+.kubernetes,
+.clickhouse,
+.terraform,
+.figma,
+.grafana,
+.elk,
+.prometheus,
+.swagger {
+  margin-bottom: 24px;
+  margin-right: 10px;
+  padding-left: 32px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -2px;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.jira::before {
+  background: url('../images/management/jira.svg') no-repeat;
+}
+
+.confluence::before {
+  background: url('../images/management/confluence.svg') no-repeat;
+}
+.google-docs::before {
+  background: url('../images/management/gdocs.svg') no-repeat;
+}
+.sap::before {
+  background: url('../images/management/sap.svg') no-repeat;
+}
+.slack::before {
+  background: url('../images/management/slack.svg') no-repeat;
+}
+.miro::before {
+  background: url('../images/management/miro.svg') no-repeat;
+}
+
+.gradle::before {
+  background: url('../images/management/gradle.svg') no-repeat;
+}
+
+.jenkins::before {
+  background: url('../images/management/jenkins.svg') no-repeat;
+}
+
+.docker::before {
+  background: url('../images/management/docker.svg') no-repeat;
+}
+
+.sonar-qube::before {
+  background: url('../images/management/sonarqube.svg') no-repeat;
+}
+
+.spring::before {
+  background: url('../images/management/spring.svg') no-repeat;
+}
+
+.gitlab::before {
+  background: url('../images/management/gitlab.svg') no-repeat;
+}
+
+.PostgreSQL::before {
+  background: url('../images/management/postgres.svg') no-repeat;
+}
+
+.HP-QualityCenter::before {
+  background: url('../images/management/hp.svg') no-repeat;
+}
+
+.postman::before {
+  background: url('../images/management/postman.svg') no-repeat;
+}
+
+.ibm::before {
+  background: url('../images/management/ibm.svg') no-repeat;
+}
+
+.ansible::before {
+  background: url('../images/management/ansible.svg') no-repeat;
+}
+
+.kubernetes::before {
+  background: url('../images/management/kubernetes.svg') no-repeat;
+}
+
+.clickhouse::before {
+  background: url('../images/management/clickhouse.svg') no-repeat;
+}
+
+.terraform::before {
+  background: url('../images/management/terraform.svg') no-repeat;
+}
+
+.figma::before {
+  background: url('../images/management/figma.svg') no-repeat;
+}
+
+.grafana::before {
+  background: url('../images/management/grafana.svg') no-repeat;
+}
+
+.elk::before {
+  background: url('../images/management/elk.svg') no-repeat;
+}
+
+.prometheus::before {
+  background: url('../images/management/prometheus.svg') no-repeat;
+}
+
+.swagger::before {
+  background: url('../images/management/swagger.svg') no-repeat;
 }
 
 .profession__side-bar-tools {
@@ -113,7 +342,6 @@
 .profession__filter-wrapper {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
   margin-bottom: 64px;
   font-size: 18px;
   line-height: 24px;
@@ -121,17 +349,17 @@
 
 .profession__checkbox-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.profession__filter-item,
-.listing-top__filter-item {
+.profession__filter-item {
   width: 100%;
   max-width: 304px;
   margin-right: 16px;
   border-bottom: 1px solid $blackColorOpacity-05;
   position: relative;
   cursor: pointer;
-  padding-bottom: 8px;
 
   &:last-child {
     margin-right: 0;
@@ -141,6 +369,15 @@
 .profession__filter-item-select {
   display: flex;
   justify-content: space-between;
+}
+
+.profession__filter-item-select-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 50%;
 }
 
 .profession__filter-item-select-list {
@@ -160,7 +397,7 @@
   font-size: 12px;
   line-height: 12px;
   color: $blackColorOpacity-05;
-  margin-bottom: 4px;
+  // margin-bottom: 4px;
 }
 
 .profession__filter-input {
@@ -231,11 +468,14 @@
   border-top: 1px solid #969696;
   padding-bottom: 32px;
   padding-top: 8px;
-  margin-bottom: 6px;
   transition: 0.2s;
 
   &:first-child {
     border-top: 1px solid transparent;
+  }
+
+  &:last-child {
+    padding-bottom: 0;
   }
 
   &:hover .profession__job-title {
@@ -253,7 +493,15 @@
 
 .profession__job-title {
   color: $mainColor;
+  cursor: pointer;
   transition: 0.2s;
+  margin-bottom: 6px;
+  width: 100%;
+  max-width: 265px;
+}
+
+.profession__bread-crumbs {
+  line-height: 12px;
 }
 
 .profession__crumb {
@@ -277,6 +525,12 @@
   &:last-child::after {
     display: none;
   }
+}
+
+.profession__job-department {
+  font-size: 12px;
+  line-height: 12px;
+  color: $blackColorOpacity-05;
 }
 
 .profession__job-title-container {
@@ -355,7 +609,7 @@
 }
 
 .profession__location {
-  margin: 24px 0;
+  margin-top: 24px;
 }
 
 .profession__location-map {
@@ -363,6 +617,7 @@
   position: relative;
   width: max-content;
   padding-right: 20px;
+  margin-top: 24px;
 
   &::after {
     content: '';
@@ -438,10 +693,9 @@
     display: none;
   }
 
-  .profession__side-bar-image-tools-wrapper {
-    background: url('../images/management/tools1024.svg') left / contain
-      no-repeat;
-    min-height: 104px;
+  .profession__technology-item {
+    margin-bottom: 16px;
+    margin-right: 16px;
   }
 
   .profession__filter-item {
@@ -497,8 +751,8 @@
   }
 
   .profession__menu {
-    width: max-content;
-    justify-content: flex-start;
+    // width: max-content;
+    width: 100%;
   }
 }
 
@@ -530,15 +784,14 @@
 
   .profession__side-bar-text-wrapper {
     width: 60%;
-    max-width: 448px;
+    max-width: 440px;
     display: flex;
     flex-direction: column;
   }
 
   .profession__side-bar-image-tools-wrapper {
-    background: url('../images/management/tools-tablet.svg') left / contain
-      no-repeat;
-    min-height: 64px;
+    max-width: 355px;
+    margin-bottom: 24px;
   }
 
   .profession__side-bar-image-wrapper {
@@ -598,7 +851,7 @@
   }
 
   .profession__side-bar-vacancy-mobile {
-    margin: 32px 0;
+    margin-bottom: 32px;
   }
 
   .profession__side-bar-image-wrapper {
@@ -611,9 +864,52 @@
   }
 
   .profession__side-bar-image-tools-wrapper {
-    background: url('../images/management/tools-mobile.svg') left / contain
-      no-repeat;
+    margin-bottom: 32px;
   }
+
+  // .profession__technology-item,
+  // .jira,
+  // .confluence,
+  // .google-docs,
+  // .gitlab,
+  // .slack,
+  // .swagger {
+  //   margin-bottom: 8px;
+  //   margin-right: 16px;
+  //   padding-left: 24px;
+  //   font-size: 14px;
+  //   line-height: 16px;
+  //   position: relative;
+
+  //   &::before {
+  //     content: '';
+  //     position: absolute;
+  //     left: 0;
+  //     top: 0;
+  //     width: 16px;
+  //     height: 16px;
+  //   }
+  // }
+
+  // .jira::before {
+  //   background: url('../images/management/jira-mob.svg') no-repeat;
+  // }
+
+  // .confluence::before {
+  //   background: url('../images/management/confluence-mob.svg') no-repeat;
+  // }
+  // .google-docs::before {
+  //   background: url('../images/management/gdocs-mob.svg') no-repeat;
+  // }
+  // .gitlab::before {
+  //   background: url('../images/management/gitlab-mob.svg') no-repeat;
+  // }
+  // .slack::before {
+  //   background: url('../images/management/slack-mob.svg') no-repeat;
+  // }
+  // .swagger::before {
+  //   background: url('../images/management/swagger-mob.svg') no-repeat;
+  // }
 
   .profession__filter-wrapper {
     flex-direction: column;
@@ -636,6 +932,9 @@
   .profession__filter-checbox-wrapper-mobile {
     line-height: 19px;
   }
+  .profession__filter-checbox-wrapper {
+    margin-bottom: 5px;
+  }
 
   .profession__filter-wrapper {
     margin-bottom: 32px;
@@ -656,6 +955,10 @@
   .profession__location-container {
     width: 50%;
     min-width: 50%;
+  }
+
+  .profession__job-department {
+    margin: 8px 0;
   }
 
   .profession__location {
@@ -685,5 +988,43 @@
 
   .profession__question {
     margin-bottom: 16px;
+  }
+}
+
+.loader-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #000;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
   }
 }

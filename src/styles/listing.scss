@@ -43,6 +43,12 @@
   position: relative;
 }
 
+.listing-top__dropdown-arrow {
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+}
+
 .listing-top__where,
 .listing-top__dropdown-list-item {
   cursor: pointer;
@@ -110,6 +116,35 @@
   &:last-child {
     margin-right: 0;
   }
+}
+
+.listing-top__filter-list-wrapper {
+  padding-top: 25px;
+}
+
+.listing-top__filter-list-item {
+  display: flex;
+  justify-content: flex-end;
+  color: $blackColorOpacity-05;
+}
+
+.listing-top__filter-list-item-active {
+  color: $mainColor;
+
+  & > .listing-top__filter-list-item-arrow {
+    opacity: 1;
+  }
+}
+
+.listing-top__filter-list-item-arrow {
+  margin-right: 9px;
+  margin-top: 7px;
+  opacity: 0;
+}
+
+.listing-top__filter-list-item-arrow,
+.listing-top__filter-list-item-text {
+  pointer-events: none;
 }
 
 // Пробные стили для Тагифай

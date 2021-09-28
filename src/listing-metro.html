@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://unpkg.com/@yaireo/tagify"></script>
+    <script src="https://unpkg.com/@yaireo/tagify@3.1.0/dist/tagify.polyfills.min.js"></script>
+    <link
+      href="https://unpkg.com/@yaireo/tagify/dist/tagify.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
     <title>М.ВидеоЭльдорадо</title>
   </head>
   <body>
@@ -98,6 +107,241 @@
       </div>
     </header>
     <!-- Header -->
+
+    <!-- Section Listing-filter-Top -->
+    <section class="listing-top">
+      <div class="page-container">
+        <h2 class="listing-top__title">
+          Вакансии
+          <span class="listing-top__counter">162</span>
+        </h2>
+        <div class="listing-top__dropdown">
+          <div class="listing-top__dropdown-container">
+            <span class="listing-top__in">в</span>
+            <span class="listing-top__where">
+              Розничных магазинах
+
+              <svg
+                class="listing-top__dropdown-arrow"
+                width="38"
+                height="36"
+                viewBox="0 0 38 36"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.3663 28.1186V0.160156H21.4663V27.9706L34.0469 15.5064L37.6363 19.1294L22.1319 34.4903C20.3098 36.2956 17.3734 36.2956 15.5513 34.4903L0.046875 19.1294L3.63632 15.5064L16.3663 28.1186Z"
+                  fill="black"
+                />
+              </svg>
+            </span>
+          </div>
+
+          <div class="listing-top__dropdown-list hide">
+            <p class="listing-top__dropdown-list-item">
+              <span class="listing-top__dropdown-list-item-value">
+                Розничных магазинах
+              </span>
+
+              <span class="listing-top__counter-list-item">1184</span>
+            </p>
+            <p class="listing-top__dropdown-list-item">
+              <span class="listing-top__dropdown-list-item-value">
+                Сервисе и логистике
+              </span>
+
+              <span class="listing-top__counter-list-item">52</span>
+            </p>
+            <p class="listing-top__dropdown-list-item">
+              <span class="listing-top__dropdown-list-item-value">
+                Центральном офисе
+              </span>
+
+              <span class="listing-top__counter-list-item">34</span>
+            </p>
+            <p class="listing-top__dropdown-list-item">
+              <span class="listing-top__dropdown-list-item-value">
+                IT-хабе
+              </span>
+
+              <span class="listing-top__counter-list-item">162</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="listing-top__filters-wrapper">
+          <div class="listing-top__filter-item">
+            <input type="hidden" id="listing-top__profession-filter" />
+            <input
+              name="tags-outside"
+              class="tagify--outside listing-top__profession-filter"
+              placeholder="Выбери профессию"
+            />
+
+            <svg
+              class="listing-top__filter-item-search-icon"
+              width="10"
+              height="10"
+              viewBox="0 0 10 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M4.50039 0.399994C2.23602 0.399994 0.400391 2.23563 0.400391 4.49999C0.400391 6.76436 2.23602 8.59999 4.50039 8.59999C5.41615 8.59999 6.26178 8.29977 6.94424 7.79237L8.57613 9.42426L9.42465 8.57573L7.79276 6.94384C8.30016 6.26139 8.60039 5.41575 8.60039 4.49999C8.60039 2.23563 6.76476 0.399994 4.50039 0.399994ZM1.60039 4.49999C1.60039 2.89837 2.89876 1.59999 4.50039 1.59999C6.10202 1.59999 7.40039 2.89837 7.40039 4.49999C7.40039 6.10162 6.10202 7.39999 4.50039 7.39999C2.89876 7.39999 1.60039 6.10162 1.60039 4.49999Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+
+          <div class="listing-top__filter-item">
+            <p class="profession__filter-item-title">Специализация</p>
+            <div class="profession__filter-item-select">
+              <input type="hidden" id="listing__specialization-select" />
+              <input
+                class="selectMode listing__specialization-select"
+                name="tags-select-mode"
+                placeholder="Выбери специализацию"
+              />
+              <div class="listing__filter-item-select-arrow">
+                <svg
+                  class="listing__filter-item-select-arrow-image"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.58286 7.56905V0.925293H4.38286V7.53389L1.4247 4.57574L0.576172 5.42426L4.22262 9.07071C4.65219 9.50029 5.34868 9.50029 5.77825 9.07071L9.4247 5.42426L8.57617 4.57574L5.58286 7.56905Z"
+                    fill="black"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="listing__filter-item-border-bottom">
+              <label class="profession__filter-checbox-listing">
+                <input class="profession__filter-input" type="checkbox" />
+                Без опыта
+                <span class="profession__filter-checbox-value"></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="listing-top__filter-item">
+            <p class="profession__filter-item-title">Город</p>
+            <div class="profession__filter-item-select">
+              <input type="hidden" id="listing__level-select" />
+              <input
+                class="selectMode listing__level-select"
+                name="tags-select-mode"
+                placeholder="Выбери город"
+              />
+
+              <div class="listing__filter-item-select-arrow">
+                <svg
+                  class="listing__filter-item-select-arrow-image"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.58286 7.56905V0.925293H4.38286V7.53389L1.4247 4.57574L0.576172 5.42426L4.22262 9.07071C4.65219 9.50029 5.34868 9.50029 5.77825 9.07071L9.4247 5.42426L8.57617 4.57574L5.58286 7.56905Z"
+                    fill="black"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="listing__filter-item-border-bottom"></div>
+          </div>
+
+          <div class="listing-top__filter-item">
+            <p class="profession__filter-item-title">Станция метро</p>
+            <div class="profession__filter-item-select">
+              <input type="hidden" id="listing__city-select" />
+              <input
+                class="selectMode listing__city-select"
+                name="tags-select-mode"
+                placeholder="Выбери станцию метро"
+              />
+
+              <div class="listing__filter-item-select-arrow">
+                <svg
+                  class="listing__filter-item-select-arrow-image"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.58286 7.56905V0.925293H4.38286V7.53389L1.4247 4.57574L0.576172 5.42426L4.22262 9.07071C4.65219 9.50029 5.34868 9.50029 5.77825 9.07071L9.4247 5.42426L8.57617 4.57574L5.58286 7.56905Z"
+                    fill="black"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div class="listing__filter-item-border-bottom"></div>
+          </div>
+          <button class="listing-top__filter-item-button-reset">
+            Сбросить фильтры
+          </button>
+
+          <div
+            class="listing-top__filter-item listing-top__filter-list-wrapper"
+          >
+            <div class="listing-top__filter-list-item">
+              <svg
+                class="listing-top__filter-list-item-arrow"
+                width="14"
+                height="10"
+                viewBox="0 0 14 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.5515 4.40044L8.57574 1.4247L9.42426 0.576172L13.8485 5.00044L9.42426 9.4247L8.57574 8.57617L11.5515 5.60044H0V4.40044H11.5515Z"
+                  fill="black"
+                />
+              </svg>
+
+              <span class="listing-top__filter-list-item-text"> списком </span>
+            </div>
+
+            <div
+              class="
+                listing-top__filter-list-item
+                listing-top__filter-list-item-active
+              "
+            >
+              <svg
+                class="listing-top__filter-list-item-arrow"
+                width="14"
+                height="10"
+                viewBox="0 0 14 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.5515 4.40044L8.57574 1.4247L9.42426 0.576172L13.8485 5.00044L9.42426 9.4247L8.57574 8.57617L11.5515 5.60044H0V4.40044H11.5515Z"
+                  fill="black"
+                />
+              </svg>
+
+              <span class="listing-top__filter-list-item-text">
+                на карте метро
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- //Section Listing-filter-Top -->
 
     <!-- Footer -->
     <footer class="footer">

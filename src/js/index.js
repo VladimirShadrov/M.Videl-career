@@ -22,6 +22,7 @@ import { VideoPlayer } from './components/itHubPage/videoPlayer';
 import { Form } from './components/itHubPage/form';
 import { RunningLine } from './components/itHubPage/runningLine';
 import { Header } from './components/itHubPage/header';
+import { ListingFilters } from './components/vacancyListingPage/listingFilters';
 
 // Перенос изображений
 require.context('../images', true, /\.(png|jpg|svg|gif)$/);
@@ -38,6 +39,9 @@ const directLink = document.querySelector('.direct-link');
 const goalBlock = document.querySelector('.goal');
 const runningLine = document.querySelector('.find__title');
 const headerIt = document.querySelector('.it-header');
+const listingPageFilters = document.querySelector(
+  '.listing-top__filters-wrapper'
+);
 
 new Vacancy(profession);
 new Advantages(ourAdvantages);
@@ -48,6 +52,7 @@ new RunningLine(runningLine);
 const header = new Header(headerIt);
 new Listing(listingPage);
 new Form(form);
+new ListingFilters(listingPageFilters);
 
 document.body.addEventListener('click', (event) => {
   header.closeSelect();

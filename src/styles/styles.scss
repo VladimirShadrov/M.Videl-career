@@ -1,3 +1,25 @@
+$bodyBackgraund: rgba(243, 243, 243, 1);
+$mainColor: #000000;
+$whiteColor: #ffffff;
+$blackColorOpacity-05: rgba(0, 0, 0, 0.5);
+
+// @import './createFuture.scss';
+// @import './advantages.scss';
+// @import './direction.scss';
+// @import './find.scss';
+// @import './flyout.scss';
+// @import './footer.scss';
+// @import './goal.scss';
+// @import './header.scss';
+// @import './intern.scss';
+// @import './listing.scss';
+// @import './profession.scss';
+// @import './upgrade.scss';
+// @import './politics.scss';
+// @import 'select';
+// @import './form.scss';
+// @import './direct-link.scss';
+
 @font-face {
   font-family: suisse;
   src: url('../fonts/SuisseIntl-Regular.woff') format('woff'),
@@ -80,11 +102,6 @@ h6 {
   font-weight: 400;
 }
 
-$bodyBackgraund: rgba(243, 243, 243, 1);
-$mainColor: #000000;
-$whiteColor: #ffffff;
-$blackColorOpacity-05: rgba(0, 0, 0, 0.5);
-
 body {
   font-family: suisse;
   background: $bodyBackgraund;
@@ -95,7 +112,7 @@ body {
 }
 
 .container {
-  padding: 16px;
+  padding: 0 16px;
 }
 
 .page-container {
