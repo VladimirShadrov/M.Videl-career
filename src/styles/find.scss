@@ -11,7 +11,7 @@
   letter-spacing: -0.03em;
   margin-bottom: 90px;
   display: flex;
-  width: 37%;
+  justify-content: flex-end;
   margin-left: auto;
 }
 
@@ -19,10 +19,8 @@
   display: flex;
   justify-content: flex-end;
   color: $mainColor;
-  width: 200%;
+  width: max-content;
   white-space: nowrap;
-  animation: running-line 10s infinite linear;
-  transition: color 0.3s;
 
   &:hover {
     color: #e31235;
@@ -39,7 +37,7 @@
   padding-left: 52px;
   padding-right: 140px;
   position: relative;
-  width: 100%;
+  pointer-events: none;
 
   &::before {
     content: '';
@@ -50,16 +48,7 @@
     height: 88px;
     background: url('../images/find-vacancies/link-arrow.svg') left / contain
       no-repeat;
-    transition: 0.3s;
-  }
-}
-
-@keyframes running-line {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(100%);
+    transition: color 0.3s;
   }
 }
 
@@ -294,7 +283,6 @@
     font-size: 124px;
     line-height: 112px;
     margin-bottom: 88px;
-    width: 39%;
   }
 
   .find__video-play-box {
@@ -351,7 +339,6 @@
     font-size: 88px;
     line-height: 80px;
     margin-bottom: 70px;
-    width: 37%;
   }
 
   .find__link-aroow {
@@ -410,10 +397,6 @@
     margin-bottom: 64px;
   }
 
-  .find__title {
-    width: 50%;
-  }
-
   .find__video-play-box {
     max-width: 504px;
     top: 50%;
@@ -438,7 +421,6 @@
   .find__title {
     font-size: 36px;
     line-height: 38px;
-    width: 21%;
   }
 
   .find__link-aroow {
@@ -546,38 +528,3 @@
     z-index: 2;
   }
 }
-
-// Styles for animation running-line
-@media (max-width: 660px) {
-  .find__title {
-    font-size: 36px;
-    line-height: 38px;
-    width: 25%;
-  }
-}
-
-@media (max-width: 550px) {
-  .find__title {
-    font-size: 36px;
-    line-height: 38px;
-    width: 29%;
-  }
-}
-
-@media (max-width: 450px) {
-  .find__title {
-    font-size: 36px;
-    line-height: 38px;
-    width: 36%;
-  }
-}
-
-@media (max-width: 320px) {
-  .find__title {
-    font-size: 36px;
-    line-height: 38px;
-    width: 51%;
-  }
-}
-
-// Styles for animation running-line

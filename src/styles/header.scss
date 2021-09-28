@@ -2,25 +2,25 @@
 
 .it-header,
 .listing-header {
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 96px;
-}
-
-.listing-header {
-  margin-bottom: 56px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 12;
+  background: $bodyBackgraund;
 }
 
 .it-header__wrapper {
   display: flex;
   justify-content: flex-start;
   position: relative;
+  padding: 16px 0;
 }
 
 .it-header__item {
-  width: 33.33%;
-  font-size: 16px;
-  line-height: 20px;
+  width: 32%;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .it-header__item-mobile {
@@ -56,6 +56,60 @@
 .it-header__directions {
   display: flex;
   align-items: center;
+  position: relative;
+  width: max-content;
+  cursor: pointer;
+}
+
+.it-header__directions-dropdown-wrapper {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 200%;
+  overflow: hidden;
+  z-index: 2;
+
+  pointer-events: none;
+}
+
+.it-header__directions-dropdown-list,
+.it-header__directions-dropdown-list-active {
+  transition: 0.3s;
+  background: $whiteColor;
+  padding: 10px 0;
+}
+
+.it-header__directions-dropdown-list {
+  transform: translateY(-100%);
+}
+
+.it-header__directions-dropdown-list-active {
+  transform: translateY(0);
+}
+
+.it-header__directions-dropdown-item {
+  color: $mainColor;
+  display: block;
+  margin: 5px 0;
+  padding: 0 8px;
+  transition: 0.3s;
+
+  pointer-events: visible;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+
+.it-header__directions-title,
+.it-header__directions-value,
+.it-header__directions-arrow,
+.it-header__arrow-bottom {
+  pointer-events: none;
+}
+
+.it-header__arrow-bottom {
+  margin-bottom: 3px;
 }
 
 .it-header__directions-title {
@@ -85,29 +139,29 @@
   border: 0.5px solid #e31235;
   border-radius: 48px;
   position: absolute;
-  top: 0;
+  top: 16px;
   right: 0;
   font-size: 16px;
   line-height: 20px;
   color: $mainColor;
 }
 
+// Styles for 1440px
 @media (max-width: 1440px) {
-  .it-header {
-    margin-bottom: 72px;
+  .it-header__item {
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
+// Styles for 768px
 @media (max-width: 991px) {
   .it-header__contact-us {
     display: none;
   }
-
-  .it-header {
-    margin-bottom: 64px;
-  }
 }
 
+// Styles for mobile landscape orientation
 @media (max-width: 767px) {
   .it-header__item,
   .it-header__item-mobile {
@@ -130,8 +184,15 @@
   }
 }
 
+// Styles for 320px
 @media (max-width: 479px) {
-  .it-header {
-    margin-bottom: 32px;
+  .it-header,
+  .listing-header {
+    position: static;
+  }
+
+  .it-header__item {
+    font-size: 14px;
+    line-height: 16px;
   }
 }

@@ -1,6 +1,9 @@
 export class VideoPlayer {
   constructor(el) {
     this.el = el;
+
+    if (this.el === null || this.el === undefined) return;
+
     this.video = this.el.querySelector('.find__video');
     this.videoBlock = this.el.querySelector('.find__block-video');
     this.videoContainer = this.el.querySelector('.find__video-container');

@@ -72,6 +72,15 @@
 
 .direction__director-image-block-mobile {
   margin-right: 8px;
+  width: 100%;
+  max-width: 56px;
+  min-height: 56px;
+
+  & > img {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+  }
 }
 
 .direction__direction-item,
@@ -117,6 +126,15 @@
 
 .direction__director-image-block {
   margin-bottom: 8px;
+  width: 100%;
+  max-width: 72px;
+  min-height: 72px;
+
+  & > img {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+  }
 }
 
 .direction__products-wrapper {

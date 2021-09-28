@@ -35,7 +35,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
   plugins: [
-    // new CleanWebpackPlugin(),
+    new CleanWebpackPlugin(),
     new HTMLWebpackPlugin({
       filename: 'index.html',
       template: './index.html',
@@ -47,6 +47,10 @@ module.exports = {
     new HTMLWebpackPlugin({
       filename: 'vacancy-direct-link.html',
       template: './vacancy-direct-link.html',
+    }),
+    new HTMLWebpackPlugin({
+      filename: 'listing-metro.html',
+      template: './listing-metro.html',
     }),
 
     new MiniCssExtractPlugin({

@@ -1,6 +1,9 @@
 export class Advantages {
   constructor(el) {
     this.el = el;
+
+    if (this.el === null || this.el === undefined) return;
+
     this.buttonNext = this.el.querySelector(
       '.why-are-we__slide-main-button-next'
     );

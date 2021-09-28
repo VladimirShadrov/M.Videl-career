@@ -2,6 +2,8 @@ export class Listing {
   constructor(el) {
     this.el = el;
 
+    if (this.el === null || this.el === undefined) return;
+
     this.dropdown = this.el.querySelector('.listing-top__dropdown-list');
     this.vacancyCounter = this.el.querySelector('.listing-top__counter');
     this.dropdownContainer = this.el.querySelector(

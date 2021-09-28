@@ -20,6 +20,8 @@ import { Advantages } from './components/itHubPage/advantages';
 import { CareerUpgrade } from './components/itHubPage/upgrade';
 import { VideoPlayer } from './components/itHubPage/videoPlayer';
 import { Form } from './components/itHubPage/form';
+import { RunningLine } from './components/itHubPage/runningLine';
+import { Header } from './components/itHubPage/header';
 
 // Перенос изображений
 require.context('../images', true, /\.(png|jpg|svg|gif)$/);
@@ -34,24 +36,22 @@ const videoPlayerBlock = document.querySelector('.find');
 const form = document.querySelector('.form');
 const directLink = document.querySelector('.direct-link');
 const goalBlock = document.querySelector('.goal');
+const runningLine = document.querySelector('.find__title');
+const headerIt = document.querySelector('.it-header');
 
-if (itHubPage && itHubPage !== null && itHubPage !== undefined) {
-  new Vacancy(profession);
-  new Advantages(ourAdvantages);
-  new CareerUpgrade(upgradeSection);
-  new VideoPlayer(videoPlayerBlock);
-  new Form(form);
-}
-
-if (listingPage && listingPage !== null && listingPage !== undefined) {
-  new Listing(listingPage);
-}
-
-if (directLink && directLink !== null && directLink !== undefined) {
-  new Form(form);
-}
+new Vacancy(profession);
+new Advantages(ourAdvantages);
+new CareerUpgrade(upgradeSection);
+new VideoPlayer(videoPlayerBlock);
+new Form(form);
+new RunningLine(runningLine);
+const header = new Header(headerIt);
+new Listing(listingPage);
+new Form(form);
 
 document.body.addEventListener('click', (event) => {
+  header.closeSelect();
+
   if (
     event.target.classList.contains('it-header__button') ||
     event.target.classList.contains('intern__header-link')

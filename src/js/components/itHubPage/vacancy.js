@@ -1,6 +1,9 @@
 export class Vacancy {
   constructor(el) {
     this.el = el;
+
+    if (this.el === null || this.el === undefined) return;
+
     this.flyout = document.querySelector('.flyout');
     this.flyoutSideBar = this.flyout.querySelector('.flyout__side-bar');
     this.flyOutContentBar = this.flyout.querySelector('.vacancy');

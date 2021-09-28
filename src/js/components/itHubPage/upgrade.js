@@ -1,6 +1,9 @@
 export class CareerUpgrade {
   constructor(el) {
     this.el = el;
+
+    if (this.el === null || this.el === undefined) return;
+
     this.slidesPrev = Array.from(
       this.el.querySelectorAll('.upgrade__slider-prev-image')
     );

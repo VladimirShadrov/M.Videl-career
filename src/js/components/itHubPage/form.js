@@ -1,6 +1,9 @@
 export class Form {
   constructor(el) {
     this.el = el;
+
+    if (this.el === null || this.el === undefined) return;
+
     this.dropdownItems = this.el.querySelectorAll('form__dropdown-list-item');
     this.sideBar = this.el.querySelector('.form__side-bar');
     this.dropdowns = Array.from(this.el.querySelectorAll('.form__dropdown'));
