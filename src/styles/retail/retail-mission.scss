@@ -1,0 +1,122 @@
+@import '../styles.scss';
+
+.retail__mission {
+  display: flex;
+  font-size: 18px;
+  line-height: 24px;
+  min-height: 320px;
+  margin-bottom: 72px;
+  padding: 0 16px;
+}
+
+.retail__mission-left-block {
+  width: 33.33%;
+}
+
+.retail__mission-right-block {
+  width: 66.66%;
+}
+
+.retail__mission-title {
+  font-size: 164px;
+  line-height: 138px;
+  letter-spacing: -0.03em;
+}
+
+.retail__mission-btn-block {
+  position: relative;
+}
+
+.retail__mission-button {
+  //   position: absolute;
+  //   top: -10px;
+  //   right: 520px;
+  display: block;
+  margin: 0 auto;
+  background: $whiteColor;
+  padding: 8px 40px 8px 16px;
+  box-shadow: 16px 2px 24px rgba(0, 0, 0, 0.03);
+  font-size: 20px;
+  line-height: 20px;
+  border-radius: 36px;
+  transform: rotate(-2deg) translateY(-15px);
+  transition: 0.3s;
+
+  &:hover {
+    transform: rotate(0) translateY(-15px);
+  }
+}
+
+.retail__mission-button-image {
+  position: absolute;
+  right: 17px;
+  top: calc(50% - 4px);
+}
+
+.retail__mission-left-block {
+  position: relative;
+}
+
+.retail__mission-watch-wrapper,
+.retail__mission-phone-wrapper,
+.retail__mission-tree-wrapper,
+.retail__mission-finger-wrapper,
+.retail__mission-microchip-wrapper,
+.retail__mission-planet-wrapper,
+.retail__mission-rocet-wrapper {
+  background: $whiteColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.retail__mission-watch-wrapper {
+  width: 72px;
+  height: 72px;
+  left: 64px;
+  bottom: 8px;
+}
+
+.retail__mission-phone-wrapper {
+  width: 40px;
+  height: 40px;
+  left: 53px;
+  bottom: 108px;
+}
+
+.retail__mission-tree-wrapper {
+  width: 104px;
+  height: 104px;
+  left: 23px;
+  top: 0;
+}
+
+.retail__mission-finger-wrapper {
+  width: 168px;
+  height: 168px;
+  left: 133px;
+  bottom: 91px;
+}
+
+.retail__mission-microchip-wrapper {
+  width: 64px;
+  height: 64px;
+  top: 16px;
+  left: 307px;
+}
+
+.retail__mission-planet-wrapper {
+  width: 88px;
+  height: 88px;
+  left: 317px;
+  bottom: 104px;
+}
+
+.retail__mission-rocet-wrapper {
+  width: 56px;
+  height: 56px;
+  left: 256px;
+  bottom: 22px;
+}
