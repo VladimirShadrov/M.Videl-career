@@ -14,7 +14,7 @@ import '../styles/listing.scss';
 import '../styles/form.scss';
 import '../styles/direct-link.scss';
 import '../styles/retail/listing-metro.scss';
-import '../styles/retail/retail-main.scss';
+import '../styles/retail/retail-preview.scss';
 
 import { Vacancy } from './components/itHubPage/vacancy';
 import { Listing } from './components/vacancyListingPage/listing';

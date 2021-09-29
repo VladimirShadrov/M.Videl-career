@@ -1,0 +1,119 @@
+@import '../styles.scss';
+
+.retail__preview {
+  padding-top: 92px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 18px;
+  line-height: 24px;
+  position: relative;
+  min-height: 724px;
+}
+
+.retail__preview-title {
+  max-width: 514px;
+  font-size: 124px;
+  line-height: 112px;
+  letter-spacing: -0.03em;
+  margin-bottom: 40px;
+}
+
+.retail__preview-text {
+  max-width: 464px;
+}
+
+.retail__preview-btn-block {
+  position: relative;
+  max-width: 464px;
+}
+
+.retail__preview-button {
+  font-size: 20px;
+  line-height: 20px;
+  padding: 7px 40px 7px 16px;
+  background: $whiteColor;
+  box-shadow: 16px 2px 24px rgba(0, 0, 0, 0.03);
+  border-radius: 36px;
+  transform: rotate(-2deg);
+  transition: 0.3s;
+  position: absolute;
+  right: 0;
+
+  &:hover {
+    transform: rotate(0);
+  }
+}
+
+.retail__preview-button-image {
+  position: absolute;
+  right: 19px;
+  top: calc(50% - 4px);
+}
+
+.retail__mvideo-icon-block {
+  position: absolute;
+  right: 360px;
+  bottom: 0;
+  height: 440px;
+  width: 440px;
+}
+
+.retail__mvideo-icon-block-icon-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.retail__mvideo-icon,
+.retail__eldorado-icon {
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  background: $whiteColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.retail__mvideo-icon {
+  left: 145px;
+  top: -52px;
+}
+
+.retail__mvideo-image-block {
+  max-width: 372px;
+  position: absolute;
+  bottom: 8px;
+  left: 15px;
+
+  & > img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.retail__eldorado-icon-block {
+  position: absolute;
+  bottom: 176px;
+  right: 16px;
+  width: 440px;
+  height: 440px;
+}
+
+.retail__eldorado-icon {
+  bottom: -52px;
+  right: 30%;
+  z-index: 1;
+}
+
+.retail__eldorado-image-block {
+  position: absolute;
+  bottom: 32px;
+  right: 1px;
+
+  & > img {
+    display: block;
+    width: 100%;
+  }
+}
