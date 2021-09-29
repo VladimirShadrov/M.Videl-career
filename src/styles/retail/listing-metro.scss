@@ -1,1 +1,312 @@
 @import '../styles.scss';
+
+.listing-metro__content {
+  display: flex;
+  font-size: 18px;
+  line-height: 24px;
+  padding-left: 16px;
+}
+
+.listing-metro__left-bar,
+.listing-metro__right-bar {
+  width: 50%;
+}
+
+.listing-metro__left-bar {
+  padding-right: 16px;
+}
+
+// Стили для блока с описание расположения вакансии
+.listing-metro__location-place,
+.listing-metro__location-adress {
+  display: block;
+  margin-bottom: 24px;
+}
+
+.listing-metro__route-button {
+  font-size: 18px;
+  line-height: 24px;
+  background: transparent;
+  display: block;
+  margin-bottom: 40px;
+}
+
+.listing-metro__location-metro-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 500px;
+  margin-bottom: 80px;
+}
+
+.listing-metro__location-metro-item {
+  padding-left: 12px;
+  position: relative;
+  margin-right: 30px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: calc(50% - 4px);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+}
+
+.listing-metro__location-metro-item.sokol-line {
+  &::before {
+    background: #e42313;
+  }
+}
+
+.listing-metro__location-metro-item.arbat-line {
+  &::before {
+    background: #0072ba;
+  }
+}
+
+.listing-metro__location-metro-item.mcd-line {
+  &::before {
+    width: 10px;
+    height: 10px;
+    border: 2px solid #df477c;
+    top: calc(50% - 6px);
+  }
+}
+
+.listing-metro__location-metro-time {
+  color: #969696;
+}
+
+.listing-metro__profession-title {
+  margin-bottom: 24px;
+}
+
+// Стили для блока с перечнем вакансий
+.listing-metro__profession-container {
+  margin-bottom: 24px;
+}
+
+.listing-metro__profession-item {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #969696;
+  padding-top: 8px;
+  padding-bottom: 24px;
+  cursor: pointer;
+}
+
+.listing-metro__profession-item:nth-child(2) {
+  border-top: 1px solid #969696;
+}
+
+.listing-metro__profession-item-left-bar {
+  width: 70%;
+}
+
+.listing-metro__profession-name {
+  margin-bottom: 6px;
+}
+
+.listing-metro__profession-bread-crumbs {
+  line-height: 12px;
+}
+
+.listing-metro__profession-crumb {
+  font-size: 12px;
+  line-height: 12px;
+  color: $blackColorOpacity-05;
+}
+
+.listing-metro__profession-crumb:last-child {
+  & > .listing-metro__profession-crumb-arrow {
+    display: none;
+  }
+}
+
+.listing-metro__profession-item-right-bar {
+  width: 30%;
+}
+
+.listing-metro__profession-conditions {
+  margin-bottom: 24px;
+}
+
+.listing-metro__profession-container-mobile {
+  display: none;
+}
+
+// Стили для блока с картой
+.listing-metro__map-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding-right: 16px;
+}
+
+.listing-metro__map-place {
+  padding-top: 100%;
+  background: url('../../images/listing/metro.png') center / cover no-repeat;
+}
+
+.listing-metro__map-button-plus,
+.listing-metro__map-button-minus {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  background: $whiteColor;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 16px 2px 24px rgba(0, 0, 0, 0.03);
+}
+
+.listing-metro__map-button-minus {
+  top: 80px;
+}
+
+.listing-metro__select-shop-container {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background: $whiteColor;
+  border-radius: 16px;
+  padding: 16px;
+  max-width: 246px;
+}
+
+.listing-metro__select-shop-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  cursor: pointer;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.listing-metro__shop-input {
+  display: none;
+}
+
+.listing-metro__select-shop-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid $mainColor;
+}
+
+.listing-metro__select-shop-checkbox-image {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.listing-metro__shop-input:checked
+  ~ .listing-metro__select-shop-checkbox
+  > .listing-metro__select-shop-checkbox-image {
+  opacity: 1;
+}
+
+.listing-metro__look-another-store-container {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  background: $whiteColor;
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 16px 2px 24px rgba(0, 0, 0, 0.03);
+  max-width: 409px;
+}
+
+.listing-metro__look-another-store-title {
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 8px;
+}
+
+.listing-metro__look-another-text {
+  margin-bottom: 24px;
+}
+
+.listing-metro__show-another-shop,
+.listing-metro__not-show-another-shop {
+  padding: 8px 16px;
+  font-size: 20px;
+  line-height: 20px;
+  border-radius: 36px;
+}
+
+.listing-metro__show-another-shop {
+  background: #f3f3f3;
+  margin-right: 8px;
+}
+
+.listing-metro__not-show-another-shop {
+  background: transparent;
+  border: 1px solid #969696;
+}
+
+.listing-metro__shops-nearby-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 260px;
+  box-shadow: 4px 4px 24px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  background: $whiteColor;
+}
+
+.listing-metro__nearest-store-container {
+  background: #f3f3f3;
+  display: flex;
+  border-radius: 16px 16px 0px 0px;
+  padding: 16px;
+}
+
+.listing-metro__nearest-store-item {
+  margin-right: 8px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:first-child {
+    padding-top: 5px;
+  }
+}
+
+.listing-metro__another-store-item {
+  padding: 8px 16px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.listing-metro__another-store-item-image {
+  margin-right: 8px;
+}
+
+// Блок подписка на вакансии
+.listing-metro__subscribe-block {
+  margin-bottom: 96px;
+  width: 67%;
+}
+
+.listing-metro__subscribe-title {
+  font-size: 40px;
+  line-height: 44px;
+  margin-bottom: 16px;
+}
+
+.listing-metro__subscribe-text {
+  margin-bottom: 32px;
+}
