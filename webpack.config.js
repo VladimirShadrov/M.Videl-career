@@ -52,6 +52,10 @@ module.exports = {
       filename: 'listing-metro.html',
       template: './listing-metro.html',
     }),
+    new HTMLWebpackPlugin({
+      filename: 'retail-main.html',
+      template: './retail-main.html',
+    }),
 
     new MiniCssExtractPlugin({
       filename: 'styles/styles.css',
