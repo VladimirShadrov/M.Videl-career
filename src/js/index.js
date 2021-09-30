@@ -20,6 +20,7 @@ import '../styles/retail/retail-why-us.scss';
 import '../styles/retail/retail-brands.scss';
 import '../styles/retail/retail-position.scss';
 import '../styles/retail/retail-quote.scss';
+import '../styles/retail/retail-internship.scss';
 
 import { Vacancy } from './components/itHubPage/vacancy';
 import { Listing } from './components/vacancyListingPage/listing';

@@ -1,0 +1,131 @@
+@import '../styles.scss';
+
+.retail__internship {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 144px;
+  padding: 0 16px;
+  display: flex;
+}
+
+.retail__internship-content-block {
+  width: 66.66%;
+}
+
+.retail__internship-title {
+  font-size: 124px;
+  line-height: 112px;
+  letter-spacing: -0.03em;
+  max-width: 944px;
+}
+
+.retail__internship-button-container {
+  display: flex;
+  max-width: 944px;
+  margin-bottom: 6px;
+}
+
+.retail__internship-button {
+  display: inline-block;
+  padding: 8px 40px 8px 16px;
+  background: $whiteColor;
+  box-shadow: 16px 2px 24px rgba(0, 0, 0, 0.03);
+  border-radius: 36px;
+  transform: rotate(-2deg) translateX(40px);
+  margin-left: auto;
+  color: $mainColor;
+  transition: 0.3s;
+  position: relative;
+
+  &:hover {
+    transform: rotate(0) translateX(40px);
+  }
+}
+
+.retail__internship-button-arrow {
+  position: absolute;
+  right: 17px;
+  top: calc(50% - 4px);
+}
+
+.retail__internship-text-wrapper {
+  display: flex;
+  max-width: 944px;
+}
+
+.retail__internship-text {
+  margin-left: auto;
+  max-width: 480px;
+}
+
+.retail__internship-image-block {
+  width: 33.33%;
+  position: relative;
+}
+
+.retail__internship-image-block-outside {
+  width: 344px;
+  height: 344px;
+  position: absolute;
+  bottom: 0;
+  right: 32px;
+}
+
+.retail__internship-image-block-outside-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.retail__internship-image-block-outside-icon-block,
+.retail__internship-image-block-inside-icon-block {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $whiteColor;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.retail__internship-image-block-outside-icon-block {
+  top: 144px;
+  left: -28px;
+}
+
+.retail__internship-image-block-inside-icon-block {
+  top: 32px;
+  right: -14px;
+}
+
+.retail__internship-image-block-inside {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 232px;
+  height: 232px;
+}
+
+.retail__internship-shop-icon-eldorado,
+.retail__internship-shop-icon-mvideo,
+.retail__internship-icon-active {
+  width: 72px;
+  height: 72px;
+  background: $whiteColor;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: 0.3s;
+}
+
+.retail__internship-icon-active {
+  z-index: 1;
+}
