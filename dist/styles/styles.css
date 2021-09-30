@@ -9202,5 +9202,141 @@ body {
 .retail__internship-icon-active {
   z-index: 1; }
 
+/*!********************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/postcss-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles/retail/retail-advantages.scss ***!
+  \********************************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: suisse;
+  src: url("../fonts/SuisseIntl-Regular.woff") format("woff"), url("../fonts/SuisseIntl-Regular.woff2") format("woff2"); }
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+:focus,
+:active {
+  outline: none; }
+
+a:focus,
+a:active {
+  outline: none; }
+
+nav,
+footer,
+header,
+aside {
+  display: block; }
+
+html,
+body {
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px; }
+
+input,
+button,
+textarea {
+  font-family: inherit; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a,
+a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400; }
+
+body {
+  font-family: suisse;
+  background: #f3f3f3;
+  color: #000000;
+  font-size: 16px;
+  line-height: 20px;
+  position: relative; }
+
+.container {
+  padding: 0 16px; }
+
+.page-container {
+  padding: 0 16px; }
+
+.hide {
+  display: none; }
+
+.cursor-pointer {
+  cursor: pointer; }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 8px; } }
+
+.retail__advantages {
+  display: flex;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 144px;
+  padding: 0 16px; }
+
+.retail__advantages-side-bar {
+  width: 33.33%; }
+
+.retail__advantages-side-bar-text {
+  max-width: 224px; }
+
+.retail__advantages-content-bar {
+  width: 66.66%; }
+
+.retail__advantages-content-item {
+  padding-bottom: 40px;
+  margin-bottom: 44px;
+  border-bottom: 1px solid #969696;
+  display: flex;
+  justify-content: flex-start; }
+
+.retail__advantages-number {
+  font-size: 132px;
+  line-height: 120px;
+  letter-spacing: -0.03em;
+  font-feature-settings: 'tnum' on, 'lnum' on, 'zero' on;
+  margin-right: 65px;
+  color: #76bc21; }
+
+.retail__advantages-description-title {
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 16px; }
+
+.retail__advantages-description-text {
+  max-width: 480px; }
+
 
 /*# sourceMappingURL=styles.css.map*/
