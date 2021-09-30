@@ -17,6 +17,7 @@ import '../styles/retail/listing-metro.scss';
 import '../styles/retail/retail-preview.scss';
 import '../styles/retail/retail-mission.scss';
 import '../styles/retail/retail-why-us.scss';
+import '../styles/retail/retail-brands.scss';
 
 import { Vacancy } from './components/itHubPage/vacancy';
 import { Listing } from './components/vacancyListingPage/listing';
