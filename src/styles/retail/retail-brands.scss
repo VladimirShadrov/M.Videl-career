@@ -80,6 +80,10 @@
 
 .brands__content-statistic-item {
   margin-bottom: 24px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .brands__content-statistic-item-title {

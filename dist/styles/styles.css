@@ -8636,6 +8636,8 @@ body {
 
 .brands__content-statistic-item {
   margin-bottom: 24px; }
+  .brands__content-statistic-item:last-child {
+    margin-bottom: 0; }
 
 .brands__content-statistic-item-title {
   margin-bottom: 8px;
@@ -8682,6 +8684,195 @@ body {
 
 .brands__content-slider-button-prev {
   margin-right: 16px; }
+
+/*!******************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/postcss-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles/retail/retail-position.scss ***!
+  \******************************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: suisse;
+  src: url("../fonts/SuisseIntl-Regular.woff") format("woff"), url("../fonts/SuisseIntl-Regular.woff2") format("woff2"); }
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+:focus,
+:active {
+  outline: none; }
+
+a:focus,
+a:active {
+  outline: none; }
+
+nav,
+footer,
+header,
+aside {
+  display: block; }
+
+html,
+body {
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px; }
+
+input,
+button,
+textarea {
+  font-family: inherit; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a,
+a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400; }
+
+body {
+  font-family: suisse;
+  background: #f3f3f3;
+  color: #000000;
+  font-size: 16px;
+  line-height: 20px;
+  position: relative; }
+
+.container {
+  padding: 0 16px; }
+
+.page-container {
+  padding: 0 16px; }
+
+.hide {
+  display: none; }
+
+.cursor-pointer {
+  cursor: pointer; }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 8px; } }
+
+.retail__position {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 72px;
+  padding: 0 16px; }
+
+.retail__position-title-wrapper {
+  margin-bottom: 72px; }
+
+.retail__position-title,
+.retail__position-title-brand {
+  font-size: 124px;
+  line-height: 112px;
+  letter-spacing: -0.03em;
+  color: #000000; }
+
+.retail__position-title-brand {
+  color: #76bc21; }
+
+.retail__position-content {
+  display: flex; }
+
+.retail__position-side-bar {
+  width: 33.33%; }
+
+.retail__position-side-bar-title {
+  max-width: 300px;
+  margin-bottom: 24px; }
+
+.retail__position-side-bar-item {
+  margin-bottom: 16px; }
+  .retail__position-side-bar-item:last-child {
+    margin-bottom: 0; }
+
+.retail__position-side-bar-item-title {
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 8px;
+  color: #76bc21; }
+
+.retail__position-side-bar-text {
+  max-width: 244px; }
+
+.retail__position-content-bar {
+  width: 66.66%; }
+
+.retail__position-headline {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px; }
+
+.retail__position-headline-link {
+  color: #000000;
+  display: block;
+  padding-right: 23px;
+  position: relative; }
+
+.retail__position-headline-link-arrow {
+  position: absolute;
+  right: 0;
+  top: calc(50% - 4px); }
+
+.retail__position-list-item {
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  padding-top: 16px;
+  padding-bottom: 32px;
+  display: flex; }
+
+.retail__position-item-position,
+.retail__position-item-description {
+  width: 50%; }
+
+.retail__position-item-position-title {
+  font-size: 32px;
+  line-height: 40px;
+  max-width: 415px; }
+
+.retail__position-description-text {
+  max-width: 464px;
+  margin-bottom: 24px; }
+
+.retail__position-description-link {
+  display: inline-block;
+  color: #000000;
+  position: relative;
+  padding-right: 23px; }
+
+.retail__position-headline-link-arrow {
+  position: absolute;
+  right: 0;
+  top: calc(50% - 4px); }
 
 
 /*# sourceMappingURL=styles.css.map*/
