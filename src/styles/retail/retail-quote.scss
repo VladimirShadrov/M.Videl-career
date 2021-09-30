@@ -1,0 +1,27 @@
+@import '../styles.scss';
+
+.retail__quote {
+  position: relative;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 72px;
+}
+
+.retail__video-placeholder {
+  display: block;
+  width: 100%;
+}
+
+.retail__quote-wrapper {
+  width: 66.66%;
+  position: absolute;
+  top: 72px;
+  right: 16px;
+  color: $whiteColor;
+}
+
+.retail__quote-text {
+  margin-bottom: 24px;
+  font-size: 56px;
+  line-height: 60px;
+}
