@@ -1,0 +1,47 @@
+@import '../styles.scss';
+
+.retail__footer-title-container {
+  display: inline-block;
+  position: relative;
+}
+
+.retail__footer-title {
+  font-size: 124px;
+  line-height: 112px;
+  letter-spacing: -0.03em;
+  display: inline-block;
+}
+
+.retail__footer-link {
+  position: absolute;
+  bottom: -20px;
+  right: -150px;
+  display: inline-block;
+  padding: 8px 40px 8px 16px;
+  background: $whiteColor;
+  color: $mainColor;
+  font-size: 20px;
+  line-height: 20px;
+  box-shadow: 16px 2px 24px rgba(0, 0, 0, 0.03);
+  border-radius: 36px;
+  transform: rotate(-2deg);
+  transition: 0.3s;
+
+  &:hover {
+    transform: rotate(0);
+  }
+}
+
+.retail__footer-link-arrow {
+  position: absolute;
+  right: 17px;
+  top: calc(50% - 4px);
+}
+
+.retail__footer-title-shop {
+  font-size: 124px;
+  line-height: 112px;
+  letter-spacing: -0.03em;
+  color: #76bc21;
+  margin-bottom: 252px;
+}
