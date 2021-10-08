@@ -1,37 +1,37 @@
 @import '../styles.scss';
 
 .retail__preview {
-  padding-top: 92px;
+  padding-top: 108px;
   padding-left: 16px;
   padding-right: 16px;
-  margin-bottom: 72px;
+  margin-bottom: 128px;
   font-size: 18px;
   line-height: 24px;
   position: relative;
-  min-height: 724px;
+  min-height: 772px;
 }
 
 .retail__preview-title {
-  max-width: 514px;
-  font-size: 124px;
-  line-height: 112px;
+  max-width: 930px;
+  font-size: 160px;
+  line-height: 144px;
   letter-spacing: -0.03em;
-  margin-bottom: 40px;
+  margin-bottom: 56px;
 }
 
 .retail__preview-text {
-  max-width: 464px;
+  max-width: 350px;
 }
 
 .retail__preview-btn-block {
   position: relative;
-  max-width: 464px;
+  max-width: 350px;
 }
 
 .retail__preview-button {
-  font-size: 20px;
-  line-height: 20px;
-  padding: 7px 40px 7px 16px;
+  font-size: 24px;
+  line-height: 24px;
+  padding: 8px 40px 8px 16px;
   background: $whiteColor;
   box-shadow: 16px 2px 24px rgba(0, 0, 0, 0.03);
   border-radius: 36px;
