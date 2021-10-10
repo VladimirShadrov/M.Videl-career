@@ -126,6 +126,7 @@
     margin-bottom: 96px;
     font-size: 16px;
     line-height: 20px;
+    min-height: 748px;
   }
 
   .retail__preview-title {
@@ -141,5 +142,75 @@
   .retail__preview-button {
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+// Styles for 1024px
+@media (max-width: 1330px) {
+  .retail__preview {
+    min-height: 648px;
+  }
+
+  .retail__preview-title {
+    font-size: 88px;
+    line-height: 80px;
+    margin-bottom: 32px;
+    max-width: 496px;
+  }
+
+  .retail__preview-btn-block {
+    max-width: 322px;
+  }
+
+  .retail__preview-button {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .retail__mvideo-icon-block,
+  .retail__eldorado-icon-block,
+  .retail__mvideo-icon-block-icon-image,
+  .retail__eldorado-icon-block-icon-image {
+    width: 364px;
+    height: 364px;
+  }
+
+  .retail__mvideo-icon-block {
+    right: 315px;
+    bottom: 25px;
+  }
+
+  .retail__mvideo-image-block,
+  .retail__eldorado-image-block {
+    max-width: 320px;
+  }
+
+  .retail__mvideo-image-block {
+    bottom: 3px;
+    left: 13px;
+  }
+
+  .retail__eldorado-image-block {
+    bottom: 15px;
+    right: 3px;
+  }
+
+  .retail__mvideo-icon,
+  .retail__eldorado-icon {
+    width: 72px;
+    height: 72px;
+
+    & > svg {
+      transform: scale(0.72);
+    }
+  }
+
+  .retail__mvideo-icon {
+    left: 182px;
+    top: -48px;
+  }
+
+  .retail__eldorado-icon {
+    bottom: -30px;
   }
 }

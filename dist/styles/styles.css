@@ -8179,7 +8179,8 @@ body {
     padding-top: 92px;
     margin-bottom: 96px;
     font-size: 16px;
-    line-height: 20px; }
+    line-height: 20px;
+    min-height: 748px; }
   .retail__preview-title {
     font-size: 124px;
     line-height: 112px;
@@ -8189,6 +8190,50 @@ body {
   .retail__preview-button {
     font-size: 20px;
     line-height: 20px; } }
+
+@media (max-width: 1330px) {
+  .retail__preview {
+    min-height: 648px; }
+  .retail__preview-title {
+    font-size: 88px;
+    line-height: 80px;
+    margin-bottom: 32px;
+    max-width: 496px; }
+  .retail__preview-btn-block {
+    max-width: 322px; }
+  .retail__preview-button {
+    font-size: 18px;
+    line-height: 18px; }
+  .retail__mvideo-icon-block,
+  .retail__eldorado-icon-block,
+  .retail__mvideo-icon-block-icon-image,
+  .retail__eldorado-icon-block-icon-image {
+    width: 364px;
+    height: 364px; }
+  .retail__mvideo-icon-block {
+    right: 315px;
+    bottom: 25px; }
+  .retail__mvideo-image-block,
+  .retail__eldorado-image-block {
+    max-width: 320px; }
+  .retail__mvideo-image-block {
+    bottom: 3px;
+    left: 13px; }
+  .retail__eldorado-image-block {
+    bottom: 15px;
+    right: 3px; }
+  .retail__mvideo-icon,
+  .retail__eldorado-icon {
+    width: 72px;
+    height: 72px; }
+    .retail__mvideo-icon > svg,
+    .retail__eldorado-icon > svg {
+      transform: scale(0.72); }
+  .retail__mvideo-icon {
+    left: 182px;
+    top: -48px; }
+  .retail__eldorado-icon {
+    bottom: -30px; } }
 
 /*!*****************************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/postcss-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles/retail/retail-mission.scss ***!
@@ -8486,7 +8531,8 @@ body {
 
 .retail__why-us {
   margin-bottom: 100px;
-  padding-left: 16px; }
+  padding-left: 16px;
+  overflow: hidden; }
 
 /*!****************************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/postcss-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles/retail/retail-brands.scss ***!
