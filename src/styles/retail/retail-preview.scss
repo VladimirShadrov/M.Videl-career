@@ -118,3 +118,28 @@
     width: 100%;
   }
 }
+
+// Styles for 1440px
+@media (max-width: 1550px) {
+  .retail__preview {
+    padding-top: 92px;
+    margin-bottom: 96px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .retail__preview-title {
+    font-size: 124px;
+    line-height: 112px;
+    margin-bottom: 40px;
+  }
+
+  .retail__preview-text {
+    max-width: 322px;
+  }
+
+  .retail__preview-button {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
