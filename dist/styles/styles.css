@@ -8083,7 +8083,8 @@ body {
   font-size: 18px;
   line-height: 24px;
   position: relative;
-  min-height: 772px; }
+  min-height: 772px;
+  overflow: hidden; }
 
 .retail__preview-title {
   max-width: 930px;
@@ -8191,9 +8192,10 @@ body {
     font-size: 20px;
     line-height: 20px; } }
 
-@media (max-width: 1330px) {
+@media (max-width: 1250px) {
   .retail__preview {
-    min-height: 648px; }
+    min-height: 648px;
+    margin-bottom: 64px; }
   .retail__preview-title {
     font-size: 88px;
     line-height: 80px;
@@ -8234,6 +8236,111 @@ body {
     top: -48px; }
   .retail__eldorado-icon {
     bottom: -30px; } }
+
+@media (max-width: 1000px) {
+  .retail__preview {
+    min-height: 540px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 68px; }
+  .retail__mvideo-icon-block,
+  .retail__eldorado-icon-block,
+  .retail__mvideo-icon-block-icon-image,
+  .retail__eldorado-icon-block-icon-image {
+    width: 240px;
+    height: 240px; }
+  .retail__mvideo-image-block,
+  .retail__eldorado-image-block {
+    width: 200px;
+    height: 200px; }
+  .retail__mvideo-image-block {
+    bottom: 4px;
+    left: 11px; }
+  .retail__eldorado-image-block {
+    bottom: 13px;
+    right: 3px; }
+  .retail__mvideo-icon,
+  .retail__eldorado-icon {
+    width: 40px;
+    height: 40px; }
+    .retail__mvideo-icon > svg,
+    .retail__eldorado-icon > svg {
+      transform: scale(0.52); }
+  .retail__mvideo-icon {
+    left: 83px;
+    top: -20px; }
+  .retail__eldorado-icon {
+    bottom: -14px;
+    right: 73px; }
+  .retail__mvideo-icon-block {
+    right: 176px; } }
+
+@media (max-width: 750px) {
+  .retail__preview {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    line-height: 16px;
+    min-height: 511px;
+    margin-bottom: 32px; }
+  .retail__mvideo-icon-block,
+  .retail__eldorado-icon-block,
+  .retail__mvideo-icon-block-icon-image,
+  .retail__eldorado-icon-block-icon-image {
+    width: 148px;
+    height: 148px; }
+  .retail__mvideo-image-block,
+  .retail__eldorado-image-block {
+    width: 120px;
+    height: 120px; }
+  .retail__mvideo-image-block {
+    left: 5px;
+    bottom: 6px; }
+  .retail__eldorado-image-block {
+    right: 2px;
+    bottom: 10px; }
+  .retail__mvideo-icon-block,
+  .retail__eldorado-icon-block {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto; }
+  .retail__mvideo-icon-block {
+    order: -1;
+    transform: translate(-30%, -30%); }
+  .retail__eldorado-icon-block {
+    order: -2;
+    transform: translateX(30%); }
+  .retail__mvideo-icon,
+  .retail__eldorado-icon {
+    width: 32px;
+    height: 32px; }
+  .retail__mvideo-icon {
+    left: 56px;
+    top: -16px; }
+  .retail__eldorado-icon {
+    bottom: 6px;
+    right: 13px; }
+    .retail__eldorado-icon > svg {
+      transform: scale(0.4); }
+  .retail__preview-title,
+  .retail__preview-text,
+  .retail__preview-btn-block {
+    max-width: 100%; }
+  .retail__preview-title {
+    font-size: 36px;
+    line-height: 38px;
+    margin-bottom: 16px;
+    margin-top: -30px; }
+  .retail__preview-text {
+    margin-bottom: 2px; }
+  .retail__preview-button {
+    left: 0;
+    right: auto; } }
+
+@media (max-width: 479px) {
+  .retail__preview {
+    padding-top: 24px; } }
 
 /*!*****************************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/postcss-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles/retail/retail-mission.scss ***!
@@ -8338,7 +8445,8 @@ body {
   line-height: 24px;
   min-height: 320px;
   margin-bottom: 72px;
-  padding: 0 16px; }
+  padding: 0 16px;
+  overflow: hidden; }
 
 .retail__mission-left-block {
   width: 33.33%; }
@@ -8635,7 +8743,8 @@ body {
   font-size: 18px;
   line-height: 24px;
   padding: 0 16px;
-  margin-bottom: 144px; }
+  margin-bottom: 144px;
+  overflow: hidden; }
 
 .brands__head {
   min-height: 480px;
@@ -8849,7 +8958,8 @@ body {
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 72px;
-  padding: 0 16px; }
+  padding: 0 16px;
+  overflow: hidden; }
 
 .retail__position-title-wrapper {
   margin-bottom: 72px; }
@@ -9038,7 +9148,8 @@ body {
   position: relative;
   font-size: 18px;
   line-height: 24px;
-  margin-bottom: 72px; }
+  margin-bottom: 72px;
+  overflow: hidden; }
 
 .retail__video-placeholder {
   display: block;
@@ -9158,7 +9269,8 @@ body {
   line-height: 24px;
   margin-bottom: 144px;
   padding: 0 16px;
-  display: flex; }
+  display: flex;
+  overflow: hidden; }
 
 .retail__internship-content-block {
   width: 66.66%; }
@@ -9366,7 +9478,8 @@ body {
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 144px;
-  padding: 0 16px; }
+  padding: 0 16px;
+  overflow: hidden; }
 
 .retail__advantages-side-bar {
   width: 33.33%; }
@@ -9499,7 +9612,8 @@ body {
 
 .retail__upgrade {
   padding: 0 16px;
-  margin-bottom: 72px; }
+  margin-bottom: 72px;
+  overflow: hidden; }
 
 /*!****************************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/postcss-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles/retail/retail-footer.scss ***!
