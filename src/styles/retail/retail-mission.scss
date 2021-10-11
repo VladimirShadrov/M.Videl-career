@@ -4,41 +4,53 @@
   display: flex;
   font-size: 18px;
   line-height: 24px;
-  min-height: 320px;
-  margin-bottom: 72px;
+  min-height: 591px;
+  margin-bottom: 174px;
   padding: 0 16px;
   overflow: hidden;
+  position: relative;
 }
 
 .retail__mission-left-block {
-  width: 33.33%;
+  width: 448px;
+  height: 419px;
+  position: absolute;
+  top: 0;
+  right: 16px;
 }
 
 .retail__mission-right-block {
-  width: 66.66%;
+  width: 100%;
 }
 
 .retail__mission-title {
-  font-size: 164px;
-  line-height: 138px;
+  font-size: 160px;
+  line-height: 144px;
   letter-spacing: -0.03em;
+  width: 88%;
+  position: relative;
+  z-index: 1;
 }
 
 .retail__mission-btn-block {
   position: relative;
+  width: 88%;
+  display: flex;
 }
 
 .retail__mission-button {
   display: block;
-  margin: 0 auto;
+  margin-left: auto;
   background: $whiteColor;
   padding: 8px 40px 8px 16px;
   box-shadow: 16px 2px 24px rgba(0, 0, 0, 0.03);
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 24px;
+  line-height: 24px;
   border-radius: 36px;
   transform: rotate(-2deg) translateY(-15px);
   transition: 0.3s;
+  position: relative;
+  z-index: 1;
 
   &:hover {
     transform: rotate(0) translateY(-15px);
@@ -49,10 +61,6 @@
   position: absolute;
   right: 17px;
   top: calc(50% - 4px);
-}
-
-.retail__mission-left-block {
-  position: relative;
 }
 
 .retail__mission-watch-wrapper,
@@ -71,50 +79,374 @@
 }
 
 .retail__mission-watch-wrapper {
-  width: 72px;
-  height: 72px;
-  left: 64px;
-  bottom: 8px;
+  width: 80px;
+  height: 80px;
+  top: 339px;
+  right: 317px;
 }
 
 .retail__mission-phone-wrapper {
-  width: 40px;
-  height: 40px;
-  left: 53px;
-  bottom: 108px;
+  width: 56px;
+  height: 56px;
+  right: 352px;
+  top: 243px;
 }
 
 .retail__mission-tree-wrapper {
-  width: 104px;
-  height: 104px;
-  left: 23px;
-  top: 0;
+  width: 120px;
+  height: 120px;
+  right: 344px;
+  top: 46px;
 }
 
 .retail__mission-finger-wrapper {
-  width: 168px;
-  height: 168px;
-  left: 133px;
-  bottom: 91px;
+  width: 184px;
+  height: 184px;
+  top: 139px;
+  right: 144px;
 }
 
 .retail__mission-microchip-wrapper {
-  width: 64px;
-  height: 64px;
-  top: 16px;
-  left: 307px;
+  width: 72px;
+  height: 72px;
+  top: 75px;
+  right: 82px;
 }
 
 .retail__mission-planet-wrapper {
-  width: 88px;
-  height: 88px;
-  left: 317px;
-  bottom: 104px;
+  width: 104px;
+  height: 104px;
+  top: 203px;
+  right: 16px;
 }
 
 .retail__mission-rocet-wrapper {
   width: 56px;
   height: 56px;
-  left: 256px;
-  bottom: 22px;
+  right: 149px;
+  top: 347px;
+}
+
+// Styles for 1440px
+@media (max-width: 1600px) {
+  .retail__mission {
+    margin-bottom: 143px;
+    min-height: 473px;
+  }
+
+  .retail__mission-title {
+    font-size: 124px;
+    line-height: 112px;
+  }
+
+  .retail__mission-btn-block {
+    width: 94%;
+  }
+
+  .retail__mission-button {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .retail__mission-left-block {
+    width: 398px;
+    height: 335px;
+  }
+
+  .retail__mission-tree-wrapper {
+    width: 104px;
+    height: 104px;
+    top: 23px;
+    right: 294px;
+  }
+
+  .retail__mission-phone-wrapper {
+    width: 40px;
+    height: 40px;
+    top: 195px;
+    right: 328px;
+  }
+
+  .retail__mission-watch-wrapper {
+    width: 72px;
+    height: 72px;
+    top: 263px;
+    right: 285px;
+  }
+
+  .retail__mission-finger-wrapper {
+    width: 168px;
+    height: 168px;
+    top: 84px;
+    right: 120px;
+  }
+
+  .retail__mission-microchip-wrapper {
+    width: 64px;
+    height: 64px;
+    top: 39px;
+    right: 50px;
+  }
+
+  .retail__mission-planet-wrapper {
+    width: 88px;
+    height: 88px;
+    top: 151px;
+    right: 16px;
+  }
+
+  .retail__mission-rocet-wrapper {
+    top: 265px;
+    right: 109px;
+  }
+}
+
+// Styles for 1024px
+@media (max-width: 1300px) {
+  .retail__mission {
+    min-height: 400px;
+    margin-bottom: 128px;
+  }
+
+  .retail__mission-title {
+    font-size: 88px;
+    line-height: 80px;
+    width: 89%;
+  }
+
+  .retail__mission-button {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .retail__mission-left-block {
+    width: 320px;
+    height: 261px;
+  }
+
+  .retail__mission-tree-wrapper {
+    width: 80px;
+    height: 80px;
+    top: 23px;
+    right: 240px;
+
+    & > svg {
+      transform: scale(0.85);
+    }
+  }
+
+  .retail__mission-phone-wrapper {
+    width: 32px;
+    height: 32px;
+    top: 159px;
+    right: 234px;
+
+    & > svg {
+      transform: scale(0.85);
+    }
+  }
+
+  .retail__mission-watch-wrapper {
+    width: 56px;
+    height: 56px;
+    top: 205px;
+    right: 53px;
+
+    & > svg {
+      transform: scale(0.85);
+    }
+  }
+
+  .retail__mission-rocet-wrapper {
+    width: 48px;
+    height: 48px;
+    top: 213px;
+    right: 231px;
+
+    & > svg {
+      transform: scale(0.85);
+    }
+  }
+
+  .retail__mission-finger-wrapper {
+    width: 128px;
+    height: 128px;
+    top: 76px;
+    right: 104px;
+
+    & > svg {
+      transform: scale(0.85);
+    }
+  }
+
+  .retail__mission-microchip-wrapper {
+    top: 31px;
+    right: 37px;
+  }
+
+  .retail__mission-planet-wrapper {
+    width: 72px;
+    height: 72px;
+    top: 123px;
+    right: 8px;
+
+    & > svg {
+      transform: scale(0.85);
+    }
+  }
+}
+
+// Styles for 768px
+@media (max-width: 950px) {
+  .retail__mission {
+    padding: 0 8px;
+    flex-direction: column;
+    margin-bottom: 129px;
+  }
+
+  .retail__mission-left-block {
+    position: relative;
+    width: 100%;
+    height: 190px;
+    right: 4px;
+  }
+
+  .retail__mission-title {
+    width: 100%;
+    z-index: 0;
+  }
+
+  .retail__mission-tree-wrapper {
+    right: auto;
+    top: 4px;
+    left: 64px;
+  }
+
+  .retail__mission-phone-wrapper {
+    right: auto;
+    left: 206px;
+    top: 26px;
+  }
+
+  .retail__mission-rocet-wrapper {
+    right: auto;
+    top: 117px;
+    left: 179px;
+  }
+
+  .retail__mission-finger-wrapper {
+    right: 310px;
+    left: 310px;
+    top: 38px;
+  }
+
+  .retail__mission-microchip-wrapper {
+    top: 0;
+    right: 144px;
+  }
+
+  .retail__mission-planet-wrapper {
+    top: 101px;
+    right: 182px;
+  }
+
+  .retail__mission-watch-wrapper {
+    top: 134px;
+    right: 61px;
+  }
+}
+
+// Styles for 320px for icons
+@media (max-width: 650px) {
+  .retail__mission {
+    min-height: 408px;
+    margin-bottom: 64px;
+  }
+
+  .retail__mission-left-block {
+    width: 310px;
+    height: 165px;
+    margin: 0 auto;
+  }
+
+  .retail__mission-tree-wrapper {
+    width: 64px;
+    height: 64px;
+    left: 0;
+    top: 4px;
+
+    & > svg {
+      transform: scale(0.6);
+    }
+  }
+
+  .retail__mission-phone-wrapper {
+    top: 17px;
+    left: 78px;
+  }
+
+  .retail__mission-rocet-wrapper {
+    top: 109px;
+    left: 42px;
+  }
+
+  .retail__mission-finger-wrapper {
+    right: auto;
+    top: 38px;
+    left: 112px;
+    width: 80px;
+    height: 80px;
+
+    & > svg {
+      transform: scale(0.7);
+    }
+  }
+
+  .retail__mission-microchip-wrapper {
+    width: 32px;
+    height: 32px;
+    top: 0px;
+    right: 69px;
+
+    & > svg {
+      transform: scale(0.6);
+    }
+  }
+
+  .retail__mission-watch-wrapper {
+    width: 40px;
+    height: 40px;
+    top: 45px;
+    right: 0;
+
+    & > svg {
+      transform: scale(0.55);
+    }
+  }
+
+  .retail__mission-planet-wrapper {
+    width: 64px;
+    height: 64px;
+    top: 101px;
+    right: 47px;
+
+    & > svg {
+      transform: scale(0.7);
+    }
+  }
+
+  .retail__mission-right-block {
+    margin-top: 16px;
+  }
+
+  .retail__mission-title {
+    font-size: 36px;
+    line-height: 38px;
+    margin-bottom: 20px;
+  }
+
+  .retail__mission-button {
+    margin-right: auto;
+    margin-left: 0;
+  }
 }
