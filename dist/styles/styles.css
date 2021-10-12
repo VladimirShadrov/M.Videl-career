@@ -9600,7 +9600,7 @@ body {
   position: relative;
   font-size: 18px;
   line-height: 24px;
-  margin-bottom: 72px;
+  margin-bottom: 96px;
   overflow: hidden; }
 
 .retail__video-placeholder {
@@ -9608,16 +9608,66 @@ body {
   width: 100%; }
 
 .retail__quote-wrapper {
-  width: 66.66%;
+  width: 60%;
   position: absolute;
   top: 72px;
-  right: 16px;
+  right: 120px;
   color: #ffffff; }
 
 .retail__quote-text {
   margin-bottom: 24px;
-  font-size: 56px;
-  line-height: 60px; }
+  font-size: 64px;
+  line-height: 68px; }
+
+@media (max-width: 1580px) {
+  .retail__quote {
+    margin-bottom: 72px;
+    font-size: 16px;
+    line-height: 20px; }
+  .retail__quote-wrapper {
+    width: 66.66%;
+    right: 16px; }
+  .retail__quote-text {
+    font-size: 56px;
+    line-height: 60px; } }
+
+@media (max-width: 1300px) {
+  .retail__quote {
+    margin-bottom: 64px; }
+  .retail__quote-wrapper {
+    top: 64px;
+    width: 60%;
+    right: 70px; }
+  .retail__quote-text {
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 24px; } }
+
+@media (max-width: 860px) {
+  .retail__quote {
+    margin-bottom: 64px;
+    min-height: 480px; }
+  .retail__quote-wrapper {
+    top: 32px;
+    width: 80%;
+    right: 16px; } }
+
+@media (max-width: 740px) {
+  .retail__quote {
+    margin-bottom: 32px;
+    min-height: 480px;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex; }
+  .retail__quote-wrapper {
+    top: 32px;
+    width: 95%;
+    right: 8px;
+    left: 8px; }
+  .retail__quote-text {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 16px; } }
 
 /*!********************************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/postcss-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles/retail/retail-internship.scss ***!
