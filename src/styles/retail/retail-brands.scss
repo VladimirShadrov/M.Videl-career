@@ -4,14 +4,25 @@
   font-size: 18px;
   line-height: 24px;
   padding: 0 16px;
+  position: relative;
   margin-bottom: 144px;
   overflow: hidden;
 }
 
 .brands__head {
-  min-height: 480px;
+  margin-bottom: 96px;
   position: relative;
-  margin-bottom: 72px;
+  display: flex;
+}
+
+.brands__head-title {
+  width: 80%;
+}
+.brands__head-image-container {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .brands__navigation-container {
@@ -42,21 +53,19 @@
 
 .brands__headline-title,
 .brands__headline-title-brand {
-  font-size: 124px;
-  line-height: 112px;
+  font-size: 160px;
+  line-height: 144px;
   letter-spacing: -0.03em;
   color: $mainColor;
-  max-width: 944px;
 }
 
 .brands__headline-title-brand {
   color: #76bc21;
 }
 
-.brands__headline-image {
-  position: absolute;
-  top: 0;
-  right: 0;
+.brands__head-image {
+  display: block;
+  width: 100%;
 }
 
 .brands__content {
@@ -81,16 +90,18 @@
 
 .brands__content-statistic-item {
   margin-bottom: 24px;
+}
 
-  &:last-child {
-    margin-bottom: 0;
-  }
+.brands__content-research {
+  font-size: 12px;
+  line-height: 12px;
+  color: #969696;
 }
 
 .brands__content-statistic-item-title {
   margin-bottom: 8px;
-  font-size: 56px;
-  line-height: 60px;
+  font-size: 64px;
+  line-height: 68px;
   color: #76bc21;
 }
 
@@ -101,8 +112,11 @@
 
 .brands__content-slider-container {
   width: 66.66%;
-  position: relative;
   overflow: hidden;
+}
+
+.brands__content-slider {
+  position: relative;
 }
 
 .brands__content-slider-row {
@@ -143,4 +157,214 @@
 
 .brands__content-slider-button-prev {
   margin-right: 16px;
+}
+
+// Styles for 1440px
+@media (max-width: 1550px) {
+  .brands,
+  .brands__navigation-button,
+  .brands__navigation-button-active {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .brands__head {
+    margin-bottom: 72px;
+  }
+
+  .brands__headline-title,
+  .brands__headline-title-brand {
+    font-size: 124px;
+    line-height: 112px;
+  }
+
+  .brands__content-statistic-item-title {
+    font-size: 56px;
+    line-height: 60px;
+  }
+}
+
+// Styles for 1024px
+@media (max-width: 1150px) {
+  .brands {
+    margin-bottom: 128px;
+  }
+
+  .brands__headline-title,
+  .brands__headline-title-brand {
+    font-size: 88px;
+    line-height: 80px;
+  }
+
+  .brands__head-image-container {
+    width: 60%;
+  }
+
+  .brands__head-title {
+    width: 95%;
+  }
+
+  .brands__content-statistic-item-title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+// Styles for 768px
+@media (max-width: 900px) {
+  .brands {
+    padding: 0 8px;
+    margin-bottom: 128px;
+  }
+
+  .brands__navigation-title {
+    margin-right: 16px;
+  }
+
+  .brands__head {
+    margin-bottom: 64px;
+  }
+
+  .brands__head-image-container {
+    top: 38px;
+    right: -25px;
+  }
+
+  .brands__content {
+    flex-direction: column;
+  }
+
+  .brands__content-side-bar {
+    width: 100%;
+    margin-bottom: 64px;
+  }
+
+  .brands__content-text {
+    max-width: 501px;
+    margin-bottom: 20px;
+
+    &:nth-child(2) {
+      margin-bottom: 40px;
+    }
+  }
+
+  .brands__content-statistic-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 24px;
+  }
+
+  .brands__content-statistic-item {
+    margin-bottom: 0;
+    margin-right: 24px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .brands__content-statistic-item-text {
+    width: 80%;
+  }
+
+  .brands__content-slider-container {
+    width: 100%;
+  }
+
+  .brands__content-research {
+    width: 65%;
+  }
+}
+
+// Styles for 320px - head block
+@media (max-width: 650px) {
+  .brands {
+    margin-bottom: 64px;
+  }
+
+  .brands__head-title,
+  .brands__navigation-title {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .brands__navigation-title {
+    margin-bottom: 16px;
+  }
+
+  .brands__navigation-container {
+    flex-wrap: wrap;
+  }
+
+  .brands__head-image-container {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 100%;
+  }
+
+  .brands__head {
+    flex-direction: column;
+  }
+
+  .brands__headline-title,
+  .brands__headline-title-brand {
+    font-size: 36px;
+    line-height: 38px;
+  }
+}
+
+// Styles for 320px - Content block
+@media (max-width: 550px) {
+  .brands,
+  .brands__navigation-button,
+  .brands__navigation-button-active {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .brands__content-text {
+    padding-right: 0;
+    margin-bottom: 16px;
+
+    &:nth-child(2) {
+      margin-bottom: 24px;
+    }
+  }
+
+  .brands__content-statistic-wrapper {
+    flex-direction: column;
+  }
+
+  .brands__content-statistic-item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 16;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .brands__content-statistic-item-text {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .brands__content-research {
+    width: 100%;
+  }
+
+  .brands__content-side-bar {
+    margin-bottom: 32px;
+  }
+
+  .brands__content-slider-button-container {
+    display: none;
+  }
+
+  .brands__content-slider-item-text {
+    max-width: 100%;
+    width: 100%;
+  }
 }
