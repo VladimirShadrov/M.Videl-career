@@ -9313,7 +9313,7 @@ body {
 .retail__position {
   font-size: 18px;
   line-height: 24px;
-  margin-bottom: 72px;
+  margin-bottom: 96px;
   padding: 0 16px;
   overflow: hidden; }
 
@@ -9322,8 +9322,8 @@ body {
 
 .retail__position-title,
 .retail__position-title-brand {
-  font-size: 124px;
-  line-height: 112px;
+  font-size: 160px;
+  line-height: 144px;
   letter-spacing: -0.03em;
   color: #000000; }
 
@@ -9346,8 +9346,8 @@ body {
     margin-bottom: 0; }
 
 .retail__position-side-bar-item-title {
-  font-size: 32px;
-  line-height: 40px;
+  font-size: 40px;
+  line-height: 44px;
   margin-bottom: 8px;
   color: #76bc21; }
 
@@ -9377,16 +9377,23 @@ body {
   border-top: 1px solid rgba(0, 0, 0, 0.5);
   padding-top: 16px;
   padding-bottom: 32px;
-  display: flex; }
+  display: flex;
+  transition: 0.3s; }
+  .retail__position-list-item:hover {
+    border-top: 1px solid #e31235; }
+  .retail__position-list-item:hover > .retail__position-item-position {
+    color: #e31235; }
 
 .retail__position-item-position,
 .retail__position-item-description {
   width: 50%; }
 
 .retail__position-item-position-title {
-  font-size: 32px;
-  line-height: 40px;
-  max-width: 415px; }
+  font-size: 40px;
+  line-height: 44px;
+  max-width: 415px;
+  padding-right: 24px;
+  transition: 0.3s; }
 
 .retail__position-description-text {
   max-width: 464px;
@@ -9402,6 +9409,95 @@ body {
   position: absolute;
   right: 0;
   top: calc(50% - 4px); }
+
+@media (max-width: 1550px) {
+  .retail__position {
+    margin-bottom: 72px;
+    font-size: 16px;
+    line-height: 20px; }
+  .retail__position-title,
+  .retail__position-title-brand {
+    font-size: 124px;
+    line-height: 112px; }
+  .retail__position-side-bar-item-title,
+  .retail__position-item-position-title {
+    font-size: 32px;
+    line-height: 40px; } }
+
+@media (max-width: 1200px) {
+  .retail__position-title,
+  .retail__position-title-brand {
+    font-size: 88px;
+    line-height: 80px; }
+  .retail__position-title-wrapper {
+    margin-bottom: 64px; }
+  .retail__position-list-item {
+    padding-bottom: 24px; }
+  .retail__position-headline {
+    margin-bottom: 24px; } }
+
+@media (max-width: 870px) {
+  .retail__position {
+    padding: 0 8px;
+    margin-bottom: 64px; }
+  .retail__position-content {
+    flex-direction: column; }
+  .retail__position-side-bar {
+    margin-bottom: 64px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; }
+  .retail__position-side-bar-title {
+    width: 100%;
+    max-width: 100%; }
+  .retail__position-side-bar-item {
+    margin-right: 24px;
+    width: 30%; }
+    .retail__position-side-bar-item:last-child {
+      margin-right: 0; }
+  .retail__position-content-bar {
+    width: 100%; } }
+
+@media (max-width: 750px) {
+  .retail__position-title,
+  .retail__position-title-brand {
+    font-size: 66px;
+    line-height: 60px; } }
+
+@media (max-width: 570px) {
+  .retail__position {
+    margin-bottom: 32px;
+    font-size: 14px;
+    line-height: 16px; }
+  .retail__position-title-wrapper {
+    margin-bottom: 32px; }
+  .retail__position-title,
+  .retail__position-title-brand {
+    font-size: 36px;
+    line-height: 38px; }
+  .retail__position-side-bar {
+    flex-direction: column;
+    margin-bottom: 32px; }
+  .retail__position-side-bar-item,
+  .retail__position-side-bar-text {
+    max-width: 100%;
+    width: 100%; }
+  .retail__position-side-bar-item-title,
+  .retail__position-item-position-title {
+    font-size: 24px;
+    line-height: 28px;
+    max-width: 100%;
+    width: 100%; }
+  .retail__position-list-item {
+    flex-direction: column;
+    padding-top: 8px; }
+  .retail__position-item-position,
+  .retail__position-item-description,
+  .retail__position-description-text {
+    max-width: 100%;
+    width: 100%; }
+  .retail__position-item-position {
+    margin-bottom: 16px; } }
 
 /*!***************************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/postcss-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles/retail/retail-quote.scss ***!
