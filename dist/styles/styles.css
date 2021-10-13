@@ -9994,6 +9994,68 @@ body {
   .retail__internship-button-container {
     width: 85%; } }
 
+@media (max-width: 750px) {
+  .retail__internship {
+    flex-direction: column; }
+  .retail__internship-content-block,
+  .retail__internship-image-block {
+    width: 100%; }
+  .retail__internship-image-block {
+    order: -1;
+    margin-bottom: 16px; }
+  .retail__internship-image-block-outside {
+    margin: 0 auto;
+    position: relative; } }
+
+@media (max-width: 450px) {
+  .retail__internship {
+    margin-bottom: 66px;
+    font-size: 14px;
+    line-height: 16px; }
+  .retail__internship-content-block {
+    display: flex;
+    flex-direction: column; }
+  .retail__internship-button-container {
+    order: 3; }
+  .retail__internship-title {
+    margin-bottom: 32px;
+    font-size: 36px;
+    line-height: 38px; }
+  .retail__internship-button {
+    transform: rotate(0) translateX(0);
+    margin-right: auto;
+    margin-left: 0; }
+  .retail__internship-image-block-outside,
+  .retail__internship-image-block-outside-circle {
+    width: 286px;
+    height: 286px; }
+  .retail__internship-image-block-inside,
+  .retail__internship-image-block-inside-circle {
+    width: 186px;
+    height: 186px; }
+  .retail__internship-image-block-outside-icon-block,
+  .retail__internship-image-block-inside-icon-block {
+    width: 40px;
+    height: 40px; }
+    .retail__internship-image-block-outside-icon-block > svg,
+    .retail__internship-image-block-inside-icon-block > svg {
+      transform: scale(0.7); }
+  .retail__internship-image-block-outside-icon-block {
+    top: 100px;
+    left: -16px; }
+  .retail__internship-image-block-inside-icon-block {
+    top: 30px;
+    right: 0; }
+  .retail__internship-shop-icon-eldorado,
+  .retail__internship-shop-icon-mvideo,
+  .retail__internship-icon-active {
+    width: 56px;
+    height: 56px; }
+    .retail__internship-shop-icon-eldorado > svg,
+    .retail__internship-shop-icon-mvideo > svg,
+    .retail__internship-icon-active > svg {
+      transform: scale(0.7); } }
+
 /*!********************************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/postcss-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles/retail/retail-advantages.scss ***!
   \********************************************************************************************************************************************************************************************************/
