@@ -239,15 +239,25 @@
 
 .upgrade__way-wrapper {
   display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .upgrade__way-item {
-  margin-right: 9px;
+  width: 33.33%;
+  padding-right: 30px;
+  margin-bottom: 16px;
+  position: relative;
+
+  &:last-child > .upgrade__way-arrow {
+    display: none;
+  }
 }
 
-.upgrade__way-arrow-block {
-  margin-right: 17px;
-  padding-top: 5px;
+.upgrade__way-arrow {
+  position: absolute;
+  right: 8px;
+  top: calc(50% - 4px);
 }
 
 // Styles for next block
@@ -385,17 +395,14 @@
     width: 81%;
   }
 
-  .upgrade__way-wrapper {
-    max-width: 594px;
-  }
+  .upgrade__way-item {
+    width: max-content;
+    margin-right: 16px;
+    padding-right: 22px;
 
-  .upgrade__way-item,
-  .upgrade__way-arrow-block {
-    margin: 0;
-  }
-
-  .upgrade__way-wrapper {
-    justify-content: space-between;
+    & > svg {
+      right: 0;
+    }
   }
 
   .upgrade__slider-next-block {
@@ -476,20 +483,6 @@
   .upgrade__slider-next-item-image-block {
     margin-right: 0;
   }
-
-  .upgrade__way-wrapper {
-    width: 100%;
-    max-width: 100%;
-    justify-content: flex-start;
-  }
-
-  .upgrade__way-item {
-    margin-right: 9px;
-  }
-
-  .upgrade__way-arrow-block {
-    margin-right: 17px;
-  }
 }
 
 // Sytles for 320px
@@ -541,12 +534,10 @@
   }
 
   .upgrade__way-wrapper {
-    width: 100%;
     flex-direction: column;
   }
 
-  .upgrade__way-item,
-  .upgrade__way-arrow-block {
+  .upgrade__way-item {
     display: none;
   }
 
