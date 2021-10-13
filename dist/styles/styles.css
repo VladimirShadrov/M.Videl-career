@@ -10157,7 +10157,7 @@ body {
   display: flex;
   font-size: 18px;
   line-height: 24px;
-  margin-bottom: 144px;
+  margin-bottom: 227px;
   padding: 0 16px;
   overflow: hidden; }
 
@@ -10176,22 +10176,86 @@ body {
   border-bottom: 1px solid #969696;
   display: flex;
   justify-content: flex-start; }
+  .retail__advantages-content-item:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none; }
 
 .retail__advantages-number {
-  font-size: 132px;
-  line-height: 120px;
+  font-size: 160px;
+  line-height: 144px;
   letter-spacing: -0.03em;
   font-feature-settings: 'tnum' on, 'lnum' on, 'zero' on;
   margin-right: 65px;
   color: #76bc21; }
 
 .retail__advantages-description-title {
-  font-size: 32px;
-  line-height: 40px;
-  margin-bottom: 16px; }
+  font-size: 40px;
+  line-height: 44px;
+  margin-bottom: 24px; }
 
 .retail__advantages-description-text {
   max-width: 480px; }
+
+@media (max-width: 1440px) {
+  .retail__advantages {
+    margin-bottom: 144px;
+    font-size: 16px;
+    line-height: 20px; }
+  .retail__advantages-number {
+    font-size: 132px;
+    line-height: 120px; }
+  .retail__advantages-description-title {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 16px; } }
+
+@media (max-width: 1024px) {
+  .retail__advantages {
+    margin-bottom: 143px; }
+  .retail__advantages-number {
+    font-size: 80px;
+    line-height: 72px;
+    margin-right: 63px; }
+  .retail__advantages-content-item {
+    padding-bottom: 32px;
+    margin-bottom: 36px; } }
+
+@media (max-width: 768px) {
+  .retail__advantages {
+    margin-bottom: 128px;
+    flex-direction: column;
+    padding: 0 8px; }
+  .retail__advantages-side-bar,
+  .retail__advantages-content-bar {
+    width: 100%; }
+  .retail__advantages-side-bar-text {
+    max-width: 240px; }
+  .retail__advantages-side-bar {
+    margin-bottom: 40px; }
+  .retail__advantages-number {
+    margin-right: 141px; } }
+
+@media (max-width: 550px) {
+  .retail__advantages {
+    margin-bottom: 64px;
+    font-size: 14px;
+    line-height: 16px; }
+  .retail__advantages-side-bar-text {
+    max-width: 100%; }
+  .retail__advantages-side-bar {
+    margin-bottom: 24px; }
+  .retail__advantages-number {
+    margin-right: 8px;
+    font-size: 36px;
+    line-height: 38px; }
+  .retail__advantages-description-title {
+    margin-bottom: 8px;
+    font-size: 24px;
+    line-height: 28px; }
+  .retail__advantages-content-item {
+    padding-bottom: 24px;
+    margin-bottom: 28px; } }
 
 /*!*****************************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/postcss-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles/retail/retail-upgrade.scss ***!
