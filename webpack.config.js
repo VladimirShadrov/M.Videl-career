@@ -56,7 +56,10 @@ module.exports = {
       filename: 'retail-main.html',
       template: './retail-main.html',
     }),
-
+    new HTMLWebpackPlugin({
+      filename: '404-page.html',
+      template: './404-page.html',
+    }),
     new MiniCssExtractPlugin({
       filename: 'styles/styles.css',
     }),

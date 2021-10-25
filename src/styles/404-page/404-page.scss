@@ -1,0 +1,200 @@
+@import '../styles.scss';
+
+.page-404 {
+  padding: 196px 16px 0 16px;
+  min-height: 980px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 18px;
+  line-height: 24px;
+  position: relative;
+}
+
+.page-404__content {
+  width: 50%;
+  position: relative;
+  z-index: 1;
+}
+
+.page-404__content-title-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 56px;
+}
+
+.page-404__title {
+  font-size: 212px;
+  line-height: 200px;
+  letter-spacing: -0.03em;
+  margin-right: 24px;
+}
+
+.page-404__title-info {
+  width: 101px;
+  margin-top: 15px;
+}
+
+.page-404__text {
+  width: 440px;
+}
+
+.page-404__button-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 420px;
+}
+
+.page-404__button {
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: lowercase;
+  color: $mainColor;
+  border: none;
+  padding: 8px 16px;
+  box-shadow: 16px 2px 24px rgba(0, 0, 0, 0.03);
+  border-radius: 36px;
+  transform: rotate(-2deg);
+  background: $whiteColor;
+  transition: 0.3s;
+
+  &:hover {
+    transform: rotate(0);
+  }
+}
+
+.page-404__background-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.page-404__background-row,
+.page-404__background-row-active {
+  height: 200%;
+  transition: 10s;
+  transition-timing-function: linear;
+}
+
+.page-404__background-row-active {
+  transform: translateY(-50%);
+}
+
+.page-404__background-item {
+  height: 50%;
+  position: relative;
+}
+
+.page-404__background-image-phone,
+.page-404__background-image-mvideo,
+.page-404__background-image-planet,
+.page-404__background-image-eldorado,
+.page-404__background-image-chip,
+.page-404__background-image-rocket,
+.page-404__background-image-book-red,
+.page-404__background-image-watch-green,
+.page-404__background-image-book-green,
+.page-404__background-image-watch-red,
+.page-404__background-image-planet-right,
+.page-404__background-image-watch-green-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: $whiteColor;
+  position: absolute;
+}
+
+.page-404__background-image-phone {
+  width: 48px;
+  height: 48px;
+  left: 16px;
+  top: 461px;
+}
+
+.page-404__background-image-mvideo {
+  width: 72px;
+  height: 72px;
+  top: 276px;
+  left: 12.9%;
+}
+
+.page-404__background-image-planet {
+  width: 56px;
+  height: 56px;
+  top: 501px;
+  left: 15.2%;
+
+  & > svg {
+    transform: scale(0.8) rotate(-24deg);
+  }
+}
+
+.page-404__background-image-eldorado {
+  width: 72px;
+  height: 72px;
+  top: 716px;
+  left: 23.2%;
+}
+
+.page-404__background-image-chip {
+  width: 64px;
+  height: 64px;
+  top: 255px;
+  left: 30%;
+}
+
+.page-404__background-image-rocket {
+  width: 64px;
+  height: 64px;
+  top: 534px;
+  left: 33.3%;
+}
+
+.page-404__background-image-book-red {
+  width: 56px;
+  height: 56px;
+  top: 411px;
+  left: 40.2%;
+}
+
+.page-404__background-image-watch-green {
+  width: 72px;
+  height: 72px;
+  top: 721px;
+  left: 50%;
+}
+
+.page-404__background-image-book-green {
+  width: 56px;
+  height: 56px;
+  top: 672px;
+  left: 65.2%;
+}
+
+.page-404__background-image-watch-red {
+  width: 72px;
+  height: 72px;
+  top: 711px;
+  left: 81.5%;
+}
+
+.page-404__background-image-planet-right {
+  width: 48px;
+  height: 48px;
+  top: 303px;
+  left: 83.3%;
+
+  & > svg {
+    transform: scale(0.7) rotate(-24deg);
+  }
+}
+
+.page-404__background-image-watch-green-right {
+  width: 56px;
+  height: 56px;
+  top: 427px;
+  right: 18px;
+}

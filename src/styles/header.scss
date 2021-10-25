@@ -3,7 +3,7 @@
 .it-header,
 .listing-header {
   position: fixed;
-  top: 0;
+  // top: 0;
   left: 0;
   right: 0;
   z-index: 12;
@@ -14,8 +14,7 @@
   display: flex;
   justify-content: flex-start;
   position: relative;
-  padding-top: 20px;
-  padding-bottom: 8px;
+  padding: 16px 0;
 }
 
 .it-header__item {
@@ -30,9 +29,12 @@
 
 .it-header__logo {
   display: block;
-  max-width: 139.5px;
+  width: 139.5px;
   height: 24px;
-  background: url('../images/header/header-logo.svg') center / cover no-repeat;
+
+  & > svg {
+    pointer-events: none;
+  }
 }
 
 .it-header__phone-mobile {
@@ -40,18 +42,17 @@
   position: relative;
   width: 132px;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 24px;
   color: $mainColor;
+}
 
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 15px;
-    height: 15px;
-    background: url('../images/header/phone.svg') center / cover no-repeat;
-  }
+.it-header__phone-mobile-icon {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 13px;
+  height: 13px;
+  pointer-events: none;
 }
 
 .it-header__directions {
@@ -176,12 +177,8 @@
   }
 
   .it-header__item-mobile {
-    display: block;
-  }
-
-  .it-header__logo {
-    width: 117.27px;
-    height: 20px;
+    display: flex;
+    justify-content: flex-end;
   }
 }
 
@@ -195,5 +192,15 @@
   .it-header__item {
     font-size: 14px;
     line-height: 16px;
+  }
+
+  .it-header__logo {
+    width: 117.27px;
+    height: 20px;
+
+    & > svg {
+      width: 117.27px;
+      height: 20px;
+    }
   }
 }
