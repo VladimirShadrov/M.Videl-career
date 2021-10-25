@@ -329,3 +329,117 @@
     right: 16px;
   }
 }
+
+// Styles for 1024px
+@media (max-width: 1024px) {
+  .page-404 {
+    min-height: 648px;
+    padding: 148px 16px 0 16px;
+  }
+
+  .page-404__content-title-wrapper {
+    margin-bottom: 32px;
+  }
+
+  .page-404__title {
+    font-size: 132px;
+    line-height: 120px;
+  }
+
+  .page-404__background-image-phone,
+  .page-404__background-image-mvideo,
+  .page-404__background-image-planet,
+  .page-404__background-image-eldorado,
+  .page-404__background-image-chip,
+  .page-404__background-image-rocket,
+  .page-404__background-image-book-red,
+  .page-404__background-image-watch-green,
+  .page-404__background-image-book-green,
+  .page-404__background-image-watch-red,
+  .page-404__background-image-planet-right,
+  .page-404__background-image-watch-green-right {
+    & > svg {
+      transform: scale(0.8);
+    }
+  }
+
+  .page-404__background-image-phone {
+    width: 32px;
+    height: 32px;
+    top: 376px;
+  }
+
+  .page-404__background-image-mvideo {
+    width: 56px;
+    height: 56px;
+    top: 257px;
+  }
+
+  .page-404__background-image-planet {
+    width: 40px;
+    height: 40px;
+    top: 408px;
+
+    & > svg {
+      transform: scale(0.6) rotate(-24deg);
+    }
+  }
+
+  .page-404__background-image-eldorado {
+    width: 56px;
+    height: 56px;
+    top: 500px;
+  }
+
+  .page-404__background-image-chip {
+    width: 48px;
+    height: 49px;
+    top: 180px;
+  }
+
+  .page-404__background-image-rocket {
+    width: 48px;
+    height: 48px;
+    top: 409px;
+  }
+
+  .page-404__background-image-book-red {
+    top: 316px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .page-404__background-image-watch-green {
+    top: 507px;
+    width: 56px;
+    height: 56px;
+  }
+
+  .page-404__background-image-book-green {
+    top: 487px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .page-404__background-image-watch-red {
+    top: 502px;
+    width: 56px;
+    height: 56px;
+  }
+
+  .page-404__background-image-planet-right {
+    width: 32px;
+    height: 32px;
+    top: 166px;
+
+    & > svg {
+      transform: scale(0.5) rotate(-24deg);
+    }
+  }
+
+  .page-404__background-image-watch-green-right {
+    top: 319px;
+    width: 40px;
+    height: 40px;
+  }
+}
