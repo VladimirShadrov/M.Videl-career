@@ -443,3 +443,92 @@
     height: 40px;
   }
 }
+
+// Styles for 768px
+@media (max-width: 768px) {
+  .page-404 {
+    min-height: 924px;
+    padding: 148px 8px 0 8px;
+  }
+
+  .page-404__content {
+    width: 66.66%;
+  }
+
+  .page-404__title-info {
+    width: 98px;
+  }
+
+  .page-404__content-title-wrapper {
+    margin-bottom: 50px;
+  }
+
+  .page-404__button-container {
+    width: 350px;
+  }
+
+  .page-404__button {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .page-404__background-image-phone {
+    top: 512px;
+    left: 8px;
+  }
+
+  .page-404__background-image-mvideo {
+    top: 332px;
+    left: 9.9%;
+  }
+
+  .page-404__background-image-planet {
+    top: 526px;
+    left: 18.7%;
+  }
+
+  .page-404__background-image-eldorado {
+    top: 679px;
+    left: 29.8%;
+  }
+
+  .page-404__background-image-chip {
+    top: 278px;
+    left: 27.1%;
+  }
+
+  .page-404__background-image-rocket {
+    top: 606px;
+    left: 43.5%;
+  }
+
+  .page-404__background-image-book-red {
+    top: 452px;
+    left: 52.3%;
+  }
+
+  .page-404__background-image-watch-green {
+    top: 651px;
+    left: 66.66%;
+  }
+
+  .page-404__background-image-book-green {
+    top: 601px;
+    left: 88.9%;
+  }
+
+  .page-404__background-image-watch-red {
+    top: 439px;
+    left: 77.2%;
+  }
+
+  .page-404__background-image-planet-right {
+    top: 302px;
+    left: 85.7%;
+  }
+
+  .page-404__background-image-watch-green-right {
+    top: 455px;
+    right: 8px;
+  }
+}
