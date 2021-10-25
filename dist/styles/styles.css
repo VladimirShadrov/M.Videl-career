@@ -10815,5 +10815,91 @@ body {
   top: 427px;
   right: 18px; }
 
+@media (max-width: 1440px) {
+  .page-404 {
+    min-height: 796px;
+    padding: 164px 16px 0 16px;
+    font-size: 16px;
+    line-height: 20px; }
+  .page-404__title {
+    font-size: 164px;
+    line-height: 138px;
+    margin-right: 16px; }
+  .page-404__content-title-wrapper {
+    margin-bottom: 40px; }
+  .page-404__button {
+    font-size: 20px;
+    line-height: 20px; }
+  .page-404__text {
+    width: 390px; }
+  .page-404__button-container {
+    width: 370px; }
+  .page-404__background-image-phone > svg,
+  .page-404__background-image-mvideo > svg,
+  .page-404__background-image-planet > svg,
+  .page-404__background-image-eldorado > svg,
+  .page-404__background-image-chip > svg,
+  .page-404__background-image-rocket > svg,
+  .page-404__background-image-book-red > svg,
+  .page-404__background-image-watch-green > svg,
+  .page-404__background-image-book-green > svg,
+  .page-404__background-image-watch-red > svg,
+  .page-404__background-image-planet-right > svg,
+  .page-404__background-image-watch-green-right > svg {
+    transform: scale(0.9); }
+  .page-404__background-image-phone {
+    width: 40px;
+    height: 40px;
+    top: 413px; }
+  .page-404__background-image-mvideo {
+    width: 64px;
+    height: 64px;
+    top: 299px; }
+  .page-404__background-image-planet {
+    width: 48px;
+    height: 48px;
+    top: 457px; }
+    .page-404__background-image-planet > svg {
+      transform: scale(0.7) rotate(-24deg); }
+  .page-404__background-image-eldorado {
+    width: 64px;
+    height: 64px;
+    top: 573px; }
+  .page-404__background-image-chip {
+    width: 56px;
+    height: 56px;
+    top: 210px; }
+  .page-404__background-image-rocket {
+    width: 56px;
+    height: 56px;
+    top: 481px; }
+  .page-404__background-image-book-red {
+    width: 48px;
+    height: 48px;
+    top: 363px; }
+  .page-404__background-image-watch-green {
+    width: 64px;
+    height: 64px;
+    top: 563px; }
+  .page-404__background-image-book-green {
+    width: 48px;
+    height: 48px;
+    top: 529px; }
+  .page-404__background-image-watch-red {
+    width: 64px;
+    height: 64px;
+    top: 544px; }
+  .page-404__background-image-planet-right {
+    width: 40px;
+    height: 40px;
+    top: 244px; }
+    .page-404__background-image-planet-right > svg {
+      transform: scale(0.6) rotate(-24deg); }
+  .page-404__background-image-watch-green-right {
+    width: 48px;
+    height: 48px;
+    top: 351px;
+    right: 16px; } }
+
 
 /*# sourceMappingURL=styles.css.map*/
