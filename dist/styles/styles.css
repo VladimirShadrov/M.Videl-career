@@ -10707,14 +10707,22 @@ body {
   height: 100%;
   overflow: hidden; }
 
-.page-404__background-row,
-.page-404__background-row-active {
+.page-404__background-row {
   height: 200%;
-  transition: 10s;
-  transition-timing-function: linear; }
+  -webkit-animation: moveBackground 15s linear infinite;
+          animation: moveBackground 15s linear infinite; }
 
-.page-404__background-row-active {
-  transform: translateY(-50%); }
+@-webkit-keyframes moveBackground {
+  from {
+    transform: translateY(0); }
+  to {
+    transform: translateY(-50%); } }
+
+@keyframes moveBackground {
+  from {
+    transform: translateY(0); }
+  to {
+    transform: translateY(-50%); } }
 
 .page-404__background-item {
   height: 50%;
@@ -10825,6 +10833,8 @@ body {
     font-size: 164px;
     line-height: 138px;
     margin-right: 16px; }
+  .page-404__title-info {
+    margin-top: 6px; }
   .page-404__content-title-wrapper {
     margin-bottom: 40px; }
   .page-404__button {

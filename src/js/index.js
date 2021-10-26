@@ -35,6 +35,7 @@ import { Form } from './components/itHubPage/form';
 import { RunningLine } from './components/itHubPage/runningLine';
 import { Header } from './components/itHubPage/header';
 import { ListingFilters } from './components/vacancyListingPage/listingFilters';
+import { Page404 } from './components/page404/animationPage404';
 
 // Перенос изображений
 require.context('../images', true, /\.(png|jpg|svg|gif)$/);
@@ -54,6 +55,7 @@ const headerIt = document.querySelector('.it-header');
 const listingPageFilters = document.querySelector(
   '.listing-top__filters-wrapper'
 );
+const page404 = document.querySelector('.page-404');
 
 new Vacancy(profession);
 new Advantages(ourAdvantages);
@@ -65,6 +67,7 @@ const header = new Header(headerIt);
 new Listing(listingPage);
 new Form(form);
 new ListingFilters(listingPageFilters);
+new Page404(page404);
 
 document.body.addEventListener('click', (event) => {
   header.closeSelect();
