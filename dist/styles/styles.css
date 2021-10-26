@@ -1184,12 +1184,69 @@ body {
   margin-bottom: 200px;
   overflow: hidden; }
 
-.goal__inner-mobile,
+.goal__head {
+  position: relative; }
+
+.goal__inner {
+  position: absolute;
+  top: 16px;
+  right: 26px;
+  width: 497px;
+  height: 303px; }
+
+.goal__finger-container,
+.goal__watch-container,
+.goal__planet-container,
+.goal__rocet-container,
+.goal__tree-container,
+.goal__micro-container {
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute; }
+
+.goal__finger-container {
+  width: 184px;
+  height: 184px;
+  top: 0;
+  right: 303px; }
+
+.goal__watch-container {
+  width: 120px;
+  height: 120px;
+  top: 0;
+  right: 46px; }
+
+.goal__planet-container {
+  width: 104px;
+  height: 104px;
+  top: 199px;
+  right: 257px; }
+
+.goal__rocet-container {
+  width: 72px;
+  height: 72px;
+  top: 121px;
+  right: 179px; }
+
+.goal__tree-container {
+  width: 56px;
+  height: 56px;
+  top: 231px;
+  right: 110px; }
+
+.goal__micro-container {
+  width: 80px;
+  height: 80px;
+  top: 135px;
+  right: 0; }
+
 .goal__slide-buttons-mobile {
   display: none; }
 
 .goal__title-wrapper {
-  background: url("../images/goal/mission__bg-fullscreen.svg") right top/contain no-repeat;
   position: relative;
   margin-bottom: 216px; }
 
@@ -1217,14 +1274,13 @@ body {
   padding-left: 16px;
   transform: translate(-190px, 20px) rotate(-2deg);
   transition: 0.3s; }
-  .goal__button::after {
-    content: '';
+  .goal__button > svg {
     position: absolute;
     right: 17px;
     top: calc(50% - 4.5px);
     width: 14px;
     height: 9px;
-    background: url("../images/goal/arrow-right.svg"); }
+    pointer-events: none; }
   .goal__button:hover {
     transform: translate(-190px, 20px) rotate(0); }
 
@@ -1278,7 +1334,8 @@ body {
     margin-bottom: 0; }
 
 .goal__item-image-container {
-  margin-top: auto; }
+  margin-top: auto;
+  transform: translateX(4px); }
 
 @media (max-width: 1600px) {
   .goal {
@@ -1286,6 +1343,49 @@ body {
   .goal-goal {
     font-size: 16px;
     line-height: 20px; }
+  .goal__inner {
+    width: 393px;
+    height: 271px; }
+  .goal__finger-container > svg,
+  .goal__watch-container > svg,
+  .goal__planet-container > svg,
+  .goal__rocet-container > svg,
+  .goal__tree-container > svg,
+  .goal__micro-container > svg {
+    transform: scale(0.95); }
+  .goal__finger-container {
+    width: 168px;
+    height: 168px;
+    right: 225px; }
+  .goal__watch-container {
+    width: 104px;
+    height: 104px;
+    right: 16px; }
+  .goal__planet-container {
+    width: 88px;
+    height: 88px;
+    right: 177px;
+    top: 180px; }
+  .goal__rocet-container {
+    width: 56px;
+    height: 56px;
+    right: 131px;
+    top: 97px; }
+    .goal__rocet-container > svg {
+      transform: scale(0.8); }
+  .goal__tree-container {
+    width: 40px;
+    height: 40px;
+    right: 78px;
+    top: 215px; }
+    .goal__tree-container > svg {
+      transform: scale(0.8); }
+  .goal__micro-container {
+    width: 64px;
+    height: 64px;
+    top: 135px; }
+    .goal__micro-container > svg {
+      transform: scale(0.9); }
   .goal__title {
     font-size: 124px;
     line-height: 112px; }
@@ -1312,6 +1412,45 @@ body {
   .goal-goal {
     font-size: 16px;
     line-height: 20px; }
+  .goal__inner {
+    width: 315px;
+    height: 223px;
+    top: 0;
+    right: 0; }
+  .goal__finger-container > svg,
+  .goal__watch-container > svg,
+  .goal__planet-container > svg,
+  .goal__rocet-container > svg,
+  .goal__tree-container > svg,
+  .goal__micro-container > svg {
+    transform: scale(0.75); }
+  .goal__finger-container {
+    width: 128px;
+    height: 128px;
+    right: 195px; }
+  .goal__watch-container {
+    width: 80px;
+    height: 80px;
+    right: 24px; }
+  .goal__planet-container {
+    width: 72px;
+    height: 72px;
+    top: 125px;
+    right: 145px; }
+  .goal__rocet-container {
+    width: 48px;
+    height: 48px;
+    top: 98px;
+    right: 83px; }
+  .goal__tree-container {
+    width: 32px;
+    height: 32px;
+    top: 181px;
+    right: 54px; }
+  .goal__micro-container {
+    width: 48px;
+    height: 48px;
+    top: 127px; }
   .goal__title {
     font-size: 88px;
     line-height: 80px; }
@@ -1327,16 +1466,57 @@ body {
 @media (max-width: 877px) {
   .goal {
     margin-bottom: 128px; }
+  .goal__inner {
+    width: 548px;
+    height: 224px;
+    position: relative;
+    margin: 0 auto; }
+  .goal__finger-container > svg,
+  .goal__watch-container > svg,
+  .goal__planet-container > svg,
+  .goal__rocet-container > svg,
+  .goal__tree-container > svg,
+  .goal__micro-container > svg {
+    transform: scale(0.8); }
+  .goal__finger-container {
+    width: 168px;
+    height: 168px;
+    right: auto;
+    top: 33px;
+    left: 0; }
+    .goal__finger-container > svg {
+      transform: scale(0.9); }
+  .goal__watch-container {
+    width: 104px;
+    height: 104px;
+    top: 0;
+    right: 123px; }
+  .goal__planet-container {
+    width: 88px;
+    height: 88px;
+    top: 136px;
+    right: 212px; }
+  .goal__rocet-container {
+    width: 56px;
+    height: 56px;
+    top: 56px;
+    right: auto;
+    left: 206px; }
+  .goal__tree-container {
+    width: 40px;
+    height: 40px;
+    top: 140px;
+    right: 83px; }
+  .goal__micro-container {
+    width: 64px;
+    height: 64px;
+    top: 38px;
+    right: 0; }
   .goal__button {
     width: 240px; }
   .goal__title-wrapper {
     margin-bottom: 99px;
     background: none; }
-  .goal__inner-mobile {
-    display: block;
-    width: 100%;
-    height: 244px;
-    background: url("../images/goal/mission__bg-tablet.svg") center/cover no-repeat; }
   .goal__content-wrapper {
     flex-direction: column; }
   .goal__side-block,
@@ -1354,7 +1534,7 @@ body {
 
 .goal__item:hover .circle {
   transition: all 1s;
-  transform: scale(1.3, 0.9) translate(10px, 0); }
+  transform: scale(1.2); }
 
 .circle-in-circle {
   position: relative; }
@@ -1616,9 +1796,6 @@ body {
     margin-bottom: 71px; }
   .goal__slide-buttons-mobile {
     display: flex; }
-  .goal__inner-mobile {
-    height: 132px;
-    background: url("../images/goal/mission__bg-mobile.svg") center/contain no-repeat; }
   .goal__side-block {
     margin-bottom: 32px; }
   .goal__item-text {
@@ -1706,6 +1883,48 @@ body {
       height: 40px; }
   .goal__main-block-title-wrapper {
     display: flex; } }
+
+@media (max-width: 570px) {
+  .goal__inner {
+    width: 304px;
+    height: 132px; }
+  .goal__finger-container > svg,
+  .goal__watch-container > svg,
+  .goal__planet-container > svg,
+  .goal__rocet-container > svg,
+  .goal__tree-container > svg,
+  .goal__micro-container > svg {
+    transform: scale(0.7); }
+  .goal__finger-container {
+    width: 83px;
+    height: 83px;
+    top: 16px;
+    left: 8px; }
+  .goal__watch-container {
+    width: 51px;
+    height: 51px;
+    top: auto;
+    bottom: 0;
+    right: 8px; }
+    .goal__watch-container > svg {
+      transform: scale(0.5); }
+  .goal__planet-container {
+    width: 70px;
+    height: 70px;
+    top: 0;
+    right: 48px; }
+  .goal__rocet-container {
+    width: 44px;
+    height: 44px;
+    top: 32px;
+    left: 112px; }
+  .goal__tree-container {
+    width: 32px;
+    height: 32px;
+    top: 84px;
+    right: 96px; }
+  .goal__micro-container {
+    display: none; } }
 
 /*!******************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/postcss-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles/profession.scss ***!
