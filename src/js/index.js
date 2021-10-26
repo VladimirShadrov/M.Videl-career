@@ -37,10 +37,17 @@ import { Header } from './components/itHubPage/header';
 import { ListingFilters } from './components/vacancyListingPage/listingFilters';
 import { Page404 } from './components/page404/animationPage404';
 
+// Импорт классов страницы Розницы
+import { CreateRetailFutureComponent } from './components/retail/createRetailFuture';
+
 // Перенос изображений
 require.context('../images', true, /\.(png|jpg|svg|gif)$/);
 require.context('../fonts', true, /\.(ttf|woff|woff2)$/);
 
+// Header - it page
+export const headerItPage = document.querySelector('.it-header');
+
+// Страница IT
 const itHubPage = document.querySelector('.it-hub');
 const profession = document.querySelector('.profession');
 const listingPage = document.querySelector('.listing');
@@ -55,7 +62,13 @@ const headerIt = document.querySelector('.it-header');
 const listingPageFilters = document.querySelector(
   '.listing-top__filters-wrapper'
 );
+
+// Страница 404
 const page404 = document.querySelector('.page-404');
+
+// Страница Розницы
+const createFutureBlock = document.querySelector('.retail__preview');
+export const retailMissionBlock = document.querySelector('.retail__mission');
 
 new Vacancy(profession);
 new Advantages(ourAdvantages);
@@ -68,6 +81,9 @@ new Listing(listingPage);
 new Form(form);
 new ListingFilters(listingPageFilters);
 new Page404(page404);
+
+// Инициализация классов страницы Розницы
+new CreateRetailFutureComponent(createFutureBlock);
 
 document.body.addEventListener('click', (event) => {
   header.closeSelect();
@@ -104,8 +120,14 @@ function openApplicationForm() {
 }
 
 // Скролл до блока
-function smothScrollingToBlock(block) {
-  const topOffset = block.offsetTop;
+export function smothScrollingToBlock(block, header) {
+  const offset = 16;
+  let headerHeight = header.clientHeight + offset;
+
+  if (window.innerWidth <= 479) {
+    headerHeight = offset;
+  }
+  const topOffset = block.offsetTop - headerHeight;
 
   let interval = setInterval(() => {
     document.scrollingElement.scrollTop += 10;
