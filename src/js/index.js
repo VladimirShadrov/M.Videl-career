@@ -88,6 +88,7 @@ new Page404(page404);
 // Инициализация классов страницы Розницы
 new CreateRetailFutureComponent(createFutureBlock);
 new RetailMission(retailMissionBlock);
+new RetailBrands(retailBrands);
 
 document.body.addEventListener('click', (event) => {
   header.closeSelect();

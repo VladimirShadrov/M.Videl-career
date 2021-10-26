@@ -117,11 +117,15 @@
 
 .brands__content-slider {
   position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .brands__content-slider-row {
   display: flex;
-  width: 400%;
+  justify-content: flex-start;
+  transition: 0.3s;
 }
 
 .brands__content-slider-item {
@@ -153,6 +157,10 @@
 .brands__content-slider-button-prev,
 .brands__content-slider-button-next {
   background: transparent;
+
+  & > svg {
+    pointer-events: none;
+  }
 }
 
 .brands__content-slider-button-prev {

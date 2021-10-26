@@ -9291,11 +9291,15 @@ body {
   overflow: hidden; }
 
 .brands__content-slider {
-  position: relative; }
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start; }
 
 .brands__content-slider-row {
   display: flex;
-  width: 400%; }
+  justify-content: flex-start;
+  transition: 0.3s; }
 
 .brands__content-slider-item {
   width: 25%;
@@ -9321,6 +9325,9 @@ body {
 .brands__content-slider-button-prev,
 .brands__content-slider-button-next {
   background: transparent; }
+  .brands__content-slider-button-prev > svg,
+  .brands__content-slider-button-next > svg {
+    pointer-events: none; }
 
 .brands__content-slider-button-prev {
   margin-right: 16px; }
