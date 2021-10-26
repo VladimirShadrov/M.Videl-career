@@ -39,6 +39,8 @@ import { Page404 } from './components/page404/animationPage404';
 
 // Импорт классов страницы Розницы
 import { CreateRetailFutureComponent } from './components/retail/createRetailFuture';
+import { RetailMission } from './components/retail/retailMissionBlock';
+import { RetailBrands } from './components/retail/retailBrandsBlock';
 
 // Перенос изображений
 require.context('../images', true, /\.(png|jpg|svg|gif)$/);
@@ -69,6 +71,7 @@ const page404 = document.querySelector('.page-404');
 // Страница Розницы
 const createFutureBlock = document.querySelector('.retail__preview');
 export const retailMissionBlock = document.querySelector('.retail__mission');
+export const retailBrands = document.querySelector('.brands');
 
 new Vacancy(profession);
 new Advantages(ourAdvantages);
@@ -84,6 +87,7 @@ new Page404(page404);
 
 // Инициализация классов страницы Розницы
 new CreateRetailFutureComponent(createFutureBlock);
+new RetailMission(retailMissionBlock);
 
 document.body.addEventListener('click', (event) => {
   header.closeSelect();
