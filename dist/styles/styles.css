@@ -9672,6 +9672,7 @@ body {
   top: 0;
   left: 0;
   padding: 10px 36px 10px 16px;
+  width: 187px;
   background: #ffffff;
   border-radius: 36px;
   color: #000000;
@@ -9903,16 +9904,20 @@ body {
   .container {
     padding: 8px; } }
 
+.retail__quote-container {
+  margin-bottom: 96px; }
+
 .retail__quote {
   position: relative;
   font-size: 18px;
   line-height: 24px;
-  margin-bottom: 96px;
   overflow: hidden; }
 
 .retail__video-placeholder {
   display: block;
-  width: 100%; }
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; }
 
 .retail__quote-wrapper {
   width: 60%;
@@ -9927,8 +9932,9 @@ body {
   line-height: 68px; }
 
 @media (max-width: 1580px) {
+  .retail__quote-container {
+    margin-bottom: 72px; }
   .retail__quote {
-    margin-bottom: 72px;
     font-size: 16px;
     line-height: 20px; }
   .retail__quote-wrapper {
@@ -9939,7 +9945,7 @@ body {
     line-height: 60px; } }
 
 @media (max-width: 1300px) {
-  .retail__quote {
+  .retail__quote-container {
     margin-bottom: 64px; }
   .retail__quote-wrapper {
     top: 64px;
@@ -9951,8 +9957,9 @@ body {
     margin-bottom: 24px; } }
 
 @media (max-width: 860px) {
+  .retail__quote-container {
+    margin-bottom: 64px; }
   .retail__quote {
-    margin-bottom: 64px;
     min-height: 480px; }
   .retail__quote-wrapper {
     top: 32px;
@@ -9960,8 +9967,9 @@ body {
     right: 16px; } }
 
 @media (max-width: 740px) {
+  .retail__quote-container {
+    margin-bottom: 32px; }
   .retail__quote {
-    margin-bottom: 32px;
     min-height: 480px;
     font-size: 14px;
     line-height: 16px;

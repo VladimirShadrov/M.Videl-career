@@ -1,16 +1,20 @@
 @import '../styles.scss';
 
+.retail__quote-container {
+  margin-bottom: 96px;
+}
+
 .retail__quote {
   position: relative;
   font-size: 18px;
   line-height: 24px;
-  margin-bottom: 96px;
   overflow: hidden;
 }
 
 .retail__video-placeholder {
   display: block;
   width: 100%;
+  object-fit: cover;
 }
 
 .retail__quote-wrapper {
@@ -29,8 +33,11 @@
 
 // Styles for 1440px
 @media (max-width: 1580px) {
-  .retail__quote {
+  .retail__quote-container {
     margin-bottom: 72px;
+  }
+
+  .retail__quote {
     font-size: 16px;
     line-height: 20px;
   }
@@ -48,7 +55,7 @@
 
 // Styles for 1024px
 @media (max-width: 1300px) {
-  .retail__quote {
+  .retail__quote-container {
     margin-bottom: 64px;
   }
 
@@ -67,8 +74,11 @@
 
 // Styles for 768px
 @media (max-width: 860px) {
-  .retail__quote {
+  .retail__quote-container {
     margin-bottom: 64px;
+  }
+
+  .retail__quote {
     min-height: 480px;
   }
 
@@ -81,8 +91,11 @@
 
 // Styles for 320px
 @media (max-width: 740px) {
-  .retail__quote {
+  .retail__quote-container {
     margin-bottom: 32px;
+  }
+
+  .retail__quote {
     min-height: 480px;
     font-size: 14px;
     line-height: 16px;

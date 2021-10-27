@@ -42,6 +42,7 @@ import { CreateRetailFutureComponent } from './components/retail/createRetailFut
 import { RetailMission } from './components/retail/retailMissionBlock';
 import { RetailBrands } from './components/retail/retailBrandsBlock';
 import { RetailPosition } from './components/retail/retailPositionBlock';
+import { RetailQuote } from './components/retail/retailQuote';
 
 // Перенос изображений
 require.context('../images', true, /\.(png|jpg|svg|gif)$/);
@@ -74,6 +75,7 @@ const createFutureBlock = document.querySelector('.retail__preview');
 export const retailMissionBlock = document.querySelector('.retail__mission');
 export const retailBrands = document.querySelector('.brands');
 export const retailPosition = document.querySelector('.retail__position');
+export const retailQuote = document.querySelector('.retail__quote-container');
 
 new Vacancy(profession);
 new Advantages(ourAdvantages);
@@ -92,6 +94,7 @@ new CreateRetailFutureComponent(createFutureBlock);
 new RetailMission(retailMissionBlock);
 new RetailBrands(retailBrands);
 new RetailPosition(retailPosition);
+new RetailQuote(retailQuote);
 
 document.body.addEventListener('click', (event) => {
   header.closeSelect();
