@@ -1,3 +1,6 @@
+import { RetailPosition } from './retailPositionBlock';
+import { retailPosition } from '../../index';
+
 export class RetailBrands {
   constructor(el) {
     this.el = el;
@@ -69,8 +72,9 @@ export class RetailBrands {
     // Переключение табов
     this.mvideo = this.el.querySelectorAll('.mvideo');
     this.eldorado = this.el.querySelectorAll('.eldorado');
+    this.positionSection = new RetailPosition(retailPosition);
 
-    this.switchSlide();
+    this.switchSlide(this.activeBrand);
   }
   // Кнопки навигации
   switchNavigationButton(event) {
@@ -83,6 +87,7 @@ export class RetailBrands {
 
     this.switchTabs();
     this.switchSlide();
+    this.positionSection.switchBrand(this.activeBrand);
   }
 
   // Слайдер

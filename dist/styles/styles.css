@@ -9589,13 +9589,17 @@ body {
   margin-bottom: 72px; }
 
 .retail__position-title,
-.retail__position-title-brand {
+.retail__position-title-brand-mvideo,
+.retail__position-title-brand-eldorado {
   font-size: 160px;
   line-height: 144px;
   letter-spacing: -0.03em;
   color: #000000; }
 
-.retail__position-title-brand {
+.retail__position-title-brand-mvideo {
+  color: #e31235; }
+
+.retail__position-title-brand-eldorado {
   color: #76bc21; }
 
 .retail__position-content {
@@ -9613,10 +9617,16 @@ body {
   .retail__position-side-bar-item:last-child {
     margin-bottom: 0; }
 
-.retail__position-side-bar-item-title {
+.retail__position-side-bar-item-title-mvideo,
+.retail__position-side-bar-item-title-eldorado {
   font-size: 40px;
   line-height: 44px;
-  margin-bottom: 8px;
+  margin-bottom: 8px; }
+
+.retail__position-side-bar-item-title-mvideo {
+  color: #e31235; }
+
+.retail__position-side-bar-item-title-eldorado {
   color: #76bc21; }
 
 .retail__position-side-bar-text {
@@ -9644,17 +9654,40 @@ body {
 .retail__position-list-item {
   border-top: 1px solid rgba(0, 0, 0, 0.5);
   padding-top: 16px;
-  padding-bottom: 32px;
+  margin-bottom: 32px;
   display: flex;
-  transition: 0.3s; }
+  transition: 0.3s;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden; }
   .retail__position-list-item:hover {
     border-top: 1px solid #e31235; }
   .retail__position-list-item:hover > .retail__position-item-position {
     color: #e31235; }
+  .retail__position-list-item:hover > .retail__position-item-button {
+    opacity: 1; }
+
+.retail__position-item-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 36px 10px 16px;
+  background: #ffffff;
+  border-radius: 36px;
+  color: #000000;
+  font-size: 12px;
+  line-height: 12px;
+  pointer-events: none;
+  opacity: 0; }
+  .retail__position-item-button > svg {
+    position: absolute;
+    right: 17px;
+    top: calc(50% - 4px); }
 
 .retail__position-item-position,
 .retail__position-item-description {
-  width: 50%; }
+  width: 50%;
+  pointer-events: none; }
 
 .retail__position-item-position-title {
   font-size: 40px;
@@ -9684,23 +9717,26 @@ body {
     font-size: 16px;
     line-height: 20px; }
   .retail__position-title,
-  .retail__position-title-brand {
+  .retail__position-title-brand-mvideo,
+  .retail__position-title-brand-eldorado {
     font-size: 124px;
     line-height: 112px; }
-  .retail__position-side-bar-item-title,
+  .retail__position-side-bar-item-title-mvideo,
+  .retail__position-side-bar-item-title-eldorado,
   .retail__position-item-position-title {
     font-size: 32px;
     line-height: 40px; } }
 
 @media (max-width: 1200px) {
   .retail__position-title,
-  .retail__position-title-brand {
+  .retail__position-title-brand-mvideo,
+  .retail__position-title-brand-eldorado {
     font-size: 88px;
     line-height: 80px; }
   .retail__position-title-wrapper {
     margin-bottom: 64px; }
   .retail__position-list-item {
-    padding-bottom: 24px; }
+    margin-bottom: 24px; }
   .retail__position-headline {
     margin-bottom: 24px; } }
 
@@ -9728,7 +9764,8 @@ body {
 
 @media (max-width: 750px) {
   .retail__position-title,
-  .retail__position-title-brand {
+  .retail__position-title-brand-mvideo,
+  .retail__position-title-brand-eldorado {
     font-size: 66px;
     line-height: 60px; } }
 
@@ -9740,7 +9777,8 @@ body {
   .retail__position-title-wrapper {
     margin-bottom: 32px; }
   .retail__position-title,
-  .retail__position-title-brand {
+  .retail__position-title-brand-mvideo,
+  .retail__position-title-brand-eldorado {
     font-size: 36px;
     line-height: 38px; }
   .retail__position-side-bar {
@@ -9750,7 +9788,8 @@ body {
   .retail__position-side-bar-text {
     max-width: 100%;
     width: 100%; }
-  .retail__position-side-bar-item-title,
+  .retail__position-side-bar-item-title-mvideo,
+  .retail__position-side-bar-item-title-eldorado,
   .retail__position-item-position-title {
     font-size: 24px;
     line-height: 28px;
