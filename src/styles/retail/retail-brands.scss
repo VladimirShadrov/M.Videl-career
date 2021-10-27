@@ -18,11 +18,14 @@
 .brands__head-title {
   width: 80%;
 }
-.brands__head-image-container {
+.brands__head-image-container,
+.brands__head-image-container.mvideo,
+.brands__head-image-container.eldorado {
   width: 50%;
   position: absolute;
   top: 0;
   right: 0;
+  transition: 0.3s;
 }
 
 .brands__navigation-container {
@@ -43,7 +46,6 @@
   padding: 8px 16px;
   border-radius: 36px;
   background: transparent;
-  transition: 0.3s;
 }
 
 .brands__navigation-button-active {
@@ -52,24 +54,31 @@
 }
 
 .brands__headline-title,
-.brands__headline-title-brand {
+.brands__headline-title-brand-mvideo,
+.brands__headline-title-brand-eldorado {
   font-size: 160px;
   line-height: 144px;
   letter-spacing: -0.03em;
   color: $mainColor;
 }
 
-.brands__headline-title-brand {
+.brands__headline-title-brand-mvideo {
+  color: #e31235;
+}
+
+.brands__headline-title-brand-eldorado {
   color: #76bc21;
 }
 
 .brands__head-image {
   display: block;
   width: 100%;
+  transition: 0.3s;
 }
 
 .brands__content {
   display: flex;
+  transition: 0.3s;
 }
 
 .brands__content-side-bar {
@@ -98,10 +107,19 @@
   color: #969696;
 }
 
-.brands__content-statistic-item-title {
+.brands__content-statistic-item-title,
+.brands__content-statistic-item-title-mvideo,
+.brands__content-statistic-item-title-eldorado {
   margin-bottom: 8px;
   font-size: 64px;
   line-height: 68px;
+}
+
+.brands__content-statistic-item-title-mvideo {
+  color: #e31235;
+}
+
+.brands__content-statistic-item-title-eldorado {
   color: #76bc21;
 }
 
@@ -132,6 +150,7 @@
   width: 25%;
   display: flex;
   flex-direction: column;
+  pointer-events: none;
 }
 
 .brands__content-slider-item-image-container {
@@ -180,6 +199,10 @@
     margin-bottom: 72px;
   }
 
+  .brands__headline {
+    transition: 0.3s;
+  }
+
   .brands__headline-title,
   .brands__headline-title-brand {
     font-size: 124px;
@@ -204,7 +227,9 @@
     line-height: 80px;
   }
 
-  .brands__head-image-container {
+  .brands__head-image-container,
+  .brands__head-image-container.mvideo,
+  .brands__head-image-container.eldorado {
     width: 60%;
   }
 
@@ -233,9 +258,15 @@
     margin-bottom: 64px;
   }
 
-  .brands__head-image-container {
+  .brands__head-image-container,
+  .brands__head-image-container.mvideo,
+  .brands__head-image-container.eldorado {
     top: 38px;
     right: -25px;
+  }
+
+  .brands__head-image-container.mvideo {
+    top: 18px;
   }
 
   .brands__content {
@@ -304,7 +335,9 @@
     flex-wrap: wrap;
   }
 
-  .brands__head-image-container {
+  .brands__head-image-container,
+  .brands__head-image-container.mvideo,
+  .brands__head-image-container.eldorado {
     position: relative;
     top: auto;
     right: auto;

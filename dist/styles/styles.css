@@ -9210,11 +9210,14 @@ body {
 .brands__head-title {
   width: 80%; }
 
-.brands__head-image-container {
+.brands__head-image-container,
+.brands__head-image-container.mvideo,
+.brands__head-image-container.eldorado {
   width: 50%;
   position: absolute;
   top: 0;
-  right: 0; }
+  right: 0;
+  transition: 0.3s; }
 
 .brands__navigation-container {
   display: flex;
@@ -9231,29 +9234,34 @@ body {
   line-height: 24px;
   padding: 8px 16px;
   border-radius: 36px;
-  background: transparent;
-  transition: 0.3s; }
+  background: transparent; }
 
 .brands__navigation-button-active {
   background: #000000;
   color: #ffffff; }
 
 .brands__headline-title,
-.brands__headline-title-brand {
+.brands__headline-title-brand-mvideo,
+.brands__headline-title-brand-eldorado {
   font-size: 160px;
   line-height: 144px;
   letter-spacing: -0.03em;
   color: #000000; }
 
-.brands__headline-title-brand {
+.brands__headline-title-brand-mvideo {
+  color: #e31235; }
+
+.brands__headline-title-brand-eldorado {
   color: #76bc21; }
 
 .brands__head-image {
   display: block;
-  width: 100%; }
+  width: 100%;
+  transition: 0.3s; }
 
 .brands__content {
-  display: flex; }
+  display: flex;
+  transition: 0.3s; }
 
 .brands__content-side-bar {
   width: 33.33%;
@@ -9276,10 +9284,17 @@ body {
   line-height: 12px;
   color: #969696; }
 
-.brands__content-statistic-item-title {
+.brands__content-statistic-item-title,
+.brands__content-statistic-item-title-mvideo,
+.brands__content-statistic-item-title-eldorado {
   margin-bottom: 8px;
   font-size: 64px;
-  line-height: 68px;
+  line-height: 68px; }
+
+.brands__content-statistic-item-title-mvideo {
+  color: #e31235; }
+
+.brands__content-statistic-item-title-eldorado {
   color: #76bc21; }
 
 .brands__content-statistic-item-text {
@@ -9304,7 +9319,8 @@ body {
 .brands__content-slider-item {
   width: 25%;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  pointer-events: none; }
 
 .brands__content-slider-item-image-container {
   margin-bottom: 16px; }
@@ -9340,6 +9356,8 @@ body {
     line-height: 20px; }
   .brands__head {
     margin-bottom: 72px; }
+  .brands__headline {
+    transition: 0.3s; }
   .brands__headline-title,
   .brands__headline-title-brand {
     font-size: 124px;
@@ -9355,7 +9373,9 @@ body {
   .brands__headline-title-brand {
     font-size: 88px;
     line-height: 80px; }
-  .brands__head-image-container {
+  .brands__head-image-container,
+  .brands__head-image-container.mvideo,
+  .brands__head-image-container.eldorado {
     width: 60%; }
   .brands__head-title {
     width: 95%; }
@@ -9371,9 +9391,13 @@ body {
     margin-right: 16px; }
   .brands__head {
     margin-bottom: 64px; }
-  .brands__head-image-container {
+  .brands__head-image-container,
+  .brands__head-image-container.mvideo,
+  .brands__head-image-container.eldorado {
     top: 38px;
     right: -25px; }
+  .brands__head-image-container.mvideo {
+    top: 18px; }
   .brands__content {
     flex-direction: column; }
   .brands__content-side-bar {
@@ -9411,7 +9435,9 @@ body {
     margin-bottom: 16px; }
   .brands__navigation-container {
     flex-wrap: wrap; }
-  .brands__head-image-container {
+  .brands__head-image-container,
+  .brands__head-image-container.mvideo,
+  .brands__head-image-container.eldorado {
     position: relative;
     top: auto;
     right: auto;
