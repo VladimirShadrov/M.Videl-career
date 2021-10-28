@@ -43,6 +43,7 @@ import { RetailMission } from './components/retail/retailMissionBlock';
 import { RetailBrands } from './components/retail/retailBrandsBlock';
 import { RetailPosition } from './components/retail/retailPositionBlock';
 import { RetailQuote } from './components/retail/retailQuote';
+import { RetailInternship } from './components/retail/retailInternship';
 
 // Перенос изображений
 require.context('../images', true, /\.(png|jpg|svg|gif)$/);
@@ -76,6 +77,7 @@ export const retailMissionBlock = document.querySelector('.retail__mission');
 export const retailBrands = document.querySelector('.brands');
 export const retailPosition = document.querySelector('.retail__position');
 export const retailQuote = document.querySelector('.retail__quote-container');
+export const retailIntern = document.querySelector('.retail__internship');
 
 new Vacancy(profession);
 new Advantages(ourAdvantages);
@@ -95,6 +97,7 @@ new RetailMission(retailMissionBlock);
 new RetailBrands(retailBrands);
 new RetailPosition(retailPosition);
 new RetailQuote(retailQuote);
+new RetailInternship(retailIntern);
 
 document.body.addEventListener('click', (event) => {
   header.closeSelect();
