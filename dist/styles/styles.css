@@ -10806,15 +10806,22 @@ body {
   right: 17px;
   top: calc(50% - 4px); }
 
-.retail__footer-title-shop {
+.retail__footer-title-shop-mvideo,
+.retail__footer-title-shop-eldorado {
   font-size: 160px;
   line-height: 144px;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.03em; }
+
+.retail__footer-title-shop-mvideo {
+  color: #e31235; }
+
+.retail__footer-title-shop-eldorado {
   color: #76bc21; }
 
 @media (max-width: 1545px) {
   .retail__footer-title,
-  .retail__footer-title-shop {
+  .retail__footer-title-shop-mvideo,
+  .retail__footer-title-shop-eldorado {
     font-size: 124px;
     line-height: 112px; }
   .retail__footer-link {
@@ -10825,7 +10832,8 @@ body {
   .retail__footer-title-container {
     margin-bottom: 44px; }
   .retail__footer-title,
-  .retail__footer-title-shop {
+  .retail__footer-title-shop-mvideo,
+  .retail__footer-title-shop-eldorado {
     font-size: 88px;
     line-height: 80px; } }
 
@@ -10833,14 +10841,16 @@ body {
   .retail__footer-title-container {
     margin-bottom: 280px; }
   .retail__footer-title,
-  .retail__footer-title-shop {
+  .retail__footer-title-shop-mvideo,
+  .retail__footer-title-shop-eldorado {
     display: inline; }
   .retail__footer-link {
     top: 30%; } }
 
 @media (max-width: 590px) {
   .retail__footer-title,
-  .retail__footer-title-shop {
+  .retail__footer-title-shop-mvideo,
+  .retail__footer-title-shop-eldorado {
     font-size: 36px;
     line-height: 38px; }
   .retail__footer-link {
