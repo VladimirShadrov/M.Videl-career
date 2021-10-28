@@ -41,7 +41,7 @@
   letter-spacing: -0.03em;
   font-feature-settings: 'tnum' on, 'lnum' on, 'zero' on;
   margin-right: 65px;
-  color: #76bc21;
+  color: #e31235;
 }
 
 .retail__advantages-description-title {
@@ -51,7 +51,7 @@
 }
 
 .retail__advantages-description-text {
-  max-width: 480px;
+  width: 736px;
 }
 
 // Styles for 1440px
@@ -71,6 +71,10 @@
     font-size: 32px;
     line-height: 40px;
     margin-bottom: 16px;
+  }
+
+  .retail__advantages-description-text {
+    max-width: 480px;
   }
 }
 

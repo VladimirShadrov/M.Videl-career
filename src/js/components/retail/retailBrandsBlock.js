@@ -4,6 +4,8 @@ import { RetailQuote } from './retailQuote';
 import { retailQuote } from '../../index';
 import { RetailInternship } from './retailInternship';
 import { retailIntern } from '../../index';
+import { RetailAdvantages } from './retailAdvantages';
+import { retailAdvantages } from '../../index';
 
 export class RetailBrands {
   constructor(el) {
@@ -79,6 +81,7 @@ export class RetailBrands {
     this.positionSection = new RetailPosition(retailPosition);
     this.quoteSection = new RetailQuote(retailQuote);
     this.internshipSection = new RetailInternship(retailIntern);
+    this.retailAdvantages = new RetailAdvantages(retailAdvantages);
 
     this.switchSlide(this.activeBrand);
   }
@@ -96,6 +99,7 @@ export class RetailBrands {
     this.positionSection.switchBrand(this.activeBrand);
     this.quoteSection.switchTab(this.activeBrand);
     this.internshipSection.changeIcon(this.activeBrand);
+    this.retailAdvantages.changeBrandColor(this.activeBrand);
   }
 
   // Слайдер

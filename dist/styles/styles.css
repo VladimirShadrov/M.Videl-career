@@ -10502,7 +10502,7 @@ body {
   letter-spacing: -0.03em;
   font-feature-settings: 'tnum' on, 'lnum' on, 'zero' on;
   margin-right: 65px;
-  color: #76bc21; }
+  color: #e31235; }
 
 .retail__advantages-description-title {
   font-size: 40px;
@@ -10510,7 +10510,7 @@ body {
   margin-bottom: 24px; }
 
 .retail__advantages-description-text {
-  max-width: 480px; }
+  width: 736px; }
 
 @media (max-width: 1440px) {
   .retail__advantages {
@@ -10523,7 +10523,9 @@ body {
   .retail__advantages-description-title {
     font-size: 32px;
     line-height: 40px;
-    margin-bottom: 16px; } }
+    margin-bottom: 16px; }
+  .retail__advantages-description-text {
+    max-width: 480px; } }
 
 @media (max-width: 1024px) {
   .retail__advantages {
