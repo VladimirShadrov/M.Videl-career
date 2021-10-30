@@ -39,7 +39,7 @@ import { Page404 } from './components/page404/animationPage404';
 
 // Импорт классов страницы Розницы
 import { CreateRetailFutureComponent } from './components/retail/createRetailFuture';
-import { RetailMission } from './components/retail/retailMissionBlock';
+import { RetailMissionBlock } from './components/retail/retailMissionBlock';
 import { RetailBrandsBlock } from './components/retail/retailBrandsBlock';
 import { RetailPositionBlock } from './components/retail/retailPositionBlock';
 import { RetailQuoteBlock } from './components/retail/retailQuote';
@@ -73,10 +73,6 @@ const listingPageFilters = document.querySelector(
 // Страница 404
 const page404 = document.querySelector('.page-404');
 
-// Страница Розницы
-const createFutureBlock = document.querySelector('.retail__preview');
-export const retailMissionBlock = document.querySelector('.retail__mission');
-
 new Vacancy(profession);
 new Advantages(ourAdvantages);
 new CareerUpgrade(upgradeSection);
@@ -90,8 +86,8 @@ new ListingFilters(listingPageFilters);
 new Page404(page404);
 
 // Инициализация классов страницы Розницы
-new CreateRetailFutureComponent(createFutureBlock);
-new RetailMission(retailMissionBlock);
+const retailCreateFuture = new CreateRetailFutureComponent('.retail__preview');
+const retailMissionBlock = new RetailMissionBlock('.retail__mission');
 const retailBrandsBlock = new RetailBrandsBlock('.brands');
 const retailPositionBlock = new RetailPositionBlock('.retail__position');
 const retailQuote = new RetailQuoteBlock('.retail__quote-container');
@@ -99,6 +95,8 @@ const retailInternshipBlock = new RetailInternshipBlock('.retail__internship');
 const retailAdvantagesBlock = new RetailAdvantagesBlock('.retail__advantages');
 const retailFooter = new RetailFooter('.retail__footer');
 
+retailCreateFuture.registerParameters(headerIt, retailMissionBlock);
+retailMissionBlock.registerParameters(retailBrandsBlock, headerIt);
 retailBrandsBlock.getAllBrandsTabs([
   { name: 'mvideo', elements: retailBrandsBlock.mvideoFromBrandsPage },
   { name: 'eldorado', elements: retailBrandsBlock.eldoradoFromBrandsPage },
