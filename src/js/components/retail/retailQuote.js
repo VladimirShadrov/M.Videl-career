@@ -1,21 +1,12 @@
-export class RetailQuote {
-  constructor(el) {
-    this.el = el;
+export class RetailQuoteBlock {
+  constructor(className) {
+    this.el = document.querySelector(className);
 
     if (!this.el) return;
 
-    this.mvideo = this.el.querySelector('.mvideo');
-    this.eldorado = this.el.querySelector('.eldorado');
-  }
-  switchTab(currentBrand) {
-    if (currentBrand === 0) {
-      this.mvideo.classList.remove('hide');
-      this.eldorado.classList.add('hide');
-    }
-
-    if (currentBrand === 1) {
-      this.mvideo.classList.add('hide');
-      this.eldorado.classList.remove('hide');
-    }
+    this.mvideoFromQuoteBlock = Array.from(this.el.querySelectorAll('.mvideo'));
+    this.eldoradoFromQuoteBlock = Array.from(
+      this.el.querySelectorAll('.eldorado')
+    );
   }
 }

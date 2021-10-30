@@ -40,11 +40,11 @@ import { Page404 } from './components/page404/animationPage404';
 // Импорт классов страницы Розницы
 import { CreateRetailFutureComponent } from './components/retail/createRetailFuture';
 import { RetailMission } from './components/retail/retailMissionBlock';
-import { RetailBrands } from './components/retail/retailBrandsBlock';
-import { RetailPosition } from './components/retail/retailPositionBlock';
-import { RetailQuote } from './components/retail/retailQuote';
-import { RetailInternship } from './components/retail/retailInternship';
-import { RetailAdvantages } from './components/retail/retailAdvantages';
+import { RetailBrandsBlock } from './components/retail/retailBrandsBlock';
+import { RetailPositionBlock } from './components/retail/retailPositionBlock';
+import { RetailQuoteBlock } from './components/retail/retailQuote';
+import { RetailInternshipBlock } from './components/retail/retailInternship';
+import { RetailAdvantagesBlock } from './components/retail/retailAdvantages';
 import { RetailFooter } from './components/retail/retailFooter';
 
 // Перенос изображений
@@ -76,12 +76,6 @@ const page404 = document.querySelector('.page-404');
 // Страница Розницы
 const createFutureBlock = document.querySelector('.retail__preview');
 export const retailMissionBlock = document.querySelector('.retail__mission');
-export const retailBrands = document.querySelector('.brands');
-export const retailPosition = document.querySelector('.retail__position');
-export const retailQuote = document.querySelector('.retail__quote-container');
-export const retailIntern = document.querySelector('.retail__internship');
-export const retailAdvantages = document.querySelector('.retail__advantages');
-export const retailFooter = document.querySelector('.retail__footer');
 
 new Vacancy(profession);
 new Advantages(ourAdvantages);
@@ -98,12 +92,39 @@ new Page404(page404);
 // Инициализация классов страницы Розницы
 new CreateRetailFutureComponent(createFutureBlock);
 new RetailMission(retailMissionBlock);
-new RetailBrands(retailBrands);
-new RetailPosition(retailPosition);
-new RetailQuote(retailQuote);
-new RetailInternship(retailIntern);
-new RetailAdvantages(retailAdvantages);
-new RetailFooter(retailFooter);
+const retailBrandsBlock = new RetailBrandsBlock('.brands');
+const retailPositionBlock = new RetailPositionBlock('.retail__position');
+const retailQuote = new RetailQuoteBlock('.retail__quote-container');
+const retailInternshipBlock = new RetailInternshipBlock('.retail__internship');
+const retailAdvantagesBlock = new RetailAdvantagesBlock('.retail__advantages');
+const retailFooter = new RetailFooter('.retail__footer');
+
+retailBrandsBlock.getAllBrandsTabs([
+  { name: 'mvideo', elements: retailBrandsBlock.mvideoFromBrandsPage },
+  { name: 'eldorado', elements: retailBrandsBlock.eldoradoFromBrandsPage },
+  { name: 'mvideo', elements: retailPositionBlock.mvideoFromPositionPage },
+  { name: 'eldorado', elements: retailPositionBlock.eldoradoFromPositionPage },
+  { name: 'mvideo', elements: retailQuote.mvideoFromQuoteBlock },
+  { name: 'eldorado', elements: retailQuote.eldoradoFromQuoteBlock },
+  {
+    name: 'mvideo',
+    elements: retailInternshipBlock.mvideoFromInternshipPage,
+  },
+  {
+    name: 'eldorado',
+    elements: retailInternshipBlock.eldoradoFromInternshipPage,
+  },
+  {
+    name: 'mvideo',
+    elements: retailAdvantagesBlock.mvideoFromRetailAdvantages,
+  },
+  {
+    name: 'eldorado',
+    elements: retailAdvantagesBlock.eldoradoFromRetailAdvantages,
+  },
+  { name: 'mvideo', elements: retailFooter.mvideoFromFooter },
+  { name: 'eldorado', elements: retailFooter.eldoradoFromFooter },
+]);
 
 document.body.addEventListener('click', (event) => {
   header.closeSelect();

@@ -1,6 +1,6 @@
-import { retailBrands } from '../../index';
-import { smothScrollingToBlock } from '../../index';
-import { headerItPage } from '../../index';
+// import { retailBrands } from '../../index';
+// import { smothScrollingToBlock } from '../../index';
+// import { headerItPage } from '../../index';
 
 export class RetailMission {
   constructor(el) {

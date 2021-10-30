@@ -1,12 +1,16 @@
-export class RetailPosition {
-  constructor(el) {
-    this.el = el;
+export class RetailPositionBlock {
+  constructor(className) {
+    this.el = document.querySelector(className);
 
     if (!this.el) return;
 
     this.vacancyItems = [];
-    this.mvideo = this.el.querySelectorAll('.mvideo');
-    this.eldorado = this.el.querySelectorAll('.eldorado');
+    this.mvideoFromPositionPage = Array.from(
+      this.el.querySelectorAll('.mvideo')
+    );
+    this.eldoradoFromPositionPage = Array.from(
+      this.el.querySelectorAll('.eldorado')
+    );
 
     this.el.addEventListener('mouseover', this.getVacancyItems.bind(this));
   }
@@ -29,17 +33,5 @@ export class RetailPosition {
         button.style.left = event.layerX - 30 + 'px';
       });
     });
-  }
-
-  switchBrand(currentBrand) {
-    if (currentBrand === 0) {
-      this.mvideo.forEach((item) => item.classList.remove('hide'));
-      this.eldorado.forEach((item) => item.classList.add('hide'));
-    }
-
-    if (currentBrand === 1) {
-      this.mvideo.forEach((item) => item.classList.add('hide'));
-      this.eldorado.forEach((item) => item.classList.remove('hide'));
-    }
   }
 }

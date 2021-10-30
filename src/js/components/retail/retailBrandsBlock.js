@@ -1,21 +1,10 @@
-import { RetailPosition } from './retailPositionBlock';
-import { retailPosition } from '../../index';
-import { RetailQuote } from './retailQuote';
-import { retailQuote } from '../../index';
-import { RetailInternship } from './retailInternship';
-import { retailIntern } from '../../index';
-import { RetailAdvantages } from './retailAdvantages';
-import { retailAdvantages } from '../../index';
-import { RetailFooter } from './retailFooter';
-import { retailFooter } from '../../index';
-
-export class RetailBrands {
-  constructor(el) {
-    this.el = el;
+export class RetailBrandsBlock {
+  constructor(className) {
+    this.el = document.querySelector(className);
 
     if (!this.el) return;
 
-    // Навигация
+    // Блок навигации
     this.navigationContainer = this.el.querySelector(
       '.brands__navigation-container'
     );
@@ -28,14 +17,16 @@ export class RetailBrands {
       this.switchNavigationButton.bind(this)
     );
 
-    this.activeBrand = 0;
+    this.mvideoBrand = 0;
+    this.eldoradoBrand = 1;
+    this.activeBrand = this.mvideoBrand;
 
     this.navigationButtons.forEach((button) => {
       button.addEventListener('click', () => {
         if (button.dataset.name === 'mvideo') {
-          this.activeBrand = 0;
+          this.activeBrand = this.mvideoBrand;
         } else {
-          this.activeBrand = 1;
+          this.activeBrand = this.eldoradoBrand;
         }
       });
     });
@@ -60,6 +51,7 @@ export class RetailBrands {
     this.sliderButtonPrev = this.el.querySelectorAll(
       '.brands__content-slider-button-prev'
     );
+    this.percendsValue = 100;
 
     this.sliderDirection;
     // this.startSliderLinePosition;
@@ -78,13 +70,11 @@ export class RetailBrands {
     // window.addEventListener('pointerup', this.stopSwipe);
 
     // Переключение табов
-    this.mvideo = this.el.querySelectorAll('.mvideo');
-    this.eldorado = this.el.querySelectorAll('.eldorado');
-    this.positionSection = new RetailPosition(retailPosition);
-    this.quoteSection = new RetailQuote(retailQuote);
-    this.internshipSection = new RetailInternship(retailIntern);
-    this.retailAdvantages = new RetailAdvantages(retailAdvantages);
-    this.retailFooter = new RetailFooter(retailFooter);
+    this.brandsTabs = [];
+    this.mvideoFromBrandsPage = Array.from(this.el.querySelectorAll('.mvideo'));
+    this.eldoradoFromBrandsPage = Array.from(
+      this.el.querySelectorAll('.eldorado')
+    );
 
     this.switchSlide(this.activeBrand);
   }
@@ -99,11 +89,6 @@ export class RetailBrands {
 
     this.switchTabs();
     this.switchSlide();
-    this.positionSection.switchBrand(this.activeBrand);
-    this.quoteSection.switchTab(this.activeBrand);
-    this.internshipSection.changeIcon(this.activeBrand);
-    this.retailAdvantages.changeBrandColor(this.activeBrand);
-    this.retailFooter.showActiveBrandTitle(this.activeBrand);
   }
 
   // Слайдер
@@ -151,7 +136,10 @@ export class RetailBrands {
   }
 
   showNextSlide() {
-    const step = 100 / (this.slides.length / 2) + '%';
+    const step =
+      this.percendsValue /
+        (this.slides.length / this.brandSliderContainer.length) +
+      '%';
     this.sliderDirection = 'next';
 
     if (
@@ -171,7 +159,10 @@ export class RetailBrands {
   }
 
   showPrevSlide() {
-    const step = 100 / (this.slides.length / 2) + '%';
+    const step =
+      this.percendsValue /
+        (this.slides.length / this.brandSliderContainer.length) +
+      '%';
     if (this.sliderDirection === 'next' || !this.sliderDirection) {
       this.sliderDirection = 'prev';
       this.brandSliderLine[this.activeBrand].prepend(
@@ -229,33 +220,43 @@ export class RetailBrands {
   // }
 
   // Переключение табов
-  switchTabs() {
-    if (this.activeBrand === 0) {
-      this.mvideo.forEach((item) => (item.style.opacity = '0'));
-      this.eldorado.forEach((item) => (item.style.opacity = '0'));
+  getAllBrandsTabs(tabs) {
+    this.brandsTabs = tabs;
+  }
 
+  switchTabs() {
+    let currentMvideoTabs = [];
+    let currentEldoradoTabs = [];
+
+    this.brandsTabs.forEach((tab) => {
+      tab.name === 'mvideo'
+        ? currentMvideoTabs.push(...tab.elements)
+        : currentEldoradoTabs.push(...tab.elements);
+    });
+
+    if (this.activeBrand === this.mvideoBrand) {
+      currentMvideoTabs.forEach((item) => (item.style.opacity = '0'));
+      currentEldoradoTabs.forEach((item) => (item.style.opacity = '0'));
       setTimeout(() => {
-        this.mvideo.forEach((item) => {
+        currentMvideoTabs.forEach((item) => {
           item.classList.remove('hide');
           item.style.opacity = '1';
         });
-        this.eldorado.forEach((item) => {
+        currentEldoradoTabs.forEach((item) => {
           item.classList.add('hide');
-          item.style.opacity = '1';
         });
       }, 300);
     }
 
-    if (this.activeBrand === 1) {
-      this.mvideo.forEach((item) => (item.style.opacity = '0'));
-      this.eldorado.forEach((item) => (item.style.opacity = '0'));
+    if (this.activeBrand === this.eldoradoBrand) {
+      currentMvideoTabs.forEach((item) => (item.style.opacity = '0'));
+      currentEldoradoTabs.forEach((item) => (item.style.opacity = '0'));
 
       setTimeout(() => {
-        this.mvideo.forEach((item) => {
+        currentMvideoTabs.forEach((item) => {
           item.classList.add('hide');
-          item.style.opacity = '1';
         });
-        this.eldorado.forEach((item) => {
+        currentEldoradoTabs.forEach((item) => {
           item.classList.remove('hide');
           item.style.opacity = '1';
         });

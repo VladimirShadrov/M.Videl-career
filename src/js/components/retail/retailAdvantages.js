@@ -1,22 +1,14 @@
-export class RetailAdvantages {
-  constructor(el) {
-    this.el = el;
+export class RetailAdvantagesBlock {
+  constructor(className) {
+    this.el = document.querySelector(className);
 
     if (!this.el) return;
 
-    this.advantagesNumbers = this.el.querySelectorAll(
-      '.retail__advantages-number'
+    this.mvideoFromRetailAdvantages = Array.from(
+      this.el.querySelectorAll('.mvideo')
     );
-  }
-  changeBrandColor(currentBrend) {
-    if (currentBrend === 0) {
-      this.advantagesNumbers.forEach((number) => {
-        number.style.color = '#E31235';
-      });
-    } else {
-      this.advantagesNumbers.forEach((number) => {
-        number.style.color = '#76BC21';
-      });
-    }
+    this.eldoradoFromRetailAdvantages = Array.from(
+      this.el.querySelectorAll('.eldorado')
+    );
   }
 }

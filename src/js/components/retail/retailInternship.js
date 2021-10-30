@@ -1,31 +1,14 @@
-export class RetailInternship {
-  constructor(el) {
-    this.el = el;
+export class RetailInternshipBlock {
+  constructor(className) {
+    this.el = document.querySelector(className);
 
     if (!this.el) return;
 
-    this.mvideoIcon = this.el.querySelector(
-      '.retail__internship-shop-icon-mvideo'
+    this.mvideoFromInternshipPage = Array.from(
+      this.el.querySelectorAll('.mvideo')
     );
-    this.eldoradoIcon = this.el.querySelector(
-      '.retail__internship-shop-icon-eldorado'
+    this.eldoradoFromInternshipPage = Array.from(
+      this.el.querySelectorAll('.eldorado')
     );
-    this.mvideo = this.el.querySelector('.mvideo');
-    this.eldorado = this.el.querySelector('.eldorado');
-  }
-  changeIcon(currentBrand) {
-    if (currentBrand === 0) {
-      this.mvideoIcon.classList.add('retail__internship-icon-active');
-      this.mvideo.classList.remove('hide');
-      this.eldoradoIcon.classList.remove('retail__internship-icon-active');
-      this.eldorado.classList.add('hide');
-    }
-
-    if (currentBrand === 1) {
-      this.mvideoIcon.classList.remove('retail__internship-icon-active');
-      this.mvideo.classList.add('hide');
-      this.eldoradoIcon.classList.add('retail__internship-icon-active');
-      this.eldorado.classList.remove('hide');
-    }
   }
 }

@@ -35,13 +35,25 @@
   }
 }
 
-.retail__advantages-number {
+.retail__advantages-number-mvideo,
+.retail__advantages-number-eldorado {
   font-size: 160px;
   line-height: 144px;
   letter-spacing: -0.03em;
   font-feature-settings: 'tnum' on, 'lnum' on, 'zero' on;
-  margin-right: 65px;
+  margin-right: auto;
+}
+
+.retail__advantages-number-mvideo {
   color: #e31235;
+}
+
+.retail__advantages-number-eldorado {
+  color: #76bc21;
+}
+
+.retail__advantages-description-block {
+  width: 75%;
 }
 
 .retail__advantages-description-title {
@@ -51,7 +63,7 @@
 }
 
 .retail__advantages-description-text {
-  width: 736px;
+  width: 78%;
 }
 
 // Styles for 1440px
@@ -62,7 +74,8 @@
     line-height: 20px;
   }
 
-  .retail__advantages-number {
+  .retail__advantages-number-mvideo,
+  .retail__advantages-number-eldorado {
     font-size: 132px;
     line-height: 120px;
   }
@@ -74,7 +87,7 @@
   }
 
   .retail__advantages-description-text {
-    max-width: 480px;
+    width: 70%;
   }
 }
 
@@ -84,15 +97,19 @@
     margin-bottom: 143px;
   }
 
-  .retail__advantages-number {
+  .retail__advantages-number-mvideo,
+  .retail__advantages-number-eldorado {
     font-size: 80px;
     line-height: 72px;
-    margin-right: 63px;
   }
 
   .retail__advantages-content-item {
     padding-bottom: 32px;
     margin-bottom: 36px;
+  }
+
+  .retail__advantages-description-text {
+    width: 100%;
   }
 }
 
@@ -117,8 +134,8 @@
     margin-bottom: 40px;
   }
 
-  .retail__advantages-number {
-    margin-right: 141px;
+  .retail__advantages-description-block {
+    width: 67%;
   }
 }
 
@@ -138,7 +155,8 @@
     margin-bottom: 24px;
   }
 
-  .retail__advantages-number {
+  .retail__advantages-number-mvideo,
+  .retail__advantages-number-eldorado {
     margin-right: 8px;
     font-size: 36px;
     line-height: 38px;
@@ -153,5 +171,9 @@
   .retail__advantages-content-item {
     padding-bottom: 24px;
     margin-bottom: 28px;
+  }
+
+  .retail__advantages-description-block {
+    width: 81.5%;
   }
 }
