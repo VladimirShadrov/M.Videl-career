@@ -5344,7 +5344,6 @@ body {
 
 .vacancy__intro-description-text {
   width: 100%;
-  max-width: 464px;
   margin-bottom: 24px; }
   .vacancy__intro-description-text:last-child {
     margin-bottom: 0; }
@@ -7667,7 +7666,12 @@ body {
 .direct-link__wrapper {
   display: flex;
   justify-content: flex-start;
-  position: relative; }
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 8px; }
+
+.it-header__logo {
+  margin-top: 6px; }
 
 .direct-link__container {
   padding: 0 16px; }

@@ -60,6 +60,10 @@ module.exports = {
       filename: '404-page.html',
       template: './404-page.html',
     }),
+    new HTMLWebpackPlugin({
+      filename: 'retail-vacancy-page.html',
+      template: './retail-vacancy-page.html',
+    }),
     new MiniCssExtractPlugin({
       filename: 'styles/styles.css',
     }),
