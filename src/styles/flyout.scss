@@ -48,7 +48,6 @@
 
 .vacancy__header-head-links {
   width: 100%;
-  max-width: 209px;
 }
 
 .vacancy__header-head-link-main,
@@ -202,7 +201,6 @@
 
 .vacancy__description-list-wrapper {
   width: 100%;
-  max-width: 454px;
 }
 
 .vacancy__description-list-item {
@@ -292,19 +290,15 @@
 .vacancy__office-content-link-mobile {
   display: inline-block;
   position: relative;
-  width: 100%;
-  max-width: 196px;
   padding-right: 20px;
   color: $mainColor;
 
-  &::after {
-    content: '';
+  & > svg {
     position: absolute;
     right: 0;
     top: calc(50% - 4.5px);
-    width: 13px;
+    width: 14px;
     height: 9px;
-    background: url('../images/flyout/flyout-office/arrow-right.svg') no-repeat;
   }
 }
 
@@ -764,10 +758,6 @@
     max-width: 187px;
   }
 
-  .vacancy__office-content-link {
-    max-width: 176px;
-  }
-
   .vacancy__news-item {
     max-width: 360px;
   }
@@ -949,10 +939,6 @@
 
   .vacancy__intro-description-text {
     max-width: 504px;
-  }
-
-  .vacancy__description-list-wrapper {
-    max-width: 494px;
   }
 
   .vacancy__description-list-item {
@@ -1139,8 +1125,8 @@
 
   .vacancy__office-content-link-mobile {
     display: block;
-    max-width: 157px;
     padding-right: 14px;
+    width: 157px;
   }
 
   .vacancy__remote {

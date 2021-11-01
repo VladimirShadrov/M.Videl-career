@@ -5236,8 +5236,7 @@ body {
   margin-bottom: 56px; }
 
 .vacancy__header-head-links {
-  width: 100%;
-  max-width: 209px; }
+  width: 100%; }
 
 .vacancy__header-head-link-main,
 .vacancy__header-head-link-vacancy {
@@ -5358,8 +5357,7 @@ body {
   width: 50%; }
 
 .vacancy__description-list-wrapper {
-  width: 100%;
-  max-width: 454px; }
+  width: 100%; }
 
 .vacancy__description-list-item {
   list-style: disc;
@@ -5430,19 +5428,15 @@ body {
 .vacancy__office-content-link-mobile {
   display: inline-block;
   position: relative;
-  width: 100%;
-  max-width: 196px;
   padding-right: 20px;
   color: #000000; }
-  .vacancy__office-content-link::after,
-  .vacancy__office-content-link-mobile::after {
-    content: '';
+  .vacancy__office-content-link > svg,
+  .vacancy__office-content-link-mobile > svg {
     position: absolute;
     right: 0;
     top: calc(50% - 4.5px);
-    width: 13px;
-    height: 9px;
-    background: url("../images/flyout/flyout-office/arrow-right.svg") no-repeat; }
+    width: 14px;
+    height: 9px; }
 
 .vacancy__office-content-link-mobile {
   display: none; }
@@ -5800,8 +5794,6 @@ body {
     font-size: 20px;
     line-height: 20px;
     max-width: 187px; }
-  .vacancy__office-content-link {
-    max-width: 176px; }
   .vacancy__news-item {
     max-width: 360px; } }
 
@@ -5908,8 +5900,6 @@ body {
     max-width: 504px; }
   .vacancy__intro-description-text {
     max-width: 504px; }
-  .vacancy__description-list-wrapper {
-    max-width: 494px; }
   .vacancy__description-list-item {
     margin-left: 15px; }
   .vacancy__office-map {
@@ -6027,8 +6017,8 @@ body {
     display: none; }
   .vacancy__office-content-link-mobile {
     display: block;
-    max-width: 157px;
-    padding-right: 14px; }
+    padding-right: 14px;
+    width: 157px; }
   .vacancy__remote {
     display: block;
     position: relative; }
@@ -7759,7 +7749,7 @@ body {
 
 .direct-link__header-headline {
   margin-bottom: 96px;
-  max-width: 1150px; }
+  width: 80%; }
 
 .direct-link__headline-title {
   display: inline;
