@@ -152,6 +152,10 @@
   margin-bottom: 96px;
 }
 
+.vacancy__description-block {
+  overflow: hidden;
+}
+
 // Styles for Flyout-Intro
 .vacancy__intro {
   display: flex;
@@ -249,9 +253,12 @@
   width: 50%;
 }
 
+.vacancy__advantages-slider-navigation-mobile {
+  display: none;
+}
+
 .vacancy__description-list-wrapper {
   width: 100%;
-  max-width: 454px;
 }
 
 .vacancy__description-list-item,
@@ -474,6 +481,7 @@
 // Sytles for Vacancy-Form block
 .vacancy__form {
   display: flex;
+  overflow: hidden;
 }
 
 .vacancy__form-title-block,
@@ -896,6 +904,11 @@
   .vacancy__news-item-image-block {
     height: 210px;
   }
+
+  .vacancy__advantages-item-title {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 
 // Styles for 1024px
@@ -1000,6 +1013,7 @@
   .vacancy__form-title {
     font-size: 32px;
     line-height: 36px;
+    width: 328px;
   }
 
   .vacancy__response {
@@ -1072,13 +1086,13 @@
     margin-right: 28px;
   }
 
+  .vacancy__description-title-text {
+    width: 80%;
+  }
+
   .vacancy__intro-description,
   .vacancy__description-list {
     width: 70%;
-  }
-
-  .vacancy__description-list-wrapper {
-    max-width: 494px;
   }
 
   .vacancy__description-list-item,
@@ -1146,6 +1160,15 @@
 
   .vacancy__news-item-image-block {
     height: 165px;
+  }
+
+  .vacancy__advantages-item {
+    width: 90%;
+    margin-left: auto;
+  }
+
+  .vacancy__advantages-item-image {
+    left: -65px;
   }
 }
 
@@ -1242,7 +1265,6 @@
   }
 
   .vacancy__intro-description-text,
-  .vacancy__description-title-text,
   .vacancy__office-map-title,
   .vacancy__office-map-selectors,
   .vacancy__office-content-top,
@@ -1252,6 +1274,56 @@
   .vacancy__item-positions-name-block,
   .vacancy__item-positions-price {
     margin-bottom: 16px;
+  }
+
+  .vacancy__description-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+
+  .vacancy__advantages-slider-navigation-mobile {
+    display: flex;
+    align-items: center;
+  }
+
+  .vacancy__advantages-slider-prev,
+  .vacancy__advantages-slider-next {
+    background: transparent;
+  }
+
+  .vacancy__advantages-slider-prev,
+  .vacancy__advantages-slider-counter {
+    margin-right: 8px;
+  }
+
+  .vacancy__advantages-item-wrapper {
+    display: flex;
+    width: 270%;
+  }
+
+  .vacancy__advantages-item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 16px;
+    margin-left: 0;
+    width: 30%;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .vacancy__advantages-item-description {
+    margin-bottom: 16px;
+  }
+
+  .vacancy__advantages-item-image {
+    position: relative;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    margin-top: auto;
   }
 
   .vacancy__office-map {
