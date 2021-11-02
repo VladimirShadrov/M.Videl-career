@@ -133,7 +133,8 @@
   color: $mainColor;
 }
 
-.it-header__button {
+.it-header__button,
+.direct-link__header-button {
   display: block;
   width: 162px;
   text-align: center;
@@ -146,6 +147,10 @@
   font-size: 16px;
   line-height: 20px;
   color: $mainColor;
+}
+
+.direct-link__header-button {
+  top: 4px;
 }
 
 // Styles for 1440px
@@ -172,7 +177,8 @@
 
   .it-header__item:first-child,
   .it-header__item:nth-child(3),
-  .it-header__button {
+  .it-header__button,
+  .direct-link__header-button {
     display: none;
   }
 

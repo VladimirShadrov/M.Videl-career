@@ -1,29 +1,40 @@
 @import './styles.scss';
 
 .direct-link__header {
-  position: relative;
   overflow: hidden;
-  margin-bottom: 96px;
+  padding: 16px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: $bodyBackgraund;
+  z-index: 10;
 }
 
-.direct-link__header {
-  margin-bottom: 56px;
+.direct-link__button {
+  display: block;
+  width: 162px;
+  text-align: center;
+  padding: 3px 0;
+  border: 0.5px solid #e31235;
+  border-radius: 48px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: $mainColor;
 }
 
 .direct-link__wrapper {
   display: flex;
   justify-content: flex-start;
   position: relative;
-  padding-top: 20px;
-  padding-bottom: 8px;
-}
-
-.it-header__logo {
-  margin-top: 6px;
 }
 
 .direct-link__container {
   padding: 0 16px;
+  padding-top: 132px;
 }
 
 .direct-link__vacancy-description-block-mobile {
@@ -58,11 +69,17 @@
 
 .direct-link__content-wrapper {
   display: flex;
+  justify-content: flex-end;
 }
 
 .direct-link__side-bar {
-  width: 33%;
+  width: 30%;
   padding-top: 16px;
+
+  position: fixed;
+  top: 112px;
+  left: 16px;
+  transition: 0.3s;
 }
 
 .direct-link__header-head-copy {
@@ -74,15 +91,13 @@
   font-size: 18px;
   line-height: 24px;
 
-  &::before {
-    content: '';
+  & > svg {
     position: absolute;
     right: 0;
     top: calc(50% - 4.5px);
     width: 14px;
     height: 9px;
-    background: url('../images/flyout/flyout-header/link.svg') left / contain
-      no-repeat;
+    pointer-events: none;
   }
 }
 
@@ -113,15 +128,16 @@
   border-radius: 36px;
   background: $whiteColor;
   position: relative;
+  transition: 0.3s;
+  opacity: 0;
 
-  &::after {
-    content: '';
+  & > svg {
     position: absolute;
     right: 16px;
     top: calc(50% - 4.5px);
     width: 14px;
     height: 9px;
-    background: url('../images/flyout/flyout-header/arrow-right.svg') no-repeat;
+    pointer-events: none;
   }
 }
 
@@ -151,14 +167,13 @@
   background: $whiteColor;
   transform: translateY(-10px);
 
-  &::after {
-    content: '';
+  & > svg {
     position: absolute;
     right: 15px;
     top: calc(50% - 4.5px);
     width: 14px;
     height: 9px;
-    background: url('../images/flyout/flyout-header/arrow-right.svg') no-repeat;
+    pointer-events: none;
   }
 }
 
@@ -166,6 +181,10 @@
 @media (max-width: 1500px) {
   .direct-link__header {
     margin-bottom: 40px;
+  }
+
+  .direct-link__container {
+    padding-top: 108px;
   }
 
   .vacancy__news,
@@ -210,6 +229,10 @@
     line-height: 36px;
   }
 
+  .direct-link__container {
+    padding-top: 100px;
+  }
+
   .direct-link__headline-link {
     font-size: 18px;
     line-height: 18px;
@@ -234,7 +257,9 @@
 // Styles for 768px
 @media (max-width: 990px) {
   .direct-link__container {
-    padding: 0 8px;
+    padding-top: 100px;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 
   .direct-link__side-bar {
@@ -287,8 +312,8 @@
     line-height: 16px;
   }
 
-  .direct-link__header {
-    margin-bottom: 16px;
+  .direct-link__button {
+    display: none;
   }
 
   .direct-link__vacancy-container {
@@ -320,5 +345,16 @@
 
   .direct-link__headline-link {
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 479px) {
+  .direct-link__container {
+    padding-top: 0;
+  }
+
+  .direct-link__header {
+    position: static;
+    margin-bottom: 16px;
   }
 }
