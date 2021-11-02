@@ -5408,6 +5408,24 @@ body {
   .vacancy__description-list > ul > li:last-child {
     margin-bottom: 0; }
 
+.vacancy__advantages-item {
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #969696;
+  position: relative; }
+
+.vacancy__advantages-item-title {
+  font-size: 40px;
+  line-height: 44px;
+  margin-bottom: 8px; }
+
+.vacancy__advantages-item-image {
+  position: absolute;
+  top: 0;
+  left: -72px;
+  width: 56px;
+  height: 56px; }
+
 .vacancy__office {
   display: flex; }
 
