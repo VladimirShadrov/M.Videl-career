@@ -100,7 +100,6 @@
   transition: 0.3s;
   position: relative;
   cursor: pointer;
-  overflow: hidden;
 
   &:hover {
     border-top: 1px solid #e31235;
@@ -160,6 +159,7 @@
   color: $mainColor;
   position: relative;
   padding-right: 23px;
+  opacity: 0;
 }
 
 .retail__position-headline-link-arrow {

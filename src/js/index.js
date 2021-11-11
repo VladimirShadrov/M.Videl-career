@@ -36,6 +36,7 @@ import { RunningLine } from './components/itHubPage/runningLine';
 import { Header } from './components/itHubPage/header';
 import { ListingFilters } from './components/vacancyListingPage/listingFilters';
 import { Page404 } from './components/page404/animationPage404';
+import { ListingVacancyMapBlock } from './components/vacancyListingPage/listingPageMapBlock';
 
 // Импорт классов страницы Розницы
 import { CreateRetailFutureComponent } from './components/retail/createRetailFuture';
@@ -84,6 +85,7 @@ new Listing(listingPage);
 new Form(form);
 new ListingFilters(listingPageFilters);
 new Page404(page404);
+new ListingVacancyMapBlock('.listing-metro__map-place');
 
 // Инициализация классов страницы Розницы
 const retailCreateFuture = new CreateRetailFutureComponent('.retail__preview');

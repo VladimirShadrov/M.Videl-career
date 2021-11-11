@@ -64,6 +64,11 @@ module.exports = {
       filename: 'retail-vacancy-page.html',
       template: './retail-vacancy-page.html',
     }),
+    new HTMLWebpackPlugin({
+      filename: 'listing-map.html',
+      template: './listing-map.html',
+    }),
+
     new MiniCssExtractPlugin({
       filename: 'styles/styles.css',
     }),

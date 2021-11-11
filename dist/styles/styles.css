@@ -8285,8 +8285,7 @@ body {
   padding-right: 16px; }
 
 .listing-metro__map-place {
-  padding-top: 100%;
-  background: url("../../images/listing/metro.png") center/cover no-repeat; }
+  height: 900px; }
 
 .listing-metro__map-button-plus,
 .listing-metro__map-button-minus {
@@ -9865,8 +9864,7 @@ body {
   display: flex;
   transition: 0.3s;
   position: relative;
-  cursor: pointer;
-  overflow: hidden; }
+  cursor: pointer; }
   .retail__position-list-item:hover {
     border-top: 1px solid #e31235; }
   .retail__position-list-item:hover > .retail__position-item-position {
@@ -9912,7 +9910,8 @@ body {
   display: inline-block;
   color: #000000;
   position: relative;
-  padding-right: 23px; }
+  padding-right: 23px;
+  opacity: 0; }
 
 .retail__position-headline-link-arrow {
   position: absolute;
