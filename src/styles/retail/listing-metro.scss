@@ -4,7 +4,7 @@
   display: flex;
   font-size: 18px;
   line-height: 24px;
-  padding-left: 16px;
+  margin-bottom: 96px;
 }
 
 .listing-metro__left-bar,
@@ -13,10 +13,24 @@
 }
 
 .listing-metro__left-bar {
-  padding-right: 16px;
+  padding: 0 16px;
 }
 
 // Стили для блока с описание расположения вакансии
+.listing-metro__link-to-shops {
+  color: $mainColor;
+  margin-bottom: 56px;
+  padding-left: 20px;
+  position: relative;
+  display: inline-block;
+
+  & > svg {
+    position: absolute;
+    left: 0;
+    top: calc(50% - 5px);
+  }
+}
+
 .listing-metro__location-place,
 .listing-metro__location-adress {
   display: block;
@@ -91,22 +105,36 @@
 .listing-metro__profession-item {
   display: flex;
   width: 100%;
-  border-bottom: 1px solid #969696;
+  border-top: 1px solid #969696;
   padding-top: 8px;
   padding-bottom: 24px;
   cursor: pointer;
-}
+  position: relative;
+  transition: 0.3s;
 
-.listing-metro__profession-item:nth-child(2) {
-  border-top: 1px solid #969696;
+  &:hover {
+    border-top: 1px solid #e31235;
+  }
+
+  &:hover
+    > .listing-metro__profession-item-left-bar
+    > .listing-metro__profession-name {
+    color: #e31235;
+  }
+
+  &:last-child {
+    border-bottom: 1px solid #969696;
+  }
 }
 
 .listing-metro__profession-item-left-bar {
   width: 70%;
+  pointer-events: none;
 }
 
 .listing-metro__profession-name {
   margin-bottom: 6px;
+  transition: 0.3s;
 }
 
 .listing-metro__profession-bread-crumbs {
@@ -131,10 +159,70 @@
 
 .listing-metro__profession-conditions {
   margin-bottom: 24px;
+  pointer-events: none;
 }
 
 .listing-metro__profession-container-mobile {
   display: none;
+}
+
+.listing-metro__profession-item-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: $whiteColor;
+  padding: 10px 36px 10px 16px;
+  border-radius: 36px;
+  color: $mainColor;
+  // pointer-events: none;
+
+  & > svg {
+    position: absolute;
+    right: 17px;
+    top: calc(50% - 5px);
+  }
+}
+
+.listing-metro__shops-list-title {
+  margin-bottom: 56px;
+}
+
+.listing-metro__shops-list-title-mobile {
+  display: none;
+}
+
+.listing-metro__shop {
+  border-top: 1px solid #969696;
+  padding-top: 16px;
+  margin-bottom: 24px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    border-top: 1px solid #e31235;
+  }
+
+  &:hover > .listing-metro__shop-title,
+  &:hover > .listing-metro__shop-address {
+    color: #e31235;
+  }
+}
+
+.listing-metro__shop-title {
+  margin-bottom: 24px;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.listing-metro__shop-address {
+  max-width: 466px;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.listing-metro__content-list-container {
+  width: 100%;
+  padding: 0 16px;
 }
 
 // Стили для блока с картой
@@ -146,8 +234,6 @@
 }
 
 .listing-metro__map-place {
-  // padding-top: 100%;
-  // background: url('../../images/listing/metro.png') center / cover no-repeat;
   height: 900px;
 }
 
@@ -310,4 +396,94 @@
 
 .listing-metro__subscribe-text {
   margin-bottom: 32px;
+}
+
+// Styles for 1440px
+@media (max-width: 1440px) {
+  .listing-metro__content {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .listing-metro__map-place {
+    height: 688px;
+  }
+}
+
+// Styles for 1024px
+@media (max-width: 1024px) {
+  .listing-metro__right-bar {
+    width: 47%;
+  }
+
+  .listing-metro__left-bar {
+    width: 53%;
+  }
+
+  .listing-metro__map-place {
+    height: 478px;
+  }
+
+  .listing-metro__shop-title {
+    margin-bottom: 12px;
+  }
+}
+
+// Syles for switcher between map and list for 768px
+@media (max-width: 950px) {
+  .listing-top__filter-list-wrapper {
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    flex-direction: row;
+    width: 200px;
+  }
+
+  .listing-top__filter-list-item:last-child {
+    margin-left: auto;
+  }
+
+  .profession__filter-checbox-map {
+    left: auto;
+    right: -150px;
+    bottom: 8px;
+  }
+}
+
+// Styles for 768px
+@media (max-width: 850px) {
+  .listing-metro__content-map {
+    flex-direction: column;
+    padding: 0 8px;
+  }
+
+  .listing-metro__left-bar,
+  .listing-metro__right-bar {
+    width: 100%;
+    padding: 0;
+  }
+
+  .listing-metro__right-bar {
+    order: -1;
+    margin-bottom: 64px;
+  }
+
+  .listing-metro__map-wrapper {
+    padding: 0;
+  }
+
+  .listing-metro__shops-list-title {
+    display: none;
+  }
+
+  .listing-metro__shops-list-title-mobile {
+    display: block;
+    margin-bottom: 32px;
+  }
+
+  .listing-metro__shop-title,
+  .listing-metro__shop-address {
+    width: 55%;
+    max-width: 100%;
+  }
 }

@@ -6441,8 +6441,12 @@ body {
   .listing-top__filter-item:last-child {
     margin-right: 0; }
 
+.listing-top__filter-sity {
+  display: none; }
+
 .listing-top__filter-list-wrapper {
-  padding-top: 25px; }
+  padding-top: 25px;
+  margin-left: auto; }
 
 .listing-top__filter-list-item {
   display: flex;
@@ -6570,7 +6574,8 @@ body {
   padding-top: 8px;
   border-top: 1px solid rgba(0, 0, 0, 0.5);
   display: flex;
-  transition: 0.3s; }
+  transition: 0.3s;
+  cursor: pointer; }
   .position__card-item:last-child {
     margin-bottom: 0; }
 
@@ -6607,7 +6612,8 @@ body {
   flex-direction: column;
   width: 100%;
   max-width: 608px;
-  margin-right: 16px; }
+  margin-right: 16px;
+  pointer-events: none; }
 
 .position__job-title {
   color: #000000;
@@ -6641,21 +6647,24 @@ body {
 .position__bread-crumbs-block {
   width: 100%;
   max-width: 304px;
-  margin-right: 16px; }
+  margin-right: 16px;
+  pointer-events: none; }
 
 .position__payment-container {
   width: 100%;
   max-width: 304px;
   margin-right: 16px;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  pointer-events: none; }
 
 .position__job-expiriens {
   margin-top: auto; }
 
 .position__location-container {
   width: 100%;
-  max-width: 304px; }
+  max-width: 304px;
+  pointer-events: none; }
 
 .position__location-city-metro,
 .position__location-city-metro-sokoln,
@@ -7065,6 +7074,10 @@ body {
     top: calc(50% - 10px); }
   .listing-top__where {
     padding-right: 32px; }
+  .listing-top__dropdown-arrow {
+    right: 0;
+    bottom: -3px;
+    transform: scale(0.5); }
   .listing-top__counter,
   .listing-top__counter-list-item {
     font-size: 16px;
@@ -7163,7 +7176,9 @@ body {
     margin-bottom: 24px; }
   .listing-top__filter-item:nth-child(2) {
     order: 3;
-    margin-right: 0; }
+    margin-right: auto; }
+  .listing-top__specialization-on-map {
+    margin-right: auto; }
   .listing-top__filter-item-button-reset {
     margin-bottom: -40px; }
   .listing-top__filter-item-selected {
@@ -8180,14 +8195,25 @@ body {
   display: flex;
   font-size: 18px;
   line-height: 24px;
-  padding-left: 16px; }
+  margin-bottom: 96px; }
 
 .listing-metro__left-bar,
 .listing-metro__right-bar {
   width: 50%; }
 
 .listing-metro__left-bar {
-  padding-right: 16px; }
+  padding: 0 16px; }
+
+.listing-metro__link-to-shops {
+  color: #000000;
+  margin-bottom: 56px;
+  padding-left: 20px;
+  position: relative;
+  display: inline-block; }
+  .listing-metro__link-to-shops > svg {
+    position: absolute;
+    left: 0;
+    top: calc(50% - 5px); }
 
 .listing-metro__location-place,
 .listing-metro__location-adress {
@@ -8244,19 +8270,27 @@ body {
 .listing-metro__profession-item {
   display: flex;
   width: 100%;
-  border-bottom: 1px solid #969696;
+  border-top: 1px solid #969696;
   padding-top: 8px;
   padding-bottom: 24px;
-  cursor: pointer; }
-
-.listing-metro__profession-item:nth-child(2) {
-  border-top: 1px solid #969696; }
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s; }
+  .listing-metro__profession-item:hover {
+    border-top: 1px solid #e31235; }
+  .listing-metro__profession-item:hover > .listing-metro__profession-item-left-bar
+> .listing-metro__profession-name {
+    color: #e31235; }
+  .listing-metro__profession-item:last-child {
+    border-bottom: 1px solid #969696; }
 
 .listing-metro__profession-item-left-bar {
-  width: 70%; }
+  width: 70%;
+  pointer-events: none; }
 
 .listing-metro__profession-name {
-  margin-bottom: 6px; }
+  margin-bottom: 6px;
+  transition: 0.3s; }
 
 .listing-metro__profession-bread-crumbs {
   line-height: 12px; }
@@ -8273,10 +8307,56 @@ body {
   width: 30%; }
 
 .listing-metro__profession-conditions {
-  margin-bottom: 24px; }
+  margin-bottom: 24px;
+  pointer-events: none; }
 
 .listing-metro__profession-container-mobile {
   display: none; }
+
+.listing-metro__profession-item-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #ffffff;
+  padding: 10px 36px 10px 16px;
+  border-radius: 36px;
+  color: #000000; }
+  .listing-metro__profession-item-link > svg {
+    position: absolute;
+    right: 17px;
+    top: calc(50% - 5px); }
+
+.listing-metro__shops-list-title {
+  margin-bottom: 56px; }
+
+.listing-metro__shops-list-title-mobile {
+  display: none; }
+
+.listing-metro__shop {
+  border-top: 1px solid #969696;
+  padding-top: 16px;
+  margin-bottom: 24px;
+  cursor: pointer;
+  transition: 0.3s; }
+  .listing-metro__shop:hover {
+    border-top: 1px solid #e31235; }
+  .listing-metro__shop:hover > .listing-metro__shop-title,
+  .listing-metro__shop:hover > .listing-metro__shop-address {
+    color: #e31235; }
+
+.listing-metro__shop-title {
+  margin-bottom: 24px;
+  pointer-events: none;
+  transition: 0.3s; }
+
+.listing-metro__shop-address {
+  max-width: 466px;
+  pointer-events: none;
+  transition: 0.3s; }
+
+.listing-metro__content-list-container {
+  width: 100%;
+  padding: 0 16px; }
 
 .listing-metro__map-wrapper {
   width: 100%;
@@ -8418,6 +8498,60 @@ body {
 
 .listing-metro__subscribe-text {
   margin-bottom: 32px; }
+
+@media (max-width: 1440px) {
+  .listing-metro__content {
+    font-size: 16px;
+    line-height: 20px; }
+  .listing-metro__map-place {
+    height: 688px; } }
+
+@media (max-width: 1024px) {
+  .listing-metro__right-bar {
+    width: 47%; }
+  .listing-metro__left-bar {
+    width: 53%; }
+  .listing-metro__map-place {
+    height: 478px; }
+  .listing-metro__shop-title {
+    margin-bottom: 12px; } }
+
+@media (max-width: 950px) {
+  .listing-top__filter-list-wrapper {
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    flex-direction: row;
+    width: 200px; }
+  .listing-top__filter-list-item:last-child {
+    margin-left: auto; }
+  .profession__filter-checbox-map {
+    left: auto;
+    right: -150px;
+    bottom: 8px; } }
+
+@media (max-width: 850px) {
+  .listing-metro__content-map {
+    flex-direction: column;
+    padding: 0 8px; }
+  .listing-metro__left-bar,
+  .listing-metro__right-bar {
+    width: 100%;
+    padding: 0; }
+  .listing-metro__right-bar {
+    order: -1;
+    margin-bottom: 64px; }
+  .listing-metro__map-wrapper {
+    padding: 0; }
+  .listing-metro__shops-list-title {
+    display: none; }
+  .listing-metro__shops-list-title-mobile {
+    display: block;
+    margin-bottom: 32px; }
+  .listing-metro__shop-title,
+  .listing-metro__shop-address {
+    width: 55%;
+    max-width: 100%; } }
 
 /*!*****************************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/postcss-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles/retail/retail-preview.scss ***!
