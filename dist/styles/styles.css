@@ -88,6 +88,9 @@ body {
 .hide {
   display: none; }
 
+.transparent {
+  opacity: 0; }
+
 .cursor-pointer {
   cursor: pointer; }
 
@@ -184,6 +187,9 @@ body {
 
 .hide {
   display: none; }
+
+.transparent {
+  opacity: 0; }
 
 .cursor-pointer {
   cursor: pointer; }
@@ -444,6 +450,9 @@ body {
 
 .hide {
   display: none; }
+
+.transparent {
+  opacity: 0; }
 
 .cursor-pointer {
   cursor: pointer; }
@@ -847,6 +856,9 @@ body {
 .hide {
   display: none; }
 
+.transparent {
+  opacity: 0; }
+
 .cursor-pointer {
   cursor: pointer; }
 
@@ -1175,6 +1187,9 @@ body {
 
 .hide {
   display: none; }
+
+.transparent {
+  opacity: 0; }
 
 .cursor-pointer {
   cursor: pointer; }
@@ -2018,6 +2033,9 @@ body {
 
 .hide {
   display: none; }
+
+.transparent {
+  opacity: 0; }
 
 .cursor-pointer {
   cursor: pointer; }
@@ -2891,6 +2909,9 @@ body {
 .hide {
   display: none; }
 
+.transparent {
+  opacity: 0; }
+
 .cursor-pointer {
   cursor: pointer; }
 
@@ -3310,6 +3331,9 @@ body {
 
 .hide {
   display: none; }
+
+.transparent {
+  opacity: 0; }
 
 .cursor-pointer {
   cursor: pointer; }
@@ -3737,6 +3761,9 @@ body {
 
 .hide {
   display: none; }
+
+.transparent {
+  opacity: 0; }
 
 .cursor-pointer {
   cursor: pointer; }
@@ -4220,6 +4247,9 @@ body {
 
 .hide {
   display: none; }
+
+.transparent {
+  opacity: 0; }
 
 .cursor-pointer {
   cursor: pointer; }
@@ -4805,6 +4835,9 @@ body {
 .hide {
   display: none; }
 
+.transparent {
+  opacity: 0; }
+
 .cursor-pointer {
   cursor: pointer; }
 
@@ -5189,6 +5222,9 @@ body {
 
 .hide {
   display: none; }
+
+.transparent {
+  opacity: 0; }
 
 .cursor-pointer {
   cursor: pointer; }
@@ -6345,6 +6381,9 @@ body {
 .hide {
   display: none; }
 
+.transparent {
+  opacity: 0; }
+
 .cursor-pointer {
   cursor: pointer; }
 
@@ -7455,6 +7494,9 @@ body {
 .hide {
   display: none; }
 
+.transparent {
+  opacity: 0; }
+
 .cursor-pointer {
   cursor: pointer; }
 
@@ -7836,6 +7878,9 @@ body {
 .hide {
   display: none; }
 
+.transparent {
+  opacity: 0; }
+
 .cursor-pointer {
   cursor: pointer; }
 
@@ -8184,6 +8229,9 @@ body {
 .hide {
   display: none; }
 
+.transparent {
+  opacity: 0; }
+
 .cursor-pointer {
   cursor: pointer; }
 
@@ -8195,7 +8243,8 @@ body {
   display: flex;
   font-size: 18px;
   line-height: 24px;
-  margin-bottom: 96px; }
+  margin-bottom: 24px;
+  transition: 0.3s; }
 
 .listing-metro__left-bar,
 .listing-metro__right-bar {
@@ -8411,7 +8460,8 @@ body {
     margin-bottom: 0; }
 
 .listing-metro__shop-input {
-  display: none; }
+  display: none;
+  pointer-events: none; }
 
 .listing-metro__select-shop-checkbox {
   display: flex;
@@ -8420,7 +8470,8 @@ body {
   margin-right: 8px;
   width: 16px;
   height: 16px;
-  border: 1px solid #000000; }
+  border: 1px solid #000000;
+  pointer-events: none; }
 
 .listing-metro__select-shop-checkbox-image {
   opacity: 0;
@@ -8497,7 +8548,9 @@ body {
   margin-right: 8px; }
 
 .listing-metro__subscribe-block {
-  width: 100%; }
+  width: 50%;
+  margin-bottom: 96px;
+  padding: 0 16px; }
 
 .listing-metro__subscribe-title {
   font-size: 40px;
@@ -8553,8 +8606,7 @@ body {
 @media (max-width: 850px) {
   .listing-metro__content-map {
     flex-direction: column;
-    padding: 0 8px;
-    margin-bottom: 64px; }
+    padding: 0 8px; }
   .listing-metro__left-bar,
   .listing-metro__right-bar {
     width: 100%;
@@ -8593,7 +8645,9 @@ body {
   .listing-metro__profession-expiriens {
     width: 45%; }
   .listing-metro__subscribe-block {
-    width: 80%; } }
+    width: 75%;
+    margin-bottom: 64px;
+    padding: 0 8px; } }
 
 @media (max-width: 700px) {
   .profession__filter-checbox-map {
@@ -8609,8 +8663,7 @@ body {
 @media (max-width: 550px) {
   .listing-metro__content {
     font-size: 14px;
-    line-height: 16px;
-    margin-bottom: 32px; }
+    line-height: 16px; }
   .listing-metro__content-map {
     padding: 0; }
   .listing-metro__shops-list-title-mobile {
@@ -8653,7 +8706,8 @@ body {
     padding-left: 0;
     width: 100%; }
   .listing-metro__subscribe-block {
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 32px; }
   .listing-metro__profession-item-link {
     display: none; } }
 
@@ -8746,6 +8800,9 @@ body {
 
 .hide {
   display: none; }
+
+.transparent {
+  opacity: 0; }
 
 .cursor-pointer {
   cursor: pointer; }
@@ -9113,6 +9170,9 @@ body {
 
 .hide {
   display: none; }
+
+.transparent {
+  opacity: 0; }
 
 .cursor-pointer {
   cursor: pointer; }
@@ -9529,6 +9589,9 @@ body {
 .hide {
   display: none; }
 
+.transparent {
+  opacity: 0; }
+
 .cursor-pointer {
   cursor: pointer; }
 
@@ -9630,6 +9693,9 @@ body {
 
 .hide {
   display: none; }
+
+.transparent {
+  opacity: 0; }
 
 .cursor-pointer {
   cursor: pointer; }
@@ -10015,6 +10081,9 @@ body {
 .hide {
   display: none; }
 
+.transparent {
+  opacity: 0; }
+
 .cursor-pointer {
   cursor: pointer; }
 
@@ -10341,6 +10410,9 @@ body {
 .hide {
   display: none; }
 
+.transparent {
+  opacity: 0; }
+
 .cursor-pointer {
   cursor: pointer; }
 
@@ -10517,6 +10589,9 @@ body {
 
 .hide {
   display: none; }
+
+.transparent {
+  opacity: 0; }
 
 .cursor-pointer {
   cursor: pointer; }
@@ -10901,6 +10976,9 @@ body {
 .hide {
   display: none; }
 
+.transparent {
+  opacity: 0; }
+
 .cursor-pointer {
   cursor: pointer; }
 
@@ -11119,6 +11197,9 @@ body {
 .hide {
   display: none; }
 
+.transparent {
+  opacity: 0; }
+
 .cursor-pointer {
   cursor: pointer; }
 
@@ -11220,6 +11301,9 @@ body {
 
 .hide {
   display: none; }
+
+.transparent {
+  opacity: 0; }
 
 .cursor-pointer {
   cursor: pointer; }
@@ -11405,6 +11489,9 @@ body {
 
 .hide {
   display: none; }
+
+.transparent {
+  opacity: 0; }
 
 .cursor-pointer {
   cursor: pointer; }

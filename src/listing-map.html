@@ -361,7 +361,7 @@
           <div
             class="listing-top__filter-item listing-top__filter-list-wrapper"
           >
-            <div class="listing-top__filter-list-item">
+            <div class="listing-top__filter-list-item" data-name="list">
               <svg
                 class="listing-top__filter-list-item-arrow"
                 width="14"
@@ -384,6 +384,7 @@
                 listing-top__filter-list-item
                 listing-top__filter-list-item-active
               "
+              data-name="map"
             >
               <svg
                 class="listing-top__filter-list-item-arrow"
@@ -1336,40 +1337,9 @@
               </a>
             </div>
           </div>
-
-          <div class="listing-metro__subscribe-block">
-            <h2 class="listing-metro__subscribe-title">
-              Подпишись на новые вакансии
-            </h2>
-            <p class="listing-metro__subscribe-text">
-              Каждую пятницу тебе будет приходить письмо с учётом фильтров:
-              специализация «Розничная продажа», ключевые слова: «продавец»,
-              «кассир».
-            </p>
-            <div class="position-subscribe__mail-container">
-              <input
-                class="position-subscribe__input"
-                type="text"
-                value="Электронная почта"
-              />
-              <a href="#" class="position-subscribe__button">
-                <svg
-                  width="12"
-                  height="8"
-                  viewBox="0 0 12 8"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M9.4136 3.55001L7.1818 1.3182L7.8182 0.681808L11.1364 4.00001L7.8182 7.3182L7.1818 6.68181L9.4136 4.45001H0.75V3.55001H9.4136Z"
-                    fill="black"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
         </div>
-        <div class="listing-metro__subscribe-block">
+
+        <!-- <div class="listing-metro__subscribe-block">
           <h2 class="listing-metro__subscribe-title">
             Подпишись на новые вакансии
           </h2>
@@ -1399,7 +1369,7 @@
               </svg>
             </a>
           </div>
-        </div>
+        </div> -->
       </div>
 
       <!-- //Left bar -->
@@ -1469,9 +1439,9 @@
           </button>
 
           <div class="listing-metro__select-shop-container">
-            <label class="listing-metro__select-shop-item">
+            <label class="listing-metro__select-shop-item" data-name="mvideo">
               <input
-                class="listing-metro__shop-input"
+                class="listing-metro__shop-input mvideo-input"
                 type="checkbox"
                 checked
               />
@@ -1495,8 +1465,11 @@
               Магазины М.Видео
             </label>
 
-            <label class="listing-metro__select-shop-item">
-              <input class="listing-metro__shop-input" type="checkbox" />
+            <label class="listing-metro__select-shop-item" data-name="eldorado">
+              <input
+                class="listing-metro__shop-input eldorado-input"
+                type="checkbox"
+              />
               <span class="listing-metro__select-shop-checkbox">
                 <svg
                   class="listing-metro__select-shop-checkbox-image"
@@ -1631,7 +1604,13 @@
       <!-- //Right bar -->
     </div>
 
-    <div class="listing-metro__content listing-metro__content-list hide">
+    <div
+      class="
+        listing-metro__content listing-metro__content-list
+        hide
+        transparent
+      "
+    >
       <div class="listing-metro__content-list-container">
         <div class="position__card-item">
           <a href="#" class="position__info-link"
@@ -2936,6 +2915,40 @@
       </div>
     </div>
     <!-- //Mobile block profession -->
+
+    <!-- Subscribe block -->
+    <div class="listing-metro__subscribe-block">
+      <h2 class="listing-metro__subscribe-title">
+        Подпишись на новые вакансии
+      </h2>
+      <p class="listing-metro__subscribe-text">
+        Каждую пятницу тебе будет приходить письмо с учётом фильтров:
+        специализация «Розничная продажа», ключевые слова: «продавец», «кассир».
+      </p>
+      <div class="position-subscribe__mail-container">
+        <input
+          class="position-subscribe__input"
+          type="text"
+          value="Электронная почта"
+        />
+        <a href="#" class="position-subscribe__button">
+          <svg
+            width="12"
+            height="8"
+            viewBox="0 0 12 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.4136 3.55001L7.1818 1.3182L7.8182 0.681808L11.1364 4.00001L7.8182 7.3182L7.1818 6.68181L9.4136 4.45001H0.75V3.55001H9.4136Z"
+              fill="black"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- //Subscribe block -->
 
     <!-- Vacancy News-block -->
     <div class="vacancy__news-block-desktop">

@@ -1,11 +1,130 @@
 export class ListingVacancyMapBlock {
-  constructor(className) {
-    this.el = document.querySelector(className);
+  constructor(mapBlockClassName, listBlockClassName, viewSwitcher) {
+    this.mapBlock = document.querySelector(mapBlockClassName);
+    this.listBlock = document.querySelector(listBlockClassName);
+    this.mapToListSwitcherContainer = document.querySelector(viewSwitcher);
 
-    if (!this.el) return;
+    if (!this.mapBlock && !this.listBlock && !this.mapToListSwitcherContainer)
+      return;
 
-    ymaps.ready(this.yandexMapInit);
+    this.shopsListContainer = this.mapBlock.querySelector(
+      '.isting-metro__shops-list-container'
+    );
+    this.vacanciesInShopContainer = this.mapBlock.querySelector(
+      '.isting-metro__single-shop-container'
+    );
+    this.shopListMVideo = this.mapBlock.querySelectorAll(
+      '.listing-metro__shops-list.mvideo > .listing-metro__shop'
+    );
+
+    this.shopListEldorado = this.mapBlock.querySelectorAll(
+      '.listing-metro__shops-list.eldorado > .listing-metro__shop'
+    );
+
+    if (!this.mapBlock && !this.listBlock && !this.mapToListSwitcher) return;
+
+    this.checkboxContainer = this.mapBlock.querySelector(
+      '.listing-metro__select-shop-container'
+    );
+    this.switchingButtons = this.mapToListSwitcherContainer.querySelectorAll(
+      '.listing-top__filter-list-item'
+    );
+    this.mvideoBrand = this.mapBlock.querySelectorAll('.mvideo');
+    this.eldoradoBrand = this.mapBlock.querySelectorAll('.eldorado');
+    this.buttonBackToShopsList = this.mapBlock.querySelector(
+      '.listing-metro__link-to-shops'
+    );
+    this.buttonBackToShopsListMobile = this.mapBlock.querySelector(
+      '.listing-metro__link-to-shops-mobile'
+    );
+
+    this.switchingButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        this.clearActiveClass(
+          this.switchingButtons,
+          'listing-top__filter-list-item-active'
+        );
+        button.classList.add('listing-top__filter-list-item-active');
+
+        button.dataset.name === 'list'
+          ? this.showVacanciesList()
+          : this.showVacanciesOnMap();
+      });
+    });
+
+    this.checkboxContainer.addEventListener(
+      'click',
+      this.switchBrand.bind(this)
+    );
+
+    this.shopListMVideo.forEach((shop) => {
+      shop.addEventListener('click', () => {
+        this.shopsListContainer.classList.add('hide');
+        this.vacanciesInShopContainer.classList.remove('hide');
+      });
+    });
+
+    this.shopListEldorado.forEach((shop) => {
+      shop.addEventListener('click', () => {
+        this.shopsListContainer.classList.add('hide');
+        this.vacanciesInShopContainer.classList.remove('hide');
+      });
+    });
+
+    this.buttonBackToShopsList.addEventListener('click', (event) => {
+      event.preventDefault();
+      this.shopsListContainer.classList.remove('hide');
+      this.vacanciesInShopContainer.classList.add('hide');
+    });
+
+    this.buttonBackToShopsListMobile.addEventListener('click', (event) => {
+      event.preventDefault();
+      this.shopsListContainer.classList.remove('hide');
+      this.vacanciesInShopContainer.classList.add('hide');
+    });
+
+    this.yandexMaps = ymaps.ready(this.yandexMapInit);
   }
+  clearActiveClass(array, className) {
+    array.forEach((item) => item.classList.remove(className));
+  }
+
+  showVacanciesList() {
+    this.mapBlock.classList.add('transparent');
+
+    setTimeout(() => {
+      this.listBlock.classList.remove('hide');
+      this.mapBlock.classList.add('hide');
+    }, 300);
+
+    setTimeout(() => this.listBlock.classList.remove('transparent'), 50);
+  }
+
+  switchBrand(event) {
+    if (event.target.dataset.name && event.target.dataset.name === 'mvideo') {
+      document.querySelector('.eldorado-input').checked = false;
+      this.mvideoBrand.forEach((shop) => shop.classList.remove('hide'));
+      this.eldoradoBrand.forEach((shop) => shop.classList.add('hide'));
+    }
+
+    if (event.target.dataset.name && event.target.dataset.name === 'eldorado') {
+      document.querySelector('.mvideo-input').checked = false;
+      this.eldoradoBrand.forEach((shop) => shop.classList.remove('hide'));
+      this.mvideoBrand.forEach((shop) => shop.classList.add('hide'));
+    }
+  }
+
+  showVacanciesOnMap() {
+    this.listBlock.classList.add('transparent');
+
+    setTimeout(() => {
+      this.listBlock.classList.add('hide');
+      this.mapBlock.classList.remove('hide');
+    }, 300);
+
+    setTimeout(() => this.mapBlock.classList.remove('transparent'), 50);
+  }
+
   yandexMapInit() {
     const map = new ymaps.Map('yandex-map', {
       center: [55.773674, 37.67109],
@@ -14,41 +133,41 @@ export class ListingVacancyMapBlock {
 
     //---------------------------------------------------------------
     // М.Видео. Одна иконка
-    const markMVideo = new ymaps.Placemark(
-      [55.773674, 37.67109],
-      {},
-      {
-        iconLayout: 'default#image',
-        iconImageHref: '../../images/listing/map/mvideo-icon.png',
-        iconImageSize: [42, 66],
-      }
-    );
+    // const markMVideo = new ymaps.Placemark(
+    //   [55.773674, 37.67109],
+    //   {},
+    //   {
+    //     iconLayout: 'default#image',
+    //     iconImageHref: '../../images/listing/map/mvideo-icon.png',
+    //     iconImageSize: [42, 66],
+    //   }
+    // );
 
-    map.geoObjects.add(markMVideo);
+    // map.geoObjects.add(markMVideo);
 
     //--------------------------------------------------------------
     // М.Видео. Несколько меток.
-    const mvideoMark1 = new ymaps.Placemark([55.77395, 37.67262]);
-    const mvideoMark2 = new ymaps.Placemark([55.773221, 37.673137]);
-    const mvideoMark3 = new ymaps.Placemark([55.772568, 37.672053]);
-    const mvideoMark4 = new ymaps.Placemark([55.772241, 37.670142]);
+    // const mvideoMark1 = new ymaps.Placemark([55.77395, 37.67262]);
+    // const mvideoMark2 = new ymaps.Placemark([55.773221, 37.673137]);
+    // const mvideoMark3 = new ymaps.Placemark([55.772568, 37.672053]);
+    // const mvideoMark4 = new ymaps.Placemark([55.772241, 37.670142]);
 
-    let mvideoCollection = new ymaps.GeoObjectCollection(
-      {},
-      {
-        iconLayout: 'default#image',
-        iconImageHref: '../../images/listing/map/mvideo-icon.png',
-        iconImageSize: [42, 66],
-      }
-    );
+    // let mvideoCollection = new ymaps.GeoObjectCollection(
+    //   {},
+    //   {
+    //     iconLayout: 'default#image',
+    //     iconImageHref: '../../images/listing/map/mvideo-icon.png',
+    //     iconImageSize: [42, 66],
+    //   }
+    // );
 
-    mvideoCollection
-      .add(mvideoMark1)
-      .add(mvideoMark2)
-      .add(mvideoMark3)
-      .add(mvideoMark4);
+    // mvideoCollection
+    //   .add(mvideoMark1)
+    //   .add(mvideoMark2)
+    //   .add(mvideoMark3)
+    //   .add(mvideoMark4);
 
-    map.geoObjects.add(mvideoCollection);
+    // map.geoObjects.add(mvideoCollection);
 
     //------------------------------------------------------------------------
     // Эльдорадо. Несколько иконок. Вывод в цикле
@@ -59,7 +178,7 @@ export class ListingVacancyMapBlock {
       [55.774291, 37.667745],
     ];
 
-    let eldoradoCollection2 = new ymaps.GeoObjectCollection(
+    let eldoradoShops = new ymaps.GeoObjectCollection(
       {},
       {
         iconLayout: 'default#image',
@@ -69,9 +188,33 @@ export class ListingVacancyMapBlock {
     );
 
     for (let i = 0; i < eldoradoMarks.length; i++) {
-      eldoradoCollection2.add(new ymaps.Placemark(eldoradoMarks[i]));
+      eldoradoShops.add(new ymaps.Placemark(eldoradoMarks[i]));
     }
-    map.geoObjects.add(eldoradoCollection2);
+    map.geoObjects.add(eldoradoShops);
+
+    //---------------------------------------------------------------------------------
+    // М.Видео
+    const mvideoMarks = [
+      [55.77395, 37.67262],
+      [55.773221, 37.673137],
+      [55.772568, 37.672053],
+      [55.772241, 37.670142],
+      [55.773674, 37.67109],
+    ];
+
+    let mvidoeShops = new ymaps.GeoObjectCollection(
+      {},
+      {
+        iconLayout: 'default#image',
+        iconImageHref: '../../images/listing/map/mvideo-icon.png',
+        iconImageSize: [42, 66],
+      }
+    );
+
+    for (let i = 0; i < mvideoMarks.length; i++) {
+      mvidoeShops.add(new ymaps.Placemark(mvideoMarks[i]));
+    }
+    map.geoObjects.add(mvidoeShops);
 
     //--------------------------------------------------------------
     // Эльдорадо. Несколько меток. Вариант 2
@@ -99,18 +242,18 @@ export class ListingVacancyMapBlock {
 
     //--------------------------------------------------------------
     // Эльдорадо. Одна иконка
-    const markEldorado = new ymaps.Placemark(
-      [55.774824, 37.671345],
+    // const markEldorado = new ymaps.Placemark(
+    //   [55.774824, 37.671345],
 
-      {},
-      {
-        iconLayout: 'default#image',
-        iconImageHref: '../../images/listing/map/eldorado-icon.png',
-        iconImageSize: [42, 66],
-      }
-    );
+    //   {},
+    //   {
+    //     iconLayout: 'default#image',
+    //     iconImageHref: '../../images/listing/map/eldorado-icon.png',
+    //     iconImageSize: [42, 66],
+    //   }
+    // );
 
-    map.geoObjects.add(markEldorado);
+    // map.geoObjects.add(markEldorado);
 
     //-----------------------------------
     // const icons = [

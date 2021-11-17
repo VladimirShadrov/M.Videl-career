@@ -4,7 +4,8 @@
   display: flex;
   font-size: 18px;
   line-height: 24px;
-  margin-bottom: 96px;
+  margin-bottom: 24px;
+  transition: 0.3s;
 }
 
 .listing-metro__left-bar,
@@ -291,6 +292,7 @@
 
 .listing-metro__shop-input {
   display: none;
+  pointer-events: none;
 }
 
 .listing-metro__select-shop-checkbox {
@@ -301,6 +303,7 @@
   width: 16px;
   height: 16px;
   border: 1px solid $mainColor;
+  pointer-events: none;
 }
 
 .listing-metro__select-shop-checkbox-image {
@@ -396,7 +399,9 @@
 
 // Блок подписка на вакансии
 .listing-metro__subscribe-block {
-  width: 100%;
+  width: 50%;
+  margin-bottom: 96px;
+  padding: 0 16px;
 }
 
 .listing-metro__subscribe-title {
@@ -488,7 +493,6 @@
   .listing-metro__content-map {
     flex-direction: column;
     padding: 0 8px;
-    margin-bottom: 64px;
   }
 
   .listing-metro__left-bar,
@@ -555,7 +559,9 @@
   }
 
   .listing-metro__subscribe-block {
-    width: 80%;
+    width: 75%;
+    margin-bottom: 64px;
+    padding: 0 8px;
   }
 }
 
@@ -582,7 +588,6 @@
   .listing-metro__content {
     font-size: 14px;
     line-height: 16px;
-    margin-bottom: 32px;
   }
 
   .listing-metro__content-map {
@@ -660,6 +665,7 @@
 
   .listing-metro__subscribe-block {
     width: 100%;
+    margin-bottom: 32px;
   }
 
   .listing-metro__profession-item-link {

@@ -1,6 +1,6 @@
 export class ListingFilters {
-  constructor(el) {
-    this.el = el;
+  constructor(className) {
+    this.el = document.querySelector(className);
 
     if (this.el === null || this.el === undefined) return;
 
@@ -52,16 +52,5 @@ export class ListingFilters {
       whitelist: ['Любая', 'Тимирязевская', 'Улица Горчакова'],
       userInput: false,
     });
-
-    this.showControls.forEach((control) =>
-      control.addEventListener('click', this.selectDisplayOption.bind(this))
-    );
-  }
-
-  selectDisplayOption(event) {
-    this.showControls.forEach((control) => {
-      control.classList.remove('listing-top__filter-list-item-active');
-    });
-    event.target.classList.add('listing-top__filter-list-item-active');
   }
 }

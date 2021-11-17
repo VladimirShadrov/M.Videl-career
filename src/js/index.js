@@ -83,9 +83,13 @@ new RunningLine(runningLine);
 const header = new Header(headerIt);
 new Listing(listingPage);
 new Form(form);
-new ListingFilters(listingPageFilters);
+new ListingFilters('.listing-top__filters-wrapper');
 new Page404(page404);
-new ListingVacancyMapBlock('.listing-metro__map-place');
+new ListingVacancyMapBlock(
+  '.listing-metro__content-map',
+  '.listing-metro__content-list',
+  '.listing-top__filter-list-wrapper'
+);
 
 // Инициализация классов страницы Розницы
 const retailCreateFuture = new CreateRetailFutureComponent('.retail__preview');
