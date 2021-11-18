@@ -8243,8 +8243,9 @@ body {
   position: absolute;
   left: 0;
   right: auto;
-  bottom: -10px;
-  top: auto; }
+  bottom: -30px;
+  top: auto;
+  width: 110px; }
 
 .listing-metro__content {
   display: flex;
