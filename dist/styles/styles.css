@@ -8601,7 +8601,8 @@ body {
   .profession__filter-checbox-map {
     left: auto;
     right: -150px;
-    bottom: 8px; } }
+    bottom: 8px;
+    top: auto; } }
 
 @media (max-width: 850px) {
   .listing-metro__content-map {
@@ -8653,7 +8654,8 @@ body {
   .profession__filter-checbox-map {
     left: 0;
     right: auto;
-    bottom: -95px; }
+    bottom: -95px;
+    top: auto; }
   .listing-top__filter-item-button-reset-map {
     bottom: -30px; }
   .listing-top__filter-list-wrapper {
