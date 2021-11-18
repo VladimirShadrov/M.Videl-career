@@ -8239,6 +8239,13 @@ body {
   .container {
     padding: 8px; } }
 
+.profession__filter-checbox-map {
+  position: absolute;
+  left: 0;
+  right: auto;
+  bottom: -30px;
+  top: auto; }
+
 .listing-metro__content {
   display: flex;
   font-size: 18px;
