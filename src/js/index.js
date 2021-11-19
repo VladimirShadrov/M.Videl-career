@@ -29,6 +29,9 @@ import '../styles/main-page/main-page-stage.scss';
 import '../styles/main-page/main-division.scss';
 import '../styles/main-page/main-mission.scss';
 import '../styles/main-page/main-video.scss';
+import '../styles/main-page/main-awards.scss';
+import '../styles/main-page/main-running-line.scss';
+import '../styles/main-page/main-news.scss';
 
 import { Vacancy } from './components/itHubPage/vacancy';
 import { Listing } from './components/vacancyListingPage/listing';

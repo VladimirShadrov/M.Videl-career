@@ -19,16 +19,16 @@
   display: flex;
   justify-content: flex-end;
   color: $mainColor;
-  width: max-content;
+  // width: max-content;
   white-space: nowrap;
 
   &:hover {
     color: #e31235;
   }
 
-  &:hover > .find__link-aroow::before {
-    background: url('../images/find-vacancies/link-arrow-red.svg') left /
-      contain no-repeat;
+  &:hover > .find__link-aroow > svg {
+    fill: #e31235;
+    stroke: #e31235;
   }
 }
 
@@ -38,17 +38,20 @@
   padding-right: 140px;
   position: relative;
   pointer-events: none;
+  transition: 0.3s;
 
-  &::before {
-    content: '';
+  width: 1418px;
+
+  & > svg {
     position: absolute;
     right: 0;
     bottom: 10px;
     width: 84px;
     height: 88px;
-    background: url('../images/find-vacancies/link-arrow.svg') left / contain
-      no-repeat;
     transition: color 0.3s;
+    fill: black;
+    stroke: black;
+    transition: 0.3s;
   }
 }
 
@@ -285,6 +288,15 @@
     margin-bottom: 88px;
   }
 
+  .find__link-aroow {
+    width: 1143px;
+
+    & > svg {
+      width: 65px;
+      height: 68px;
+    }
+  }
+
   .find__video-play-box {
     max-width: 720px;
   }
@@ -345,7 +357,9 @@
     padding-right: 73px;
     padding-left: 30px;
 
-    &::before {
+    width: 778px;
+
+    & > svg {
       width: 42px;
       height: 44px;
     }
@@ -426,8 +440,9 @@
   .find__link-aroow {
     padding-left: 15px;
     padding-right: 35px;
+    width: 326px;
 
-    &::before {
+    & > svg {
       width: 17px;
       height: 17px;
     }

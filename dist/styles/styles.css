@@ -3789,30 +3789,31 @@ body {
   display: flex;
   justify-content: flex-end;
   color: #000000;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
   white-space: nowrap; }
   .find__title-link:hover {
     color: #e31235; }
-  .find__title-link:hover > .find__link-aroow::before {
-    background: url("../images/find-vacancies/link-arrow-red.svg") left/contain no-repeat; }
+  .find__title-link:hover > .find__link-aroow > svg {
+    fill: #e31235;
+    stroke: #e31235; }
 
 .find__link-aroow {
   display: block;
   padding-left: 52px;
   padding-right: 140px;
   position: relative;
-  pointer-events: none; }
-  .find__link-aroow::before {
-    content: '';
+  pointer-events: none;
+  transition: 0.3s;
+  width: 1418px; }
+  .find__link-aroow > svg {
     position: absolute;
     right: 0;
     bottom: 10px;
     width: 84px;
     height: 88px;
-    background: url("../images/find-vacancies/link-arrow.svg") left/contain no-repeat;
-    transition: color 0.3s; }
+    transition: color 0.3s;
+    fill: black;
+    stroke: black;
+    transition: 0.3s; }
 
 .find__block-video,
 .find__block-video-active {
@@ -4004,6 +4005,11 @@ body {
     font-size: 124px;
     line-height: 112px;
     margin-bottom: 88px; }
+  .find__link-aroow {
+    width: 1143px; }
+    .find__link-aroow > svg {
+      width: 65px;
+      height: 68px; }
   .find__video-play-box {
     max-width: 720px; }
   .find__video-title {
@@ -4039,8 +4045,9 @@ body {
     margin-bottom: 70px; }
   .find__link-aroow {
     padding-right: 73px;
-    padding-left: 30px; }
-    .find__link-aroow::before {
+    padding-left: 30px;
+    width: 778px; }
+    .find__link-aroow > svg {
       width: 42px;
       height: 44px; }
   .find__video-play-box {
@@ -4087,8 +4094,9 @@ body {
     line-height: 38px; }
   .find__link-aroow {
     padding-left: 15px;
-    padding-right: 35px; }
-    .find__link-aroow::before {
+    padding-right: 35px;
+    width: 326px; }
+    .find__link-aroow > svg {
       width: 17px;
       height: 17px; }
   .find__block-video {
@@ -12752,6 +12760,355 @@ body {
   right: 16px;
   bottom: 16px;
   width: 142px; }
+
+/*!*****************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/postcss-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles/main-page/main-awards.scss ***!
+  \*****************************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: suisse;
+  src: url("../fonts/SuisseIntl-Regular.woff") format("woff"), url("../fonts/SuisseIntl-Regular.woff2") format("woff2"); }
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+:focus,
+:active {
+  outline: none; }
+
+a:focus,
+a:active {
+  outline: none; }
+
+nav,
+footer,
+header,
+aside {
+  display: block; }
+
+html,
+body {
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px; }
+
+input,
+button,
+textarea {
+  font-family: inherit; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a,
+a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400; }
+
+body {
+  font-family: suisse;
+  background: #f3f3f3;
+  color: #000000;
+  font-size: 16px;
+  line-height: 20px;
+  position: relative; }
+
+.container {
+  padding: 0 16px; }
+
+.page-container {
+  padding: 0 16px; }
+
+.hide {
+  display: none; }
+
+.transparent {
+  opacity: 0; }
+
+.cursor-pointer {
+  cursor: pointer; }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 8px; } }
+
+.main-awards {
+  font-size: 18px;
+  line-height: 24px;
+  padding: 0 16px;
+  display: flex;
+  margin-bottom: 192px; }
+
+.main-awards__left-bar {
+  width: 33.33%; }
+
+.main-awards__left-bar-text {
+  max-width: 304px; }
+
+.main-awards__right-bar {
+  width: 66.66%; }
+
+.main-awards__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -16px -8px; }
+
+.main-awards__award-item {
+  margin: 16px 8px;
+  width: calc(50% - 16px);
+  padding-bottom: 24px;
+  border-bottom: 1px solid #969696;
+  display: flex;
+  flex-direction: column; }
+
+.main-awards__item-title {
+  font-size: 40px;
+  line-height: 44px;
+  margin-bottom: 156px; }
+
+.main-awards__item-link {
+  color: #000000;
+  margin-top: auto; }
+
+.main-awards__awards-button {
+  margin-top: 32px;
+  cursor: pointer; }
+
+/*!***********************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/postcss-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles/main-page/main-running-line.scss ***!
+  \***********************************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: suisse;
+  src: url("../fonts/SuisseIntl-Regular.woff") format("woff"), url("../fonts/SuisseIntl-Regular.woff2") format("woff2"); }
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+:focus,
+:active {
+  outline: none; }
+
+a:focus,
+a:active {
+  outline: none; }
+
+nav,
+footer,
+header,
+aside {
+  display: block; }
+
+html,
+body {
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px; }
+
+input,
+button,
+textarea {
+  font-family: inherit; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a,
+a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400; }
+
+body {
+  font-family: suisse;
+  background: #f3f3f3;
+  color: #000000;
+  font-size: 16px;
+  line-height: 20px;
+  position: relative; }
+
+.container {
+  padding: 0 16px; }
+
+.page-container {
+  padding: 0 16px; }
+
+.hide {
+  display: none; }
+
+.transparent {
+  opacity: 0; }
+
+.cursor-pointer {
+  cursor: pointer; }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 8px; } }
+
+.main__running-line {
+  overflow: hidden;
+  margin-bottom: 210px; }
+
+/*!***************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/postcss-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles/main-page/main-news.scss ***!
+  \***************************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: suisse;
+  src: url("../fonts/SuisseIntl-Regular.woff") format("woff"), url("../fonts/SuisseIntl-Regular.woff2") format("woff2"); }
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+:focus,
+:active {
+  outline: none; }
+
+a:focus,
+a:active {
+  outline: none; }
+
+nav,
+footer,
+header,
+aside {
+  display: block; }
+
+html,
+body {
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px; }
+
+input,
+button,
+textarea {
+  font-family: inherit; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a,
+a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400; }
+
+body {
+  font-family: suisse;
+  background: #f3f3f3;
+  color: #000000;
+  font-size: 16px;
+  line-height: 20px;
+  position: relative; }
+
+.container {
+  padding: 0 16px; }
+
+.page-container {
+  padding: 0 16px; }
+
+.hide {
+  display: none; }
+
+.transparent {
+  opacity: 0; }
+
+.cursor-pointer {
+  cursor: pointer; }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 8px; } }
+
+.main-news-events {
+  margin-bottom: 192px; }
 
 
 /*# sourceMappingURL=styles.css.map*/
