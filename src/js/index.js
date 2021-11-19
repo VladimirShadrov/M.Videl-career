@@ -26,6 +26,7 @@ import '../styles/retail/retail-upgrade.scss';
 import '../styles/retail/retail-footer.scss';
 import '../styles/404-page/404-page.scss';
 import '../styles/main-page/main-page-stage.scss';
+import '../styles/main-page/main-division.scss';
 
 import { Vacancy } from './components/itHubPage/vacancy';
 import { Listing } from './components/vacancyListingPage/listing';
