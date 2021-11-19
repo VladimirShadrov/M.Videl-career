@@ -1,0 +1,104 @@
+@import '../styles.scss';
+
+.main-mission {
+  font-size: 18px;
+  line-height: 24px;
+  padding: 0 8px;
+  margin-bottom: 96px;
+  display: flex;
+}
+
+.main-mission__icons-bar {
+  width: 33.33%;
+  position: relative;
+  padding-bottom: 25px;
+}
+
+.main-mission__icon-tree,
+.main-mission__icon-phone,
+.main-mission__icon-finger,
+.main-mission__icon-chip,
+.main-mission__icon-planet,
+.main-mission__icon-rocket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $whiteColor;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.main-mission__icon-tree {
+  width: 136px;
+  height: 136px;
+  top: 0;
+  left: 32px;
+}
+
+.main-mission__title-bar {
+  width: 66.66%;
+  position: relative;
+}
+
+.main-mission__icon-phone {
+  width: 56px;
+  height: 56px;
+  top: 219px;
+  left: 70px;
+}
+
+.main-mission__icon-finger {
+  width: 216px;
+  height: 216px;
+  top: 78px;
+  left: 173px;
+}
+
+.main-mission__icon-chip {
+  width: 88px;
+  height: 88px;
+  top: 20px;
+  left: 395px;
+}
+
+.main-mission__icon-planet {
+  width: 108px;
+  height: 108px;
+  top: 159px;
+  left: 435px;
+}
+
+.main-mission__icon-rocket {
+  width: 80px;
+  height: 80px;
+  top: 309px;
+  left: 330px;
+}
+
+.main-mission-title {
+  font-size: 212px;
+  line-height: 200px;
+  letter-spacing: -0.03em;
+  display: inline;
+}
+
+.main-mission__link {
+  font-size: 24px;
+  line-height: 24px;
+  color: $mainColor;
+  padding: 8px 40px 8px 16px;
+  background: $whiteColor;
+  box-shadow: 16px 2px 24px rgba(0, 0, 0, 0.03);
+  border-radius: 36px;
+  transform: rotate(-2deg);
+  transition: 0.3s;
+  width: max-content;
+  display: inline-block;
+  position: absolute;
+  right: 29%;
+  bottom: -15px;
+
+  &:hover {
+    transform: rotate(0);
+  }
+}
