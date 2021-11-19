@@ -13110,5 +13110,161 @@ body {
 .main-news-events {
   margin-bottom: 192px; }
 
+/*!*************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/postcss-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles/main-page/main-sustainability.scss ***!
+  \*************************************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: suisse;
+  src: url("../fonts/SuisseIntl-Regular.woff") format("woff"), url("../fonts/SuisseIntl-Regular.woff2") format("woff2"); }
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+:focus,
+:active {
+  outline: none; }
+
+a:focus,
+a:active {
+  outline: none; }
+
+nav,
+footer,
+header,
+aside {
+  display: block; }
+
+html,
+body {
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px; }
+
+input,
+button,
+textarea {
+  font-family: inherit; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a,
+a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400; }
+
+body {
+  font-family: suisse;
+  background: #f3f3f3;
+  color: #000000;
+  font-size: 16px;
+  line-height: 20px;
+  position: relative; }
+
+.container {
+  padding: 0 16px; }
+
+.page-container {
+  padding: 0 16px; }
+
+.hide {
+  display: none; }
+
+.transparent {
+  opacity: 0; }
+
+.cursor-pointer {
+  cursor: pointer; }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 8px; } }
+
+.main-sustainability {
+  padding: 0 16px;
+  margin-bottom: 96px;
+  position: relative;
+  min-height: 342px; }
+
+.main-sustainability__title {
+  font-size: 160px;
+  line-height: 144px;
+  letter-spacing: -0.03em;
+  max-width: 1136px; }
+
+.main-sustainability__icons-container {
+  width: 759px;
+  height: 314px;
+  position: absolute;
+  right: 201px;
+  bottom: 0; }
+
+.main-sustainability__earth-icon-container,
+.main-sustainability__finger-icon-container {
+  width: 323px;
+  height: 157px;
+  border-radius: 96px;
+  position: relative; }
+
+.main-sustainability__earth-icon-container {
+  border: 1px solid #76bc21;
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.main-sustainability__finger-icon-container {
+  border: 1px solid #e31235;
+  position: absolute;
+  left: 0;
+  bottom: 0; }
+
+.main-sustainability__earth-icon,
+.main-sustainability__finger-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border-radius: 50%;
+  width: 134px;
+  height: 134px; }
+
+.main-sustainability__wire-icon {
+  position: absolute;
+  top: 79px;
+  left: 321px; }
+
 
 /*# sourceMappingURL=styles.css.map*/

@@ -1,0 +1,65 @@
+@import '../styles.scss';
+
+.main-sustainability {
+  padding: 0 16px;
+  margin-bottom: 96px;
+  position: relative;
+  min-height: 342px;
+}
+
+.main-sustainability__title {
+  font-size: 160px;
+  line-height: 144px;
+  letter-spacing: -0.03em;
+  max-width: 1136px;
+}
+
+.main-sustainability__icons-container {
+  width: 759px;
+  height: 314px;
+  position: absolute;
+  right: 201px;
+  bottom: 0;
+}
+
+.main-sustainability__earth-icon-container,
+.main-sustainability__finger-icon-container {
+  width: 323px;
+  height: 157px;
+  border-radius: 96px;
+  position: relative;
+}
+
+.main-sustainability__earth-icon-container {
+  border: 1px solid #76bc21;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.main-sustainability__finger-icon-container {
+  border: 1px solid #e31235;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.main-sustainability__earth-icon,
+.main-sustainability__finger-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $whiteColor;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border-radius: 50%;
+  width: 134px;
+  height: 134px;
+}
+
+.main-sustainability__wire-icon {
+  position: absolute;
+  top: 79px;
+  left: 321px;
+}
