@@ -33,6 +33,7 @@ import '../styles/main-page/main-awards.scss';
 import '../styles/main-page/main-running-line.scss';
 import '../styles/main-page/main-news.scss';
 import '../styles/main-page/main-sustainability.scss';
+import '../styles/main-page/main-stability.scss';
 
 import { Vacancy } from './components/itHubPage/vacancy';
 import { Listing } from './components/vacancyListingPage/listing';
