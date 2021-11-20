@@ -12834,8 +12834,7 @@ body {
   line-height: 24px;
   padding: 0 8px;
   margin-bottom: 121px;
-  display: flex;
-  overflow: hidden; }
+  display: flex; }
 
 .main-mission__icons-bar {
   width: 33.33%;
@@ -12847,7 +12846,8 @@ body {
 .main-mission__icon-finger,
 .main-mission__icon-chip,
 .main-mission__icon-planet,
-.main-mission__icon-rocket {
+.main-mission__icon-rocket,
+.main-mission__icon-watch {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12864,6 +12864,14 @@ body {
 .main-mission__title-bar {
   width: 66.66%;
   position: relative; }
+
+.main-mission__icon-watch {
+  width: 72px;
+  height: 72px;
+  top: 300px;
+  left: 120px; }
+  .main-mission__icon-watch > svg {
+    transform: scale(0.9); }
 
 .main-mission__icon-phone {
   width: 56px;
@@ -12920,6 +12928,242 @@ body {
   bottom: -15px; }
   .main-mission__link:hover {
     transform: rotate(0); }
+
+@media (max-width: 1440px) {
+  .main-mission {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 72px;
+    min-height: 320px; }
+  .main-mission-title {
+    font-size: 164px;
+    line-height: 138px; }
+  .main-mission__link {
+    font-size: 20px;
+    line-height: 20px;
+    width: 252px;
+    padding-right: 20px;
+    right: 23%;
+    bottom: 15px; }
+  .main-mission__icon-tree {
+    width: 104px;
+    height: 104px;
+    left: 23px; }
+    .main-mission__icon-tree > svg {
+      transform: scale(0.9); }
+  .main-mission__icon-phone {
+    width: 40px;
+    height: 40px;
+    top: 172px;
+    left: 53px; }
+    .main-mission__icon-phone > svg {
+      transform: scale(0.9); }
+  .main-mission__icon-watch {
+    top: 240px;
+    left: 64px; }
+  .main-mission__icon-finger {
+    width: 168px;
+    height: 168px;
+    top: 61px;
+    left: 133px; }
+    .main-mission__icon-finger > svg {
+      transform: scale(0.9); }
+  .main-mission__icon-chip {
+    width: 64px;
+    height: 64px;
+    top: 16px;
+    left: 307px; }
+    .main-mission__icon-chip > svg {
+      transform: scale(0.9); }
+  .main-mission__icon-planet {
+    width: 88px;
+    height: 88px;
+    top: 128px;
+    left: 317px; }
+    .main-mission__icon-planet > svg {
+      transform: scale(0.9); }
+  .main-mission__icon-rocket {
+    width: 56px;
+    height: 56px;
+    top: 242px;
+    left: 256px; }
+    .main-mission__icon-rocket > svg {
+      transform: scale(0.9); } }
+
+@media (max-width: 1150px) {
+  .main-mission {
+    margin-bottom: 64px;
+    min-height: 272px; }
+  .main-mission-title {
+    font-size: 132px;
+    line-height: 120px; }
+  .main-mission__link {
+    bottom: 5px;
+    right: 18%; }
+  .main-mission__icon-tree {
+    width: 86px;
+    height: 86px;
+    left: 0; }
+    .main-mission__icon-tree > svg {
+      transform: scale(0.7); }
+  .main-mission__icon-phone {
+    width: 32px;
+    height: 32px;
+    top: 134px;
+    left: 25px; }
+    .main-mission__icon-phone > svg {
+      transform: scale(0.7); }
+  .main-mission__icon-watch {
+    width: 59px;
+    height: 59px;
+    top: 190px;
+    left: 42px; }
+    .main-mission__icon-watch > svg {
+      transform: scale(0.7); }
+  .main-mission__icon-finger {
+    width: 138px;
+    height: 138px;
+    top: 50px;
+    left: 91px; }
+    .main-mission__icon-finger > svg {
+      transform: scale(0.7); }
+  .main-mission__icon-chip {
+    width: 52px;
+    height: 52px;
+    top: 13px;
+    left: 234px; }
+    .main-mission__icon-chip > svg {
+      transform: scale(0.7); }
+  .main-mission__icon-planet {
+    width: 72px;
+    height: 72px;
+    top: 106px;
+    left: 242px; }
+    .main-mission__icon-planet > svg {
+      transform: scale(0.7); }
+  .main-mission__icon-rocket {
+    width: 44px;
+    height: 44px;
+    top: 200px;
+    left: 192px; }
+    .main-mission__icon-rocket > svg {
+      transform: scale(0.7); } }
+
+@media (max-width: 850px) {
+  .main-mission {
+    padding: 0 8px;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+    min-height: 491px; }
+  .main-mission__icons-bar {
+    min-height: 224px; }
+  .main-mission__title-bar {
+    min-height: 258px; }
+  .main-mission__icons-bar,
+  .main-mission__title-bar {
+    width: 100%; }
+  .main-mission__icon-finger {
+    width: 168px;
+    height: 168px;
+    top: 33px;
+    left: 15%; }
+    .main-mission__icon-finger > svg {
+      transform: scale(0.8); }
+  .main-mission__icon-rocket {
+    width: 56px;
+    height: 56px;
+    top: 56px;
+    left: 42%;
+    stroke: #e31235; }
+    .main-mission__icon-rocket > svg {
+      transform: scale(0.8); }
+  .main-mission__icon-planet {
+    width: 88px;
+    height: 88px;
+    top: 136px;
+    left: 48%; }
+    .main-mission__icon-planet > svg {
+      transform: scale(0.8); }
+  .main-mission__icon-watch {
+    width: 104px;
+    height: 104px;
+    top: 0;
+    left: 57%; }
+    .main-mission__icon-watch > svg {
+      transform: scale(1.5); }
+  .main-mission__icon-tree {
+    width: 40px;
+    height: 40px;
+    top: 140px;
+    left: 71%; }
+    .main-mission__icon-tree > svg {
+      transform: scale(0.4); }
+  .main-mission__icon-chip {
+    width: 64px;
+    height: 64px;
+    top: 38px;
+    left: 79%;
+    stroke: #e31235; }
+    .main-mission__icon-chip > svg {
+      transform: scale(0.8); }
+  .main-mission__icon-phone {
+    display: none; }
+  .main-mission__link {
+    bottom: 0; } }
+
+@media (max-width: 650px) {
+  .main-mission {
+    margin-bottom: 32px;
+    font-size: 14px;
+    line-height: 16px;
+    min-height: 242px; }
+  .main-mission__icons-bar {
+    min-height: 132px; }
+  .main-mission__title-bar {
+    min-height: 130px; }
+  .main-mission__icon-finger {
+    width: 82px;
+    height: 82px;
+    top: 16px;
+    left: 2.6%; }
+    .main-mission__icon-finger > svg {
+      transform: scale(0.65); }
+  .main-mission__icon-rocket {
+    width: 44px;
+    height: 44px;
+    top: 32px;
+    left: 37%; }
+    .main-mission__icon-rocket > svg {
+      transform: scale(0.7); }
+  .main-mission__icon-planet {
+    width: 70px;
+    height: 70px;
+    top: 0;
+    left: 61%; }
+  .main-mission__icon-tree {
+    width: 32px;
+    height: 32px;
+    top: 84px;
+    left: 58%;
+    stroke: #e31235; }
+    .main-mission__icon-tree > svg {
+      transform: scale(0.4); }
+  .main-mission__icon-chip {
+    width: 52px;
+    height: 52px;
+    top: 80px;
+    left: 78%;
+    stroke: #76bc21; }
+    .main-mission__icon-chip > svg {
+      transform: scale(0.7); }
+  .main-mission__icon-watch {
+    display: none; }
+  .main-mission-title {
+    font-size: 48px;
+    line-height: 44px; }
+  .main-mission__link {
+    right: auto;
+    left: 2.6%; } }
 
 /*!****************************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/postcss-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles/main-page/main-video.scss ***!
