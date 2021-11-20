@@ -11,6 +11,11 @@
   display: flex;
 }
 
+.main-division__top-services-mobile,
+.main-division__more-about-direction-mobile {
+  display: none;
+}
+
 .main-division__top-left-bar {
   width: 33.33%;
 }
@@ -139,4 +144,228 @@
 .main-division__item-link {
   color: $mainColor;
   margin-top: auto;
+}
+
+// Styles for 1440px
+@media (max-width: 1440px) {
+  .main-division {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 144px;
+  }
+
+  .main-division__top-item-title {
+    font-size: 56px;
+    line-height: 60px;
+    margin-bottom: 128px;
+  }
+
+  .main-division__top-services {
+    max-width: 224px;
+  }
+
+  .main-division__top-item-scills {
+    max-width: 464px;
+  }
+
+  .main-division__top-to-vacancies-link {
+    margin-right: 23px;
+  }
+
+  .main-division__item-title {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 16px;
+  }
+
+  .main-division__item-info {
+    max-width: 354px;
+    margin-bottom: 128px;
+  }
+}
+
+// Styles for 1024px
+@media (max-width: 1024px) {
+  .main-division {
+    margin-bottom: 133px;
+  }
+
+  .main-division__top-item-title {
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 120px;
+  }
+
+  .main-division__top-item-scills {
+    max-width: 318px;
+  }
+
+  .main-division__top-services {
+    max-width: 209px;
+  }
+
+  .main-division__top-to-vacancies-link {
+    margin-right: 8px;
+  }
+
+  .main-division__item-title {
+    max-width: 295px;
+  }
+
+  .main-division__item-info {
+    max-width: 304px;
+    margin-bottom: 72px;
+  }
+
+  .main-division__top-title-icon {
+    right: -30px;
+  }
+}
+
+// Styles for 768px
+@media (max-width: 850px) {
+  .main-division {
+    margin-bottom: 128px;
+    padding: 0 8px;
+  }
+
+  .main-division__top {
+    flex-wrap: wrap;
+  }
+
+  .main-division__top-left-bar,
+  .main-division__top-right-bar {
+    width: 100%;
+  }
+
+  .main-division__top-left-bar {
+    margin-bottom: 40px;
+  }
+
+  .main-division__top-switching-block {
+    flex-direction: column;
+  }
+
+  .main-division__top-switching-text {
+    margin-bottom: 12px;
+  }
+
+  .main-division__top-switcher-container {
+    display: flex;
+  }
+
+  .main-division__top-switcher:first-child {
+    margin-right: 8px;
+  }
+
+  .main-division__top-main-item {
+    margin-bottom: 40px;
+  }
+
+  .main-division__item-title {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .main-division__item-info {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+// Styles for 320px
+@media (max-width: 700px) {
+  .main-division {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 64px;
+  }
+
+  .main-division__top-left-bar {
+    margin-bottom: 32px;
+  }
+
+  .main-division__top-switching-text {
+    margin-bottom: 16px;
+  }
+
+  .main-division__top-switcher-container {
+    width: 100%;
+  }
+
+  .main-division__top-item-title {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 4px;
+  }
+
+  .main-division__top-main-item {
+    padding-bottom: 16px;
+    margin-bottom: 8px;
+  }
+
+  .main-division__bottom {
+    flex-wrap: wrap;
+  }
+
+  .main-division__item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+
+  .main-division__top-item-right {
+    display: none;
+  }
+
+  .main-division__top-item-left {
+    width: 100%;
+  }
+
+  .main-division__top-services-mobile,
+  .main-division__more-about-direction-mobile {
+    display: inline-block;
+  }
+
+  .main-division__top-services-mobile {
+    margin-bottom: 24px;
+  }
+
+  .main-division__top-item-scills {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .main-division__more-about-direction-mobile {
+    color: $mainColor;
+  }
+
+  .main-division__top-title-icon {
+    width: 20px;
+    height: 20px;
+    right: -20px;
+
+    & > svg {
+      transform: scale(0.8);
+    }
+  }
+
+  .main-division__item {
+    padding-bottom: 16px;
+  }
+
+  .main-division__item-link {
+    display: none;
+  }
+
+  .main-division__item-title {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 4px;
+  }
+
+  .main-division__item-info {
+    margin-bottom: 24px;
+  }
 }
