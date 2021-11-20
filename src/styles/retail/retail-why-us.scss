@@ -1,7 +1,25 @@
 @import '../styles.scss';
 
 .retail__why-us {
-  margin-bottom: 100px;
+  margin-bottom: 96px;
   padding-left: 16px;
   overflow: hidden;
+}
+
+@media (max-width: 1440px) {
+  .retail__why-us {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .retail__why-us {
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 320px) {
+  .retail__why-us {
+    margin-bottom: 0;
+  }
 }

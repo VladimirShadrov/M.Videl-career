@@ -9618,9 +9618,21 @@ body {
     padding: 8px; } }
 
 .retail__why-us {
-  margin-bottom: 100px;
+  margin-bottom: 96px;
   padding-left: 16px;
   overflow: hidden; }
+
+@media (max-width: 1440px) {
+  .retail__why-us {
+    margin-bottom: 40px; } }
+
+@media (max-width: 1024px) {
+  .retail__why-us {
+    margin-bottom: 32px; } }
+
+@media (max-width: 320px) {
+  .retail__why-us {
+    margin-bottom: 0; } }
 
 /*!****************************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/postcss-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles/retail/retail-brands.scss ***!
@@ -13268,7 +13280,6 @@ body {
 .main-video {
   position: relative;
   width: 100%;
-  height: 1088px;
   margin-bottom: 96px; }
   .main-video > img {
     display: block;
@@ -13284,7 +13295,31 @@ body {
   position: absolute;
   right: 16px;
   bottom: 16px;
-  width: 142px; }
+  width: 142px;
+  font-size: 18px;
+  line-height: 24px; }
+
+@media (max-width: 1440px) {
+  .main-video {
+    margin-bottom: 72px;
+    font-size: 16px;
+    line-height: 20px; }
+  .main-video__button {
+    font-size: 16px;
+    line-height: 20px; } }
+
+@media (max-width: 1024px) {
+  .main-video {
+    margin-bottom: 64px; } }
+
+@media (max-width: 320px) {
+  .main-video {
+    margin-bottom: 32px;
+    font-size: 14px;
+    line-height: 16px; }
+  .main-video__button {
+    font-size: 14px;
+    line-height: 16px; } }
 
 /*!*****************************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/postcss-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles/main-page/main-awards.scss ***!
