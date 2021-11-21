@@ -22,3 +22,10 @@
     margin-bottom: 134px;
   }
 }
+
+// Styles for 320px
+@media (max-width: 550px) {
+  .main__running-line {
+    margin-bottom: 64px;
+  }
+}
