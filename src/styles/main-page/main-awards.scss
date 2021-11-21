@@ -13,6 +13,10 @@
   width: 33.33%;
 }
 
+.main-awards__buttons-mobile {
+  display: none;
+}
+
 .main-awards__left-bar-text {
   max-width: 304px;
 }
@@ -50,4 +54,117 @@
 .main-awards__awards-button {
   margin-top: 32px;
   cursor: pointer;
+}
+
+// Styles for 1440
+@media (max-width: 1440px) {
+  .main-awards {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 144px;
+  }
+
+  .main-awards__left-bar-text {
+    max-width: 224px;
+  }
+
+  .main-awards__item-title {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 128px;
+  }
+
+  .main-awards__awards-button {
+    margin-top: 24px;
+  }
+}
+
+// Styles for 1024px
+@media (max-width: 1100px) {
+  .main-awards {
+    margin-bottom: 128px;
+  }
+
+  .main-awards__left-bar-text {
+    max-width: 262px;
+  }
+
+  .main-awards__item-title {
+    margin-bottom: 108px;
+  }
+
+  .main-awards__item-link {
+    width: 95%;
+  }
+}
+
+// Styles for 768px
+@media (max-width: 850px) {
+  .main-awards {
+    flex-wrap: wrap;
+    padding: 0 8px;
+  }
+
+  .main-awards__left-bar,
+  .main-awards__right-bar {
+    width: 100%;
+  }
+
+  .main-awards__left-bar {
+    margin-bottom: 40px;
+  }
+
+  .main-awards__item-title {
+    margin-bottom: 88px;
+  }
+
+  .main-awards__award-item {
+    margin-top: 0;
+  }
+}
+
+// Styles for 320px
+@media (max-width: 550px) {
+  .main-awards {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 60px;
+  }
+
+  .main-awards__buttons-mobile {
+    display: flex;
+  }
+
+  .main-awards__left-bar {
+    display: flex;
+    align-items: start;
+    margin-bottom: 24px;
+  }
+
+  .main-awards__left-bar-text {
+    max-width: 221px;
+  }
+
+  .main-awards__wrapper {
+    width: 330%;
+    flex-wrap: nowrap;
+  }
+
+  .main-awards__award-item {
+    width: calc(80% - 16px);
+    margin-bottom: 0;
+    padding-bottom: 8px;
+  }
+
+  .main-awards__item-title {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 60px;
+  }
+
+  .main-awards__awards-button {
+    opacity: 0;
+    margin-top: 0;
+    pointer-events: none;
+  }
 }

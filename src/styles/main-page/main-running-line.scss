@@ -3,4 +3,22 @@
 .main__running-line {
   overflow: hidden;
   margin-bottom: 210px;
+
+  & > h2 {
+    margin-bottom: 0;
+  }
+}
+
+// Styles for 1440px
+@media (max-width: 1440px) {
+  .main__running-line {
+    margin-bottom: 144px;
+  }
+}
+
+// Styles for 1024px
+@media (max-width: 1440px) {
+  .main__running-line {
+    margin-bottom: 134px;
+  }
 }

@@ -4,3 +4,24 @@
   margin-bottom: 192px;
   overflow: hidden;
 }
+
+// Styles for 1440px
+@media (max-width: 1440px) {
+  .main-news-events {
+    margin-bottom: 144px;
+  }
+}
+
+// Styles for 1024px
+@media (max-width: 1024px) {
+  .main-news-events {
+    margin-bottom: 128px;
+  }
+}
+
+// Styles for 320px
+@media (max-width: 550px) {
+  .main-news-events {
+    margin-bottom: 64px;
+  }
+}
