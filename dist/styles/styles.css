@@ -13891,13 +13891,15 @@ body {
   font-size: 160px;
   line-height: 144px;
   letter-spacing: -0.03em;
-  max-width: 1136px; }
+  max-width: 1136px;
+  position: relative;
+  z-index: 1; }
 
 .main-sustainability__icons-container {
   width: 759px;
   height: 314px;
   position: absolute;
-  right: 201px;
+  right: 10%;
   bottom: 0; }
 
 .main-sustainability__earth-icon-container,
@@ -13936,6 +13938,118 @@ body {
   position: absolute;
   top: 79px;
   left: 321px; }
+
+@media (max-width: 1550px) {
+  .main-sustainability {
+    margin-bottom: 72px;
+    min-height: 264px; }
+  .main-sustainability__title {
+    font-size: 124px;
+    line-height: 112px;
+    max-width: 1136px; }
+  .main-sustainability__icons-container {
+    right: 16px;
+    width: 563px;
+    height: 224px; }
+  .main-sustainability__earth-icon-container,
+  .main-sustainability__finger-icon-container {
+    width: 240px;
+    height: 116px; }
+  .main-sustainability__finger-icon,
+  .main-sustainability__earth-icon {
+    width: 100px;
+    height: 100px;
+    top: 8px;
+    right: 8px; }
+    .main-sustainability__finger-icon > svg,
+    .main-sustainability__earth-icon > svg {
+      transform: scale(0.8); }
+  .main-sustainability__wire-icon {
+    top: 40px;
+    left: 223px;
+    transform: scale(0.73); } }
+
+@media (max-width: 1200px) {
+  .main-sustainability {
+    margin-bottom: 64px;
+    min-height: 202px; }
+  .main-sustainability__title {
+    font-size: 88px;
+    line-height: 80px;
+    max-width: 666px; }
+  .main-sustainability__icons-container {
+    right: 16px;
+    width: 428px;
+    height: 170px; }
+  .main-sustainability__earth-icon-container,
+  .main-sustainability__finger-icon-container {
+    width: 182px;
+    height: 88px; }
+  .main-sustainability__finger-icon,
+  .main-sustainability__earth-icon {
+    width: 76px;
+    height: 76px;
+    top: 6px;
+    right: 6px; }
+    .main-sustainability__finger-icon > svg,
+    .main-sustainability__earth-icon > svg {
+      transform: scale(0.75); }
+  .main-sustainability__wire-icon {
+    top: 12px;
+    left: 155px;
+    transform: scale(0.57); } }
+
+@media (max-width: 850px) {
+  .main-sustainability {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+    padding: 0 8px; }
+  .main-sustainability__title,
+  .main-sustainability__icons-container {
+    width: 100%;
+    max-width: 100%; }
+  .main-sustainability__icons-container {
+    position: relative;
+    order: -1;
+    width: 428px;
+    height: 170px;
+    margin: 0 auto; }
+  .main-sustainability__title {
+    margin-top: 8px; } }
+
+@media (max-width: 550px) {
+  .main-sustainability {
+    margin-bottom: 32px; }
+  .main-sustainability__icons-container {
+    width: 304px;
+    height: 120px;
+    left: 8px; }
+  .main-sustainability__finger-icon-container,
+  .main-sustainability__earth-icon-container {
+    width: 120px;
+    height: 60px; }
+  .main-sustainability__finger-icon,
+  .main-sustainability__earth-icon {
+    width: 52px;
+    height: 52px;
+    top: 4px;
+    right: 4px; }
+    .main-sustainability__finger-icon > svg,
+    .main-sustainability__earth-icon > svg {
+      transform: scale(0.7); }
+  .main-sustainability__earth-icon-container {
+    right: 16px; }
+  .main-sustainability__wire-icon {
+    left: 95px; }
+  .main-sustainability__wire-icon {
+    transform: scale(0.42);
+    top: -14px;
+    left: 86px; }
+  .main-sustainability__title {
+    font-size: 36px;
+    line-height: 38px;
+    margin-top: 10px; } }
 
 /*!********************************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/postcss-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles/main-page/main-stability.scss ***!
