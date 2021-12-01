@@ -1,0 +1,41 @@
+@import '../styles.scss';
+
+.logistic-advantages {
+  margin-bottom: 192px;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  padding: 0 16px;
+}
+
+.logistic-advantages__left-bar {
+  width: 33.33%;
+}
+
+.logistic-advantages__right-bar {
+  width: 66.66%;
+}
+
+.logistic-advantages__content-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: -24px -16px;
+}
+
+.logistic-advantages__content-item {
+  margin: 24px 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #969696;
+  width: calc(25% - 32px);
+  display: flex;
+  flex-direction: column;
+}
+
+.logistic-advantages__content-item-text {
+  margin-bottom: 32px;
+}
+
+.logistic-advantages__content-item-icon {
+  margin-top: auto;
+}
