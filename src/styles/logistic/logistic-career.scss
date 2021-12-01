@@ -1,0 +1,57 @@
+@import '../styles.scss';
+
+.logistic-career {
+  padding: 0 16px;
+  margin-bottom: 200px;
+}
+
+.logistic-career__button {
+  padding: 8px 16px;
+  background: transparent;
+  border: 1px solid #969696;
+  border-radius: 36px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  margin-top: 56px;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.logistic-career__position-description-link {
+  opacity: 1;
+}
+
+//Styles for 1440px
+@media (max-width: 1440px) {
+  .logistic-career {
+    margin-bottom: 160px;
+  }
+
+  .logistic-career__button {
+    margin-top: 40px;
+  }
+}
+
+//Styles for 1024px
+@media (max-width: 1440px) {
+  .logistic-career {
+    margin-bottom: 130px;
+  }
+
+  .logistic-career__button {
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logistic-career {
+    padding: 0 8px;
+  }
+}
+
+@media (max-width: 450px) {
+  .logistic-career {
+    margin-bottom: 70px;
+  }
+}
