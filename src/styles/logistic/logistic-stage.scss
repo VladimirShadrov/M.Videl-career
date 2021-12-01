@@ -1,0 +1,122 @@
+@import '../styles.scss';
+
+.logistic-stage {
+  margin-bottom: 96px;
+  min-height: 716px;
+  display: flex;
+  padding: 100px 16px 0 16px;
+  font-size: 18px;
+  line-height: 24px;
+  overflow: hidden;
+  position: relative;
+}
+
+.logistic-stage__title-block {
+  width: 33.33%;
+}
+
+.logistic-stage__title {
+  font-size: 160px;
+  line-height: 144px;
+  letter-spacing: -0.03em;
+  display: inline;
+}
+
+.logistic-stage__button {
+  padding: 9px 40px 8px 16px;
+  color: $mainColor;
+  background: $whiteColor;
+  border-radius: 36px;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: lowercase;
+  display: inline-block;
+  box-shadow: 16px 2px 24px rgba(0, 0, 0, 0.03);
+  border-radius: 36px;
+  transform: rotate(-2deg);
+  transition: 0.3s;
+  position: relative;
+  left: 70%;
+  bottom: 20px;
+  margin-bottom: 20px;
+
+  &:hover {
+    transform: rotate(0);
+  }
+}
+
+.logistic-stage__text {
+  width: 80%;
+}
+
+.logistic-stage__icon-block {
+  width: 66.66%;
+  position: relative;
+}
+
+.logistic-stage__icon-block-big {
+  position: absolute;
+  left: 76px;
+  top: 76px;
+  width: 1925px;
+  height: 965px;
+  border: 1px solid #e31235;
+  border-radius: 540px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logistic-stage__icon-block-middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1484px;
+  height: 674px;
+  border: 1px solid #969696;
+  border-radius: 540px;
+  position: relative;
+}
+
+.logistic-stage__icon-block-small {
+  width: 1073px;
+  height: 426px;
+  border: 1px solid #76bc21;
+  border-radius: 540px;
+  position: relative;
+}
+
+.logistic-stage__icon-container {
+  width: 124px;
+  height: 124px;
+  border-radius: 50%;
+  background: $whiteColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.logistic-stage__mvideo-icon {
+  left: 860px;
+  top: -62px;
+}
+
+.logistic-stage__finger-icon {
+  left: 352px;
+  top: -64px;
+}
+
+.logistic-stage__elorado-icon {
+  left: -11px;
+  top: 19px;
+}
+
+.logistic-stage__gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(180deg, rgba(243, 243, 243, 0) 0%, #f3f3f3 100%);
+}

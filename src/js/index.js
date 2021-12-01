@@ -34,6 +34,7 @@ import '../styles/main-page/main-running-line.scss';
 import '../styles/main-page/main-news.scss';
 import '../styles/main-page/main-sustainability.scss';
 import '../styles/main-page/main-stability.scss';
+import '../styles/logistic/logistic-stage.scss';
 
 import { Vacancy } from './components/itHubPage/vacancy';
 import { Listing } from './components/vacancyListingPage/listing';
@@ -152,12 +153,12 @@ document.body.addEventListener('click', (event) => {
 
   if (event.target.classList.contains('create-future__button')) {
     event.preventDefault();
-    smothScrollingToBlock(goalBlock);
+    smothScrollingToBlock(goalBlock, headerItPage);
   }
 
   if (event.target.classList.contains('goal__button')) {
     event.preventDefault();
-    smothScrollingToBlock(profession);
+    smothScrollingToBlock(profession, headerItPage);
   }
 });
 

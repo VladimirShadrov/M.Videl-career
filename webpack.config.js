@@ -72,6 +72,10 @@ module.exports = {
       filename: 'listing-map.html',
       template: './listing-map.html',
     }),
+    new HTMLWebpackPlugin({
+      filename: 'logistic.html',
+      template: './logistic.html',
+    }),
     new MiniCssExtractPlugin({
       filename: 'styles/styles.css',
     }),
