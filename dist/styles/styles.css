@@ -2220,6 +2220,37 @@ body {
     top: -2px;
     width: 24px;
     height: 24px; }
+  .profession__technology-item > svg,
+  .jira > svg,
+  .confluence > svg,
+  .google-docs > svg,
+  .sap > svg,
+  .slack > svg,
+  .miro > svg,
+  .gradle > svg,
+  .jenkins > svg,
+  .docker > svg,
+  .sonar-qube > svg,
+  .spring > svg,
+  .gitlab > svg,
+  .PostgreSQL > svg,
+  .HP-QualityCenter > svg,
+  .postman > svg,
+  .ibm > svg,
+  .ansible > svg,
+  .kubernetes > svg,
+  .clickhouse > svg,
+  .terraform > svg,
+  .figma > svg,
+  .grafana > svg,
+  .elk > svg,
+  .prometheus > svg,
+  .swagger > svg {
+    position: absolute;
+    left: 0;
+    top: -2px;
+    width: 24px;
+    height: 24px; }
 
 .jira::before {
   background: url("../images/management/jira.svg") no-repeat; }
@@ -2319,15 +2350,16 @@ body {
   display: none; }
 
 .profession__side-bar-image-wrapper {
-  max-width: 416px; }
+  max-width: 416px;
+  margin-top: auto; }
   .profession__side-bar-image-wrapper > .profession__side-bar-image {
-    width: 100%; }
+    width: 100%;
+    height: auto; }
 
 .profession__side-bar-vacancy-value-arrow {
   display: inline-block;
   width: 14px;
-  height: 9px;
-  background: url("../images/management/arrow-right.svg"); }
+  height: 9px; }
 
 .profession__main-content {
   width: 66.66%; }
@@ -2350,7 +2382,8 @@ body {
   margin-right: 16px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   position: relative;
-  cursor: pointer; }
+  cursor: pointer;
+  padding-bottom: 8px; }
   .profession__filter-item:last-child {
     margin-right: 0; }
 
@@ -2415,18 +2448,16 @@ body {
   width: 16px;
   height: 16px;
   border: 1px solid #000000; }
-  .profession__filter-checbox-value::before {
-    content: '';
+  .profession__filter-checbox-value > svg {
     position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: url("../images/management/check.svg") center/cover no-repeat;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     opacity: 0;
-    transition: 0.2s; }
+    transition: 0.2s;
+    pointer-events: none; }
 
-.profession__filter-input:checked + .profession__filter-checbox-value::before {
+.profession__filter-input:checked + .profession__filter-checbox-value > svg {
   opacity: 1; }
 
 .profession__filter-reset {
@@ -2441,13 +2472,16 @@ body {
   font-size: 18px;
   line-height: 24px;
   border-top: 1px solid #969696;
-  padding-bottom: 32px;
+  margin-bottom: 32px;
   padding-top: 8px;
-  transition: 0.2s; }
+  transition: 0.2s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden; }
   .profession__job-item:first-child {
     border-top: 1px solid transparent; }
   .profession__job-item:last-child {
-    padding-bottom: 0; }
+    margin-bottom: 0; }
   .profession__job-item:hover .profession__job-title {
     color: #e31235; }
   .profession__job-item:hover {
@@ -2473,15 +2507,13 @@ body {
   color: rgba(0, 0, 0, 0.5);
   position: relative;
   padding-right: 15px; }
-  .profession__crumb::after {
-    content: '';
+  .profession__crumb > svg {
     position: absolute;
     right: 0;
     top: calc(50% - 3px);
     width: 11px;
-    height: 7px;
-    background: url("../images/management/arrow-bread-crumb.svg") no-repeat; }
-  .profession__crumb:last-child::after {
+    height: 7px; }
+  .profession__crumb:last-child > svg {
     display: none; }
 
 .profession__job-department {
@@ -2493,7 +2525,8 @@ body {
   margin-right: auto;
   position: relative;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  pointer-events: none; }
 
 .profession__show-more {
   color: #000000;
@@ -2501,32 +2534,33 @@ body {
 
 .profession__more-info {
   position: absolute;
-  right: -100%;
-  bottom: -16px;
-  width: 195px;
+  top: 0;
+  left: 0;
+  width: 185px;
   color: #000000;
   font-size: 12px;
   line-height: 12px;
   border-radius: 36px;
   background: #ffffff;
   padding: 10px 36px 10px 16px;
-  transition: 0.2s;
+  z-index: 1;
+  pointer-events: none;
   opacity: 0; }
-  .profession__more-info::before {
-    content: '';
+  .profession__more-info > svg {
     position: absolute;
-    top: calc(50% - 4.5px);
+    top: calc(50% - 3px);
     right: 17px;
     width: 14px;
     height: 9px;
-    background: url("../images/management/arrow-right.svg") center/cover no-repeat; }
+    pointer-events: none; }
 
 .profession__job-price-container,
 .profession__location-container {
   width: 100%;
   max-width: 310px;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  pointer-events: none; }
 
 .profession__job-expiriens {
   margin-top: auto; }
@@ -2564,14 +2598,13 @@ body {
   width: max-content;
   padding-right: 20px;
   margin-top: 24px; }
-  .profession__location-map::after {
-    content: '';
+  .profession__location-map > svg {
     position: absolute;
-    top: calc(50% - 4.5px);
+    top: calc(50% - 3px);
     right: 0;
     width: 14px;
     height: 9px;
-    background: url("../images/management/arrow-right.svg"); }
+    pointer-events: none; }
 
 @media (max-width: 1440px) {
   .profession__header {
@@ -2595,7 +2628,7 @@ body {
   .profession__filter-item {
     max-width: 224px; }
   .profession__job-item {
-    padding-bottom: 24px; }
+    margin-bottom: 24px; }
   .profession__side-bar-text,
   .profession__side-bar-vacancy {
     margin-bottom: 24px; }
@@ -2722,7 +2755,7 @@ body {
   .profession__filter-item {
     width: 100%;
     min-width: 100%;
-    margin-left: 8px;
+    margin-left: 0;
     margin-bottom: 42px;
     padding-bottom: 8px; }
   .profession__filter-reset {
@@ -2766,7 +2799,9 @@ body {
     font-size: 14px;
     line-height: 16px; }
   .profession__question {
-    margin-bottom: 16px; } }
+    margin-bottom: 16px; }
+  .profession__more-info {
+    display: none; } }
 
 .loader-bg {
   display: flex;
@@ -2818,6 +2853,21 @@ body {
     width: 72px;
     height: 72px;
     opacity: 0; } }
+
+#vacancy_popup {
+  position: relative; }
+
+#vacancy_popup .loader-wrapp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1; }
+
+#vacancy_popup .loader-wrapp .loader-bg {
+  height: 100%; }
 
 /*!*****************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/postcss-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles/direction.scss ***!
@@ -14766,6 +14816,153 @@ body {
 @media (max-width: 450px) {
   .logistic-career {
     margin-bottom: 70px; } }
+
+/*!********************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/postcss-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles/logistic/logistic-vacancy-directions.scss ***!
+  \********************************************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: suisse;
+  src: url("../fonts/SuisseIntl-Regular.woff") format("woff"), url("../fonts/SuisseIntl-Regular.woff2") format("woff2"); }
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+:focus,
+:active {
+  outline: none; }
+
+a:focus,
+a:active {
+  outline: none; }
+
+nav,
+footer,
+header,
+aside {
+  display: block; }
+
+html,
+body {
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px; }
+
+input,
+button,
+textarea {
+  font-family: inherit; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a,
+a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400; }
+
+body {
+  font-family: suisse;
+  background: #f3f3f3;
+  color: #000000;
+  font-size: 16px;
+  line-height: 20px;
+  position: relative; }
+
+.container {
+  padding: 0 16px; }
+
+.page-container {
+  padding: 0 16px; }
+
+.hide {
+  display: none; }
+
+.transparent {
+  opacity: 0; }
+
+.cursor-pointer {
+  cursor: pointer; }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 8px; } }
+
+.logistic-vacancy-directions {
+  margin-bottom: 196px;
+  padding: 0 16px; }
+
+.logistic__activity-item {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 24px; }
+
+.logistic__activity-item-number {
+  color: #76bc21;
+  width: 22px;
+  margin-right: 4px; }
+
+@media (max-width: 1450px) {
+  .logistic-vacancy-directions {
+    margin-bottom: 160px; }
+  .logistic__activity-item {
+    font-size: 16px;
+    line-height: 20px; } }
+
+@media (max-width: 1024px) {
+  .logistic-vacancy-directions {
+    margin-bottom: 140px; } }
+
+@media (max-width: 768px) {
+  .logistic-vacancy-directions {
+    padding: 0 8px; } }
+
+@media (max-width: 479px) {
+  .logistic-vacancy-directions {
+    margin-bottom: 64px; }
+  .logistic__activity-item {
+    font-size: 14px;
+    line-height: 16px; }
+  .logistic__side-bar-vacancy-mobile {
+    margin: 32px 0; }
+  .logistic__location-city {
+    margin-bottom: 16px; }
+  .logistic__location {
+    margin-top: auto;
+    margin-bottom: 0; }
+  .logistic__job-item {
+    margin-bottom: 16px; } }
 
 
 /*# sourceMappingURL=styles.css.map*/

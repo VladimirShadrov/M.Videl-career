@@ -37,6 +37,7 @@ import '../styles/main-page/main-stability.scss';
 import '../styles/logistic/logistic-stage.scss';
 import '../styles/logistic/logistic-advantages.scss';
 import '../styles/logistic/logistic-career.scss';
+import '../styles/logistic/logistic-vacancy-directions.scss';
 
 import { Vacancy } from './components/itHubPage/vacancy';
 import { Listing } from './components/vacancyListingPage/listing';

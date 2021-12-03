@@ -1,0 +1,75 @@
+@import '../styles.scss';
+
+.logistic-vacancy-directions {
+  margin-bottom: 196px;
+  padding: 0 16px;
+}
+
+.logistic__activity-item {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.logistic__activity-item-number {
+  color: #76bc21;
+  width: 22px;
+  margin-right: 4px;
+}
+
+// Styles for 1440px
+@media (max-width: 1450px) {
+  .logistic-vacancy-directions {
+    margin-bottom: 160px;
+  }
+
+  .logistic__activity-item {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+// Styles for 1024px
+@media (max-width: 1024px) {
+  .logistic-vacancy-directions {
+    margin-bottom: 140px;
+  }
+}
+
+// Styles for 768px
+@media (max-width: 768px) {
+  .logistic-vacancy-directions {
+    padding: 0 8px;
+  }
+}
+
+// Styles for 320px
+@media (max-width: 479px) {
+  .logistic-vacancy-directions {
+    margin-bottom: 64px;
+  }
+
+  .logistic__activity-item {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .logistic__side-bar-vacancy-mobile {
+    margin: 32px 0;
+  }
+
+  .logistic__location-city {
+    margin-bottom: 16px;
+  }
+
+  .logistic__location {
+    margin-top: auto;
+    margin-bottom: 0;
+  }
+
+  .logistic__job-item {
+    margin-bottom: 16px;
+  }
+}
