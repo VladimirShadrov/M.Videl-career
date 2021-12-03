@@ -1,0 +1,31 @@
+@import '../styles.scss';
+
+.logistic__why-we-are {
+  margin-bottom: 196px;
+}
+
+.logistic__advantages-side-bar-text {
+  width: 100%;
+  max-width: 100%;
+}
+
+// Styles for 1440px
+@media (max-width: 1440px) {
+  .logistic__why-we-are {
+    margin-bottom: 144px;
+  }
+}
+
+// Styles for 1024px
+@media (max-width: 1024px) {
+  .logistic__why-we-are {
+    margin-bottom: 128px;
+  }
+}
+
+// Styles for 320px
+@media (max-width: 479px) {
+  .logistic__why-we-are {
+    margin-bottom: 64px;
+  }
+}
