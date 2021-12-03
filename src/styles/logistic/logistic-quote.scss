@@ -1,0 +1,26 @@
+@import '../styles.scss';
+
+.logistic__quote {
+  margin-bottom: 96px;
+}
+
+// Styles for 1440px
+@media (max-width: 1440px) {
+  .logistic__quote {
+    margin-bottom: 72px;
+  }
+}
+
+// Styles for 1024px
+@media (max-width: 1024px) {
+  .logistic__quote {
+    margin-bottom: 64px;
+  }
+}
+
+// Styles for 320px
+@media (max-width: 479px) {
+  .logistic__quote {
+    margin-bottom: 32px;
+  }
+}

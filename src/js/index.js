@@ -41,6 +41,7 @@ import '../styles/logistic/logistic-vacancy-directions.scss';
 import '../styles/logistic/logistic-why-we-are.scss';
 import '../styles/logistic/logistic-upgrade-slider.scss';
 import '../styles/logistic/logistic-running-line.scss';
+import '../styles/logistic/logistic-quote.scss';
 
 import { Vacancy } from './components/itHubPage/vacancy';
 import { Listing } from './components/vacancyListingPage/listing';
