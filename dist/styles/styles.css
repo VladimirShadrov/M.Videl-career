@@ -14491,12 +14491,7 @@ body {
   left: 76px;
   top: 76px;
   width: 1925px;
-  height: 965px;
-  border: 1px solid #e31235;
-  border-radius: 540px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  height: 965px; }
 
 .logistic-stage__icon-block-middle {
   display: flex;
@@ -14504,16 +14499,21 @@ body {
   align-items: center;
   width: 1484px;
   height: 674px;
-  border: 1px solid #969696;
-  border-radius: 540px;
-  position: relative; }
+  position: absolute;
+  top: 140px;
+  left: 156px; }
 
 .logistic-stage__icon-block-small {
   width: 1073px;
   height: 426px;
-  border: 1px solid #76bc21;
-  border-radius: 540px;
-  position: relative; }
+  position: absolute;
+  top: 140px;
+  left: 156px; }
+
+.logistic-stage__border {
+  position: absolute;
+  top: 0;
+  left: 0; }
 
 .logistic-stage__icon-container {
   width: 124px;
@@ -14523,7 +14523,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute; }
+  position: absolute;
+  z-index: 1; }
 
 .logistic-stage__mvideo-icon {
   left: 860px;
@@ -14544,6 +14545,201 @@ body {
   width: 100%;
   height: 80px;
   background: linear-gradient(180deg, rgba(243, 243, 243, 0) 0%, #f3f3f3 100%); }
+
+@media (max-width: 1440px) {
+  .logistic-stage {
+    margin-bottom: 72px;
+    font-size: 16px;
+    line-height: 20px; }
+  .logistic-stage__title {
+    font-size: 124px;
+    line-height: 112px; }
+  .logistic-stage__button {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 0; }
+  .logistic-stage__icon-block-big {
+    width: 1008px;
+    height: 633.5px; }
+    .logistic-stage__icon-block-big > .logistic-stage__mvideo-icon {
+      left: 672px; }
+  .logistic-stage__icon-block-middle {
+    width: 811px;
+    height: 495.5px;
+    top: 148px;
+    left: 148px; }
+    .logistic-stage__icon-block-middle > .logistic-stage__finger-icon {
+      left: 233px; }
+  .logistic-stage__icon-block-small {
+    width: 615px;
+    height: 406px;
+    top: 148px;
+    left: 148px; }
+    .logistic-stage__icon-block-small > .logistic-stage__finger-icon {
+      left: -39px;
+      top: 64px; } }
+
+@media (max-width: 1150px) {
+  .logistic-stage {
+    min-height: 611px; }
+  .logistic-stage__title {
+    font-size: 88px;
+    line-height: 80px; }
+  .logistic-stage__button {
+    font-size: 18px;
+    line-height: 18px;
+    width: 183px;
+    padding: 9px 16px 8px 16px;
+    bottom: 12px;
+    left: 60%; }
+  .logistic-stage__text {
+    width: 95%;
+    position: relative;
+    top: -10px; }
+  .logistic-stage__icon-block-big {
+    left: 0;
+    width: 1383px;
+    height: 715px; }
+    .logistic-stage__icon-block-big > svg {
+      transform: scale(0.8);
+      top: -55px;
+      left: -115px; }
+    .logistic-stage__icon-block-big > .logistic-stage__mvideo-icon {
+      width: 80px;
+      height: 80px;
+      left: 558px;
+      top: -40px; }
+      .logistic-stage__icon-block-big > .logistic-stage__mvideo-icon > svg {
+        transform: scale(0.8); }
+  .logistic-stage__icon-block-middle {
+    width: 1065px;
+    height: 516px;
+    top: 116px;
+    left: 112px; }
+    .logistic-stage__icon-block-middle > svg {
+      transform: scale(0.8);
+      top: -41px;
+      left: -102px; }
+    .logistic-stage__icon-block-middle > .logistic-stage__finger-icon {
+      width: 80px;
+      height: 80px;
+      left: 309px;
+      top: -36px; }
+      .logistic-stage__icon-block-middle > .logistic-stage__finger-icon > svg {
+        transform: scale(0.8); }
+  .logistic-stage__icon-block-small {
+    width: 818px;
+    height: 294px;
+    top: 116px;
+    left: 117px; }
+    .logistic-stage__icon-block-small > svg {
+      transform: scale(0.8);
+      top: -27px;
+      left: -86px; }
+    .logistic-stage__icon-block-small > .logistic-stage__elorado-icon {
+      width: 80px;
+      height: 80px;
+      top: 2px;
+      left: 16px; }
+      .logistic-stage__icon-block-small > .logistic-stage__elorado-icon > svg {
+        transform: scale(0.8); } }
+
+@media (max-width: 800px) {
+  .logistic-stage {
+    padding: 0 8px;
+    padding-top: 92px;
+    min-height: 520px; }
+  .logistic-stage__title-block {
+    width: 49%;
+    z-index: 1; }
+  .logistic-stage__icon-block {
+    position: absolute;
+    top: 134px;
+    left: 72px;
+    bottom: 0;
+    width: 95%; }
+  .logistic-stage__icon-block-big {
+    top: 0; }
+  .logistic-stage__text {
+    width: 100%; } }
+
+@media (max-width: 479px) {
+  .logistic-stage {
+    margin-bottom: 32px;
+    font-size: 14px;
+    line-height: 16px;
+    flex-direction: column;
+    padding-top: 25px; }
+  .logistic-stage__icon-block {
+    position: relative;
+    top: 0;
+    left: 0;
+    order: -1;
+    width: 100%;
+    min-height: 268px;
+    margin-bottom: 22px; }
+  .logistic-stage__icon-block-big {
+    width: 100%;
+    height: 256px;
+    top: auto;
+    left: 35px;
+    bottom: 0; }
+    .logistic-stage__icon-block-big > svg {
+      transform: scale(0.47);
+      top: -144px;
+      left: -310px; }
+    .logistic-stage__icon-block-big .logistic-stage__mvideo-icon {
+      width: 48px;
+      height: 48px;
+      left: 70%;
+      top: -22px; }
+      .logistic-stage__icon-block-big .logistic-stage__mvideo-icon > svg {
+        transform: scale(0.6); }
+  .logistic-stage__icon-block-middle {
+    width: 248px;
+    height: 198px;
+    top: 59px;
+    left: 70px;
+    width: 100%; }
+    .logistic-stage__icon-block-middle > svg {
+      transform: scale(0.47);
+      top: -105px;
+      left: -270px; }
+    .logistic-stage__icon-block-middle > .logistic-stage__finger-icon {
+      width: 48px;
+      height: 48px;
+      top: 4px;
+      left: 45px; }
+      .logistic-stage__icon-block-middle > .logistic-stage__finger-icon > svg {
+        transform: scale(0.6); }
+  .logistic-stage__icon-block-small {
+    width: 159px;
+    height: 140px;
+    top: 58px;
+    left: 70px;
+    width: 100%; }
+    .logistic-stage__icon-block-small > svg {
+      transform: scale(0.49);
+      top: -67px;
+      left: -220px; }
+    .logistic-stage__icon-block-small > .logistic-stage__elorado-icon {
+      width: 48px;
+      height: 48px;
+      top: 41px;
+      left: -17px; }
+      .logistic-stage__icon-block-small > .logistic-stage__elorado-icon > svg {
+        transform: scale(0.6); }
+  .logistic-stage__title-block {
+    width: 100%; }
+  .logistic-stage__title {
+    font-size: 36px;
+    line-height: 38px;
+    width: 80%;
+    display: block; }
+  .logistic-stage__button {
+    left: 5%;
+    bottom: 7px;
+    margin-bottom: 25px; } }
 
 /*!************************************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/postcss-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles/logistic/logistic-advantages.scss ***!
@@ -14650,7 +14846,8 @@ body {
   font-size: 18px;
   line-height: 24px;
   display: flex;
-  padding: 0 16px; }
+  padding: 0 16px;
+  overflow: hidden; }
 
 .logistic-advantages__left-bar {
   width: 33.33%; }
@@ -15185,7 +15382,8 @@ body {
 
 .logistic__career-upgrade {
   padding: 0 16px;
-  margin-bottom: 192px; }
+  margin-bottom: 192px;
+  overflow: hidden; }
 
 @media (max-width: 1440px) {
   .logistic__career-upgrade {
@@ -15535,7 +15733,8 @@ body {
     padding: 8px; } }
 
 .logistic-news-events {
-  margin-bottom: 96px; }
+  margin-bottom: 96px;
+  overflow: hidden; }
 
 @media (max-width: 1440px) {
   .logistic-news-events {
