@@ -13,6 +13,10 @@
   width: 33.33%;
 }
 
+.logistic-advantages__slide-buttons-mobile {
+  display: none;
+}
+
 .logistic-advantages__right-bar {
   width: 66.66%;
 }
@@ -39,4 +43,111 @@
 
 .logistic-advantages__content-item-icon {
   margin-top: auto;
+  width: 96px;
+  height: 96px;
+  display: flex;
+
+  & > svg {
+    margin-top: auto;
+  }
+}
+
+// Styles for 1440px
+@media (max-width: 1440px) {
+  .logistic-advantages {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 144px;
+  }
+
+  .logistic-advantages__content-item-icon {
+    margin-top: auto;
+    width: 72px;
+    height: 72px;
+    display: flex;
+
+    & > svg {
+      transform: scale(0.75);
+    }
+  }
+}
+
+// Styles for 1024px
+@media (max-width: 1024px) {
+  .logistic-advantages {
+    margin-bottom: 136px;
+  }
+
+  .logistic-advantages__content-item {
+    width: calc(50% - 32px);
+  }
+}
+
+// Styles for 768px
+@media (max-width: 768px) {
+  .logistic-advantages {
+    margin-bottom: 136px;
+    flex-wrap: wrap;
+    padding: 0 8px;
+  }
+
+  .logistic-advantages__left-bar,
+  .logistic-advantages__right-bar {
+    width: 100%;
+  }
+
+  .logistic-advantages__left-bar {
+    margin-bottom: 24px;
+  }
+
+  .logistic-advantages__content-item {
+    width: calc(33.33% - 32px);
+  }
+}
+
+// Styles for 320px
+@media (max-width: 479px) {
+  .logistic-advantages {
+    margin-bottom: 64px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .logistic-advantages__content-wrapper {
+    flex-wrap: nowrap;
+    width: 700%;
+  }
+
+  .logistic-advantages__content-item {
+    width: calc(12.5% - 16px);
+    padding-bottom: 8px;
+  }
+
+  .logistic-advantages__content-item-icon {
+    width: 48px;
+    height: 48px;
+
+    & > svg {
+      transform: scale(0.67);
+    }
+  }
+
+  .logistic-advantages__left-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .logistic-advantages__slide-buttons-mobile {
+    display: flex;
+  }
+
+  .logistic-advantages__text {
+    max-width: 220px;
+  }
+
+  .logistic-advantage__slide-arrow,
+  .logistic-advantages__slide-number-mobile {
+    margin-right: 9px;
+  }
 }
