@@ -43,6 +43,7 @@ import '../styles/logistic/logistic-upgrade-slider.scss';
 import '../styles/logistic/logistic-running-line.scss';
 import '../styles/logistic/logistic-quote.scss';
 import '../styles/logistic/logistic-news-events.scss';
+import '../styles/office/office-stage.scss';
 
 import { Vacancy } from './components/itHubPage/vacancy';
 import { Listing } from './components/vacancyListingPage/listing';

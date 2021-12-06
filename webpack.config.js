@@ -76,6 +76,10 @@ module.exports = {
       filename: 'logistic.html',
       template: './logistic.html',
     }),
+    new HTMLWebpackPlugin({
+      filename: 'office.html',
+      template: './office.html',
+    }),
     new MiniCssExtractPlugin({
       filename: 'styles/styles.css',
     }),
