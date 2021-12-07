@@ -17006,6 +17006,8 @@ body {
   overflow: hidden;
   padding: 0 16px;
   margin-bottom: 192px; }
+  .office__internship .intern__header.office__internship-header {
+    margin-bottom: 0; }
   .office__internship .intern {
     margin-bottom: 96px;
     font-size: 18px;
