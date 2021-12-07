@@ -1,0 +1,55 @@
+@import '../styles.scss';
+
+.office__advantages {
+  margin-bottom: 144px;
+}
+
+.office__slider-wrapper {
+  position: relative;
+}
+
+.office__slide-buttons {
+  left: 0;
+  overflow: hidden;
+}
+
+.office__slide-main-button-next,
+.office__slide-main-button-prev {
+  position: absolute;
+  bottom: 0;
+  height: 20px;
+  transition: width 0.3s;
+  overflow: hidden;
+}
+
+.office__slide-main-button-next {
+  width: 100%;
+  right: 0;
+}
+
+.office__slide-main-button-prev {
+  width: 0px;
+  left: 0;
+}
+
+// Styles for 1024px
+@media (max-width: 1024px) {
+  .office__advantages {
+    margin-bottom: 136px;
+  }
+
+  .office__slide-title {
+    margin-bottom: 12px;
+  }
+
+  .office__slide-text {
+    margin-bottom: 0;
+  }
+}
+
+// Styles for 320px
+@media (max-width: 479px) {
+  .office__advantages {
+    margin-bottom: 64px;
+  }
+}
