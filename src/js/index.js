@@ -46,6 +46,7 @@ import '../styles/logistic/logistic-news-events.scss';
 import '../styles/office/office-stage.scss';
 import '../styles/office/office-advantages.scss';
 import '../styles/office/office-vacancies.scss';
+import '../styles/office/office-why-we-are.scss';
 
 import { Vacancy } from './components/itHubPage/vacancy';
 import { Listing } from './components/vacancyListingPage/listing';

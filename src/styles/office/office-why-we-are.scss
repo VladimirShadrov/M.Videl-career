@@ -1,0 +1,37 @@
+@import '../styles.scss';
+
+.office__why-we-are {
+  padding: 0 16px;
+  display: flex;
+  margin-bottom: 144px;
+}
+
+.office__advantages-side-bar-text {
+  max-width: 224px;
+}
+
+// Styles for 1024px
+@media (max-width: 1024px) {
+  .office__why-we-are {
+    margin-bottom: 128px;
+  }
+}
+
+// Styles for 768px
+@media (max-width: 768px) {
+  .office__why-we-are {
+    padding: 0 8px;
+    flex-wrap: wrap;
+  }
+
+  .office__advantages-side-bar-text {
+    max-width: 100%;
+  }
+}
+
+// Styles for 320px
+@media (max-width: 479px) {
+  .office__why-we-are {
+    margin-bottom: 64px;
+  }
+}
