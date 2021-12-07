@@ -18,8 +18,6 @@
   right: 0;
   width: 100%;
   max-width: 907px;
-  background: url('../images/internship/swichers.svg') right / contain no-repeat;
-  padding-top: 15%;
 }
 
 .intern__title {
@@ -49,16 +47,19 @@
   text-transform: lowercase;
   padding: 9px 40px 9px 16px;
   color: $mainColor;
+  transition: 0.3s;
 
-  &::after {
-    content: '';
+  & > svg {
     position: absolute;
     right: 17px;
-    top: calc(50% - 4.5px);
+    top: calc(50% - 3px);
     width: 14px;
     height: 9px;
-    background: url('../images/internship/arrow-right.svg') center / contain
-      no-repeat;
+    pointer-events: none;
+  }
+
+  &:hover {
+    transform: rotate(0);
   }
 }
 
@@ -143,10 +144,6 @@
   max-width: 129px;
 }
 
-.intern__news-block {
-  width: 65.83%;
-}
-
 .intern__news-block-header {
   display: flex;
   justify-content: space-between;
@@ -176,7 +173,6 @@
   display: flex;
   justify-content: space-between;
 }
-
 .intern__news {
   width: 49.4%;
 }
@@ -235,7 +231,7 @@
 
   .intern__news-block {
     width: 100%;
-    max-width: 944px;
+    // max-width: 944px;
   }
 
   .intern__main-news-title {
@@ -305,9 +301,9 @@
     line-height: 72px;
   }
 
-  .intern__news-block {
-    max-width: 666px;
-  }
+  // .intern__news-block {
+  //   max-width: 666px;
+  // }
 
   .intern__news-block-header {
     margin-bottom: 24px;
@@ -370,8 +366,6 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
-    font-size: 14px;
-    line-height: 16px;
   }
 
   .intern__events-all-link {
@@ -396,8 +390,6 @@
     margin-right: 24px;
     display: flex;
     flex-direction: column;
-    font-size: 14px;
-    line-height: 16px;
   }
 
   .intern__event-date-block {
@@ -447,12 +439,6 @@
     padding: 0 8px;
   }
 
-  .intern__header-background {
-    max-width: 220px;
-    right: -20px;
-    padding-top: 20%;
-  }
-
   .intern__header-text {
     max-width: 100%;
     padding-right: 8px;
@@ -460,11 +446,6 @@
 
   .intern__events-block-mobile {
     margin-bottom: 32px;
-  }
-
-  .intern__news-block-header {
-    font-size: 14px;
-    line-height: 16px;
   }
 
   .intern__events-block-mobile-events-wrapper {
@@ -535,7 +516,119 @@
   }
 }
 
-// Styles for block widthout events
+.svg-toggle {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 950px;
+  overflow: hidden;
+  padding: 10px;
+}
+.svg-toggle-line {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 950px;
+
+  &_768 {
+    display: none;
+  }
+
+  &_320 {
+    display: none;
+  }
+}
+
+.svg-toggle-line:nth-child(2) {
+  max-width: 800px;
+  top: 20px;
+  left: 262px;
+  margin-bottom: 15px;
+}
+
+.svg-toggle__btn {
+  position: relative;
+  // display: flex;
+}
+
+.intern__inside-circle,
+.intern__inside-circle-active {
+  position: absolute;
+  top: 11px;
+  left: 10px;
+  transition: all 1s ease 0s;
+}
+
+.intern__inside-circle-active {
+  left: 150px;
+}
+
+@media (max-width: 768px) {
+  // .svg-toggle-line {
+  //   display: none;
+
+  //   &_768 {
+  //     display: flex;
+  //   }
+  // }
+  //
+  .intern__header-background {
+    max-width: 500px;
+    right: -150px;
+  }
+  .svg-toggle {
+    max-width: 500px;
+  }
+
+  .svg-toggle-line:nth-child(4) {
+    margin-left: 40px;
+    margin-top: 8px;
+  }
+
+  // .svg-toggle .svg-toggle__btn svg:nth-child(2) {
+  //   position: absolute;
+  //   top: 4px;
+  //   left: 5px;
+  // }
+}
+
+@media (max-width: 320px) {
+  // .svg-toggle-line {
+  //   display: none;
+
+  //   &_768 {
+  //     display: none;
+  //   }
+
+  //   &_320 {
+  //     display: flex;
+  //   }
+  // }
+  //
+  .intern__header-background {
+    max-width: 300px;
+    right: -100px;
+  }
+  .svg-toggle {
+    max-width: 300px;
+  }
+  .svg-toggle-line {
+    max-width: 200px;
+  }
+  .svg-toggle-line:nth-child(6) {
+    margin-left: 40px;
+    margin-top: 8px;
+    max-width: 300px;
+  }
+
+  // .svg-toggle .svg-toggle__btn svg:nth-child(2) {
+  //   position: absolute;
+  //   top: 2px;
+  //   left: 3px;
+  // }
+}
+
 .intern-no-events {
   font-size: 18px;
   line-height: 24px;
@@ -560,14 +653,13 @@
 .intern-no-events__all-news-link {
   padding-right: 20px;
 
-  &::after {
-    content: '';
+  & > svg {
     position: absolute;
     right: 0;
-    top: calc(50% - 4.5px);
+    top: calc(50% - 3px);
     width: 14px;
     height: 9px;
-    background: url('../images/internship/arrow-right.svg') no-repeat;
+    pointer-events: none;
   }
 }
 
@@ -588,6 +680,7 @@
 
 .intern-no-events__news-card-main {
   width: 63%;
+  color: #000000;
 
   & > .intern-no-events__title {
     font-size: 40px;
@@ -604,10 +697,12 @@
 .intern-no-events__card-image {
   display: block;
   width: 100%;
+  height: auto;
 }
 
 .intern-no-events__news-card-second {
   width: 35%;
+  color: #000000;
 
   & > .intern-no-events__title {
     font-size: 18px;
@@ -652,6 +747,60 @@
       max-width: 100%;
     }
   }
+
+  // Стили для анимации. Начало
+
+  .intern__header-background {
+    max-width: 747px;
+    overflow: hidden;
+  }
+
+  .intern__outside-oval {
+    transform: scale(0.75) translateX(-45px);
+  }
+
+  .intern__inside-circle {
+    transform: scale(0.75);
+    left: -3px;
+    top: 10px;
+  }
+
+  .intern__inside-circle-active {
+    left: 95px;
+  }
+
+  .svg-toggle-line {
+    height: 100px;
+  }
+
+  .svg-toggle-line:nth-child(2) {
+    justify-content: flex-start;
+    left: 193px;
+  }
+
+  .svg-toggle__btn {
+    width: 204px;
+  }
+
+  .svg-toggle__btn,
+  .svg-toggle__arrow-container {
+    margin-right: 16px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .svg-toggle__arrow-container {
+    width: 120px;
+    height: 24px;
+    overflow: hidden;
+  }
+
+  .svg-toggle__arrow {
+    transform: scale(0.75) translateX(-37px);
+  }
+  // Стили для анимации. Конец
 }
 
 // Styles block widthout events for 1024px
@@ -667,6 +816,48 @@
   .intern-no-events__news-block {
     margin-bottom: 32px;
   }
+
+  // Стили для анимации. Начало
+  .intern__header-background {
+    max-width: 592px;
+    right: -60px;
+  }
+
+  .svg-toggle__arrow {
+    transform: scale(0.6) translateX(-65px);
+  }
+
+  .intern__outside-oval {
+    transform: scale(0.6) translate(-90px, -45px);
+  }
+
+  .intern__inside-circle {
+    transform: scale(0.6) translateY(-45px);
+    left: -14px;
+  }
+
+  .intern__inside-circle-active {
+    left: 65px;
+  }
+
+  .svg-toggle__btn {
+    width: 164px;
+  }
+
+  .svg-toggle__btn {
+    height: 80px;
+  }
+
+  .svg-toggle-line {
+    height: auto;
+  }
+
+  .svg-toggle-line:nth-child(2) {
+    left: 150px;
+    top: 0;
+  }
+
+  // Стили для анимации. Конец
 }
 
 // Styles block widthout events for 768px
@@ -715,51 +906,85 @@
   }
 }
 
+// Стили для анимации 768px. Начало
+@media (max-width: 768px) {
+  .intern__header-background {
+    max-width: 440px;
+    right: -30px;
+    top: -8px;
+  }
+
+  .svg-toggle__btn {
+    width: 117px;
+    height: 57px;
+  }
+
+  .intern__outside-oval {
+    transform: scale(0.43) translate(-182px, -89px);
+  }
+
+  .intern__inside-circle {
+    transform: scale(0.43) translateY(-88px);
+    left: -25px;
+  }
+
+  .intern__inside-circle-active {
+    left: 28px;
+  }
+
+  .svg-toggle__arrow {
+    transform: scale(0.43) translateX(-123px);
+  }
+
+  .svg-toggle-line:nth-child(2) {
+    left: 110px;
+  }
+
+  .svg-toggle__arrow-container {
+    max-width: 69px;
+  }
+}
+
+// Стили для анимации. Конец
+
 // Styles block widthout events for 320px
 @media (max-width: 620px) {
-  .intern-no-events {
-    margin-top: 0;
-    font-size: 14px;
-    line-height: 16px;
+  // Стили для анимации. Начало
+  .intern__header-background {
+    max-width: 220px;
   }
 
-  .intern__subnews-block {
-    margin: 0 -8px;
-    font-size: 14px;
-    line-height: 16px;
+  .intern__outside-oval {
+    transform: scale(0.21) translate(-517px, -251px);
   }
 
-  .intern__news-title {
-    margin-bottom: 16px;
+  .intern__inside-circle {
+    transform: scale(0.21) translateY(-250px);
+    left: -42px;
   }
 
-  .intern__news-title,
-  .intern__news-date-block {
-    padding: 0 8px;
+  .intern__inside-circle-active {
+    left: -15px;
   }
 
-  .intern-no-events__news-card-main {
-    & > .intern-no-events__title {
-      font-size: 14px;
-      line-height: 16px;
-      padding: 0 8px;
-    }
+  .svg-toggle__btn {
+    width: 57px;
+    height: 28px;
+    margin-right: 5px;
   }
 
-  .intern-no-events__news-card-second {
-    & > .intern-no-events__title {
-      font-size: 14px;
-      line-height: 16px;
-      padding: 0 8px;
-    }
+  .svg-toggle__arrow-container {
+    margin-right: 5px;
+    width: 35px;
   }
 
-  .intern-no-events-container {
-    padding: 0;
+  .svg-toggle__arrow {
+    transform: scale(0.21) translateX(-325px);
   }
 
-  .intern-no-events__header,
-  .intern-no-events__date-block {
-    padding: 0 8px;
+  .svg-toggle-line:nth-child(2) {
+    left: 53px;
   }
+
+  // Стили для анимации. Конец
 }
