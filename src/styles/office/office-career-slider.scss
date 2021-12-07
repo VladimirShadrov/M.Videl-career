@@ -1,0 +1,34 @@
+@import '../styles.scss';
+
+.office__career-upgrade {
+  padding: 0 16px;
+  margin-bottom: 192px;
+}
+
+// Styles for 1440px
+@media (max-width: 1440px) {
+  .office__career-upgrade {
+    margin-bottom: 144px;
+  }
+}
+
+// Styles for 1024px
+@media (max-width: 1024px) {
+  .office__career-upgrade {
+    margin-bottom: 128px;
+  }
+}
+
+// Styles for 768px
+@media (max-width: 768px) {
+  .office__career-upgrade {
+    padding: 0 8px;
+  }
+}
+
+// Styles for 320px
+@media (max-width: 479px) {
+  .office__career-upgrade {
+    margin-bottom: 64px;
+  }
+}
