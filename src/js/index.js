@@ -48,6 +48,7 @@ import '../styles/office/office-advantages.scss';
 import '../styles/office/office-vacancies.scss';
 import '../styles/office/office-why-we-are.scss';
 import '../styles/office/office-career-slider.scss';
+import '../styles/office/office-running-line.scss';
 
 import { Vacancy } from './components/itHubPage/vacancy';
 import { Listing } from './components/vacancyListingPage/listing';

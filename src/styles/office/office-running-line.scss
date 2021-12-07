@@ -1,31 +1,31 @@
 @import '../styles.scss';
 
-.logistic__running-line {
+.office__running-line {
   margin-bottom: 114px;
   overflow: hidden;
 }
 
-.logistic__title {
+.office__running-line-title {
   margin-bottom: 0;
 }
 
-//Styles for 1440px
+// Styles for 1440px
 @media (max-width: 1440px) {
-  .logistic__running-line {
+  .office__running-line {
     margin-bottom: 88px;
   }
 }
 
-//Styles for 1024px
+// Styles for 1024px
 @media (max-width: 1024px) {
-  .logistic__running-line {
+  .office__running-line {
     margin-bottom: 70px;
   }
 }
 
-//Styles for 320px
+// Styles for 320px
 @media (max-width: 479px) {
-  .logistic__running-line {
+  .office__running-line {
     margin-bottom: 32px;
   }
 }
