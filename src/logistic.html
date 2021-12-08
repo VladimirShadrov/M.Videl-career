@@ -3149,5 +3149,1232 @@
       </div>
     </footer>
     <!--  //Footer  -->
+
+    <!-- Flyout section -->
+    <div class="flyout">
+      <div
+        class="flyout__side-bar"
+        style="background: rgba(0, 0, 0, 0.8)"
+      ></div>
+      <div class="vacancy" style="overflow: auto">
+        <div id="vacancy_popup" class="container">
+          <div class="loader-wrapp" style="display: none">
+            <div class="loader-bg">
+              <div class="lds-ripple">
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <header class="vacancy__header">
+            <div class="vacancy__header-head">
+              <div class="vacancy__header-head-links">
+                <a href="/" class="vacancy__header-head-link-main">
+                  IT-хаб
+                  <svg
+                    width="14"
+                    height="10"
+                    viewBox="0 0 14 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.57661 0.575745L0.152344 5.00001L4.57661 9.42427L5.42514 8.57574L2.4494 5.60001H14.0009V4.40001H2.4494L5.42514 1.42427L4.57661 0.575745Z"
+                      fill="black"
+                    ></path>
+                  </svg>
+                </a>
+                <a href="/vacancies/" class="vacancy__header-head-link-vacancy">
+                  Вакансии в IT-хабе
+                  <svg
+                    width="14"
+                    height="10"
+                    viewBox="0 0 14 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.57661 0.575745L0.152344 5.00001L4.57661 9.42427L5.42514 8.57574L2.4494 5.60001H14.0009V4.40001H2.4494L5.42514 1.42427L4.57661 0.575745Z"
+                      fill="black"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+              <a href="#" class="vacancy__header-head-copy">
+                Скопировать ссылку
+                <svg
+                  width="14"
+                  height="10"
+                  viewBox="0 0 14 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.88332 3.8842C4.88525 4.88228 4.88525 6.50048 5.88332 7.49856C6.8814 8.49663 8.4996 8.49663 9.49768 7.49856L12.2635 4.73273C13.2616 3.73465 13.2616 2.11645 12.2635 1.11837C11.2654 0.120293 9.64723 0.120293 8.64915 1.11837C8.41484 1.35268 8.41484 1.73258 8.64915 1.9669C8.88347 2.20121 9.26337 2.20121 9.49768 1.9669C10.0271 1.43745 10.8855 1.43745 11.415 1.9669C11.9444 2.49635 11.9444 3.35475 11.415 3.8842L8.64915 6.65003C8.1197 7.17948 7.2613 7.17948 6.73185 6.65003C6.2024 6.12058 6.2024 5.26218 6.73185 4.73273C6.96617 4.49841 6.96617 4.11851 6.73185 3.8842C6.49754 3.64988 6.11764 3.64988 5.88332 3.8842Z"
+                    fill="black"
+                  ></path>
+                  <path
+                    d="M1.73293 5.26726C0.734856 6.26533 0.734856 7.88354 1.73293 8.88161C2.73101 9.87969 4.34921 9.87969 5.34729 8.88161C5.5816 8.6473 5.5816 8.2674 5.34729 8.03309C5.11298 7.79877 4.73308 7.79877 4.49876 8.03309C3.96931 8.56253 3.11091 8.56253 2.58146 8.03309C2.05201 7.50364 2.05201 6.64523 2.58146 6.11578L5.34729 3.34995C5.87674 2.82051 6.73514 2.82051 7.26459 3.34995C7.79404 3.8794 7.79404 4.73781 7.26459 5.26726C7.03028 5.50157 7.03028 5.88147 7.26459 6.11578C7.49891 6.3501 7.8788 6.3501 8.11312 6.11578C9.1112 5.11771 9.1112 3.4995 8.11312 2.50143C7.11504 1.50335 5.49684 1.50335 4.49876 2.50143L1.73293 5.26726Z"
+                    fill="black"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <div class="vacancy__header-headline">
+              <h2
+                class="vacancy__headline-title"
+                origin_url="https://career.dev64.ru/"
+              >
+                Системный аналитик в ИТ
+              </h2>
+              <a href="#" class="vacancy__headline-link">
+                откликнуться
+                <svg
+                  width="14"
+                  height="10"
+                  viewBox="0 0 14 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.5515 4.40001L8.57574 1.42427L9.42426 0.575745L13.8485 5.00001L9.42426 9.42427L8.57574 8.57574L11.5515 5.60001H0L0 4.40001H11.5515Z"
+                    fill="black"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <div class="vacancy__header-meta">
+              <div class="vacancy__meta-info">
+                <div class="vacancy__meta-info-item" style="display: block">
+                  <span class="vacancy__meta-info-title">Город</span>
+                  <span id="town_info_vacancy" class="vacancy__meta-info-value"
+                    >Москва</span
+                  >
+                </div>
+                <div class="vacancy__meta-info-item">
+                  <span class="vacancy__meta-info-title">Направление</span>
+                  <span
+                    id="vaccat_info_vacancy"
+                    class="vacancy__meta-info-value"
+                    >Analyst</span
+                  >
+                </div>
+              </div>
+              <div class="vacancy__meta-info">
+                <div class="vacancy__meta-info-item" style="display: block">
+                  <span class="vacancy__meta-info-title">Заработная плата</span>
+                  <span class="vacancy__meta-info-value">
+                    от <span class="vacancy__meta-info-sum">110 000</span> ₽
+                  </span>
+                  <span class="vacancy__meta-info-sum-after"
+                    ><span> - Гросс</span></span
+                  >
+                </div>
+                <div class="vacancy__meta-info-item">
+                  <span class="vacancy__meta-info-title">Опыт</span>
+                  <span
+                    id="experience_important"
+                    class="vacancy__meta-info-value"
+                    >Требуется опыт</span
+                  >
+                </div>
+              </div>
+            </div>
+            <a href="#" class="vacancy__header-head-copy-mobile">
+              Скопировать ссылку
+              <svg
+                width="14"
+                height="10"
+                viewBox="0 0 14 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.88332 3.8842C4.88525 4.88228 4.88525 6.50048 5.88332 7.49856C6.8814 8.49663 8.4996 8.49663 9.49768 7.49856L12.2635 4.73273C13.2616 3.73465 13.2616 2.11645 12.2635 1.11837C11.2654 0.120293 9.64723 0.120293 8.64915 1.11837C8.41484 1.35268 8.41484 1.73258 8.64915 1.9669C8.88347 2.20121 9.26337 2.20121 9.49768 1.9669C10.0271 1.43745 10.8855 1.43745 11.415 1.9669C11.9444 2.49635 11.9444 3.35475 11.415 3.8842L8.64915 6.65003C8.1197 7.17948 7.2613 7.17948 6.73185 6.65003C6.2024 6.12058 6.2024 5.26218 6.73185 4.73273C6.96617 4.49841 6.96617 4.11851 6.73185 3.8842C6.49754 3.64988 6.11764 3.64988 5.88332 3.8842Z"
+                  fill="black"
+                ></path>
+                <path
+                  d="M1.73293 5.26726C0.734856 6.26533 0.734856 7.88354 1.73293 8.88161C2.73101 9.87969 4.34921 9.87969 5.34729 8.88161C5.5816 8.6473 5.5816 8.2674 5.34729 8.03309C5.11298 7.79877 4.73308 7.79877 4.49876 8.03309C3.96931 8.56253 3.11091 8.56253 2.58146 8.03309C2.05201 7.50364 2.05201 6.64523 2.58146 6.11578L5.34729 3.34995C5.87674 2.82051 6.73514 2.82051 7.26459 3.34995C7.79404 3.8794 7.79404 4.73781 7.26459 5.26726C7.03028 5.50157 7.03028 5.88147 7.26459 6.11578C7.49891 6.3501 7.8788 6.3501 8.11312 6.11578C9.1112 5.11771 9.1112 3.4995 8.11312 2.50143C7.11504 1.50335 5.49684 1.50335 4.49876 2.50143L1.73293 5.26726Z"
+                  fill="black"
+                ></path>
+              </svg>
+            </a>
+          </header>
+          <div class="popup_vacancy_content">
+            <div class="vacancy__intro">
+              <div class="vacancy__video">
+                <div class="vacancy__video-container" data-name="muted">
+                  <video
+                    class="vacancy__video-preview"
+                    muted=""
+                    loop=""
+                    src="https://career.dev64.ru/wp-content/themes/career_theme/assets/images/flyout/flyout-intro/video/analytic-video-preview.mp4"
+                    data-src="https://career.dev64.ru/wp-content/themes/career_theme/assets/images/flyout/flyout-intro/video/analytic-video-preview.mp4"
+                    autoplay="true"
+                  ></video>
+                  <svg
+                    class="vacancy__progress-container"
+                    viewBox="0 0 280 280"
+                  >
+                    <circle
+                      class="vacancy__progress-bar"
+                      stroke="#E31235"
+                      stroke-width="2"
+                      cx="140"
+                      cy="140"
+                      r="139"
+                      fill="transparent"
+                      style="
+                        stroke-dasharray: 873.363, 873.363;
+                        stroke-dashoffset: 746.493;
+                      "
+                    ></circle>
+                  </svg>
+                  <div class="vacancy__video-sound">
+                    <svg
+                      class="vacancy__video-sound-muted"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.67721 10.2L3.87721 12H1.49902V6H4.90794L10.499 0V5.37819L8.69902 7.17819V4.57196L5.69098 7.8H3.29902V10.2H5.67721Z"
+                        fill="white"
+                      ></path>
+                      <path
+                        d="M10.499 9.62083L8.69902 11.4208V13.428L7.73083 12.389L6.45724 13.6626L10.499 18V9.62083Z"
+                        fill="white"
+                      ></path>
+                      <path
+                        d="M15.8633 0.863525L0.863281 15.8635L2.13607 17.1363L17.1361 2.13632L15.8633 0.863525Z"
+                        fill="white"
+                      ></path>
+                    </svg>
+                    <svg
+                      class="vacancy__video-sound-loud hide"
+                      width="16"
+                      height="18"
+                      viewBox="0 0 16 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.90891 12L9.5 18V0L3.90891 6H0.5V12H3.90891ZM2.3 10.2H4.69196L7.7 13.428V4.57196L4.69196 7.8H2.3V10.2ZM13.8507 8.99992C13.8507 7.16006 12.6276 5.89965 11.8643 5.13632L13.137 3.86353L13.1672 3.8937C13.9211 4.64702 15.6507 6.37546 15.6507 8.99992C15.6507 11.6244 13.9211 13.3528 13.1672 14.1061L13.137 14.1363L11.8643 12.8635C12.6276 12.1002 13.8507 10.8398 13.8507 8.99992ZM12.1137 9C12.1137 9.40043 11.8284 10.125 11 10.125V7.875C11.8284 7.875 12.1137 8.59957 12.1137 9Z"
+                        fill="white"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="vacancy__intro-description">
+                <span style="font-weight: 400"
+                  >Мы обеспечиваем поддержку реализации бизнес-стратегии и
+                  цифровой трансформации в части ИТ. Кросс-функциональные
+                  платформы одновременно реализуют бизнес-запросы на внедрение и
+                  занимаются развитием своей платформенной части. Канонические
+                  сервисы являются прослойкой между бэком и фронтом на уровне
+                  микросервисов, отвечая за гибкую интеграцию систем и
+                  процессов. Мультисервисная инфраструктурная платформа
+                  предоставляет инфраструктуру как сервис, и поддерживает
+                  отказоустойчивость работы всех систем компании. Техническая
+                  платформа формирует целевой производственный процесс в ИТ,
+                  отвечает за используемые инструменты и общие принципы
+                  разработки, отслеживая лучшие рыночные практики.</span
+                >
+              </div>
+            </div>
+            <div id="expectations" class="vacancy__description">
+              <div class="vacancy__description-block">
+                <div class="vacancy__description-title">
+                  <p class="vacancy__description-title-text">
+                    Ты будешь заниматься
+                  </p>
+                </div>
+                <div class="vacancy__description-list">
+                  <ul>
+                    <li style="font-weight: 400" aria-level="1">
+                      <span style="font-weight: 400"
+                        >Обработкой запросов от бизнес-подразделений:
+                        анализировать поступившие бизнес-требования, участвовать
+                        в проектировании, разрабатывать функциональные
+                        спецификации</span
+                      >
+                    </li>
+                    <li style="font-weight: 400" aria-level="1">
+                      <span style="font-weight: 400"
+                        >Проектированием и подготовкой спецификаций по выделению
+                        функциональности в отдельные сервисы и использованию
+                        этих сервисов, спецификаций по интеграции с другими
+                        системами</span
+                      >
+                    </li>
+                    <li style="font-weight: 400" aria-level="1">
+                      <span style="font-weight: 400"
+                        >Сопровождением внедрения новой функциональности ИС,
+                        включая консультации разработчиков, прием прототипов,
+                        функциональное и интеграционное тестирование, настройку
+                        ИС</span
+                      >
+                    </li>
+                    <li style="font-weight: 400" aria-level="1">
+                      <span style="font-weight: 400"
+                        >Взаимодействием с архитекторами и аналитиками смежных
+                        систем для согласования интеграционных решений и
+                        подходов с другими системами компании</span
+                      >
+                    </li>
+                    <li style="font-weight: 400" aria-level="1">
+                      <span style="font-weight: 400"
+                        >Проработкой технических решений и подходов внутри
+                        проекта</span
+                      >
+                    </li>
+                    <li style="font-weight: 400" aria-level="1">
+                      <span style="font-weight: 400"
+                        >Анализом инцидентов (3 линия поддержки)</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="vacancy__description-block">
+                <div class="vacancy__description-title">
+                  <p class="vacancy__description-title-text">
+                    Мы знаем, что ты
+                  </p>
+                </div>
+                <div class="vacancy__description-list">
+                  <ul>
+                    <li style="font-weight: 400" aria-level="1">
+                      <span style="font-weight: 400">Имеешь </span
+                      ><span style="font-weight: 400"
+                        >опыт описания сервисов, разработки технических
+                        спецификаций к микросервисам</span
+                      >
+                    </li>
+                    <li style="font-weight: 400" aria-level="1">
+                      <span style="font-weight: 400">Владеешь </span
+                      ><span style="font-weight: 400"
+                        >SQL на уровне простых запросов</span
+                      >
+                    </li>
+                    <li style="font-weight: 400" aria-level="1">
+                      <span style="font-weight: 400">Знаешь нотации UML</span>
+                    </li>
+                    <li style="font-weight: 400" aria-level="1">
+                      <span style="font-weight: 400"
+                        >Имеешь опыт проектирования/описания API</span
+                      >
+                    </li>
+                    <li style="font-weight: 400" aria-level="1">
+                      <span style="font-weight: 400"
+                        >Имеешь опыт работы с REST точками и SOAP
+                        сервисами</span
+                      >
+                    </li>
+                    <li style="font-weight: 400" aria-level="1">
+                      <span style="font-weight: 400"
+                        >Имеешь опыт в интеграции систем</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="vacancy__description-block">
+                <div class="vacancy__description-title">
+                  <p class="vacancy__description-title-text">
+                    Будет плюсом, если ты
+                  </p>
+                </div>
+                <div class="vacancy__description-list">
+                  <ul>
+                    <li style="font-weight: 400" aria-level="1">
+                      <span style="font-weight: 400"
+                        >Имеешь опыт ​​работы со SWAGGER</span
+                      >
+                    </li>
+                    <li style="font-weight: 400" aria-level="1">
+                      <span style="font-weight: 400"
+                        >Умеешь пользоваться Postman/SoapUi</span
+                      >
+                    </li>
+                    <li style="font-weight: 400" aria-level="1">
+                      <span style="font-weight: 400"
+                        >Имеешь опыт работы с MQ</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="vacancy__description-block">
+                <div class="vacancy__description-title">
+                  <p class="vacancy__description-title-text">Что ты получишь</p>
+                </div>
+                <div class="vacancy__description-list">
+                  <ul>
+                    <li style="font-weight: 400" aria-level="1">
+                      <span style="font-weight: 400"
+                        >Весь этот гигиенический минимум: работа на удаленке или
+                        в офисе, ДМС, официальное оформление и
+                        конкурентоспособная зарплата</span
+                      >
+                    </li>
+                    <li style="font-weight: 400" aria-level="1">
+                      <span style="font-weight: 400"
+                        >Страхование жизни на сумму от 1 миллиона рублей после
+                        испытательного срока</span
+                      >
+                    </li>
+                    <li style="font-weight: 400" aria-level="1">
+                      <span style="font-weight: 400"
+                        >Опыт участия в цифровой трансформации крупнейшего
+                        техноритейлера России и мира: ты постоянно развиваешься
+                        в быстро меняющейся реальности, которая заставляет
+                        компанию трансформироваться день за днем, код за кодом.
+                        Ты готов принять вызов? Даешь Agile и Highload!</span
+                      >
+                    </li>
+                    <li style="font-weight: 400" aria-level="1">
+                      <span style="font-weight: 400"
+                        >Реальный HighLoad, огромное количество интересных
+                        проектов, в рамках которых ты сможешь развиваться</span
+                      >
+                    </li>
+                    <li style="font-weight: 400" aria-level="1">
+                      <span style="font-weight: 400"
+                        >Разнообразный кафетерий льгот — ты сам выбираешь, чем
+                        хочешь пользоваться</span
+                      >
+                    </li>
+                    <li style="font-weight: 400" aria-level="1">
+                      <span style="font-weight: 400"
+                        >Сильная команда, нацеленная нa результaт и готовая
+                        поддержать в сложных ситуациях</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div id="can_work_remotely">
+              <!-- Vacancy Remote-block -->
+              <div class="vacancy__remote">
+                <div class="vacancy__remote-title-wrapper">
+                  <h2 class="vacancy__remote-title">Работай откуда угодно</h2>
+                  <p class="vacancy__remote-info">
+                    На этой позиции можно работать удалённо
+                    и&nbsp;не&nbsp;ходить в&nbsp;офис. Нужно иметь разрешение
+                    на&nbsp;работу в&nbsp;России.
+                  </p>
+                </div>
+                <div class="vacancy__remote-image-container">
+                  <img
+                    class="vacancy__remote-image"
+                    src="https://career.dev64.ru/wp-content/themes/career_theme/assets/images/flyout/flyout-remote/palm.svg"
+                    alt="Picture"
+                  />
+                </div>
+              </div>
+              <!-- //Vacancy Remote-block -->
+            </div>
+            <div class="vacancy__form">
+              <div class="vacancy__form-title-block">
+                <h2 class="vacancy__form-title">
+                  Расскажи нам&nbsp;о&nbsp;себе
+                </h2>
+              </div>
+              <div id="vacancy_form" class="vacancy__form-inner-block">
+                <div
+                  role="form"
+                  class="wpcf7"
+                  id="wpcf7-f277-o1"
+                  lang="ru-RU"
+                  dir="ltr"
+                >
+                  <div class="screen-reader-response">
+                    <p role="status" aria-live="polite" aria-atomic="true"></p>
+                    <ul></ul>
+                  </div>
+                  <form
+                    action="/#wpcf7-f277-o1"
+                    method="post"
+                    class="wpcf7-form init"
+                    novalidate="novalidate"
+                    data-status="init"
+                  >
+                    <div style="display: none">
+                      <input type="hidden" name="_wpcf7" value="277" />
+                      <input
+                        type="hidden"
+                        name="_wpcf7_version"
+                        value="5.4.2"
+                      />
+                      <input type="hidden" name="_wpcf7_locale" value="ru_RU" />
+                      <input
+                        type="hidden"
+                        name="_wpcf7_unit_tag"
+                        value="wpcf7-f277-o1"
+                      />
+                      <input
+                        type="hidden"
+                        name="_wpcf7_container_post"
+                        value="0"
+                      />
+                      <input
+                        type="hidden"
+                        name="_wpcf7_posted_data_hash"
+                        value=""
+                      />
+                    </div>
+                    <p style="display: none">
+                      <span class="wpcf7-form-control-wrap text-rel_type"
+                        ><input
+                          type="text"
+                          name="text-rel_type"
+                          value=""
+                          size="40"
+                          class="wpcf7-form-control wpcf7-text rel_type"
+                          aria-invalid="false" /></span
+                      ><span class="wpcf7-form-control-wrap text-vacancyid"
+                        ><input
+                          type="text"
+                          name="text-vacancyid"
+                          value=""
+                          size="40"
+                          class="wpcf7-form-control wpcf7-text vacancyid"
+                          aria-invalid="false" /></span
+                      ><span class="wpcf7-form-control-wrap text-sourceurl"
+                        ><input
+                          type="text"
+                          name="text-sourceurl"
+                          value=""
+                          size="40"
+                          class="wpcf7-form-control wpcf7-text sourceurl"
+                          aria-invalid="false"
+                      /></span>
+                    </p>
+                    <div class="vacancy__form-top">
+                      <div class="vacancy__form-name">
+                        <p class="vacancy__form-name-value">Имя и фамилия*</p>
+                        <p>
+                          <span class="wpcf7-form-control-wrap text-name"
+                            ><input
+                              type="text"
+                              name="text-name"
+                              value=""
+                              size="40"
+                              class="
+                                wpcf7-form-control
+                                wpcf7-text
+                                wpcf7-validates-as-required
+                                vacancy__form-input
+                              "
+                              aria-required="true"
+                              aria-invalid="false"
+                          /></span>
+                        </p>
+                      </div>
+                      <div class="vacancy__form-name">
+                        <p class="vacancy__form-name-value">
+                          Электронная почта*
+                        </p>
+                        <p>
+                          <span class="wpcf7-form-control-wrap email-717"
+                            ><input
+                              type="email"
+                              name="email-717"
+                              value=""
+                              size="40"
+                              class="
+                                wpcf7-form-control
+                                wpcf7-text
+                                wpcf7-email
+                                wpcf7-validates-as-required
+                                wpcf7-validates-as-email
+                                vacancy__form-input
+                              "
+                              aria-required="true"
+                              aria-invalid="false"
+                          /></span>
+                        </p>
+                      </div>
+                      <div class="vacancy__form-name">
+                        <p class="vacancy__form-name-value">Телефон*</p>
+                        <p>
+                          <span class="wpcf7-form-control-wrap mask-348"
+                            ><input
+                              type="tel"
+                              name="mask-348"
+                              value=""
+                              class="
+                                wpcf7-form-control
+                                wpcf7mf-mask
+                                wpcf7-mask wpcf7-validates-as-required
+                                vacancy__form-input
+                              "
+                              size="40"
+                              aria-required="1"
+                              placeholder="+7 (___) ___-__-__"
+                              data-mask="+7 (___) ___-__-__"
+                          /></span>
+                        </p>
+                      </div>
+                      <p>
+                        <a
+                          href="#"
+                          class="vacancy__add-contact vacancy__input-checkbox"
+                        >
+                          добавить другие контакты
+                        </a>
+                      </p>
+                    </div>
+                    <div class="form__file-uploader">
+                      <span class="wpcf7-form-control-wrap upload-file-805"
+                        ><div class="codedropz-upload-wrapper">
+                          <input
+                            type="file"
+                            size="40"
+                            class="
+                              wpcf7-form-control wpcf7-drag-n-drop-file
+                              d-none
+                            "
+                            aria-invalid="false"
+                            multiple="multiple"
+                            data-name="upload-file-805"
+                            data-type="jpeg|png|jpg|gif|txt|docx|doc"
+                            data-id="277"
+                            accept=".jpeg, .png, .jpg, .gif, .txt, .docx, .doc"
+                          />
+                          <div class="codedropz-upload-handler">
+                            <div class="codedropz-upload-container">
+                              <div class="codedropz-upload-inner">
+                                <h3>Выберите файл или перетащите сюда</h3>
+                                <span>или</span>
+                                <div class="codedropz-btn-wrap">
+                                  <a
+                                    class="cd-upload-btn"
+                                    href="javascript:void(0)"
+                                    >До 2 файлов по 5 Мб форматов pdf, doc,
+                                    docx, rtf</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                            <span class="dnd-upload-counter"
+                              ><span>0</span> из 10</span
+                            >
+                          </div>
+                        </div></span
+                      >
+                    </div>
+                    <div class="vacancy__form-bottom">
+                      <label
+                        class="vacancy__form-label vacancy__form-label_checkbox"
+                      >
+                        <span class="wpcf7-form-control-wrap checkbox-508"
+                          ><span
+                            class="
+                              wpcf7-form-control
+                              wpcf7-checkbox
+                              wpcf7-validates-as-required
+                              form__input-checkbox
+                            "
+                            ><span class="wpcf7-list-item first last"
+                              ><input
+                                type="checkbox"
+                                name="checkbox-508[]"
+                                value="" /><span
+                                class="wpcf7-list-item-label"
+                              ></span></span></span
+                        ></span>
+                        <span class="form__form-agree"> Я согласен с </span>
+                        <a
+                          href="/privacy-policy/"
+                          class="vacancy__form-politics"
+                          >Политикой обработки персональных данных</a
+                        >
+                      </label>
+                      <input
+                        type="submit"
+                        value="Откликнуться"
+                        class="
+                          wpcf7-form-control wpcf7-submit
+                          vacancy__response
+                        "
+                      /><span class="ajax-loader"></span>
+                    </div>
+                    <div class="wpcf7-response-output" aria-hidden="true"></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div id="flexible_schedule"></div>
+          </div>
+        </div>
+        <div class="vacancy__news-block-desktop">
+          <div
+            class="
+              vacancy__news
+              swiper
+              newsSlider
+              swiper-initialized swiper-horizontal swiper-pointer-events
+            "
+          >
+            <div class="vacancy__news-title">
+              <div class="vacancy__news-tabs">
+                <a
+                  href="#"
+                  class="vacancy__news-link vacancy__news-link-active"
+                >
+                  Новости
+                </a>
+              </div>
+              <div class="vacancy__news-arrows">
+                <button class="vacancy__news-btn-prev">
+                  <svg
+                    width="14"
+                    height="10"
+                    viewBox="0 0 14 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.57661 0.575745L0.152344 5.00001L4.57661 9.42427L5.42514 8.57574L2.4494 5.60001H14.0009V4.40001H2.4494L5.42514 1.42427L4.57661 0.575745Z"
+                      fill="black"
+                    ></path>
+                  </svg>
+                </button>
+                <button class="vacancy__news-btn-next">
+                  <svg
+                    width="14"
+                    height="10"
+                    viewBox="0 0 14 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.5515 4.40001L8.57574 1.42427L9.42426 0.575745L13.8485 5.00001L9.42426 9.42427L8.57574 8.57574L11.5515 5.60001H0L0 4.40001H11.5515Z"
+                      fill="black"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <a href="#" class="vacancy__news-link-mobile"> Все новости </a>
+            </div>
+            <div
+              class="vacancy__news-row swiper-wrapper"
+              id="swiper-wrapper-8b8104b51c67141f7"
+              aria-live="polite"
+              style="
+                transition-duration: 0ms;
+                transform: translate3d(-1187.78px, 0px, 0px);
+              "
+            >
+              <a
+                href="https://habr.com/ru/post/580476/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=corporate_blog#habracut"
+                target="_blank"
+                class="vacancy__news-item swiper-slide swiper-slide-duplicate"
+                data-swiper-slide-index="3"
+                style="width: 379.926px; margin-right: 16px"
+                role="group"
+                aria-label="4 / 6"
+                ><div class="vacancy__news-item-image-block loading">
+                  <img
+                    class="vacancy__news-image"
+                    data-src="https://career.dev64.ru/wp-content/uploads/2021/09/pic-sajt-vakansii-09.jpg"
+                    src="https://career.dev64.ru/wp-content/themes/career_theme/assets/images/Lazy-loading/1x1.png"
+                    alt="News"
+                    title="Новости"
+                    width="500"
+                    height="280"
+                  />
+                </div>
+                <div class="vacancy__news-title-info">
+                  Технологии спасают планету
+                </div>
+                <p class="vacancy__news-date-container">
+                  <span class="vacancy__news-date">14 октября 2021</span>
+                </p> </a
+              ><a
+                href="https://habr.com/ru/post/579818/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=corporate_blog#habracut"
+                target="_blank"
+                class="vacancy__news-item swiper-slide swiper-slide-duplicate"
+                data-swiper-slide-index="4"
+                style="width: 379.926px; margin-right: 16px"
+                role="group"
+                aria-label="5 / 6"
+                ><div class="vacancy__news-item-image-block loading">
+                  <img
+                    class="vacancy__news-image"
+                    data-src="https://career.dev64.ru/wp-content/uploads/2021/09/pic-sajt-vakansii-08.jpg"
+                    src="https://career.dev64.ru/wp-content/themes/career_theme/assets/images/Lazy-loading/1x1.png"
+                    alt="News"
+                    title="Новости"
+                    width="500"
+                    height="280"
+                  />
+                </div>
+                <div class="vacancy__news-title-info">
+                  DevOpsConf: информация к размышлению
+                </div>
+                <p class="vacancy__news-date-container">
+                  <span class="vacancy__news-date">14 октября 2021</span>
+                </p> </a
+              ><a
+                href="https://habr.com/ru/company/mvideo/blog/579334/#habracut"
+                target="_blank"
+                class="
+                  vacancy__news-item
+                  swiper-slide swiper-slide-duplicate swiper-slide-prev
+                "
+                data-swiper-slide-index="5"
+                style="width: 379.926px; margin-right: 16px"
+                role="group"
+                aria-label="6 / 6"
+                ><div class="vacancy__news-item-image-block loading">
+                  <img
+                    class="vacancy__news-image"
+                    data-src="https://career.dev64.ru/wp-content/uploads/2021/09/6fd0889a5cd2733d42bb2a56de203371.png"
+                    src="https://career.dev64.ru/wp-content/themes/career_theme/assets/images/Lazy-loading/1x1.png"
+                    alt="News"
+                    title="Новости"
+                    width="500"
+                    height="280"
+                  />
+                </div>
+                <div class="vacancy__news-title-info">Дорогой мой патефон</div>
+                <p class="vacancy__news-date-container">
+                  <span class="vacancy__news-date">22 сентября 2021</span>
+                </p>
+              </a>
+              <a
+                href="https://habr.com/ru/post/582378/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=corporate_blog#habracut"
+                target="_blank"
+                class="vacancy__news-item swiper-slide swiper-slide-active"
+                data-swiper-slide-index="0"
+                style="width: 379.926px; margin-right: 16px"
+                role="group"
+                aria-label="1 / 6"
+                ><div class="vacancy__news-item-image-block loading">
+                  <img
+                    class="vacancy__news-image"
+                    data-src="https://career.dev64.ru/wp-content/uploads/2021/10/pic-sajt-vakansii-12.jpg"
+                    src="https://career.dev64.ru/wp-content/themes/career_theme/assets/images/Lazy-loading/1x1.png"
+                    alt="News"
+                    title="Новости"
+                    width="500"
+                    height="280"
+                  />
+                </div>
+                <div class="vacancy__news-title-info">
+                  Алиса, Маруся, Алекса и все-все-все: 10 умных колонок для дома
+                  и офиса
+                </div>
+                <p class="vacancy__news-date-container">
+                  <span class="vacancy__news-date">14 октября 2021</span>
+                </p>
+              </a>
+              <a
+                href="https://habr.com/ru/post/581702/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=corporate_blog#habracut"
+                target="_blank"
+                class="vacancy__news-item swiper-slide swiper-slide-next"
+                data-swiper-slide-index="1"
+                style="width: 379.926px; margin-right: 16px"
+                role="group"
+                aria-label="2 / 6"
+                ><div class="vacancy__news-item-image-block loading">
+                  <img
+                    class="vacancy__news-image"
+                    data-src="https://career.dev64.ru/wp-content/uploads/2021/10/pic-sajt-vakansii-11.jpg"
+                    src="https://career.dev64.ru/wp-content/themes/career_theme/assets/images/Lazy-loading/1x1.png"
+                    alt="News"
+                    title="Новости"
+                    width="500"
+                    height="280"
+                  />
+                </div>
+                <div class="vacancy__news-title-info">
+                  Секреты выбора онлайн-касс: подборка оптимальных вариантов
+                </div>
+                <p class="vacancy__news-date-container">
+                  <span class="vacancy__news-date">14 октября 2021</span>
+                </p>
+              </a>
+              <a
+                href="https://habr.com/ru/post/581470/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=corporate_blog#habracut"
+                target="_blank"
+                class="vacancy__news-item swiper-slide"
+                data-swiper-slide-index="2"
+                style="width: 379.926px; margin-right: 16px"
+                role="group"
+                aria-label="3 / 6"
+                ><div class="vacancy__news-item-image-block loading">
+                  <img
+                    class="vacancy__news-image"
+                    data-src="https://career.dev64.ru/wp-content/uploads/2021/10/pic-sajt-vakansii-10.jpg"
+                    src="https://career.dev64.ru/wp-content/themes/career_theme/assets/images/Lazy-loading/1x1.png"
+                    alt="News"
+                    title="Новости"
+                    width="500"
+                    height="280"
+                  />
+                </div>
+                <div class="vacancy__news-title-info">
+                  Квадратный колобок: еще раз про UX в ритейле
+                </div>
+                <p class="vacancy__news-date-container">
+                  <span class="vacancy__news-date">14 октября 2021</span>
+                </p>
+              </a>
+              <a
+                href="https://habr.com/ru/post/580476/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=corporate_blog#habracut"
+                target="_blank"
+                class="vacancy__news-item swiper-slide"
+                data-swiper-slide-index="3"
+                style="width: 379.926px; margin-right: 16px"
+                role="group"
+                aria-label="4 / 6"
+                ><div class="vacancy__news-item-image-block loading">
+                  <img
+                    class="vacancy__news-image"
+                    data-src="https://career.dev64.ru/wp-content/uploads/2021/09/pic-sajt-vakansii-09.jpg"
+                    src="https://career.dev64.ru/wp-content/themes/career_theme/assets/images/Lazy-loading/1x1.png"
+                    alt="News"
+                    title="Новости"
+                    width="500"
+                    height="280"
+                  />
+                </div>
+                <div class="vacancy__news-title-info">
+                  Технологии спасают планету
+                </div>
+                <p class="vacancy__news-date-container">
+                  <span class="vacancy__news-date">14 октября 2021</span>
+                </p>
+              </a>
+              <a
+                href="https://habr.com/ru/post/579818/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=corporate_blog#habracut"
+                target="_blank"
+                class="vacancy__news-item swiper-slide"
+                data-swiper-slide-index="4"
+                style="width: 379.926px; margin-right: 16px"
+                role="group"
+                aria-label="5 / 6"
+                ><div class="vacancy__news-item-image-block loading">
+                  <img
+                    class="vacancy__news-image"
+                    data-src="https://career.dev64.ru/wp-content/uploads/2021/09/pic-sajt-vakansii-08.jpg"
+                    src="https://career.dev64.ru/wp-content/themes/career_theme/assets/images/Lazy-loading/1x1.png"
+                    alt="News"
+                    title="Новости"
+                    width="500"
+                    height="280"
+                  />
+                </div>
+                <div class="vacancy__news-title-info">
+                  DevOpsConf: информация к размышлению
+                </div>
+                <p class="vacancy__news-date-container">
+                  <span class="vacancy__news-date">14 октября 2021</span>
+                </p>
+              </a>
+              <a
+                href="https://habr.com/ru/company/mvideo/blog/579334/#habracut"
+                target="_blank"
+                class="
+                  vacancy__news-item
+                  swiper-slide swiper-slide-duplicate-prev
+                "
+                data-swiper-slide-index="5"
+                style="width: 379.926px; margin-right: 16px"
+                role="group"
+                aria-label="6 / 6"
+                ><div class="vacancy__news-item-image-block loading">
+                  <img
+                    class="vacancy__news-image"
+                    data-src="https://career.dev64.ru/wp-content/uploads/2021/09/6fd0889a5cd2733d42bb2a56de203371.png"
+                    src="https://career.dev64.ru/wp-content/themes/career_theme/assets/images/Lazy-loading/1x1.png"
+                    alt="News"
+                    title="Новости"
+                    width="500"
+                    height="280"
+                  />
+                </div>
+                <div class="vacancy__news-title-info">Дорогой мой патефон</div>
+                <p class="vacancy__news-date-container">
+                  <span class="vacancy__news-date">22 сентября 2021</span>
+                </p> </a
+              ><a
+                href="https://habr.com/ru/post/582378/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=corporate_blog#habracut"
+                target="_blank"
+                class="
+                  vacancy__news-item
+                  swiper-slide
+                  swiper-slide-duplicate
+                  swiper-slide-duplicate-active
+                "
+                data-swiper-slide-index="0"
+                style="width: 379.926px; margin-right: 16px"
+                role="group"
+                aria-label="1 / 6"
+                ><div class="vacancy__news-item-image-block loading">
+                  <img
+                    class="vacancy__news-image"
+                    data-src="https://career.dev64.ru/wp-content/uploads/2021/10/pic-sajt-vakansii-12.jpg"
+                    src="https://career.dev64.ru/wp-content/themes/career_theme/assets/images/Lazy-loading/1x1.png"
+                    alt="News"
+                    title="Новости"
+                    width="500"
+                    height="280"
+                  />
+                </div>
+                <div class="vacancy__news-title-info">
+                  Алиса, Маруся, Алекса и все-все-все: 10 умных колонок для дома
+                  и офиса
+                </div>
+                <p class="vacancy__news-date-container">
+                  <span class="vacancy__news-date">14 октября 2021</span>
+                </p> </a
+              ><a
+                href="https://habr.com/ru/post/581702/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=corporate_blog#habracut"
+                target="_blank"
+                class="
+                  vacancy__news-item
+                  swiper-slide
+                  swiper-slide-duplicate
+                  swiper-slide-duplicate-next
+                "
+                data-swiper-slide-index="1"
+                style="width: 379.926px; margin-right: 16px"
+                role="group"
+                aria-label="2 / 6"
+                ><div class="vacancy__news-item-image-block loading">
+                  <img
+                    class="vacancy__news-image"
+                    data-src="https://career.dev64.ru/wp-content/uploads/2021/10/pic-sajt-vakansii-11.jpg"
+                    src="https://career.dev64.ru/wp-content/themes/career_theme/assets/images/Lazy-loading/1x1.png"
+                    alt="News"
+                    title="Новости"
+                    width="500"
+                    height="280"
+                  />
+                </div>
+                <div class="vacancy__news-title-info">
+                  Секреты выбора онлайн-касс: подборка оптимальных вариантов
+                </div>
+                <p class="vacancy__news-date-container">
+                  <span class="vacancy__news-date">14 октября 2021</span>
+                </p> </a
+              ><a
+                href="https://habr.com/ru/post/581470/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=corporate_blog#habracut"
+                target="_blank"
+                class="vacancy__news-item swiper-slide swiper-slide-duplicate"
+                data-swiper-slide-index="2"
+                role="group"
+                aria-label="3 / 6"
+                style="width: 379.926px; margin-right: 16px"
+                ><div class="vacancy__news-item-image-block loading">
+                  <img
+                    class="vacancy__news-image"
+                    data-src="https://career.dev64.ru/wp-content/uploads/2021/10/pic-sajt-vakansii-10.jpg"
+                    src="https://career.dev64.ru/wp-content/themes/career_theme/assets/images/Lazy-loading/1x1.png"
+                    alt="News"
+                    title="Новости"
+                    width="500"
+                    height="280"
+                  />
+                </div>
+                <div class="vacancy__news-title-info">
+                  Квадратный колобок: еще раз про UX в ритейле
+                </div>
+                <p class="vacancy__news-date-container">
+                  <span class="vacancy__news-date">14 октября 2021</span>
+                </p>
+              </a>
+            </div>
+            <span
+              class="swiper-notification"
+              aria-live="assertive"
+              aria-atomic="true"
+            ></span>
+          </div>
+        </div>
+        <div class="vacancy__news-block-mobile">
+          <div class="vacancy__news">
+            <div class="vacancy__news-title">
+              <div class="vacancy__news-tabs">
+                <a href="#" class="vacancy__news-link vacancy__news-link-active"
+                  >Новости</a
+                >
+                <a href="#" class="vacancy__news-link">События</a>
+              </div>
+              <div class="vacancy__news-arrows">
+                <button class="vacancy__news-btn-prev">
+                  <svg
+                    width="14"
+                    height="10"
+                    viewBox="0 0 14 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.57661 0.575745L0.152344 5.00001L4.57661 9.42427L5.42514 8.57574L2.4494 5.60001H14.0009V4.40001H2.4494L5.42514 1.42427L4.57661 0.575745Z"
+                      fill="black"
+                    ></path>
+                  </svg>
+                </button>
+                <button class="vacancy__news-btn-next">
+                  <svg
+                    width="14"
+                    height="10"
+                    viewBox="0 0 14 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.5515 4.40001L8.57574 1.42427L9.42426 0.575745L13.8485 5.00001L9.42426 9.42427L8.57574 8.57574L11.5515 5.60001H0L0 4.40001H11.5515Z"
+                      fill="black"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <a href="#" class="vacancy__news-link-mobile"> Все новости </a>
+            </div>
+            <div class="vacancy__news-row">
+              <a
+                href="https://habr.com/ru/post/582378/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=corporate_blog#habracut"
+                target="_blank"
+                class="vacancy__news-item"
+                ><div class="vacancy__news-item-image-block">
+                  <img
+                    class="vacancy__news-image"
+                    src="https://career.dev64.ru/wp-content/uploads/2021/10/pic-sajt-vakansii-12.jpg"
+                    alt="News"
+                    title="Новости"
+                    width="500"
+                    height="280"
+                  />
+                </div>
+                <div class="vacancy__news-title-info">
+                  Алиса, Маруся, Алекса и все-все-все: 10 умных колонок для дома
+                  и офиса
+                </div>
+                <p class="vacancy__news-date-container">
+                  <span class="vacancy__news-date">14 октября 2021</span>
+                </p>
+              </a>
+              <a
+                href="https://habr.com/ru/post/581702/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=corporate_blog#habracut"
+                target="_blank"
+                class="vacancy__news-item"
+                ><div class="vacancy__news-item-image-block">
+                  <img
+                    class="vacancy__news-image"
+                    src="https://career.dev64.ru/wp-content/uploads/2021/10/pic-sajt-vakansii-11.jpg"
+                    alt="News"
+                    title="Новости"
+                    width="500"
+                    height="280"
+                  />
+                </div>
+                <div class="vacancy__news-title-info">
+                  Секреты выбора онлайн-касс: подборка оптимальных вариантов
+                </div>
+                <p class="vacancy__news-date-container">
+                  <span class="vacancy__news-date">14 октября 2021</span>
+                </p>
+              </a>
+              <a
+                href="https://habr.com/ru/post/581470/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=corporate_blog#habracut"
+                target="_blank"
+                class="vacancy__news-item"
+                ><div class="vacancy__news-item-image-block">
+                  <img
+                    class="vacancy__news-image"
+                    src="https://career.dev64.ru/wp-content/uploads/2021/10/pic-sajt-vakansii-10.jpg"
+                    alt="News"
+                    title="Новости"
+                    width="500"
+                    height="280"
+                  />
+                </div>
+                <div class="vacancy__news-title-info">
+                  Квадратный колобок: еще раз про UX в ритейле
+                </div>
+                <p class="vacancy__news-date-container">
+                  <span class="vacancy__news-date">14 октября 2021</span>
+                </p>
+              </a>
+              <a
+                href="https://habr.com/ru/post/580476/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=corporate_blog#habracut"
+                target="_blank"
+                class="vacancy__news-item"
+                ><div class="vacancy__news-item-image-block">
+                  <img
+                    class="vacancy__news-image"
+                    src="https://career.dev64.ru/wp-content/uploads/2021/09/pic-sajt-vakansii-09.jpg"
+                    alt="News"
+                    title="Новости"
+                    width="500"
+                    height="280"
+                  />
+                </div>
+                <div class="vacancy__news-title-info">
+                  Технологии спасают планету
+                </div>
+                <p class="vacancy__news-date-container">
+                  <span class="vacancy__news-date">14 октября 2021</span>
+                </p>
+              </a>
+              <a
+                href="https://habr.com/ru/post/579818/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=corporate_blog#habracut"
+                target="_blank"
+                class="vacancy__news-item"
+                ><div class="vacancy__news-item-image-block">
+                  <img
+                    class="vacancy__news-image"
+                    src="https://career.dev64.ru/wp-content/uploads/2021/09/pic-sajt-vakansii-08.jpg"
+                    alt="News"
+                    title="Новости"
+                    width="500"
+                    height="280"
+                  />
+                </div>
+                <div class="vacancy__news-title-info">
+                  DevOpsConf: информация к размышлению
+                </div>
+                <p class="vacancy__news-date-container">
+                  <span class="vacancy__news-date">14 октября 2021</span>
+                </p>
+              </a>
+              <a
+                href="https://habr.com/ru/company/mvideo/blog/579334/#habracut"
+                target="_blank"
+                class="vacancy__news-item"
+                ><div class="vacancy__news-item-image-block">
+                  <img
+                    class="vacancy__news-image"
+                    src="https://career.dev64.ru/wp-content/uploads/2021/09/6fd0889a5cd2733d42bb2a56de203371.png"
+                    alt="News"
+                    title="Новости"
+                    width="500"
+                    height="280"
+                  />
+                </div>
+                <div class="vacancy__news-title-info">Дорогой мой патефон</div>
+                <p class="vacancy__news-date-container">
+                  <span class="vacancy__news-date">22 сентября 2021</span>
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //Flyout section -->
   </body>
 </html>

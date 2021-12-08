@@ -77,6 +77,7 @@ import { RetailFooter } from './components/retail/retailFooter';
 
 // Импорт классов со страницы "Сервис и Логистика"
 import { FirstScreenBlock } from './components/servece-and-logistic/logisticFirstScreenBlock';
+import { LogisticPageVacanciesBlock } from './components/servece-and-logistic/logisticVacanciesBlock';
 
 // Перенос изображений
 require.context('../images', true, /\.(png|jpg|svg|gif)$/);
@@ -162,6 +163,7 @@ retailBrandsBlock.getAllBrandsTabs([
 
 // Инициализация классов на странице "Сервис и Логистика"
 new FirstScreenBlock('.logistic-stage');
+new LogisticPageVacanciesBlock('.retail__position-list');
 //--------------------------------------------------------
 
 document.body.addEventListener('click', (event) => {

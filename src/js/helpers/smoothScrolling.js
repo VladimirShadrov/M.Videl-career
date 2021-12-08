@@ -1,3 +1,7 @@
+// При инициализации внутри другого элемента в конструктор класса нужно передать:
+// -Целевой элемент, к которому нужно проскроллить страницу;
+// -Хедер.
+
 export class SmothScrollingToTargetBlock {
   constructor(targetBlock, header) {
     this.targetBlock = targetBlock;
