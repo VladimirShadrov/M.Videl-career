@@ -7,7 +7,8 @@ export class SmothScrollingToTargetBlock {
     this.targetBlock = targetBlock;
     this.header = header;
   }
-  scrollToTargetBlock() {
+  scrollToTargetBlock(event) {
+    event.preventDefault();
     const offset = 16;
     const mobileScreenWidth = 479;
     let headerHeight = this.header.clientHeight + offset;

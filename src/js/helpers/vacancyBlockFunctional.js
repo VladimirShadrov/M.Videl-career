@@ -4,6 +4,8 @@
 // -Имя класса кнопки "Больше о направлении", которая находится внутри элемента вакансии
 // -Флайаут
 
+import { FlyoutFunctional } from '../helpers/flyout';
+
 export class VacancyBlockFunctional {
   constructor(el, vacancyItemClassName, vacancyButtonClassName, flyout) {
     this.el = el;
@@ -12,7 +14,7 @@ export class VacancyBlockFunctional {
     this.flyout = flyout;
     this.vacancyItems = [];
 
-    this.vacancyItems = document.querySelectorAll(this.vacancyItemClassName);
+    this.flyoutInstance = new FlyoutFunctional(this.flyout);
 
     this.el.addEventListener('mouseover', this.getVacancyItems.bind(this));
   }
@@ -45,6 +47,10 @@ export class VacancyBlockFunctional {
   }
 
   openFlyout() {
-    this.flyout.classList.add('flyout__active');
+    this.flyoutInstance.openFlyout();
+
+    if (this.flyout.classList.contains('flyout__active')) {
+      this.flyoutInstance.playFlyoutVideo();
+    }
   }
 }

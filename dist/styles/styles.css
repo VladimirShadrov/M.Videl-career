@@ -5482,6 +5482,7 @@ body {
 .vacancy__header-head-copy,
 .vacancy__header-head-copy-mobile {
   display: inline-block;
+  width: 100%;
   max-width: 201px;
   padding-right: 20px;
   color: #000000;
