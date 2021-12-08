@@ -1,14 +1,17 @@
 export class SmothScrollingToTargetBlock {
-  constructor() {}
-  scrollToTargetBlock(targetBlock, header) {
+  constructor(targetBlock, header) {
+    this.targetBlock = targetBlock;
+    this.header = header;
+  }
+  scrollToTargetBlock() {
     const offset = 16;
     const mobileScreenWidth = 479;
-    let headerHeight = header.clientHeight + offset;
+    let headerHeight = this.header.clientHeight + offset;
 
     if (window.innerWidth <= mobileScreenWidth) {
       headerHeight = offset;
     }
-    const topOffset = targetBlock.offsetTop - headerHeight;
+    const topOffset = this.targetBlock.offsetTop - headerHeight;
 
     let interval = setInterval(() => {
       document.scrollingElement.scrollTop += 10;

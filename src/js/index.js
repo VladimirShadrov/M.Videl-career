@@ -75,6 +75,9 @@ import { RetailInternshipBlock } from './components/retail/retailInternship';
 import { RetailAdvantagesBlock } from './components/retail/retailAdvantages';
 import { RetailFooter } from './components/retail/retailFooter';
 
+// Импорт классов со страницы "Сервис и Логистика"
+import { FirstScreenBlock } from './components/servece-and-logistic/logisticFirstScreenBlock';
+
 // Перенос изображений
 require.context('../images', true, /\.(png|jpg|svg|gif)$/);
 require.context('../fonts', true, /\.(ttf|woff|woff2)$/);
@@ -156,6 +159,10 @@ retailBrandsBlock.getAllBrandsTabs([
   { name: 'mvideo', elements: retailFooter.mvideoFromFooter },
   { name: 'eldorado', elements: retailFooter.eldoradoFromFooter },
 ]);
+
+// Инициализация классов на странице "Сервис и Логистика"
+new FirstScreenBlock('.logistic-stage');
+//--------------------------------------------------------
 
 document.body.addEventListener('click', (event) => {
   header.closeSelect();
