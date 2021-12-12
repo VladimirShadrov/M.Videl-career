@@ -11610,6 +11610,126 @@ body {
   .retail__footer-title-container {
     margin-bottom: 42px; } }
 
+/*!************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/postcss-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles/retail/retail-career-upgrade.scss ***!
+  \************************************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: suisse;
+  src: url("../fonts/SuisseIntl-Regular.woff") format("woff"), url("../fonts/SuisseIntl-Regular.woff2") format("woff2"); }
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+:focus,
+:active {
+  outline: none; }
+
+a:focus,
+a:active {
+  outline: none; }
+
+nav,
+footer,
+header,
+aside {
+  display: block; }
+
+html,
+body {
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px; }
+
+input,
+button,
+textarea {
+  font-family: inherit; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a,
+a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400; }
+
+body {
+  font-family: suisse;
+  background: #f3f3f3;
+  color: #000000;
+  font-size: 16px;
+  line-height: 20px;
+  position: relative; }
+
+.container {
+  padding: 0 16px; }
+
+.page-container {
+  padding: 0 16px; }
+
+.hide {
+  display: none; }
+
+.transparent {
+  opacity: 0; }
+
+.cursor-pointer {
+  cursor: pointer; }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 8px; } }
+
+.retail__career-upgrade {
+  margin-bottom: 192px;
+  padding: 0 16px; }
+
+@media (max-width: 1440px) {
+  .retail__career-upgrade {
+    margin-bottom: 144px; } }
+
+@media (max-width: 1024px) {
+  .retail__career-upgrade {
+    margin-bottom: 128px; } }
+
+@media (max-width: 770px) {
+  .retail__career-upgrade {
+    padding: 0 8px; } }
+
+@media (max-width: 479px) {
+  .retail__career-upgrade {
+    margin-bottom: 64px; } }
+
 /*!*************************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/postcss-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles/404-page/404-page.scss ***!
   \*************************************************************************************************************************************************************************************************/

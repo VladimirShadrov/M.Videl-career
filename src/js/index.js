@@ -24,6 +24,8 @@ import '../styles/retail/retail-internship.scss';
 import '../styles/retail/retail-advantages.scss';
 import '../styles/retail/retail-upgrade.scss';
 import '../styles/retail/retail-footer.scss';
+import '../styles/retail/retail-career-upgrade.scss';
+
 import '../styles/404-page/404-page.scss';
 import '../styles/main-page/main-page-stage.scss';
 import '../styles/main-page/main-division.scss';
@@ -166,8 +168,8 @@ retailBrandsBlock.getAllBrandsTabs([
 new FirstScreenBlock('.logistic-stage');
 new LogisticPageVacanciesBlock('.retail__position-list');
 new LogisticPageFlyout('.flyout');
-//--------------------------------------------------------
 
+//--------------------------------------------------------
 document.body.addEventListener('click', (event) => {
   header.closeSelect();
 
